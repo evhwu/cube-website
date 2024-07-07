@@ -1,5 +1,5 @@
-{
-    "100": {
+[
+    {
         "draft_number": "100",
         "date": "04/06/2024",
         "patch": "6.0",
@@ -658,7 +658,7 @@
             }
         ]
     },
-    "101": {
+    {
         "draft_number": "101",
         "date": "04/27/2024",
         "patch": "6.0",
@@ -1317,7 +1317,7 @@
             }
         ]
     },
-    "102": {
+    {
         "draft_number": "102",
         "date": "05/19/2024",
         "patch": "6.0",
@@ -1972,7 +1972,7 @@
             }
         ]
     },
-    "17": {
+    {
         "draft_number": "17",
         "date": "11/20/2020",
         "patch": "1.0",
@@ -2631,7 +2631,7 @@
             }
         ]
     },
-    "18": {
+    {
         "draft_number": "18",
         "date": "11/23/2020",
         "patch": "1.0",
@@ -3290,7 +3290,7 @@
             }
         ]
     },
-    "19": {
+    {
         "draft_number": "19",
         "date": "11/28/2020",
         "patch": "1.0",
@@ -3949,7 +3949,7 @@
             }
         ]
     },
-    "21": {
+    {
         "draft_number": "21",
         "date": "12/07/2020",
         "patch": "1.0",
@@ -4608,7 +4608,7 @@
             }
         ]
     },
-    "22": {
+    {
         "draft_number": "22",
         "date": "12/16/2020",
         "patch": "1.0",
@@ -4643,69 +4643,6 @@
                 "player": "Nenni",
                 "number": 1,
                 "cards": [
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN
-                ]
-            },
-            {
-                "player": "Nenni",
-                "number": 2,
-                "cards": [
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN
-                ]
-            },
-            {
-                "player": "Nenni",
-                "number": 3,
-                "cards": [
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN,
-                    NaN
-                ]
-            },
-            {
-                "player": "big big big big dumps",
-                "number": 1,
-                "cards": [
                     "Library of Alexandria",
                     "Batterskull",
                     "Force Spike",
@@ -4724,7 +4661,7 @@
                 ]
             },
             {
-                "player": "big big big big dumps",
+                "player": "Nenni",
                 "number": 2,
                 "cards": [
                     "Mox Sapphire",
@@ -4745,7 +4682,7 @@
                 ]
             },
             {
-                "player": "big big big big dumps",
+                "player": "Nenni",
                 "number": 3,
                 "cards": [
                     "Mox Jet",
@@ -4766,7 +4703,7 @@
                 ]
             },
             {
-                "player": "shinydog",
+                "player": "big big big big dumps",
                 "number": 1,
                 "cards": [
                     "Spell Pierce",
@@ -4787,7 +4724,7 @@
                 ]
             },
             {
-                "player": "shinydog",
+                "player": "big big big big dumps",
                 "number": 2,
                 "cards": [
                     "Ramunap Excavator",
@@ -4808,7 +4745,7 @@
                 ]
             },
             {
-                "player": "shinydog",
+                "player": "big big big big dumps",
                 "number": 3,
                 "cards": [
                     "Blood Artist",
@@ -4829,7 +4766,7 @@
                 ]
             },
             {
-                "player": "Alexotl",
+                "player": "shinydog",
                 "number": 1,
                 "cards": [
                     "Arcane Denial",
@@ -4850,7 +4787,7 @@
                 ]
             },
             {
-                "player": "Alexotl",
+                "player": "shinydog",
                 "number": 2,
                 "cards": [
                     "Mox Ruby",
@@ -4871,7 +4808,7 @@
                 ]
             },
             {
-                "player": "Alexotl",
+                "player": "shinydog",
                 "number": 3,
                 "cards": [
                     "Jace, the Mind Sculptor",
@@ -4889,6 +4826,69 @@
                     "Academy Ruins",
                     "Tezzeret, Agent of Bolas",
                     "Feldon of the Third Path"
+                ]
+            },
+            {
+                "player": "Alexotl",
+                "number": 1,
+                "cards": [
+                    "Mox Diamond",
+                    "Dack Fayden",
+                    "Doom Blade",
+                    "Condescend",
+                    "Nissa, Who Shakes the World",
+                    "Arc Trail",
+                    "Doom Whisperer",
+                    "Chandra, Torch of Defiance",
+                    "Plow Under",
+                    "Canyon Slough",
+                    "Wildfire",
+                    "Spear of Heliod",
+                    "Smokestack",
+                    "Entomb",
+                    "Lodestone Golem"
+                ]
+            },
+            {
+                "player": "Alexotl",
+                "number": 2,
+                "cards": [
+                    "Bonesplitter",
+                    "Goblin Cratermaker",
+                    "Wall of Blossoms",
+                    "Show and Tell",
+                    "Angel of Invention",
+                    "Rolling Earthquake",
+                    "Thran Dynamo",
+                    "Boros Charm",
+                    "Rofellos, Llanowar Emissary",
+                    "Goblin Guide",
+                    "Snuff Out",
+                    "Elspeth, Sun's Champion",
+                    "Nature's Lore",
+                    "Wrenn and Six",
+                    "Arid Mesa"
+                ]
+            },
+            {
+                "player": "Alexotl",
+                "number": 3,
+                "cards": [
+                    "Kitchen Finks",
+                    "Watcher for Tomorrow",
+                    "Krenko, Tin Street Kingpin",
+                    "Grim Lavamancer",
+                    "Mother of Runes",
+                    "Monastery Mentor",
+                    "Saddled Rimestag",
+                    "Zurgo Bellstriker",
+                    "Journey to Nowhere",
+                    "Reflector Mage",
+                    "Giant Killer // Chop Down",
+                    "Manic Vandal",
+                    "Daretti, Scrap Savant",
+                    "Through the Breach",
+                    "Ashnod's Altar"
                 ]
             }
         ],
@@ -5267,7 +5267,7 @@
             }
         ]
     },
-    "23": {
+    {
         "draft_number": "23",
         "date": "12/19/2020",
         "patch": "1.0",
@@ -5926,7 +5926,7 @@
             }
         ]
     },
-    "24": {
+    {
         "draft_number": "24",
         "date": "12/28/2020",
         "patch": "1.0",
@@ -6585,7 +6585,7 @@
             }
         ]
     },
-    "25": {
+    {
         "draft_number": "25",
         "date": "01/11/2021",
         "patch": "1.0",
@@ -7244,7 +7244,7 @@
             }
         ]
     },
-    "26": {
+    {
         "draft_number": "26",
         "date": "01/18/2021",
         "patch": "1.0",
@@ -7903,7 +7903,7 @@
             }
         ]
     },
-    "30": {
+    {
         "draft_number": "30",
         "date": "04/10/2021",
         "patch": "2.0",
@@ -8562,7 +8562,7 @@
             }
         ]
     },
-    "31": {
+    {
         "draft_number": "31",
         "date": "04/14/2021",
         "patch": "2.0",
@@ -9221,7 +9221,7 @@
             }
         ]
     },
-    "32": {
+    {
         "draft_number": "32",
         "date": "04/18/2021",
         "patch": "2.0",
@@ -9880,7 +9880,7 @@
             }
         ]
     },
-    "33": {
+    {
         "draft_number": "33",
         "date": "04/28/2021",
         "patch": "2.0",
@@ -10539,7 +10539,7 @@
             }
         ]
     },
-    "34": {
+    {
         "draft_number": "34",
         "date": "05/04/2021",
         "patch": "2.0",
@@ -11198,7 +11198,7 @@
             }
         ]
     },
-    "35": {
+    {
         "draft_number": "35",
         "date": "05/06/2021",
         "patch": "2.0",
@@ -11857,7 +11857,7 @@
             }
         ]
     },
-    "36": {
+    {
         "draft_number": "36",
         "date": "05/11/2021",
         "patch": "2.0",
@@ -12516,7 +12516,7 @@
             }
         ]
     },
-    "37": {
+    {
         "draft_number": "37",
         "date": "05/12/2021",
         "patch": "2.0",
@@ -13175,7 +13175,7 @@
             }
         ]
     },
-    "38": {
+    {
         "draft_number": "38",
         "date": "05/16/2021",
         "patch": "2.0",
@@ -13834,7 +13834,7 @@
             }
         ]
     },
-    "39": {
+    {
         "draft_number": "39",
         "date": "05/18/2021",
         "patch": "2.0",
@@ -14493,7 +14493,7 @@
             }
         ]
     },
-    "40": {
+    {
         "draft_number": "40",
         "date": "05/21/2021",
         "patch": "2.0",
@@ -15152,7 +15152,7 @@
             }
         ]
     },
-    "41": {
+    {
         "draft_number": "41",
         "date": "05/23/2021",
         "patch": "2.0",
@@ -15811,7 +15811,7 @@
             }
         ]
     },
-    "42": {
+    {
         "draft_number": "42",
         "date": "06/01/2021",
         "patch": "2.0",
@@ -16470,7 +16470,7 @@
             }
         ]
     },
-    "43": {
+    {
         "draft_number": "43",
         "date": "06/06/2021",
         "patch": "3.0",
@@ -17129,7 +17129,7 @@
             }
         ]
     },
-    "44": {
+    {
         "draft_number": "44",
         "date": "06/07/2021",
         "patch": "3.0",
@@ -17788,7 +17788,7 @@
             }
         ]
     },
-    "45": {
+    {
         "draft_number": "45",
         "date": "06/10/2021",
         "patch": "3.0",
@@ -18447,7 +18447,7 @@
             }
         ]
     },
-    "46": {
+    {
         "draft_number": "46",
         "date": "06/13/2021",
         "patch": "3.0",
@@ -19106,7 +19106,7 @@
             }
         ]
     },
-    "47": {
+    {
         "draft_number": "47",
         "date": "06/14/2021",
         "patch": "3.0",
@@ -19765,7 +19765,7 @@
             }
         ]
     },
-    "48": {
+    {
         "draft_number": "48",
         "date": "06/16/2021",
         "patch": "3.0",
@@ -20424,7 +20424,7 @@
             }
         ]
     },
-    "49": {
+    {
         "draft_number": "49",
         "date": "06/18/2021",
         "patch": "3.0",
@@ -21083,7 +21083,7 @@
             }
         ]
     },
-    "50": {
+    {
         "draft_number": "50",
         "date": "06/20/2021",
         "patch": "3.0",
@@ -21742,7 +21742,7 @@
             }
         ]
     },
-    "51": {
+    {
         "draft_number": "51",
         "date": "06/25/2021",
         "patch": "3.0",
@@ -22401,7 +22401,7 @@
             }
         ]
     },
-    "52": {
+    {
         "draft_number": "52",
         "date": "06/29/2021",
         "patch": "3.0",
@@ -23060,7 +23060,7 @@
             }
         ]
     },
-    "53": {
+    {
         "draft_number": "53",
         "date": "07/05/2021",
         "patch": "3.0",
@@ -23719,7 +23719,7 @@
             }
         ]
     },
-    "55": {
+    {
         "draft_number": "55",
         "date": "07/21/2021",
         "patch": "3.0",
@@ -24378,7 +24378,7 @@
             }
         ]
     },
-    "56": {
+    {
         "draft_number": "56",
         "date": "08/14/2021",
         "patch": "3.0",
@@ -25037,7 +25037,7 @@
             }
         ]
     },
-    "57": {
+    {
         "draft_number": "57",
         "date": "08/19/2021",
         "patch": "3.0",
@@ -25696,7 +25696,7 @@
             }
         ]
     },
-    "58": {
+    {
         "draft_number": "58",
         "date": "09/02/2021",
         "patch": "3.0",
@@ -26355,7 +26355,7 @@
             }
         ]
     },
-    "59": {
+    {
         "draft_number": "59",
         "date": "09/13/2021",
         "patch": "3.0",
@@ -27014,7 +27014,7 @@
             }
         ]
     },
-    "60": {
+    {
         "draft_number": "60",
         "date": "10/01/2021",
         "patch": "3.0",
@@ -27673,7 +27673,7 @@
             }
         ]
     },
-    "61": {
+    {
         "draft_number": "61",
         "date": "01/23/2022",
         "patch": "3.0",
@@ -28332,7 +28332,7 @@
             }
         ]
     },
-    "62": {
+    {
         "draft_number": "62",
         "date": "02/25/2022",
         "patch": "4.0",
@@ -28991,7 +28991,7 @@
             }
         ]
     },
-    "63": {
+    {
         "draft_number": "63",
         "date": "03/03/2022",
         "patch": "4.0",
@@ -29650,7 +29650,7 @@
             }
         ]
     },
-    "64": {
+    {
         "draft_number": "64",
         "date": "03/24/2022",
         "patch": "4.0",
@@ -30309,7 +30309,7 @@
             }
         ]
     },
-    "65": {
+    {
         "draft_number": "65",
         "date": "03/27/2022",
         "patch": "4.0",
@@ -30968,7 +30968,7 @@
             }
         ]
     },
-    "66": {
+    {
         "draft_number": "66",
         "date": "03/28/2022",
         "patch": "4.0",
@@ -31627,7 +31627,7 @@
             }
         ]
     },
-    "67": {
+    {
         "draft_number": "67",
         "date": "04/05/2022",
         "patch": "4.0",
@@ -32286,7 +32286,7 @@
             }
         ]
     },
-    "68": {
+    {
         "draft_number": "68",
         "date": "04/17/2022",
         "patch": "4.0",
@@ -32945,7 +32945,7 @@
             }
         ]
     },
-    "69": {
+    {
         "draft_number": "69",
         "date": "04/21/2022",
         "patch": "4.0",
@@ -33604,7 +33604,7 @@
             }
         ]
     },
-    "70": {
+    {
         "draft_number": "70",
         "date": "04/26/2022",
         "patch": "4.1",
@@ -34263,7 +34263,7 @@
             }
         ]
     },
-    "71": {
+    {
         "draft_number": "71",
         "date": "04/30/2022",
         "patch": "4.1",
@@ -34922,7 +34922,7 @@
             }
         ]
     },
-    "72": {
+    {
         "draft_number": "72",
         "date": "06/01/2022",
         "patch": "4.1",
@@ -35581,7 +35581,7 @@
             }
         ]
     },
-    "73": {
+    {
         "draft_number": "73",
         "date": "06/27/2022",
         "patch": "4.1",
@@ -36240,7 +36240,7 @@
             }
         ]
     },
-    "74": {
+    {
         "draft_number": "74",
         "date": "12/21/2022",
         "patch": "4.1",
@@ -36899,7 +36899,7 @@
             }
         ]
     },
-    "75": {
+    {
         "draft_number": "75",
         "date": "02/10/2023",
         "patch": "4.1",
@@ -37558,7 +37558,7 @@
             }
         ]
     },
-    "76": {
+    {
         "draft_number": "76",
         "date": "02/14/2023",
         "patch": "4.1",
@@ -38217,7 +38217,7 @@
             }
         ]
     },
-    "77": {
+    {
         "draft_number": "77",
         "date": "02/24/2023",
         "patch": "4.1",
@@ -38876,7 +38876,7 @@
             }
         ]
     },
-    "78": {
+    {
         "draft_number": "78",
         "date": "03/07/2023",
         "patch": "4.1",
@@ -39535,7 +39535,7 @@
             }
         ]
     },
-    "79": {
+    {
         "draft_number": "79",
         "date": "04/07/2023",
         "patch": "4.1",
@@ -40194,7 +40194,7 @@
             }
         ]
     },
-    "80": {
+    {
         "draft_number": "80",
         "date": "04/28/2023",
         "patch": "5.0",
@@ -40853,7 +40853,7 @@
             }
         ]
     },
-    "81": {
+    {
         "draft_number": "81",
         "date": "04/30/2023",
         "patch": "5.0",
@@ -41508,7 +41508,7 @@
             }
         ]
     },
-    "82": {
+    {
         "draft_number": "82",
         "date": "05/03/2023",
         "patch": "5.0",
@@ -42167,7 +42167,7 @@
             }
         ]
     },
-    "83": {
+    {
         "draft_number": "83",
         "date": "05/08/2023",
         "patch": "5.0",
@@ -42822,7 +42822,7 @@
             }
         ]
     },
-    "84": {
+    {
         "draft_number": "84",
         "date": "05/15/2023",
         "patch": "5.0",
@@ -43481,7 +43481,7 @@
             }
         ]
     },
-    "85": {
+    {
         "draft_number": "85",
         "date": "05/18/2023",
         "patch": "5.0",
@@ -44140,7 +44140,7 @@
             }
         ]
     },
-    "86": {
+    {
         "draft_number": "86",
         "date": "06/07/2023",
         "patch": "5.0",
@@ -44799,7 +44799,7 @@
             }
         ]
     },
-    "89": {
+    {
         "draft_number": "89",
         "date": "07/23/2023",
         "patch": "5.0",
@@ -45458,7 +45458,7 @@
             }
         ]
     },
-    "90": {
+    {
         "draft_number": "90",
         "date": "11/16/2023",
         "patch": "5.0",
@@ -46117,7 +46117,7 @@
             }
         ]
     },
-    "91": {
+    {
         "draft_number": "91",
         "date": "12/27/2023",
         "patch": "5.0",
@@ -46776,7 +46776,7 @@
             }
         ]
     },
-    "92": {
+    {
         "draft_number": "92",
         "date": "01/21/2024",
         "patch": "5.0",
@@ -47435,7 +47435,7 @@
             }
         ]
     },
-    "93": {
+    {
         "draft_number": "93",
         "date": "02/01/2024",
         "patch": "5.1",
@@ -48094,7 +48094,7 @@
             }
         ]
     },
-    "94": {
+    {
         "draft_number": "94",
         "date": "02/13/2024",
         "patch": "5.1",
@@ -48753,7 +48753,7 @@
             }
         ]
     },
-    "95": {
+    {
         "draft_number": "95",
         "date": "03/04/2024",
         "patch": "6.0",
@@ -49412,7 +49412,7 @@
             }
         ]
     },
-    "96": {
+    {
         "draft_number": "96",
         "date": "03/08/2024",
         "patch": "6.0",
@@ -50071,7 +50071,7 @@
             }
         ]
     },
-    "97": {
+    {
         "draft_number": "97",
         "date": "03/16/2024",
         "patch": "6.0",
@@ -50730,7 +50730,7 @@
             }
         ]
     },
-    "98": {
+    {
         "draft_number": "98",
         "date": "03/22/2024",
         "patch": "6.0",
@@ -51389,7 +51389,7 @@
             }
         ]
     },
-    "99": {
+    {
         "draft_number": "99",
         "date": "03/31/2024",
         "patch": "6.0",
@@ -52048,4 +52048,4 @@
             }
         ]
     }
-}
+]

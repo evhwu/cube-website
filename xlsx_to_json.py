@@ -7,7 +7,7 @@ save_path = os.path.dirname(f"{BASE_PATH}/archive/")
                         
 def xlsx_to_json():
     archive_files = os.listdir(save_path)
-    draft_records = {}
+    draft_records = []
     
     for f in archive_files:
         draft = {}
@@ -67,9 +67,9 @@ def xlsx_to_json():
                 if series_name == p["name"]:
                     p["decklist"] = series.to_list()
              
-        draft_records[file_num] = draft
+        draft_records.append(draft)
         
-    f = open(f"{BASE_PATH}/test.txt", "w")
+    f = open(f"{BASE_PATH}/raw.json", "w")
     f.write(json.dumps(draft_records, indent=4))
     f.close()
         
