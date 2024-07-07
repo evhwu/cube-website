@@ -3,7 +3,6 @@ import pandas as pd
 
 BASE_PATH = os.getcwd()
 save_path = os.path.dirname(f"{BASE_PATH}/archive/")
-                        
 
 def validate_decklist():
     archive_files = os.listdir(save_path)
@@ -29,7 +28,7 @@ def validate_decklist():
                 if card not in drafted_cards.get(p_series_name):
                     print(f"{f} - {p_series_name} - {card}")
 
-def find_card(card_name, technical=False):
+def find_card(card_name):
     print(card_name)
     
     archive_files = os.listdir(save_path)
@@ -41,5 +40,3 @@ def find_card(card_name, technical=False):
             for card in series:
                 if card == card_name:
                     print(f"{f} - {series_name}")
- 
-validate_decklist()
