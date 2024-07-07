@@ -18,12 +18,12 @@ def generate_card(card_name):
             if card_name in player["pick_order"]:
                 active_player = player["name"]
                 seen = True
-                pick_number = (player["pick_order"].index(card_name) +1) % 15
+                pick_number = ((player["pick_order"].index(card_name) ) % 15) +1
             if card_name in player["decklist"]:
                 run = True
-        print(pick_number)
         return seen, run, pick_number, active_player
     
+    output["name"] = card_name
     output["total"] = len(data)    
     output["seen"] = []
     output["run"] = []
@@ -72,6 +72,9 @@ def generate_card(card_name):
                     p["losses"] += losses
             
     raw.close()
-    f = open(f"{BASE_PATH}/{card_name}.json", "w")
-    f.write(json.dumps(output, indent=4))
-    f.close()
+    try:
+        f = open(f"{BASE_PATH}/cards/{card_name}.json", "w")
+        f.write(json.dumps(output, indent=4))
+        f.close()
+    except:
+        print("skipped " + card_name)
