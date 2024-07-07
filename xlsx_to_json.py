@@ -46,13 +46,29 @@ def xlsx_to_json():
                 write_row(row)
             lastrow = row
         draft["matches"] = matches
-                
-        draft_sheet = pd.read_excel(file_name,sheet_name="Draft", skiprows=[16,32],
-                                    usecols=[0,1,2,3,5,6,7,8], header=0)
-        play_sheet = pd.read_excel(file_name,sheet_name="Play")
-
+        
+        pack_sheet = pd.read_excel(file_name,sheet_name="Draft", skiprows=[16,32],
+                                          usecols=[5,6,7,8], header=0)
         
         
+        rank_sheet = pd.read_excel(file_name,sheet_name="Results", usecols=[4], skiprows=[5,6])
+        pick_order_sheet = pd.read_excel(file_name,sheet_name="Draft", skiprows=[16,32],
+                                          usecols=[0,1,2,3], header=0)
+        play_sheet = pd.read_excel(file_name,sheet_name="Play").dropna()
+        
+        draft["players"] = []
+        for index, row in rank_sheet.iterrows():
+            draft["players"].append({"name": row["Ranking"],
+                                     "place": index + 1})
+            
+        for p in draft["players"]:
+            for series_name, series in pick_order_sheet.items():
+                if series_name == p["name"]:
+                    p["pick_order"] = series.to_list()
+            for series_name, series in play_sheet.items():
+                if series_name == p["name"]:
+                    p["decklist"] = series.to_list()
+             
         draft_records[file_num] = draft
         
     f = open(f"{BASE_PATH}/test.txt", "w")
