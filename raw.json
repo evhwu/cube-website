@@ -40319,13 +40319,13 @@
                     "Arcane Savant",
                     "Treachery",
                     "Taiga",
-                    "Malakir Rebirth",
+                    "Malakir Rebirth // Malakir Mire",
                     "Damnation",
                     "Watcher for Tomorrow",
                     "Cathar Commando",
                     "Volrath's Stronghold",
                     "Flametongue Yearling",
-                    "Etali, Primal Conqueror",
+                    "Etali, Primal Conqueror // Etali, Primal Sickness",
                     "Dragon's Rage Channeler",
                     "Oath of Druids"
                 ]
@@ -40597,7 +40597,7 @@
                     "Savai Triome",
                     "Lotus Petal",
                     "Plateau",
-                    "Malakir Rebirth",
+                    "Malakir Rebirth // Malakir Mire",
                     "Flickerwisp",
                     "Liliana, the Last Hope",
                     "Lingering Souls",
@@ -40696,7 +40696,7 @@
                     "Saheeli, Filigree Master",
                     "Hellrider",
                     "Whirler Rogue",
-                    "Etali, Primal Conqueror",
+                    "Etali, Primal Conqueror // Etali, Primal Sickness",
                     "Thundermaw Hellkite",
                     "Zurgo Bellstriker",
                     "The Tabernacle at Pendrell Vale",
@@ -40893,7 +40893,7 @@
                     "Sword of Body and Mind",
                     "Angel of Invention",
                     "Fabled Passage",
-                    "Etali, Primal Conqueror",
+                    "Etali, Primal Conqueror // Etali, Primal Sickness",
                     "Grave Titan",
                     "Nissa, Who Shakes the World",
                     "Lose Focus",
@@ -40923,7 +40923,7 @@
                     "Watery Grave",
                     "Psionic Blast",
                     "Shatterskull Smashing // Shatterskull, the Hammer Pass",
-                    "Invasion of Tolvada"
+                    "Invasion of Tolvada // The Broken Sky"
                 ]
             },
             {
@@ -41239,7 +41239,7 @@
                     "Griselbrand",
                     "The Tabernacle at Pendrell Vale",
                     "Spara's Headquarters",
-                    "Etali, Primal Conqueror",
+                    "Etali, Primal Conqueror // Etali, Primal Sickness",
                     "Brainstorm",
                     "Taiga",
                     "Archon of Cruelty",
@@ -41355,7 +41355,7 @@
                     "Old One Eye",
                     "Murderous Rider // Swift End",
                     "Dragonsguard Elite",
-                    "Invasion of Tolvada",
+                    "Invasion of Tolvada // The Broken Sky",
                     "Blood Artist",
                     "White Plume Adventurer",
                     "Thalia, Guardian of Thraben",
@@ -45079,7 +45079,7 @@
                     "Unexpectedly Absent",
                     "Frostwalk Bastion",
                     "Chart a Course",
-                    "Sheoldred // The Truth Scripctures"
+                    "Sheoldred // The True Scriptures"
                 ]
             }
         ],
@@ -45411,7 +45411,7 @@
                     "Bloodchief's Thirst",
                     "Reanimate",
                     "Collective Brutality",
-                    "Sheoldred // The Truth Scripctures"
+                    "Sheoldred // The True Scriptures"
                 ],
                 "decklist": [
                     "Evolving Wilds",
@@ -51627,7 +51627,7 @@
                     "Crystal Shard",
                     "Irreverent Revelers",
                     "Talisman of Progress",
-                    " Talisman of Dominance"
+                    "Talisman of Dominance"
                 ]
             },
             {
@@ -51692,7 +51692,7 @@
                     "Stifle",
                     "Troll of Khazad-d\u00fbm",
                     "Triplicate Titan",
-                    " Talisman of Dominance",
+                    "Talisman of Dominance",
                     "Gideon, Ally of Zendikar",
                     "Arcane Denial",
                     "Raffine's Tower",
