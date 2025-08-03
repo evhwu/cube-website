@@ -1,6 +1,8 @@
 import openpyxl
 from openpyxl import styles
 import os
+import requests
+from time import sleep
 
 save_path = os.path.dirname(f"{os.getcwd()}/archive/")
 
@@ -14,6 +16,9 @@ with open(f"{save_path}/input/player_results.txt",
 with open(f"{save_path}/input/pack_results.txt",
           'r', encoding="utf-8") as result:
     pack_file = result.read().split('\n')
+with open(f"{save_path}/input/deck_results.txt",
+          'r', encoding="utf-8") as result:
+    deck_file = result.read().split('\n')
 
 wb = openpyxl.Workbook()
 base_style = styles.NamedStyle(name="base",
@@ -21,9 +26,14 @@ base_style = styles.NamedStyle(name="base",
                                                 size=12),
                                 alignment=styles.Alignment(horizontal="center"))
 draft_sheet = wb.active
-draft_sheet.title = ("Draft")
+draft_sheet.title = "Draft" 
 color_order = {"Green" : [0, "ff78d05c"], "Blue" : [1, "ff6FBBEA"],
                "Red" : [2, "ffEA6F6F"], "Purple" : [3, "ffAE6FEA"]}
+deck_sheet = wb.create_sheet(title = "Play")
+result_sheet = wb.create_sheet(title = "Results")
+
+# do ersults
+# make some checks during decklist using requests
 
 class Player:
     def __init__(self, data):
@@ -38,8 +48,9 @@ def write_cell(sheet, row, col, value, color):
     curr_cell = sheet.cell(row=row, column=col)
     curr_cell.value = value
     curr_cell.style = base_style
-    curr_cell.fill = styles.PatternFill(start_color=color_order[color][1],
-                                        fill_type="solid")
+    if color:
+        curr_cell.fill = styles.PatternFill(start_color=color_order[color][1],
+                                            fill_type="solid")
 
 players = []
 lines = []
@@ -121,8 +132,49 @@ class DeckCard:
         
 def write_deck(deck, col):
     cards = []
-    row = 0
-    curr_color = color_order[deck[0]]
+    for p in players:
+        if p.name == deck[0]:
+            color = p.color
+    write_cell(deck_sheet, 1, col, deck.pop(0), color)
+    row = 1
+    for line in deck:
+        found = False
+        for c in cards:
+            if c.name == line:
+                c.qty += 1
+                found = True
+                break
+        if found:
+            continue
+        request_string = "https://api.scryfall.com/cards/search?q=" + line
+        response = requests.get(request_string,
+                                params = {"format" : "json"})
+        card_dict = response.json()["data"]
+        for card_entry in card_dict:
+            if card_entry["name"] == line:
+                temp_cmc = card_entry["cmc"]
+                cards.append(DeckCard(line, temp_cmc, 1))
+                break
+        sleep(0.2)
+    cards = sorted(cards)
+    for c in cards:
+        for q in range(c.qty):
+            write_cell(deck_sheet, row, col, c.name, color)
+            row += 1
+
+col = 1
+curr_deck = []
+for line in deck_file:
+    if "#413" in line:
+        write_deck(curr_deck, col)
+        curr_deck.clear()
+        col += 1
+    else:
+        curr_deck.append(line)
+
+
+    
+        
     
         
 
