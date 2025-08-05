@@ -13,6 +13,8 @@ def xlsx_to_json():
         draft = {}
         file_num, file_ext = os.path.splitext(f)
         file_name = os.path.join(save_path, f)
+        if file_ext != ".xlsx":
+            continue
         
         date_sheet = pd.read_excel(file_name,sheet_name="Date", header=None)    
         draft["draft_number"] = file_num
@@ -70,7 +72,7 @@ def xlsx_to_json():
         draft_records.append(draft)
         
     f = open(f"{BASE_PATH}/raw.json", "w")
-    f.write(json.dumps(draft_records, indent=4))
+    f.write(json.dumps(draft_records, indent=4, default=str))
     f.close()
         
         
