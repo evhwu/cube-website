@@ -2,8 +2,8 @@ import os
 import json
 import pandas as pd
 
-BASE_PATH = os.getcwd()
-save_path = os.path.dirname(f"{BASE_PATH}/archive/")
+base_path = os.getcwd()
+save_path = os.path.dirname(f"{base_path}/archive/")
                         
 def xlsx_to_json():
     archive_files = os.listdir(save_path)
@@ -71,8 +71,9 @@ def xlsx_to_json():
              
         draft_records.append(draft)
         
-    f = open(f"{BASE_PATH}/raw.json", "w")
+    f = open(f"{base_path}/raw.json", "w")
     f.write(json.dumps(draft_records, indent=4, default=str))
     f.close()
-        
-        
+
+if __name__ == "__main__":
+    xlsx_to_json()
