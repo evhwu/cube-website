@@ -6,13 +6,13 @@ from time import sleep
 save_path = os.path.dirname(f"{os.getcwd()}/input/")
 
 def record_xlsx(): 
-    with open(f"{save_path}/input/player_results.txt",
+    with open(f"{save_path}/text/player_results.txt",
             'r', encoding="utf-8") as result:
         player_file = result.read().split('\n')
-    with open(f"{save_path}/input/pack_results.txt",
+    with open(f"{save_path}/text/pack_results.txt",
             'r', encoding="utf-8") as result:
         pack_file = result.read().split('\n')
-    with open(f"{save_path}/input/deck_results.txt",
+    with open(f"{save_path}/text/deck_results.txt",
             'r', encoding="utf-8") as result:
         deck_file = result.read().split('\n')
 

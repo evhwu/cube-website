@@ -3,7 +3,7 @@ import json
 import pandas as pd
 
 base_path = os.getcwd()
-save_path = os.path.dirname(f"{base_path}/archive/")
+save_path = os.path.dirname(f"{base_path}/input/")
                         
 def xlsx_to_json():
     archive_files = os.listdir(save_path)
