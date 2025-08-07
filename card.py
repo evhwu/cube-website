@@ -73,6 +73,8 @@ def generate_card(card_name):
             
     raw.close()
     try:
+        if "//" in card_name:
+            card_name = card_name.split(" // ")[0]
         f = open(f"{BASE_PATH}/cards/{card_name}.json", "w")
         f.write(json.dumps(output, indent=4))
         f.close()

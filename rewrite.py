@@ -17,4 +17,13 @@ def generate_json():
         match_sheet = pd.read_excel(file_name, sheet_name = "Results",
                                     usecols = [0,1,2])
         matches = []
+        def write_match_row(row):
+            loser = row["Player 1"] if row["Winner"] == row["Player 2"] else row["Player 2"]
+            matches.append({"winner" : row["Winner"], "loser" : loser})
+        
+
+
+
+        draft = {"draft_number" : file_num, "date" : date_sheet.iloc[0,0],
+                 "patch" : date_sheet.iloc[1,0], "matches" : matches}
         
