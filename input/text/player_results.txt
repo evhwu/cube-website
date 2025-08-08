@@ -1,188 +1,188 @@
-shinydog-#-Green
-Arcum's Astrolabe
-Curse of Predation
-Monastery Mentor
-Temple Garden
-Verdant Catacombs
-Luminarch Aspirant
-Ravages of War
-Generous Ent
-Mirari's Wake
-Swords to Plowshares
-Nurturing Peatland
-Mount Doom
-Nature's Lore
-Reanimate
-Assassin's Trophy
-Once Upon a Time
-Misery's Shadow
-Ocelot Pride
-Pawpatch Recruit
-Reprieve
-Savai Triome
-Dust Animus
-Cankerbloom
-Skyclave Apparition
-Baleful Mastery
-Elspeth, Knight-Errant
-Loran of the Third Path
-Raging Ravine
-Nethergoyf
-Braids, Cabal Minion
-Mother of Runes
-Pest Infestation
-Adeline, Resplendent Cathar
-Sevinne's Reclamation
-Phelia, Exuberant Shepherd
-Bristly Bill, Spine Sower
-Transmogrant's Crown
-Goblin Cratermaker
-Stirring Wildwood
-Legolas's Quick Reflexes
-Regrowth
-Lethal Scheme
-Gemstone Mine
-Iridescent Vinelasher
-Bitter Triumph
-#413
-Alexotl-#-Blue
-Hexdrinker
-Uro, Titan of Nature's Wrath
-Garruk Wildspeaker
-Spara's Headquarters
-Restless Anchorage
-Sandstorm Salvager
-Hangarback Walker
-Zagoth Triome
-Sail into the West
-Shorikai, Genesis Engine
-Restoration Angel
-Fanatic of Rhonas
-Catastrophe
-Thirst for Discovery
-Worldspine Wurm
-Tamiyo, Inquisitive Student // Tamiyo, Seasoned Scholar
-Secure the Wastes
-Minsc & Boo, Timeless Heroes
-Banishing Light
-Counterspell
-Breeding Pool
-Bristlebud Farmer
+Nenni-#-Purple
+Astrid Peth
+Flash
+Mana Leak
+Faerie Mastermind
+Duelist of the Mind
+Volcanic Island
 Misty Rainforest
-Opposition
-Wilt
-Elesh Norn, Mother of Machines
-Restless Vinestalk
-Cut Down
-Marionette Apprentice
-Entomb
-Old One Eye
-Kitchen Finks
-Treachery
-Arcane Denial
-Flooded Strand
-Tireless Tracker
-Voice of Resurgence
+Fanatic of Rhonas
+Reclamation Sage
+Time Warp
+Abundant Harvest
+Natural Order
+Wrenn and Six
+Strangleroot Geist
+Silent Clearing
+Urza, Lord High Artificer
+Triplicate Titan
+Lutri, the Spellchaser
+Force of Will
+Birds of Paradise
+Thragtusk
+Breeding Pool
+Sink into Stupor // Soporific Springs
 Boseiju, Who Endures
-Dauthi Voidwalker
-Hallowed Fountain
-Sorin of House Markov // Sorin, Ravenous Neonate
-Engineered Explosives
-Soltari Champion
-The Tabernacle at Pendrell Vale
-Kaya, Intangible Slayer
+Stomping Ground
+Restless Spire
+Emrakul, the Promised End
+City of Death
+Cankerbloom
+Nissa, Voice of Zendikar
+Tamiyo, Inquisitive Student // Tamiyo, Seasoned Scholar
+Flare of Denial
+Atraxa, Grand Unifier
+Stern Scolding
+Ignoble Hierarch
+Fury
+Smuggler's Surprise
+Six
+Pest Infestation
+Sakura-Tribe Elder
+Waterlogged Grove
+Regrowth
+Denethor, Stone Seer
+Young Pyromancer
+Gravecrawler
 #413
 big big big big dumps-#-Red
-Fury
-Arcane Savant
-Stern Scolding
-Time Warp
-Steam Vents
-Firebolt
-Broadside Bombardiers
-Galvanic Blast
-Consider
-Dress Down
-Three Steps Ahead
-Disruptor Flute
-Nevinyrral's Disk
-Seasoned Pyromancer
-Field of the Dead
-Bounty Board
-True-Name Nemesis
-Hired Claw
-Chrome Mox
-Wooded Foothills
-Maze of Ith
-Death-Greeter's Champion
-Goblin Guide
-Psionic Blast
-Lose Focus
-Fiery Islet
-Narset, Parter of Veils
-Recruiter of the Guard
-Sheoldred, the Apocalypse
-Moat
-Wurmcoil Engine
-Wheel of Fortune
-Party Thrasher
-Occult Epiphany
-Searing Spear
-Emberheart Challenger
-Embereth Veteran
-Arena of Glory
-Preordain
-Creeping Tar Pit
-Abrade
-Mosswood Dreadknight // Dread Whispers
-Bribery
-Demonic Tutor
-Oliphaunt
-#413
-Nenni-#-Purple
-Mox Diamond
-Balance
-Jace, the Mind Sculptor
-Lurrus of the Dream-Den
-Lightning Greaves
-Phantasmal Image
-Eagles of the North
-Icehide Golem
-Kami of False Hope
-Metallic Mimic
-Emry, Lurker of the Loch
-Usher of the Fallen
-Spymaster's Vault
-Cult Conscript
-Hymn to Tourach
-City of Brass
-Mishra's Bauble
-Scalding Tarn
-Tolarian Academy
-Tundra
-Forth Eorlingas!
-Flametongue Kavu
-Plateau
+Guardian Scalelord
+Savai Triome
+Thalia, Guardian of Thraben
+Virtue of Loyalty // Ardenvale Fealty
+Murderous Redcap
+Trumpeting Carnosaur
+Phlage, Titan of Fire's Fury
+Raugrin Triome
+Through the Breach
+Ugin, the Spirit Dragon
+Sunbaked Canyon
+Goblin Cratermaker
+Xander's Lounge
+Sorcerous Spyglass
+Sinkhole
+Retrofitter Foundry
+Mother of Runes
+Solemn Simulacrum
+Chain Lightning
+Lightning Strike
+Marsh Flats
+The Wandering Emperor
 Unlicensed Hearse
-Celestial Colonnade
-Mystical Tutor
-Samwise the Stouthearted
-Kaya, Ghost Assassin
-Wrenn and Six
+Demand Answers
+Éomer, King of Rohan
 Imperial Seal
-Collector's Vault
-Hullbreacher
-Guide of Souls
-Ghostfire Slice
-Svyelun of Sea and Sky
-Incinerate
-Denethor, Stone Seer
-Grafted Wargear
-Polluted Delta
-Thalia, Heretic Cathar
-Blood Crypt
-Lórien Revealed
+Land Tax
+Kaya, Ghost Assassin
+Nissa, Who Shakes the World
+Conspiracy Theorist
+Transmogrant's Crown
+Show and Tell
+Etali, Primal Conqueror // Etali, Primal Sickness
+Animate Dead
+Vaultborn Tyrant
+Shark Typhoon
+Samwise the Stouthearted
+Worldspine Wurm
+Nevinyrral's Disk
+Tropical Island
+Glen Elendra Archmage
+Engineered Explosives
+Damnation
+Abuelo, Ancestral Echo
+Wildfire
+#413
+shinydog-#-Green
+Tolarian Academy
+Arcum's Astrolabe
+Smirking Spelljacker
+Chrome Mox
+Watery Grave
 Pack Rat
-Voldaren Bloodcaster // Bloodbat Summoner
-Bloodsoaked Champion
+Porcelain Legionnaire
+Lethal Scheme
+Undercity Sewers
+Master of Death
+Liliana of the Veil
+Saheeli, Filigree Master
+Ponder
+Unmarked Grave
+Deep-Cavern Bat
+Skullclamp
+Spellskite
+Ledger Shredder
+Polluted Delta
+Containment Construct
+Hostile Investigator
+Barrowgoyf
+Ertai Resurrected
+Underground Sea
+Subtlety
+Blood Artist
+Dress Down
+Commercial District
+Eagles of the North
+Demonic Tutor
+Mox Diamond
+Treasure Map // Treasure Cove
+Tinker
+Kitsa, Otterball Elite
+Agatha's Soul Cauldron
+Emry, Lurker of the Loch
+Memory Lapse
+Bitterblossom
+Duress
+Dig Through Time
+Baleful Mastery
+Brazen Borrower // Petty Theft
+Godless Shrine
+Consider
+Hymn to Tourach
+#413
+Alexotl-#-Blue
+Phelia, Exuberant Shepherd
+Kitchen Finks
+Mana Confluence
+Sword of Body and Mind
+Temple Garden
+Hired Claw
+Giver of Runes
+Light Up the Night
+Irreverent Revelers
+Death-Greeter's Champion
+Anim Pakal, Thousandth Moon
+Oliphaunt
+Stirring Wildwood
+Lingering Souls
+Disruptor Flute
+Ravages of War
+Guide of Souls
+Luminarch Aspirant
+Wheel of Fortune
+Cathar Commando
+Legion Extruder
+Emberheart Challenger
+Elspeth, Knight-Errant
+Grim Monolith
+Flametongue Yearling
+Inti, Seneschal of the Sun
+Scavenging Ooze
+Yawgmoth's Will
+Teferi, Time Raveler
+Knight of Autumn
+Lotus Petal
+Hellrider
+Incendiary Flow
+Laelia, the Blade Reforged
+Gemstone Mine
+Kami of False Hope
+Goblin Bombardment
+Kari Zev, Skyship Raider
+Ornery Tumblewagg
+Tarmogoyf
+Solitude
+Collector's Cage
+Wilt
+Vampiric Tutor
+Entomb
 #413
