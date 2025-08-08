@@ -37,5 +37,23 @@ def generate_json():
             lastrow = row
         #end
         draft = {"draft_number" : file_num, "date" : date_sheet.iloc[0,0],
-                 "patch" : date_sheet.iloc[1,0], "matches" : matches}
+                 "patch" : date_sheet.iloc[1,0], "matches" : matches,
+                 "packs" : [], "players" : []}
+        pack_sheet = pd.read_excel(file_name, sheet_name="Draft",
+                                   skiprows=[16,32], usecols=[5,6,7,8],
+                                   header=0)
+        for series_name, series in pack_sheet.items():
+            packs = series.to_list()
+            for i in range(3):
+                draft["packs"].append({"player" : series_name.removesuffix(".1"),
+                                       "number" : i + 1,
+                                       "cards" : packs[i*15:((i + 1) * 15)]})
+        rank_sheet = pd.read_excel(file_name, sheet_name = "Results",
+                                   usecols = [4], skiprows = [5,6])
+        player_sheet = pd.read_excel(file_name, sheet_name = "Draft",
+                                     skiprows = [16,32], usecols = [0,1,2,3],
+                                     header = 0)
+        deck_sheet = pd.read_excel(file_name, sheet_name = "Play").dropna()
+        
+        
         
