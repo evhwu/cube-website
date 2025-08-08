@@ -20,10 +20,22 @@ def generate_json():
         def write_match_row(row):
             loser = row["Player 1"] if row["Winner"] == row["Player 2"] else row["Player 2"]
             matches.append({"winner" : row["Winner"], "loser" : loser})
-        
 
-
-
+        #TODO: rewrite the row 2 swap - so that loser's 3/4 always played first
+        for index, row in match_sheet.iterrows():
+            if index == 2:
+                if row["Player 1"] == lastrow["Winner"] or row["Player 2"] == lastrow["Winner"]:
+                    is_swap = True
+                else:
+                    write_match_row(row)
+            elif is_swap:
+                write_match_row(row)
+                write_match_row(lastrow)
+                is_swap = False
+            else:
+                write_match_row(row)
+            lastrow = row
+        #end
         draft = {"draft_number" : file_num, "date" : date_sheet.iloc[0,0],
                  "patch" : date_sheet.iloc[1,0], "matches" : matches}
         
