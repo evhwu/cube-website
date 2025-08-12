@@ -1,7 +1,7 @@
 import os
 import json
 import pandas as pd
-save_path = os.path.dirname(f"{os.getcwd()}/input/")
+save_path = os.path.dirname(f"{os.getcwd()}/input/xlsx/")
 
 def generate_json():
     input_files = os.listdir(save_path)
@@ -79,8 +79,9 @@ def generate_json():
                     p["decklist"] = series.to_list()
             
         draft_records.append(draft)
-    f = open(f"{os.getcwd()}/raw.json", "w")
+    f = open(f"{os.getcwd()}/output/raw.json", "w")
     f.write(json.dumps(draft_records, indent=4, default=str))
     f.close()
-        
-generate_json()
+
+if __name__ == "__main__":
+    generate_json()
