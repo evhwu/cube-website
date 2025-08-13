@@ -1,10 +1,9 @@
-import json
 import os
-
-base_path = os.path.dirname(f"{os.getcwd()}/output/")
+import json
+save_path = os.path.dirname(f"{os.getcwd()}/output/cards/")
 
 def generate_list():
-    raw = open(os.path.join(base_path, 'raw.json'))
+    raw = open(os.path.join(os.getcwd, 'raw.json'))
     data = json.load(raw)
     
     unique_cards = set()
@@ -18,5 +17,4 @@ def generate_list():
     f.write(json.dumps(sorted(unique_cards), indent=4))
     f.close()
 
-if __name__ == "__main__":
-    generate_list()
+def generate_cards():

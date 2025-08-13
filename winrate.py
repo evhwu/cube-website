@@ -44,4 +44,5 @@ def winrate():
                 players[match["loser"]] = WR_Player(False, match["winner"])
     raw.close()
 
-winrate()
+if __name__ == "__main__":
+    winrate()
