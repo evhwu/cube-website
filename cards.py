@@ -13,8 +13,19 @@ def generate_list():
                 unique_cards.add(c)
 
     raw.close()
-    f = open(f"{base_path}/card_list.json", "w")
+    f = open(f"{save_path}/card_list.json", "w")
     f.write(json.dumps(sorted(unique_cards), indent=4))
     f.close()
 
 def generate_cards():
+    card_list = open(os.path.join(os.getcwd(), 'card_list.json'))
+    card_list_data = json.load(card_list)
+    
+    raw = open(os.path.join(os.getcwd(), 'raw.json'))
+    data = json.load(raw)
+    
+    for card in card_list_data:
+        output = {"name" : card}
+
+    
+    card_list.close()
