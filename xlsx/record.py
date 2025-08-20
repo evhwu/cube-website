@@ -20,7 +20,7 @@ def record_xlsx():
     confirm = int(input("Check for misspellings? 1 - All, 2 - Ignore Short, 3 - Skip: "))
     if confirm != 3:
         for line in pack_file:
-            request_string = "https://api.scryfall.com/cards/search?q=" + line
+            request_string = f"https://api.scryfall.com/cards/search?q={line}"
             response = requests.get(request_string,
                                     params = {"format" : "json"})
             try:
@@ -198,7 +198,7 @@ def record_xlsx():
                     break
             if found:
                 continue
-            request_string = "https://api.scryfall.com/cards/search?q=" + line
+            request_string = f"https://api.scryfall.com/cards/search?q={line}"
             response = requests.get(request_string,
                                     params = {"format" : "json"})
             card_dict = response.json()["data"]

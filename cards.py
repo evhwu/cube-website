@@ -1,21 +1,45 @@
 import os
 import json
-save_path = os.path.dirname(f"{os.getcwd()}/output/cards/")
+import requests
+from time import sleep
+from pathlib import Path
+
+from helper import get_oracle_path
+
+raw_path = Path.cwd().joinpath("output", "raw.json")
+list_path = Path.cwd().joinpath("output", "card_list.json")
+oracle_path = get_oracle_path()
+
+def assign_colors(data, card_name):
+    return [entry for entry in data if entry['name'] == card_name and
+            entry["object"] == "card" and entry["layout"] != "token"]
+
 
 def generate_list():
-    raw = open(os.path.join(os.getcwd, 'raw.json'))
-    data = json.load(raw)
-    
-    unique_cards = set()
-    for d in data:
-        for p in d["packs"]:
-            for c in p["cards"]:
-                unique_cards.add(c)
+    with raw_path.open("r", encoding="utf-8") as f:
+        raw_data = json.load(f)
 
-    raw.close()
-    f = open(f"{save_path}/card_list.json", "w")
-    f.write(json.dumps(sorted(unique_cards), indent=4))
-    f.close()
+    unique_cards = set()
+    for draft in raw_data:
+        for pack in draft["packs"]:
+            for card in pack["cards"]:
+                unique_cards.add(card)
+    
+    with oracle_path.open("r", encoding="utf-8") as f:
+        oracle_data = json.load(f)
+    
+    card_dict = {}
+    for card in unique_cards:
+        temp_dict = {}
+        temp_dict["mana_cost"] = assign_colors(oracle_data, card)
+        card_dict[card] = temp_dict
+    card_dict = dict(sorted(card_dict.items()))
+
+    with list_path.open("w", encoding="utf-8") as f:
+        f.write(json.dumps(card_dict, indent=4))
+
+#generate_list()
+
 
 def generate_cards():
     card_list = open(os.path.join(os.getcwd(), 'card_list.json'))
