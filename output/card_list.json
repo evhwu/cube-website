@@ -839,10 +839,10 @@
     },
     "Bonecrusher Giant // Stomp": {
         "mana_cost": {
-            "mana_cost": "{2}{r}{1}{r}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
-                "R": 0.5
+                "R": 1.0
             }
         },
         "tags": []
@@ -914,10 +914,10 @@
     },
     "Brazen Borrower // Petty Theft": {
         "mana_cost": {
-            "mana_cost": "{1}{u}{u}{1}{u}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
-                "U": 0.5
+                "U": 1.5
             }
         },
         "tags": []
@@ -1280,10 +1280,10 @@
     },
     "Cheeky House-Mouse // Squeak By": {
         "mana_cost": {
-            "mana_cost": "{w}{w}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
-                "W": 0.5
+                "W": 1.0
             }
         },
         "tags": []
@@ -1528,10 +1528,10 @@
     },
     "Cosima, God of the Voyage // The Omenkeel": {
         "mana_cost": {
-            "mana_cost": "{2}{u}{1}{u}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
-                "U": 0.5
+                "U": 1.0
             }
         },
         "tags": []
@@ -2390,7 +2390,7 @@
     },
     "Elusive Otter // Grove's Bounty": {
         "mana_cost": {
-            "mana_cost": "{u}{x}{g}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
                 "U": 0.5,
@@ -2402,10 +2402,10 @@
     },
     "Embereth Shieldbreaker // Battle Display": {
         "mana_cost": {
-            "mana_cost": "{1}{r}{r}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
-                "R": 0.5
+                "R": 1.0
             }
         },
         "tags": []
@@ -2874,11 +2874,11 @@
     },
     "Flamescroll Celebrant // Revel in Silence": {
         "mana_cost": {
-            "mana_cost": "{1}{r}{w}{w}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
                 "R": 0.5,
-                "W": 0.5
+                "W": 1.0
             }
         },
         "tags": []
@@ -3199,10 +3199,10 @@
     },
     "Giant Killer // Chop Down": {
         "mana_cost": {
-            "mana_cost": "{w}{2}{w}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
-                "W": 0.5
+                "W": 1.0
             }
         },
         "tags": []
@@ -4820,10 +4820,10 @@
     },
     "Lovestruck Beast // Heart's Desire": {
         "mana_cost": {
-            "mana_cost": "{2}{g}{g}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
-                "G": 0.5
+                "G": 1.0
             }
         },
         "tags": []
@@ -5350,7 +5350,7 @@
     },
     "Mosswood Dreadknight // Dread Whispers": {
         "mana_cost": {
-            "mana_cost": "{1}{g}{1}{b}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
                 "G": 0.5,
@@ -5448,10 +5448,10 @@
     },
     "Murderous Rider // Swift End": {
         "mana_cost": {
-            "mana_cost": "{1}{b}{b}{1}{b}{b}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
-                "B": 0.5
+                "B": 2.0
             }
         },
         "tags": []
@@ -6108,7 +6108,7 @@
     },
     "Plargg, Dean of Chaos // Augusta, Dean of Order": {
         "mana_cost": {
-            "mana_cost": "{1}{r}{2}{w}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
                 "R": 0.5,
@@ -6342,7 +6342,7 @@
     },
     "Questing Druid // Seek the Beast": {
         "mana_cost": {
-            "mana_cost": "{1}{g}{1}{r}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
                 "G": 0.5,
@@ -6642,10 +6642,10 @@
     },
     "Reidane, God of the Worthy // Valkmira, Protector's Shield": {
         "mana_cost": {
-            "mana_cost": "{2}{w}{3}{w}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
-                "W": 0.5
+                "W": 1.0
             }
         },
         "tags": []
@@ -8994,10 +8994,10 @@
     },
     "Valki, God of Lies // Tibalt, Cosmic Impostor": {
         "mana_cost": {
-            "mana_cost": "{1}{b}{5}{b}{r}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
-                "B": 0.5,
+                "B": 1.0,
                 "R": 0.5
             }
         },
@@ -9103,20 +9103,20 @@
     },
     "Virtue of Loyalty // Ardenvale Fealty": {
         "mana_cost": {
-            "mana_cost": "{3}{w}{w}{1}{w}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
-                "W": 0.5
+                "W": 1.5
             }
         },
         "tags": []
     },
     "Virtue of Persistence // Locthwain Scorn": {
         "mana_cost": {
-            "mana_cost": "{5}{b}{b}{1}{b}",
+            "mana_cost": "",
             "splash": "",
             "pips": {
-                "B": 0.5
+                "B": 1.5
             }
         },
         "tags": []

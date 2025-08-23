@@ -12,8 +12,9 @@ oracle_path = get_oracle_path()
 
 
 def translate_mana_cost(mana_string):
+    pips = {}
     if not mana_string:
-        return "", ""
+        return "", pips
     colorless_symbols = {"C", "X", "S"}
     symbols = mana_string.replace("{", "").split("}")
     pips = {}
@@ -28,7 +29,7 @@ def translate_mana_cost(mana_string):
             for c in split_hybrid:
                 pips[c] = pips.get(c, 0) + 0.5
         elif s.islower():
-            pips[s.upper()] = pips.get(s, 0) + 0.5
+            pips[s.upper()] = pips.get(s.upper(), 0) + 0.5
         else:
             pips[s] = pips.get(s, 0) + 1
 
@@ -41,20 +42,27 @@ def translate_mana_cost(mana_string):
 def assign_colors(data, card_name):
     card_entry =  [entry for entry in data if entry['name'] == card_name and
                    entry["object"] == "card" and entry["layout"] != "token"]
+    half_mana_string = ""
     if len(card_entry) != 1: 
         print(f"Multiple oracle entries for {card_name}")
         mana_string = None
     elif "card_faces" in card_entry[0]:
         mana_cost_faces = [face for face in card_entry[0]["card_faces"] if face["mana_cost"] != ""]
+        if len(mana_cost_faces) > 1:
+            half_mana_string = "".join(m["mana_cost"] for m in mana_cost_faces).lower()
+            mana_string = mana_cost_faces[0]["mana_cost"]
         if len(mana_cost_faces) == 1:
             mana_string = mana_cost_faces[0]["mana_cost"]
         else:
-            mana_string = "".join(m["mana_cost"] for m in mana_cost_faces).lower()
-            print(f"{card_name} - {mana_string}")
+            mana_string = ""
+
     else:
         mana_string = card_entry[0]["mana_cost"]
 
-    splash, pips = translate_mana_cost(mana_string)
+    if half_mana_string:
+        splash, pips = translate_mana_cost(half_mana_string)
+    else:
+        splash, pips = translate_mana_cost(mana_string)
     color_profile = {"mana_cost" : mana_string,
                      "splash" : splash,
                      "pips" : pips}
