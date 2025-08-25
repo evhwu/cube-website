@@ -97,16 +97,14 @@ def generate_list():
         f.write(json.dumps(card_dict, indent=4))
 
 def generate_cards():
-    card_list = open(os.path.join(os.getcwd(), 'card_list.json'))
-    card_list_data = json.load(card_list)
+    with raw_path.open("r", encoding="utf-8") as f:
+        raw_data = json.load(f)
+    with list_path.open("r", encoding="utf-8") as f:
+        card_list = json.load(f)
 
-    raw = open(os.path.join(os.getcwd(), 'raw.json'))
-    data = json.load(raw)
     
-    for card in card_list_data:
+    for card in card_list:
         output = {"name" : card}
 
-    
-    card_list.close()
-
-generate_list()
+if __name__ == "__main__":
+    generate_cards()
