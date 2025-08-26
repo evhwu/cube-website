@@ -1,7 +1,6 @@
 import os
 import json
-import requests
-from time import sleep
+import helper
 from pathlib import Path
 from helper import get_oracle_path
 
@@ -91,6 +90,10 @@ def generate_list():
     for card in unique_cards:
         temp_dict = {"mana" : assign_colors(oracle_data, exception_data, card),
                      "tags" : []}
+        alias = helper.card_alias(card)
+        if alias:
+            temp_dict["alias"] = alias
+        
         card_dict[card] = temp_dict
     card_dict = dict(sorted(card_dict.items()))
     with list_path.open("w", encoding="utf-8") as f:
@@ -102,9 +105,8 @@ def generate_cards():
     with list_path.open("r", encoding="utf-8") as f:
         card_list = json.load(f)
 
-    
     for card in card_list:
         output = {"name" : card}
 
 if __name__ == "__main__":
-    generate_cards()
+    generate_list()

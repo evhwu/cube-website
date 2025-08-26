@@ -151,7 +151,8 @@
                 "B": 3
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Agadeem's Awakening"
     },
     "Agatha's Soul Cauldron": {
         "mana": {
@@ -563,7 +564,8 @@
                 "G": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Bala Ged Recovery"
     },
     "Balance": {
         "mana": {
@@ -997,7 +999,8 @@
                 "R": 1.0
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Bonecrusher Giant"
     },
     "Bonesplitter": {
         "mana": {
@@ -1083,7 +1086,8 @@
                 "U": 1.5
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Brazen Borrower"
     },
     "Breeding Pool": {
         "mana": {
@@ -1163,7 +1167,8 @@
                 "W": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Brutal Cathar"
     },
     "Burn Down the House": {
         "mana": {
@@ -1519,7 +1524,8 @@
                 "W": 1.0
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Cheeky House-Mouse"
     },
     "Chrome Host Seedshark": {
         "mana": {
@@ -1703,7 +1709,8 @@
                 "B": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Concealing Curtains"
     },
     "Conclave Sledge-Captain": {
         "mana": {
@@ -1807,7 +1814,8 @@
                 "U": 1.0
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Cosima, God of the Voyage"
     },
     "Council's Judgment": {
         "mana": {
@@ -2149,7 +2157,8 @@
             "splash": {},
             "pips": {}
         },
-        "tags": []
+        "tags": [],
+        "alias": "Darkbore Pathway"
     },
     "Dauntless Bodyguard": {
         "mana": {
@@ -2679,7 +2688,8 @@
                 "G": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Duskwatch Recruiter"
     },
     "Dust Animus": {
         "mana": {
@@ -2841,7 +2851,8 @@
                 "G": 0.5
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Elusive Otter"
     },
     "Embereth Shieldbreaker // Battle Display": {
         "mana": {
@@ -2853,7 +2864,8 @@
                 "R": 1.0
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Embereth Shieldbreaker"
     },
     "Embereth Veteran": {
         "mana": {
@@ -2901,7 +2913,8 @@
                 "W": 3
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Emeria's Call"
     },
     "Empty the Warrens": {
         "mana": {
@@ -3047,7 +3060,8 @@
                 "R": 2
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Etali, Primal Conqueror"
     },
     "Eternal Witness": {
         "mana": {
@@ -3115,7 +3129,8 @@
                 "R": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Fable of the Mirror-Breaker"
     },
     "Fabled Passage": {
         "mana": {
@@ -3407,7 +3422,8 @@
                 "W": 1.0
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Flamescroll Celebrant"
     },
     "Flametongue Kavu": {
         "mana": {
@@ -3697,7 +3713,8 @@
                 "G": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Garruk Relentless"
     },
     "Garruk Wildspeaker": {
         "mana": {
@@ -3791,7 +3808,8 @@
                 "W": 1.0
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Giant Killer"
     },
     "Gideon Jura": {
         "mana": {
@@ -3871,7 +3889,8 @@
                 "U": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Glasspool Mimic"
     },
     "Glen Elendra Archmage": {
         "mana": {
@@ -4283,7 +4302,8 @@
                 "B": 2
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Hagra Mauling"
     },
     "Hallowed Fountain": {
         "mana": {
@@ -4759,7 +4779,8 @@
                 "G": 2
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Invasion of Shandalar"
     },
     "Invasion of Tolvada // The Broken Sky": {
         "mana": {
@@ -4773,7 +4794,8 @@
                 "B": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Invasion of Tolvada"
     },
     "Iridescent Vinelasher": {
         "mana": {
@@ -4855,7 +4877,8 @@
                 "U": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Jace, Vryn's Prodigy"
     },
     "Jace, the Mind Sculptor": {
         "mana": {
@@ -4879,7 +4902,8 @@
                 "U": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Jacob Hauken, Inspector"
     },
     "Jadar, Ghoulcaller of Nephalia": {
         "mana": {
@@ -5103,7 +5127,8 @@
                 "G": 2
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Kazandu Mammoth"
     },
     "Kessig Prowler // Sinuous Predator": {
         "mana": {
@@ -5115,7 +5140,8 @@
                 "G": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Kessig Prowler"
     },
     "Ketria Triome": {
         "mana": {
@@ -5135,7 +5161,8 @@
                 "R": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Khenra Spellspear"
     },
     "Kitchen Finks": {
         "mana": {
@@ -5311,7 +5338,8 @@
                 "R": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Kumano Faces Kakkazan"
     },
     "Kytheon, Hero of Akros // Gideon, Battle-Forged": {
         "mana": {
@@ -5323,7 +5351,8 @@
                 "W": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Kytheon, Hero of Akros"
     },
     "Laelia, the Blade Reforged": {
         "mana": {
@@ -5715,7 +5744,8 @@
                 "G": 1.0
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Lovestruck Beast"
     },
     "Loyal Warhound": {
         "mana": {
@@ -5849,7 +5879,8 @@
                 "B": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Malakir Rebirth"
     },
     "Malcolm, Alluring Scoundrel": {
         "mana": {
@@ -5873,7 +5904,8 @@
                 "U": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Malevolent Hermit"
     },
     "Man-o'-War": {
         "mana": {
@@ -6337,7 +6369,8 @@
                 "B": 0.5
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Mosswood Dreadknight"
     },
     "Mother of Runes": {
         "mana": {
@@ -6443,7 +6476,8 @@
                 "B": 2.0
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Murderous Rider"
     },
     "Mutavault": {
         "mana": {
@@ -6911,7 +6945,8 @@
                 "G": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Outland Liberator"
     },
     "Overgrown Tomb": {
         "mana": {
@@ -7229,7 +7264,8 @@
                 "W": 0.5
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Plargg, Dean of Chaos"
     },
     "Plateau": {
         "mana": {
@@ -7293,7 +7329,8 @@
                 "U": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Poppet Stitcher"
     },
     "Porcelain Legionnaire": {
         "mana": {
@@ -7505,7 +7542,8 @@
                 "R": 0.5
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Questing Druid"
     },
     "Rabbit Battery": {
         "mana": {
@@ -7753,7 +7791,8 @@
                 "R": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Reckless Stormseeker"
     },
     "Reclamation Sage": {
         "mana": {
@@ -7863,7 +7902,8 @@
                 "W": 1.0
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Reidane, God of the Worthy"
     },
     "Release the Gremlins": {
         "mana": {
@@ -8057,7 +8097,8 @@
             "splash": {},
             "pips": {}
         },
-        "tags": []
+        "tags": [],
+        "alias": "Riverglide Pathway"
     },
     "Riveteers Requisitioner": {
         "mana": {
@@ -8117,7 +8158,8 @@
                 "U": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Rona, Herald of Invasion"
     },
     "Rotting Regisaur": {
         "mana": {
@@ -8367,7 +8409,8 @@
                 "U": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Search for Azcanta"
     },
     "Search for Tomorrow": {
         "mana": {
@@ -8599,7 +8642,8 @@
                 "R": 2
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Shatterskull Smashing"
     },
     "Sheltered Thicket": {
         "mana": {
@@ -8619,7 +8663,8 @@
                 "B": 2
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Sheoldred"
     },
     "Sheoldred, the Apocalypse": {
         "mana": {
@@ -8713,7 +8758,8 @@
                 "U": 2
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Sink into Stupor"
     },
     "Sinkhole": {
         "mana": {
@@ -8953,7 +8999,8 @@
                 "B": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Sorin of House Markov"
     },
     "Sorin, Lord of Innistrad": {
         "mana": {
@@ -9345,7 +9392,8 @@
                 "U": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Suspicious Stowaway"
     },
     "Svyelun of Sea and Sky": {
         "mana": {
@@ -9609,7 +9657,8 @@
                 "U": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Tamiyo, Inquisitive Student"
     },
     "Tangle Wire": {
         "mana": {
@@ -9629,7 +9678,8 @@
                 "G": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Tangled Florahedron"
     },
     "Tarmogoyf": {
         "mana": {
@@ -9933,7 +9983,8 @@
                 "U": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Thing in the Ice"
     },
     "Third Path Iconoclast": {
         "mana": {
@@ -10241,7 +10292,8 @@
                 "G": 2
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Tovolar's Huntmaster"
     },
     "Toxic Deluge": {
         "mana": {
@@ -10297,7 +10349,8 @@
             "splash": {},
             "pips": {}
         },
-        "tags": []
+        "tags": [],
+        "alias": "Treasure Map"
     },
     "Treetop Village": {
         "mana": {
@@ -10381,7 +10434,8 @@
                 "G": 3
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Turntimber Symbiosis"
     },
     "Twinshot Sniper": {
         "mana": {
@@ -10429,7 +10483,8 @@
                 "G": 2
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Ulvenwald Oddity"
     },
     "Umezawa's Jitte": {
         "mana": {
@@ -10601,7 +10656,8 @@
                 "R": 0.5
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Valki, God of Lies"
     },
     "Vampire Nighthawk": {
         "mana": {
@@ -10733,7 +10789,8 @@
                 "W": 1.5
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Virtue of Loyalty"
     },
     "Virtue of Persistence // Locthwain Scorn": {
         "mana": {
@@ -10745,7 +10802,8 @@
                 "B": 1.5
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Virtue of Persistence"
     },
     "Vivien, Monsters' Advocate": {
         "mana": {
@@ -10791,7 +10849,8 @@
                 "B": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Voldaren Bloodcaster"
     },
     "Volrath's Stronghold": {
         "mana": {
@@ -10815,7 +10874,8 @@
                 "R": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Voltaic Visionary"
     },
     "Voracious Hydra": {
         "mana": {
@@ -10839,7 +10899,8 @@
                 "G": 2
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Vorinclex"
     },
     "Walking Ballista": {
         "mana": {
@@ -11091,7 +11152,8 @@
                 "G": 1
             }
         },
-        "tags": []
+        "tags": [],
+        "alias": "Wolfbitten Captive"
     },
     "Wooded Foothills": {
         "mana": {
