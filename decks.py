@@ -6,7 +6,32 @@ import copy
 raw_path = Path.cwd().joinpath("output", "raw.json")
 card_list_path = Path.cwd().joinpath("output", "card_list.json")
 
-#def deck_name(pips, splash):
+
+
+def deck_name(pips, splash):
+    color_string = ""
+    has_splash = False
+    sorted_pips = dict(sorted(pips.items(), key=lambda x: x[1], reverse=True))
+    print(sorted_pips)
+
+
+    for key, value in sorted_pips.items():
+        def is_splash():
+            return False
+        if is_splash:
+            color_string += key.lower()
+        else:
+            color_string += key
+    if not has_splash:
+        color_string
+
+
+
+
+
+    return "wattatata"
+
+
 
 
 
@@ -35,7 +60,7 @@ def update_raw_colors():
             current_deck = raw_rewrite[draft_i]["players"][player_i]
             current_deck["pips"] = pips
             current_deck["splash"] = splash
-            #current_deck["deck_name"] = deck_name(pips, splash)
+            current_deck["deck_name"] = deck_name(pips, splash)
     
 
     print("hehe")
