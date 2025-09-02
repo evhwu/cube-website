@@ -4,7 +4,7 @@ import os
 BASE_PATH = os.getcwd()
 
 def generate_card(card_name):
-    raw = open(os.path.join(BASE_PATH, 'raw.json'))
+    raw = open(os.path.join(BASE_PATH, "output", 'raw.json'))
     data = json.load(raw)
     
     output = {}
@@ -75,8 +75,10 @@ def generate_card(card_name):
     try:
         if "//" in card_name:
             card_name = card_name.split(" // ")[0]
-        f = open(f"{BASE_PATH}/cards/{card_name}.json", "w")
+        f = open(f"{BASE_PATH}/output/cards/{card_name}.json", "w")
         f.write(json.dumps(output, indent=4))
         f.close()
     except:
         print("skipped " + card_name)
+
+generate_card("Thoughtseize")

@@ -388,7 +388,20 @@
                     "Elesh Norn, Grand Cenobite",
                     "Emeria's Call // Emeria, Shattered Skyclave",
                     "Dig Through Time"
-                ]
+                ],
+                "pips": {
+                    "B": 0.5,
+                    "G": 5.5,
+                    "W": 10,
+                    "U": 10
+                },
+                "splash": {
+                    "B": 0.5,
+                    "G": 5.5,
+                    "W": 7,
+                    "U": 8
+                },
+                "deck_name": "WUg"
             },
             {
                 "name": "big big big big dumps",
@@ -482,7 +495,18 @@
                     "Vivien, Monsters' Advocate",
                     "Wurmcoil Engine",
                     "Karn Liberated"
-                ]
+                ],
+                "pips": {
+                    "B": 12,
+                    "G": 7,
+                    "U": 0.5
+                },
+                "splash": {
+                    "B": 10,
+                    "G": 6,
+                    "U": 0.5
+                },
+                "deck_name": "Golgari"
             },
             {
                 "name": "Nenni",
@@ -576,7 +600,16 @@
                     "Elesh Norn, Mother of Machines",
                     "Timeless Dragon",
                     "Leyline Binding"
-                ]
+                ],
+                "pips": {
+                    "G": 12,
+                    "W": 16
+                },
+                "splash": {
+                    "G": 9,
+                    "W": 14
+                },
+                "deck_name": "Selesnya"
             },
             {
                 "name": "shinydog",
@@ -670,7 +703,18 @@
                     "Laelia, the Blade Reforged",
                     "Minsc & Boo, Timeless Heroes",
                     "Twinshot Sniper"
-                ]
+                ],
+                "pips": {
+                    "R": 17.5,
+                    "W": 2,
+                    "G": 2.5
+                },
+                "splash": {
+                    "R": 18,
+                    "W": 2,
+                    "G": 3
+                },
+                "deck_name": "Rgw"
             }
         ]
     },
@@ -1063,7 +1107,18 @@
                     "Saheeli, Filigree Master",
                     "The One Ring",
                     "Leyline Binding"
-                ]
+                ],
+                "pips": {
+                    "R": 7.0,
+                    "U": 6,
+                    "W": 10
+                },
+                "splash": {
+                    "R": 6,
+                    "U": 6,
+                    "W": 9
+                },
+                "deck_name": "WRu"
             },
             {
                 "name": "Nenni",
@@ -1157,7 +1212,18 @@
                     "Vivien, Monsters' Advocate",
                     "Old One Eye",
                     "Shark Typhoon"
-                ]
+                ],
+                "pips": {
+                    "G": 14.5,
+                    "U": 8,
+                    "B": 5.5
+                },
+                "splash": {
+                    "G": 12,
+                    "U": 7,
+                    "B": 6
+                },
+                "deck_name": "GUb"
             },
             {
                 "name": "Alexotl",
@@ -1251,7 +1317,18 @@
                     "Timeless Dragon",
                     "Elesh Norn, Grand Cenobite",
                     "Torsten, Founder of Benalia"
-                ]
+                ],
+                "pips": {
+                    "G": 8,
+                    "W": 15,
+                    "U": 3
+                },
+                "splash": {
+                    "G": 8,
+                    "W": 11,
+                    "U": 3
+                },
+                "deck_name": "WGu"
             },
             {
                 "name": "big big big big dumps",
@@ -1345,7 +1422,18 @@
                     "Twinshot Sniper",
                     "Fury",
                     "Thundermaw Hellkite"
-                ]
+                ],
+                "pips": {
+                    "R": 15.0,
+                    "B": 15.0,
+                    "W": 1.0
+                },
+                "splash": {
+                    "R": 11.5,
+                    "B": 10.0,
+                    "W": 0.5
+                },
+                "deck_name": "Rakdos"
             }
         ]
     },
@@ -1738,7 +1826,20 @@
                     "Twinshot Sniper",
                     "Deep Forest Hermit",
                     "Fury"
-                ]
+                ],
+                "pips": {
+                    "R": 18,
+                    "U": 0.5,
+                    "G": 7,
+                    "B": 1
+                },
+                "splash": {
+                    "R": 16,
+                    "U": 0.5,
+                    "G": 6,
+                    "B": 1
+                },
+                "deck_name": "RGb"
             },
             {
                 "name": "shinydog",
@@ -1832,7 +1933,16 @@
                     "Time Warp",
                     "Treachery",
                     "Time Spiral"
-                ]
+                ],
+                "pips": {
+                    "U": 22,
+                    "G": 6
+                },
+                "splash": {
+                    "U": 14,
+                    "G": 6
+                },
+                "deck_name": "Ug"
             },
             {
                 "name": "Alexotl",
@@ -1926,7 +2036,22 @@
                     "Grave Titan",
                     "Archon of Cruelty",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "B": 22.5,
+                    "G": 0.5,
+                    "R": 2,
+                    "U": 5,
+                    "W": 1.0
+                },
+                "splash": {
+                    "B": 15.0,
+                    "G": 0.5,
+                    "R": 2,
+                    "U": 5,
+                    "W": 0.5
+                },
+                "deck_name": "Bur"
             },
             {
                 "name": "big big big big dumps",
@@ -2020,7 +2145,18 @@
                     "Angel of Invention",
                     "Elspeth, Sun's Champion",
                     "Troll of Khazad-d\u00fbm"
-                ]
+                ],
+                "pips": {
+                    "W": 18.0,
+                    "B": 6,
+                    "G": 1.0
+                },
+                "splash": {
+                    "W": 13.5,
+                    "B": 6,
+                    "G": 0.5
+                },
+                "deck_name": "Wb"
             }
         ]
     },
@@ -2413,7 +2549,20 @@
                     "Gruff Triplets",
                     "Atraxa, Grand Unifier",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "W": 11.5,
+                    "B": 18.5,
+                    "U": 1.0,
+                    "G": 3.5
+                },
+                "splash": {
+                    "W": 9.0,
+                    "B": 14.0,
+                    "U": 1.0,
+                    "G": 1.5
+                },
+                "deck_name": "BWgu"
             },
             {
                 "name": "Nenni",
@@ -2507,7 +2656,20 @@
                     "Old One Eye",
                     "Time Spiral",
                     "Myr Battlesphere"
-                ]
+                ],
+                "pips": {
+                    "G": 12.0,
+                    "U": 12,
+                    "B": 1.0,
+                    "W": 1.0
+                },
+                "splash": {
+                    "G": 8.5,
+                    "U": 7,
+                    "B": 0.5,
+                    "W": 0.5
+                },
+                "deck_name": "Simic"
             },
             {
                 "name": "shinydog",
@@ -2601,7 +2763,18 @@
                     "Shorikai, Genesis Engine",
                     "Solitude",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "W": 12.0,
+                    "B": 8,
+                    "U": 4
+                },
+                "splash": {
+                    "W": 11,
+                    "B": 7,
+                    "U": 4
+                },
+                "deck_name": "WBu"
             },
             {
                 "name": "big big big big dumps",
@@ -2695,7 +2868,18 @@
                     "Rankle, Master of Pranks",
                     "Shriekmaw",
                     "Thundermaw Hellkite"
-                ]
+                ],
+                "pips": {
+                    "B": 6,
+                    "R": 14.0,
+                    "W": 3.5
+                },
+                "splash": {
+                    "B": 5,
+                    "R": 12,
+                    "W": 2.5
+                },
+                "deck_name": "Rbw"
             }
         ]
     },
@@ -3088,7 +3272,20 @@
                     "Craterhoof Behemoth",
                     "Woodfall Primus",
                     "Triplicate Titan"
-                ]
+                ],
+                "pips": {
+                    "R": 11,
+                    "G": 13.0,
+                    "W": 2,
+                    "U": 1
+                },
+                "splash": {
+                    "R": 9,
+                    "G": 6,
+                    "W": 2,
+                    "U": 1
+                },
+                "deck_name": "GRwu"
             },
             {
                 "name": "Nenni",
@@ -3182,7 +3379,18 @@
                     "Questing Beast",
                     "The One Ring",
                     "Thragtusk"
-                ]
+                ],
+                "pips": {
+                    "R": 9.0,
+                    "G": 14.5,
+                    "B": 1.5
+                },
+                "splash": {
+                    "R": 9,
+                    "G": 12,
+                    "B": 2
+                },
+                "deck_name": "GRb"
             },
             {
                 "name": "big big big big dumps",
@@ -3276,7 +3484,18 @@
                     "Guardian Scalelord",
                     "Shriekmaw",
                     "Timeless Dragon"
-                ]
+                ],
+                "pips": {
+                    "W": 15.0,
+                    "B": 11.0,
+                    "U": 0.5
+                },
+                "splash": {
+                    "W": 10.5,
+                    "B": 8.5,
+                    "U": 0.5
+                },
+                "deck_name": "Orzhov"
             },
             {
                 "name": "Alexotl",
@@ -3370,7 +3589,18 @@
                     "Custodi Lich",
                     "Force of Will",
                     "Upheaval"
-                ]
+                ],
+                "pips": {
+                    "B": 8.0,
+                    "U": 23.0,
+                    "R": 1.0
+                },
+                "splash": {
+                    "B": 6.5,
+                    "U": 15.5,
+                    "R": 0.5
+                },
+                "deck_name": "Dimir"
             }
         ]
     },
@@ -3763,7 +3993,18 @@
                     "Elspeth, Knight-Errant",
                     "Ravages of War",
                     "Mirari's Wake"
-                ]
+                ],
+                "pips": {
+                    "G": 8,
+                    "W": 18,
+                    "B": 1
+                },
+                "splash": {
+                    "G": 8,
+                    "W": 15,
+                    "B": 1
+                },
+                "deck_name": "WGb"
             },
             {
                 "name": "Nenni",
@@ -3857,7 +4098,20 @@
                     "Jace, the Mind Sculptor",
                     "L\u00f3rien Revealed",
                     "Eagles of the North"
-                ]
+                ],
+                "pips": {
+                    "W": 9.0,
+                    "U": 8,
+                    "R": 4,
+                    "B": 1.0
+                },
+                "splash": {
+                    "W": 8.5,
+                    "U": 6,
+                    "R": 4,
+                    "B": 0.5
+                },
+                "deck_name": "WUr"
             },
             {
                 "name": "Alexotl",
@@ -3951,7 +4205,18 @@
                     "Elesh Norn, Mother of Machines",
                     "Treachery",
                     "Old One Eye"
-                ]
+                ],
+                "pips": {
+                    "G": 14.0,
+                    "W": 6.0,
+                    "U": 10
+                },
+                "splash": {
+                    "G": 11.5,
+                    "W": 5.5,
+                    "U": 8
+                },
+                "deck_name": "GUw"
             },
             {
                 "name": "big big big big dumps",
@@ -4045,7 +4310,16 @@
                     "Wheel of Fortune",
                     "Arcane Savant",
                     "Fury"
-                ]
+                ],
+                "pips": {
+                    "U": 12,
+                    "R": 16
+                },
+                "splash": {
+                    "U": 10,
+                    "R": 14
+                },
+                "deck_name": "Izzet"
             }
         ]
     },
@@ -4438,7 +4712,18 @@
                     "Hostile Investigator",
                     "Lethal Scheme",
                     "Smirking Spelljacker"
-                ]
+                ],
+                "pips": {
+                    "U": 11.0,
+                    "B": 11,
+                    "W": 0.5
+                },
+                "splash": {
+                    "U": 10.5,
+                    "B": 9,
+                    "W": 0.5
+                },
+                "deck_name": "Dimir"
             },
             {
                 "name": "Nenni",
@@ -4532,7 +4817,22 @@
                     "Fury",
                     "Thragtusk",
                     "Atraxa, Grand Unifier"
-                ]
+                ],
+                "pips": {
+                    "G": 12.5,
+                    "U": 16.5,
+                    "R": 4.0,
+                    "W": 0.5,
+                    "B": 0.5
+                },
+                "splash": {
+                    "G": 11.5,
+                    "U": 12.0,
+                    "R": 2.5,
+                    "W": 0.5,
+                    "B": 0.5
+                },
+                "deck_name": "UGr"
             },
             {
                 "name": "Alexotl",
@@ -4626,7 +4926,16 @@
                     "Wheel of Fortune",
                     "Hellrider",
                     "Ravages of War"
-                ]
+                ],
+                "pips": {
+                    "W": 8,
+                    "R": 17
+                },
+                "splash": {
+                    "W": 8,
+                    "R": 15
+                },
+                "deck_name": "Boros"
             },
             {
                 "name": "big big big big dumps",
@@ -4720,7 +5029,22 @@
                     "Vaultborn Tyrant",
                     "Ugin, the Spirit Dragon",
                     "Worldspine Wurm"
-                ]
+                ],
+                "pips": {
+                    "R": 11.0,
+                    "W": 8,
+                    "B": 4.0,
+                    "U": 2,
+                    "G": 5
+                },
+                "splash": {
+                    "R": 8.5,
+                    "W": 7,
+                    "B": 3.5,
+                    "U": 2,
+                    "G": 2
+                },
+                "deck_name": "RWgbu"
             }
         ]
     },
@@ -5113,7 +5437,20 @@
                     "Gilded Lotus",
                     "Consecrated Sphinx",
                     "Myr Battlesphere"
-                ]
+                ],
+                "pips": {
+                    "W": 5,
+                    "G": 6,
+                    "U": 17,
+                    "B": 4
+                },
+                "splash": {
+                    "W": 5,
+                    "G": 5,
+                    "U": 11,
+                    "B": 3
+                },
+                "deck_name": "Ugwb"
             },
             {
                 "name": "shinydog",
@@ -5207,7 +5544,20 @@
                     "Deep Forest Hermit",
                     "Gray Merchant of Asphodel",
                     "Living Death"
-                ]
+                ],
+                "pips": {
+                    "G": 13,
+                    "B": 13,
+                    "U": 1.0,
+                    "R": 1.0
+                },
+                "splash": {
+                    "G": 11,
+                    "B": 8.5,
+                    "U": 0.5,
+                    "R": 0.5
+                },
+                "deck_name": "Golgari"
             },
             {
                 "name": "Alexotl",
@@ -5301,7 +5651,18 @@
                     "Wheel of Fortune",
                     "Fleetwheel Cruiser",
                     "Murderous Redcap"
-                ]
+                ],
+                "pips": {
+                    "B": 6.0,
+                    "G": 0.5,
+                    "R": 18.5
+                },
+                "splash": {
+                    "B": 5.5,
+                    "G": 0.5,
+                    "R": 17.0
+                },
+                "deck_name": "Rb"
             },
             {
                 "name": "big big big big dumps",
@@ -5395,7 +5756,16 @@
                     "Sorin, Lord of Innistrad",
                     "Baneslayer Angel",
                     "Doom Whisperer"
-                ]
+                ],
+                "pips": {
+                    "B": 11,
+                    "W": 19
+                },
+                "splash": {
+                    "B": 8,
+                    "W": 15
+                },
+                "deck_name": "Orzhov"
             }
         ]
     },
@@ -5788,7 +6158,16 @@
                     "Kalonian Hydra",
                     "Nissa, Who Shakes the World",
                     "Thragtusk"
-                ]
+                ],
+                "pips": {
+                    "G": 22.0,
+                    "B": 1.0
+                },
+                "splash": {
+                    "G": 18.5,
+                    "B": 0.5
+                },
+                "deck_name": "Green"
             },
             {
                 "name": "Nenni",
@@ -5882,7 +6261,16 @@
                     "Sower of Temptation",
                     "Whirler Rogue",
                     "Teferi, Hero of Dominaria"
-                ]
+                ],
+                "pips": {
+                    "W": 12,
+                    "U": 16.5
+                },
+                "splash": {
+                    "W": 9,
+                    "U": 11.5
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "Alexotl",
@@ -5976,7 +6364,20 @@
                     "Catastrophe",
                     "Grave Titan",
                     "Tasigur, the Golden Fang"
-                ]
+                ],
+                "pips": {
+                    "U": 6.5,
+                    "B": 23,
+                    "W": 7,
+                    "G": 0.5
+                },
+                "splash": {
+                    "U": 5.5,
+                    "B": 14,
+                    "W": 5,
+                    "G": 0.5
+                },
+                "deck_name": "BWu"
             },
             {
                 "name": "big big big big dumps",
@@ -6070,7 +6471,16 @@
                     "Angel of Invention",
                     "Baneslayer Angel",
                     "Sun Titan"
-                ]
+                ],
+                "pips": {
+                    "R": 14,
+                    "W": 12.5
+                },
+                "splash": {
+                    "R": 12,
+                    "W": 8.5
+                },
+                "deck_name": "Boros"
             }
         ]
     },
@@ -6463,7 +6873,16 @@
                     "Force of Will",
                     "Fractured Identity",
                     "Mulldrifter"
-                ]
+                ],
+                "pips": {
+                    "W": 16,
+                    "U": 15
+                },
+                "splash": {
+                    "W": 12,
+                    "U": 11
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "shinydog",
@@ -6557,7 +6976,16 @@
                     "Zirda, the Dawnwaker",
                     "Hellrider",
                     "Fireblast"
-                ]
+                ],
+                "pips": {
+                    "R": 21.0,
+                    "W": 5.0
+                },
+                "splash": {
+                    "R": 17.5,
+                    "W": 4.5
+                },
+                "deck_name": "Rw"
             },
             {
                 "name": "big big big big dumps",
@@ -6651,7 +7079,16 @@
                     "Tezzeret, Agent of Bolas",
                     "Sundering Titan",
                     "Blightsteel Colossus"
-                ]
+                ],
+                "pips": {
+                    "U": 7,
+                    "B": 14
+                },
+                "splash": {
+                    "U": 7,
+                    "B": 10
+                },
+                "deck_name": "Dimir"
             },
             {
                 "name": "Alexotl",
@@ -6745,7 +7182,16 @@
                     "Elspeth, Sun's Champion",
                     "Elesh Norn, Grand Cenobite",
                     "Woodfall Primus"
-                ]
+                ],
+                "pips": {
+                    "G": 27,
+                    "W": 12
+                },
+                "splash": {
+                    "G": 19,
+                    "W": 8
+                },
+                "deck_name": "Selesnya"
             }
         ]
     },
@@ -7138,7 +7584,16 @@
                     "Vendilion Clique",
                     "Whirler Rogue",
                     "Gray Merchant of Asphodel"
-                ]
+                ],
+                "pips": {
+                    "B": 13,
+                    "U": 13
+                },
+                "splash": {
+                    "B": 12,
+                    "U": 9
+                },
+                "deck_name": "Dimir"
             },
             {
                 "name": "shinydog",
@@ -7232,7 +7687,20 @@
                     "Shriekmaw",
                     "Vivien, Monsters' Advocate",
                     "Burning of Xinye"
-                ]
+                ],
+                "pips": {
+                    "R": 8.0,
+                    "B": 8.0,
+                    "G": 10,
+                    "U": 1.0
+                },
+                "splash": {
+                    "R": 6.5,
+                    "B": 6,
+                    "G": 7,
+                    "U": 0.5
+                },
+                "deck_name": "Jund"
             },
             {
                 "name": "big big big big dumps",
@@ -7326,7 +7794,20 @@
                     "Arcane Savant",
                     "Batterskull",
                     "Verdurous Gearhulk"
-                ]
+                ],
+                "pips": {
+                    "U": 11.0,
+                    "G": 13.0,
+                    "W": 1.0,
+                    "R": 1.0
+                },
+                "splash": {
+                    "U": 9.5,
+                    "G": 10.5,
+                    "W": 0.5,
+                    "R": 0.5
+                },
+                "deck_name": "Simic"
             },
             {
                 "name": "Alexotl",
@@ -7420,7 +7901,16 @@
                     "Teferi, Hero of Dominaria",
                     "Consecrated Sphinx",
                     "Wurmcoil Engine"
-                ]
+                ],
+                "pips": {
+                    "U": 15,
+                    "W": 18.5
+                },
+                "splash": {
+                    "U": 12,
+                    "W": 13.5
+                },
+                "deck_name": "Azorius"
             }
         ]
     },
@@ -7813,7 +8303,16 @@
                     "Hero of Bladehold",
                     "Angel of Invention",
                     "Batterskull"
-                ]
+                ],
+                "pips": {
+                    "G": 9.0,
+                    "W": 19.0
+                },
+                "splash": {
+                    "G": 7.5,
+                    "W": 14.5
+                },
+                "deck_name": "Selesnya"
             },
             {
                 "name": "Nenni",
@@ -7907,7 +8406,18 @@
                     "Cryptic Command",
                     "Whirler Rogue",
                     "Mulldrifter"
-                ]
+                ],
+                "pips": {
+                    "U": 10,
+                    "R": 16.5,
+                    "B": 0.5
+                },
+                "splash": {
+                    "U": 7,
+                    "R": 13.5,
+                    "B": 0.5
+                },
+                "deck_name": "Izzet"
             },
             {
                 "name": "shinydog",
@@ -8001,7 +8511,18 @@
                     "Fractured Identity",
                     "Elspeth, Sun's Champion",
                     "Upheaval"
-                ]
+                ],
+                "pips": {
+                    "W": 6,
+                    "U": 15,
+                    "R": 7
+                },
+                "splash": {
+                    "W": 5,
+                    "U": 12,
+                    "R": 6
+                },
+                "deck_name": "URw"
             },
             {
                 "name": "big big big big dumps",
@@ -8095,7 +8616,16 @@
                     "Doom Whisperer",
                     "Shriekmaw",
                     "Craterhoof Behemoth"
-                ]
+                ],
+                "pips": {
+                    "B": 14.5,
+                    "G": 15.5
+                },
+                "splash": {
+                    "B": 11.5,
+                    "G": 10.5
+                },
+                "deck_name": "Golgari"
             }
         ]
     },
@@ -8488,7 +9018,18 @@
                     "Teferi, Hero of Dominaria",
                     "Torrential Gearhulk",
                     "Myr Battlesphere"
-                ]
+                ],
+                "pips": {
+                    "W": 7.0,
+                    "U": 17,
+                    "G": 1.0
+                },
+                "splash": {
+                    "W": 6.5,
+                    "U": 12,
+                    "G": 0.5
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "Alexotl",
@@ -8582,7 +9123,16 @@
                     "Ugin, the Ineffable",
                     "Elesh Norn, Grand Cenobite",
                     "Terastodon"
-                ]
+                ],
+                "pips": {
+                    "G": 26,
+                    "W": 8
+                },
+                "splash": {
+                    "G": 17,
+                    "W": 6
+                },
+                "deck_name": "Selesnya"
             },
             {
                 "name": "Nenni",
@@ -8676,7 +9226,16 @@
                     "Chandra, Torch of Defiance",
                     "Nether Void",
                     "Gray Merchant of Asphodel"
-                ]
+                ],
+                "pips": {
+                    "B": 17,
+                    "R": 11.0
+                },
+                "splash": {
+                    "B": 11,
+                    "R": 10
+                },
+                "deck_name": "Rakdos"
             },
             {
                 "name": "shinydog",
@@ -8770,7 +9329,18 @@
                     "Wrath of God",
                     "Memory Jar",
                     "Chandra, Flamecaller"
-                ]
+                ],
+                "pips": {
+                    "R": 10.0,
+                    "W": 10.5,
+                    "G": 0.5
+                },
+                "splash": {
+                    "R": 7.5,
+                    "W": 8.0,
+                    "G": 0.5
+                },
+                "deck_name": "Boros"
             }
         ]
     },
@@ -9163,7 +9733,18 @@
                     "Primeval Titan",
                     "Wurmcoil Engine",
                     "Woodfall Primus"
-                ]
+                ],
+                "pips": {
+                    "U": 4,
+                    "R": 11.0,
+                    "G": 13
+                },
+                "splash": {
+                    "U": 4,
+                    "R": 9,
+                    "G": 8
+                },
+                "deck_name": "GRu"
             },
             {
                 "name": "Nenni",
@@ -9257,7 +9838,20 @@
                     "Shark Typhoon",
                     "Time Spiral",
                     "Upheaval"
-                ]
+                ],
+                "pips": {
+                    "G": 9,
+                    "U": 14.0,
+                    "W": 4,
+                    "R": 1.0
+                },
+                "splash": {
+                    "G": 7,
+                    "U": 10.5,
+                    "W": 3,
+                    "R": 0.5
+                },
+                "deck_name": "UGw"
             },
             {
                 "name": "Alexotl",
@@ -9351,7 +9945,20 @@
                     "Grave Titan",
                     "Liliana, Dreadhorde General",
                     "Tasigur, the Golden Fang"
-                ]
+                ],
+                "pips": {
+                    "B": 25.5,
+                    "G": 1.0,
+                    "W": 0.5,
+                    "U": 0.5
+                },
+                "splash": {
+                    "B": 18.5,
+                    "G": 1.0,
+                    "W": 0.5,
+                    "U": 0.5
+                },
+                "deck_name": "Bg"
             },
             {
                 "name": "big big big big dumps",
@@ -9445,7 +10052,18 @@
                     "Reveillark",
                     "Fireblast",
                     "Sun Titan"
-                ]
+                ],
+                "pips": {
+                    "R": 22.5,
+                    "B": 1.0,
+                    "W": 5.5
+                },
+                "splash": {
+                    "R": 18.5,
+                    "B": 1.0,
+                    "W": 4.5
+                },
+                "deck_name": "Rwb"
             }
         ]
     },
@@ -9838,7 +10456,20 @@
                     "Smokestack",
                     "Solemn Simulacrum",
                     "Vivien, Monsters' Advocate"
-                ]
+                ],
+                "pips": {
+                    "G": 9,
+                    "R": 9.0,
+                    "U": 0.5,
+                    "B": 1.0
+                },
+                "splash": {
+                    "G": 7,
+                    "R": 8.5,
+                    "U": 0.5,
+                    "B": 0.5
+                },
+                "deck_name": "Gruul"
             },
             {
                 "name": "big big big big dumps",
@@ -9932,7 +10563,16 @@
                     "Inferno Titan",
                     "Time Spiral",
                     "Wildfire"
-                ]
+                ],
+                "pips": {
+                    "R": 17,
+                    "U": 15
+                },
+                "splash": {
+                    "R": 12,
+                    "U": 9
+                },
+                "deck_name": "Izzet"
             },
             {
                 "name": "Nenni",
@@ -10026,7 +10666,18 @@
                     "Deep Forest Hermit",
                     "Gray Merchant of Asphodel",
                     "Wurmcoil Engine"
-                ]
+                ],
+                "pips": {
+                    "G": 15,
+                    "W": 6,
+                    "B": 7
+                },
+                "splash": {
+                    "G": 12,
+                    "W": 5,
+                    "B": 5
+                },
+                "deck_name": "GBw"
             },
             {
                 "name": "Alexotl",
@@ -10120,7 +10771,16 @@
                     "Grave Titan",
                     "Sundering Titan",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "B": 12,
+                    "U": 12
+                },
+                "splash": {
+                    "B": 10,
+                    "U": 9
+                },
+                "deck_name": "Dimir"
             }
         ]
     },
@@ -10513,7 +11173,20 @@
                     "Control Magic",
                     "Jace, the Mind Sculptor",
                     "Shark Typhoon"
-                ]
+                ],
+                "pips": {
+                    "G": 11,
+                    "U": 16.0,
+                    "B": 1.0,
+                    "R": 1.0
+                },
+                "splash": {
+                    "G": 10,
+                    "U": 11.5,
+                    "B": 0.5,
+                    "R": 0.5
+                },
+                "deck_name": "Simic"
             },
             {
                 "name": "Nenni",
@@ -10607,7 +11280,18 @@
                     "Deep Forest Hermit",
                     "Reveillark",
                     "Karn Liberated"
-                ]
+                ],
+                "pips": {
+                    "G": 16,
+                    "B": 3,
+                    "W": 3
+                },
+                "splash": {
+                    "G": 12,
+                    "B": 3,
+                    "W": 3
+                },
+                "deck_name": "Gbw"
             },
             {
                 "name": "Alexotl",
@@ -10701,7 +11385,18 @@
                     "Batterskull",
                     "Cloudgoat Ranger",
                     "Fireblast"
-                ]
+                ],
+                "pips": {
+                    "W": 17.5,
+                    "G": 0.5,
+                    "R": 13
+                },
+                "splash": {
+                    "W": 13.5,
+                    "G": 0.5,
+                    "R": 10
+                },
+                "deck_name": "Boros"
             },
             {
                 "name": "big big big big dumps",
@@ -10795,7 +11490,16 @@
                     "Chandra, Flamecaller",
                     "Griselbrand",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "B": 14.0,
+                    "R": 9.0
+                },
+                "splash": {
+                    "B": 10.5,
+                    "R": 6.5
+                },
+                "deck_name": "Rakdos"
             }
         ]
     },
@@ -11188,7 +11892,18 @@
                     "Thragtusk",
                     "Primeval Titan",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "G": 9,
+                    "R": 7.0,
+                    "U": 7.5
+                },
+                "splash": {
+                    "G": 7,
+                    "R": 7,
+                    "U": 7
+                },
+                "deck_name": "Temur"
             },
             {
                 "name": "Nenni",
@@ -11282,7 +11997,18 @@
                     "Elesh Norn, Grand Cenobite",
                     "Myr Battlesphere",
                     "Ugin, the Spirit Dragon"
-                ]
+                ],
+                "pips": {
+                    "B": 7,
+                    "U": 6,
+                    "W": 12
+                },
+                "splash": {
+                    "B": 6,
+                    "U": 5,
+                    "W": 7
+                },
+                "deck_name": "WBu"
             },
             {
                 "name": "Alexotl",
@@ -11376,7 +12102,16 @@
                     "Thalia, Heretic Cathar",
                     "Armageddon",
                     "Parallax Wave"
-                ]
+                ],
+                "pips": {
+                    "W": 11.5,
+                    "R": 12.0
+                },
+                "splash": {
+                    "W": 10.5,
+                    "R": 11
+                },
+                "deck_name": "Boros"
             },
             {
                 "name": "big big big big dumps",
@@ -11470,7 +12205,18 @@
                     "Kalonian Hydra",
                     "Vivien, Monsters' Advocate",
                     "Terastodon"
-                ]
+                ],
+                "pips": {
+                    "G": 17.0,
+                    "B": 13.0,
+                    "W": 1.0
+                },
+                "splash": {
+                    "G": 12.0,
+                    "B": 9.5,
+                    "W": 0.5
+                },
+                "deck_name": "Golgari"
             }
         ]
     },
@@ -11863,7 +12609,18 @@
                     "Garruk Wildspeaker",
                     "Arcane Savant",
                     "Vivien, Monsters' Advocate"
-                ]
+                ],
+                "pips": {
+                    "G": 17,
+                    "R": 4.0,
+                    "U": 10.0
+                },
+                "splash": {
+                    "G": 13,
+                    "R": 3.5,
+                    "U": 8.5
+                },
+                "deck_name": "GUr"
             },
             {
                 "name": "big big big big dumps",
@@ -11957,7 +12714,18 @@
                     "Wheel of Misfortune",
                     "Fleetwheel Cruiser",
                     "Restoration Angel"
-                ]
+                ],
+                "pips": {
+                    "R": 8,
+                    "W": 15.5,
+                    "B": 0.5
+                },
+                "splash": {
+                    "R": 8,
+                    "W": 14.5,
+                    "B": 0.5
+                },
+                "deck_name": "Boros"
             },
             {
                 "name": "shinydog",
@@ -12051,7 +12819,20 @@
                     "Garruk, Cursed Huntsman",
                     "Liliana, Dreadhorde General",
                     "Elesh Norn, Grand Cenobite"
-                ]
+                ],
+                "pips": {
+                    "B": 15.0,
+                    "G": 11.5,
+                    "W": 7.5,
+                    "R": 2
+                },
+                "splash": {
+                    "B": 10.5,
+                    "G": 10.0,
+                    "W": 5.5,
+                    "R": 2
+                },
+                "deck_name": "BGWr"
             },
             {
                 "name": "Alexotl",
@@ -12145,7 +12926,18 @@
                     "Teferi, Hero of Dominaria",
                     "Inferno Titan",
                     "Shark Typhoon"
-                ]
+                ],
+                "pips": {
+                    "W": 11,
+                    "R": 9,
+                    "U": 6
+                },
+                "splash": {
+                    "W": 9,
+                    "R": 6,
+                    "U": 5
+                },
+                "deck_name": "WRu"
             }
         ]
     },
@@ -12538,7 +13330,16 @@
                     "Force of Will",
                     "Shriekmaw",
                     "Consecrated Sphinx"
-                ]
+                ],
+                "pips": {
+                    "B": 12,
+                    "U": 22
+                },
+                "splash": {
+                    "B": 9,
+                    "U": 15
+                },
+                "deck_name": "Dimir"
             },
             {
                 "name": "Alexotl",
@@ -12632,7 +13433,16 @@
                     "Wheel of Fortune",
                     "Ajani Goldmane",
                     "Empty the Warrens"
-                ]
+                ],
+                "pips": {
+                    "R": 16.0,
+                    "W": 11.0
+                },
+                "splash": {
+                    "R": 15,
+                    "W": 10
+                },
+                "deck_name": "Boros"
             },
             {
                 "name": "big big big big dumps",
@@ -12726,7 +13536,18 @@
                     "Turntimber Symbiosis // Turntimber, Serpentine Wood",
                     "Terastodon",
                     "Woodfall Primus"
-                ]
+                ],
+                "pips": {
+                    "B": 0.5,
+                    "G": 30.5,
+                    "W": 7.0
+                },
+                "splash": {
+                    "B": 0.5,
+                    "G": 18.0,
+                    "W": 6.5
+                },
+                "deck_name": "Selesnya"
             },
             {
                 "name": "shinydog",
@@ -12820,7 +13641,18 @@
                     "Mirari's Wake",
                     "Teferi, Hero of Dominaria",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "U": 5,
+                    "G": 5,
+                    "W": 21
+                },
+                "splash": {
+                    "U": 5,
+                    "G": 5,
+                    "W": 14
+                },
+                "deck_name": "Wug"
             }
         ]
     },
@@ -13213,7 +14045,22 @@
                     "Rankle, Master of Pranks",
                     "Siege-Gang Commander",
                     "Tasigur, the Golden Fang"
-                ]
+                ],
+                "pips": {
+                    "B": 21,
+                    "W": 4.5,
+                    "R": 6,
+                    "G": 0.5,
+                    "U": 0.5
+                },
+                "splash": {
+                    "B": 14.5,
+                    "W": 4.5,
+                    "R": 5,
+                    "G": 0.5,
+                    "U": 0.5
+                },
+                "deck_name": "Brw"
             },
             {
                 "name": "Nenni",
@@ -13307,7 +14154,18 @@
                     "Baneslayer Angel",
                     "Gideon Jura",
                     "Wurmcoil Engine"
-                ]
+                ],
+                "pips": {
+                    "G": 14.0,
+                    "W": 18.0,
+                    "U": 0.5
+                },
+                "splash": {
+                    "G": 10.5,
+                    "W": 12.5,
+                    "U": 0.5
+                },
+                "deck_name": "Selesnya"
             },
             {
                 "name": "Alexotl",
@@ -13401,7 +14259,22 @@
                     "Nissa, Who Shakes the World",
                     "Garruk, Cursed Huntsman",
                     "Primeval Titan"
-                ]
+                ],
+                "pips": {
+                    "G": 13.5,
+                    "U": 10.5,
+                    "W": 6.5,
+                    "R": 1.0,
+                    "B": 1
+                },
+                "splash": {
+                    "G": 10.5,
+                    "U": 10.0,
+                    "W": 5.5,
+                    "R": 0.5,
+                    "B": 1
+                },
+                "deck_name": "GUwb"
             },
             {
                 "name": "big big big big dumps",
@@ -13495,7 +14368,18 @@
                     "Murderous Redcap",
                     "Fireblast",
                     "Dig Through Time"
-                ]
+                ],
+                "pips": {
+                    "U": 9.5,
+                    "R": 17.0,
+                    "B": 1.0
+                },
+                "splash": {
+                    "U": 8,
+                    "R": 13.5,
+                    "B": 0.5
+                },
+                "deck_name": "Izzet"
             }
         ]
     },
@@ -13888,7 +14772,18 @@
                     "Deep Forest Hermit",
                     "Verdurous Gearhulk",
                     "Wildfire"
-                ]
+                ],
+                "pips": {
+                    "G": 16,
+                    "R": 11.0,
+                    "B": 2
+                },
+                "splash": {
+                    "G": 12,
+                    "R": 10,
+                    "B": 2
+                },
+                "deck_name": "GRb"
             },
             {
                 "name": "Alexotl",
@@ -13982,7 +14877,16 @@
                     "Reveillark",
                     "Time Spiral",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "U": 25,
+                    "W": 15.5
+                },
+                "splash": {
+                    "U": 16,
+                    "W": 10.5
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "big big big big dumps",
@@ -14076,7 +14980,16 @@
                     "Kalitas, Traitor of Ghet",
                     "Snuff Out",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "B": 17.0,
+                    "R": 10
+                },
+                "splash": {
+                    "B": 13,
+                    "R": 10
+                },
+                "deck_name": "Rakdos"
             },
             {
                 "name": "Nenni",
@@ -14170,7 +15083,16 @@
                     "Treachery",
                     "Vivien, Monsters' Advocate",
                     "Primeval Titan"
-                ]
+                ],
+                "pips": {
+                    "G": 12,
+                    "U": 10.5
+                },
+                "splash": {
+                    "G": 8,
+                    "U": 8.5
+                },
+                "deck_name": "Simic"
             }
         ]
     },
@@ -14563,7 +15485,16 @@
                     "Arcane Savant",
                     "Force of Will",
                     "Shark Typhoon"
-                ]
+                ],
+                "pips": {
+                    "U": 15.5,
+                    "R": 13
+                },
+                "splash": {
+                    "U": 12,
+                    "R": 12
+                },
+                "deck_name": "Izzet"
             },
             {
                 "name": "Alexotl",
@@ -14657,7 +15588,18 @@
                     "Blood on the Snow",
                     "Liliana, Dreadhorde General",
                     "Wurmcoil Engine"
-                ]
+                ],
+                "pips": {
+                    "B": 16.0,
+                    "G": 12,
+                    "R": 1.0
+                },
+                "splash": {
+                    "B": 12.5,
+                    "G": 9,
+                    "R": 0.5
+                },
+                "deck_name": "Golgari"
             },
             {
                 "name": "Nenni",
@@ -14751,7 +15693,18 @@
                     "Kalonian Hydra",
                     "Vivien, Monsters' Advocate",
                     "Turntimber Symbiosis // Turntimber, Serpentine Wood"
-                ]
+                ],
+                "pips": {
+                    "G": 21.0,
+                    "W": 11.0,
+                    "B": 1.0
+                },
+                "splash": {
+                    "G": 13,
+                    "W": 9,
+                    "B": 0.5
+                },
+                "deck_name": "Selesnya"
             },
             {
                 "name": "big big big big dumps",
@@ -14845,7 +15798,18 @@
                     "Siege-Gang Commander",
                     "Inferno Titan",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "W": 14,
+                    "B": 0.5,
+                    "R": 13.5
+                },
+                "splash": {
+                    "W": 10,
+                    "B": 0.5,
+                    "R": 10.5
+                },
+                "deck_name": "Boros"
             }
         ]
     },
@@ -15238,7 +16202,16 @@
                     "Jace, the Mind Sculptor",
                     "Ral Zarek",
                     "Arcane Savant"
-                ]
+                ],
+                "pips": {
+                    "R": 20.0,
+                    "U": 10.0
+                },
+                "splash": {
+                    "R": 16.5,
+                    "U": 7.5
+                },
+                "deck_name": "Izzet"
             },
             {
                 "name": "shinydog",
@@ -15332,7 +16305,20 @@
                     "Ilharg, the Raze-Boar",
                     "The Scarab God",
                     "Inferno Titan"
-                ]
+                ],
+                "pips": {
+                    "B": 14.0,
+                    "U": 9.5,
+                    "R": 6,
+                    "W": 4
+                },
+                "splash": {
+                    "B": 11,
+                    "U": 9,
+                    "R": 4,
+                    "W": 2
+                },
+                "deck_name": "BUrw"
             },
             {
                 "name": "Alexotl",
@@ -15426,7 +16412,18 @@
                     "Kalitas, Traitor of Ghet",
                     "Nether Void",
                     "Baneslayer Angel"
-                ]
+                ],
+                "pips": {
+                    "B": 16,
+                    "W": 15,
+                    "R": 2
+                },
+                "splash": {
+                    "B": 13.5,
+                    "W": 10,
+                    "R": 2
+                },
+                "deck_name": "BWr"
             },
             {
                 "name": "big big big big dumps",
@@ -15520,7 +16517,16 @@
                     "Myr Battlesphere",
                     "Turntimber Symbiosis // Turntimber, Serpentine Wood",
                     "Ugin, the Spirit Dragon"
-                ]
+                ],
+                "pips": {
+                    "G": 21,
+                    "U": 8
+                },
+                "splash": {
+                    "G": 15,
+                    "U": 4
+                },
+                "deck_name": "Simic"
             }
         ]
     },
@@ -15913,7 +16919,18 @@
                     "Karn Liberated",
                     "Craterhoof Behemoth",
                     "Emrakul, the Aeons Torn"
-                ]
+                ],
+                "pips": {
+                    "G": 20,
+                    "U": 1.5,
+                    "W": 2
+                },
+                "splash": {
+                    "G": 13,
+                    "U": 1.5,
+                    "W": 2
+                },
+                "deck_name": "Gwu"
             },
             {
                 "name": "Nenni",
@@ -16007,7 +17024,22 @@
                     "Chandra, Torch of Defiance",
                     "Fleetwheel Cruiser",
                     "Custodi Lich"
-                ]
+                ],
+                "pips": {
+                    "B": 9.0,
+                    "G": 6.5,
+                    "R": 12.0,
+                    "W": 1.0,
+                    "U": 1.0
+                },
+                "splash": {
+                    "B": 7.0,
+                    "G": 6.5,
+                    "R": 10.5,
+                    "W": 1.0,
+                    "U": 0.5
+                },
+                "deck_name": "RBgw"
             },
             {
                 "name": "shinydog",
@@ -16101,7 +17133,16 @@
                     "Force of Will",
                     "Fractured Identity",
                     "Meloku the Clouded Mirror"
-                ]
+                ],
+                "pips": {
+                    "U": 25.5,
+                    "W": 2
+                },
+                "splash": {
+                    "U": 20,
+                    "W": 2
+                },
+                "deck_name": "Uw"
             },
             {
                 "name": "big big big big dumps",
@@ -16195,7 +17236,18 @@
                     "Terastodon",
                     "Woodfall Primus",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "B": 15,
+                    "R": 12,
+                    "G": 5
+                },
+                "splash": {
+                    "B": 11,
+                    "R": 10,
+                    "G": 2
+                },
+                "deck_name": "BRg"
             }
         ]
     },
@@ -16588,7 +17640,18 @@
                     "Primeval Titan",
                     "Wildfire",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "G": 10,
+                    "R": 17.0,
+                    "W": 0.5
+                },
+                "splash": {
+                    "G": 6,
+                    "R": 12,
+                    "W": 0.5
+                },
+                "deck_name": "Gruul"
             },
             {
                 "name": "shinydog",
@@ -16682,7 +17745,20 @@
                     "Arcane Savant",
                     "Nissa, Who Shakes the World",
                     "Teferi, Hero of Dominaria"
-                ]
+                ],
+                "pips": {
+                    "G": 5,
+                    "R": 5.0,
+                    "U": 9.0,
+                    "W": 6
+                },
+                "splash": {
+                    "G": 4,
+                    "R": 4.5,
+                    "U": 6.5,
+                    "W": 5
+                },
+                "deck_name": "Uwgr"
             },
             {
                 "name": "Nenni",
@@ -16776,7 +17852,18 @@
                     "Elesh Norn, Grand Cenobite",
                     "Myr Battlesphere",
                     "Dig Through Time"
-                ]
+                ],
+                "pips": {
+                    "U": 19.0,
+                    "B": 10.0,
+                    "W": 2
+                },
+                "splash": {
+                    "U": 14.5,
+                    "B": 7,
+                    "W": 1
+                },
+                "deck_name": "UBw"
             },
             {
                 "name": "Alexotl",
@@ -16870,7 +17957,20 @@
                     "Shriekmaw",
                     "Thragtusk",
                     "Wurmcoil Engine"
-                ]
+                ],
+                "pips": {
+                    "G": 8.0,
+                    "B": 12.0,
+                    "W": 7,
+                    "R": 0.5
+                },
+                "splash": {
+                    "G": 7.5,
+                    "B": 10.5,
+                    "W": 5,
+                    "R": 1
+                },
+                "deck_name": "Junk"
             }
         ]
     },
@@ -17263,7 +18363,14 @@
                     "Hellrider",
                     "Fireblast",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "R": 27.0
+                },
+                "splash": {
+                    "R": 23
+                },
+                "deck_name": "Red"
             },
             {
                 "name": "big big big big dumps",
@@ -17357,7 +18464,18 @@
                     "Blood on the Snow",
                     "Liliana, Dreadhorde General",
                     "Wurmcoil Engine"
-                ]
+                ],
+                "pips": {
+                    "B": 17.0,
+                    "G": 16.0,
+                    "R": 0.5
+                },
+                "splash": {
+                    "B": 11.5,
+                    "G": 10.5,
+                    "R": 1
+                },
+                "deck_name": "Golgari"
             },
             {
                 "name": "shinydog",
@@ -17451,7 +18569,18 @@
                     "Sword of Fire and Ice",
                     "Elspeth, Knight-Errant",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "W": 15.0,
+                    "B": 1,
+                    "U": 0.5
+                },
+                "splash": {
+                    "W": 12,
+                    "B": 0.5,
+                    "U": 0.5
+                },
+                "deck_name": "White"
             },
             {
                 "name": "Nenni",
@@ -17545,7 +18674,20 @@
                     "Deep Forest Hermit",
                     "Force of Will",
                     "Ugin, the Spirit Dragon"
-                ]
+                ],
+                "pips": {
+                    "B": 0.5,
+                    "G": 8.5,
+                    "U": 17.5,
+                    "R": 1.0
+                },
+                "splash": {
+                    "B": 0.5,
+                    "G": 6.5,
+                    "U": 12.0,
+                    "R": 0.5
+                },
+                "deck_name": "Simic"
             }
         ]
     },
@@ -17938,7 +19080,18 @@
                     "Carnage Tyrant",
                     "Grave Titan",
                     "Karn Liberated"
-                ]
+                ],
+                "pips": {
+                    "G": 14,
+                    "B": 7.0,
+                    "U": 0.5
+                },
+                "splash": {
+                    "G": 10,
+                    "B": 4.5,
+                    "U": 0.5
+                },
+                "deck_name": "Golgari"
             },
             {
                 "name": "Nenni",
@@ -18032,7 +19185,22 @@
                     "Murderous Redcap",
                     "Sarkhan Vol",
                     "Surrak, the Hunt Caller"
-                ]
+                ],
+                "pips": {
+                    "G": 11,
+                    "R": 14.0,
+                    "B": 4.5,
+                    "W": 0.5,
+                    "U": 1.0
+                },
+                "splash": {
+                    "G": 8,
+                    "R": 12.0,
+                    "B": 3.5,
+                    "W": 0.5,
+                    "U": 0.5
+                },
+                "deck_name": "RGb"
             },
             {
                 "name": "Alexotl",
@@ -18126,7 +19294,18 @@
                     "Arcane Savant",
                     "Bribery",
                     "Inferno Titan"
-                ]
+                ],
+                "pips": {
+                    "U": 17,
+                    "R": 13.0,
+                    "W": 1
+                },
+                "splash": {
+                    "U": 11,
+                    "R": 10,
+                    "W": 1
+                },
+                "deck_name": "URw"
             },
             {
                 "name": "big big big big dumps",
@@ -18220,7 +19399,16 @@
                     "Time Spiral",
                     "Wurmcoil Engine",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "W": 15.0,
+                    "U": 9
+                },
+                "splash": {
+                    "W": 13,
+                    "U": 7
+                },
+                "deck_name": "Azorius"
             }
         ]
     },
@@ -18613,7 +19801,16 @@
                     "Myr Battlesphere",
                     "Sundering Titan",
                     "Emrakul, the Aeons Torn"
-                ]
+                ],
+                "pips": {
+                    "U": 18.0,
+                    "R": 7.0
+                },
+                "splash": {
+                    "U": 11.5,
+                    "R": 6.5
+                },
+                "deck_name": "Izzet"
             },
             {
                 "name": "shinydog",
@@ -18707,7 +19904,18 @@
                     "Batterskull",
                     "Mulldrifter",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "U": 14.5,
+                    "W": 19,
+                    "B": 1
+                },
+                "splash": {
+                    "U": 11,
+                    "W": 12,
+                    "B": 1
+                },
+                "deck_name": "WUb"
             },
             {
                 "name": "big big big big dumps",
@@ -18801,7 +20009,16 @@
                     "Regal Behemoth",
                     "Craterhoof Behemoth",
                     "Woodfall Primus"
-                ]
+                ],
+                "pips": {
+                    "W": 7,
+                    "G": 24
+                },
+                "splash": {
+                    "W": 5,
+                    "G": 16
+                },
+                "deck_name": "Selesnya"
             },
             {
                 "name": "Alexotl",
@@ -18895,7 +20112,20 @@
                     "Snuff Out",
                     "Reveillark",
                     "Turntimber Symbiosis // Turntimber, Serpentine Wood"
-                ]
+                ],
+                "pips": {
+                    "G": 9,
+                    "B": 8,
+                    "R": 10,
+                    "W": 2
+                },
+                "splash": {
+                    "G": 7,
+                    "B": 8,
+                    "R": 10,
+                    "W": 2
+                },
+                "deck_name": "RGBw"
             }
         ]
     },
@@ -19288,7 +20518,20 @@
                     "Smokestack",
                     "Solemn Simulacrum",
                     "Ugin, the Ineffable"
-                ]
+                ],
+                "pips": {
+                    "B": 16.5,
+                    "G": 1.0,
+                    "R": 5,
+                    "W": 4.5
+                },
+                "splash": {
+                    "B": 10.5,
+                    "G": 0.5,
+                    "R": 5,
+                    "W": 4.5
+                },
+                "deck_name": "Brw"
             },
             {
                 "name": "Nenni",
@@ -19382,7 +20625,18 @@
                     "Nissa, Who Shakes the World",
                     "Regal Behemoth",
                     "Terastodon"
-                ]
+                ],
+                "pips": {
+                    "G": 21,
+                    "R": 8,
+                    "U": 0.5
+                },
+                "splash": {
+                    "G": 13,
+                    "R": 7,
+                    "U": 0.5
+                },
+                "deck_name": "Gruul"
             },
             {
                 "name": "Alexotl",
@@ -19476,7 +20730,18 @@
                     "Court of Grace",
                     "Fleetwheel Cruiser",
                     "Palace Jailer"
-                ]
+                ],
+                "pips": {
+                    "W": 17,
+                    "G": 6.0,
+                    "B": 1
+                },
+                "splash": {
+                    "W": 15,
+                    "G": 6,
+                    "B": 0.5
+                },
+                "deck_name": "Wg"
             },
             {
                 "name": "big big big big dumps",
@@ -19570,7 +20835,16 @@
                     "Sower of Temptation",
                     "Arcane Savant",
                     "Blood on the Snow"
-                ]
+                ],
+                "pips": {
+                    "U": 20,
+                    "B": 12
+                },
+                "splash": {
+                    "U": 14,
+                    "B": 8
+                },
+                "deck_name": "Dimir"
             }
         ]
     },
@@ -19963,7 +21237,20 @@
                     "Acidic Slime",
                     "Regal Behemoth",
                     "Myr Battlesphere"
-                ]
+                ],
+                "pips": {
+                    "U": 4.0,
+                    "G": 19.0,
+                    "B": 1.0,
+                    "W": 0.5
+                },
+                "splash": {
+                    "U": 4.0,
+                    "G": 12.5,
+                    "B": 0.5,
+                    "W": 0.5
+                },
+                "deck_name": "Gu"
             },
             {
                 "name": "Alexotl",
@@ -20057,7 +21344,22 @@
                     "Shriekmaw",
                     "Thundermaw Hellkite",
                     "Tasigur, the Golden Fang"
-                ]
+                ],
+                "pips": {
+                    "R": 10.5,
+                    "B": 16.5,
+                    "G": 1.0,
+                    "W": 0.5,
+                    "U": 0.5
+                },
+                "splash": {
+                    "R": 10,
+                    "B": 12.5,
+                    "G": 1.0,
+                    "W": 1,
+                    "U": 0.5
+                },
+                "deck_name": "BRg"
             },
             {
                 "name": "big big big big dumps",
@@ -20151,7 +21453,16 @@
                     "Mulldrifter",
                     "Emeria's Call // Emeria, Shattered Skyclave",
                     "Sundering Titan"
-                ]
+                ],
+                "pips": {
+                    "U": 16,
+                    "W": 13.0
+                },
+                "splash": {
+                    "U": 12,
+                    "W": 9
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "Nenni",
@@ -20245,7 +21556,20 @@
                     "Wurmcoil Engine",
                     "Craterhoof Behemoth",
                     "Terastodon"
-                ]
+                ],
+                "pips": {
+                    "B": 13,
+                    "U": 11,
+                    "W": 1,
+                    "G": 5
+                },
+                "splash": {
+                    "B": 11,
+                    "U": 9,
+                    "W": 1,
+                    "G": 2
+                },
+                "deck_name": "BUgw"
             }
         ]
     },
@@ -20638,7 +21962,18 @@
                     "Inferno Titan",
                     "Wurmcoil Engine",
                     "Griselbrand"
-                ]
+                ],
+                "pips": {
+                    "B": 14.0,
+                    "R": 8.0,
+                    "U": 6
+                },
+                "splash": {
+                    "B": 10.5,
+                    "R": 5.5,
+                    "U": 5
+                },
+                "deck_name": "BRu"
             },
             {
                 "name": "shinydog",
@@ -20732,7 +22067,18 @@
                     "Unexpectedly Absent",
                     "Council's Judgment",
                     "Lingering Souls"
-                ]
+                ],
+                "pips": {
+                    "W": 17.5,
+                    "B": 2,
+                    "G": 2.5
+                },
+                "splash": {
+                    "W": 14.5,
+                    "B": 2,
+                    "G": 2.5
+                },
+                "deck_name": "Wgb"
             },
             {
                 "name": "Alexotl",
@@ -20826,7 +22172,18 @@
                     "Mulldrifter",
                     "The Scarab God",
                     "Verdurous Gearhulk"
-                ]
+                ],
+                "pips": {
+                    "B": 9.5,
+                    "G": 13.5,
+                    "U": 6
+                },
+                "splash": {
+                    "B": 8.5,
+                    "G": 11.5,
+                    "U": 6
+                },
+                "deck_name": "GBu"
             },
             {
                 "name": "big big big big dumps",
@@ -20920,7 +22277,16 @@
                     "Avalanche Riders",
                     "Flametongue Kavu",
                     "Ilharg, the Raze-Boar"
-                ]
+                ],
+                "pips": {
+                    "R": 23.0,
+                    "W": 3.5
+                },
+                "splash": {
+                    "R": 20,
+                    "W": 4
+                },
+                "deck_name": "Rw"
             }
         ]
     },
@@ -21313,7 +22679,22 @@
                     "Chandra, Flamecaller",
                     "Wildfire",
                     "Karn Liberated"
-                ]
+                ],
+                "pips": {
+                    "G": 4.5,
+                    "W": 13.5,
+                    "R": 6,
+                    "U": 0.5,
+                    "B": 9
+                },
+                "splash": {
+                    "G": 4.5,
+                    "W": 8.5,
+                    "R": 4,
+                    "U": 0.5,
+                    "B": 7
+                },
+                "deck_name": "WBrg"
             },
             {
                 "name": "Nenni",
@@ -21407,7 +22788,16 @@
                     "Carnage Tyrant",
                     "Wurmcoil Engine",
                     "Craterhoof Behemoth"
-                ]
+                ],
+                "pips": {
+                    "G": 26.5,
+                    "W": 1.5
+                },
+                "splash": {
+                    "G": 17.0,
+                    "W": 1.0
+                },
+                "deck_name": "Gw"
             },
             {
                 "name": "Alexotl",
@@ -21501,7 +22891,18 @@
                     "Yawgmoth's Will",
                     "Thundermaw Hellkite",
                     "Fireblast"
-                ]
+                ],
+                "pips": {
+                    "R": 16.5,
+                    "B": 11.0,
+                    "W": 0.5
+                },
+                "splash": {
+                    "R": 14.5,
+                    "B": 9.5,
+                    "W": 0.5
+                },
+                "deck_name": "Rakdos"
             },
             {
                 "name": "big big big big dumps",
@@ -21595,7 +22996,16 @@
                     "Shark Typhoon",
                     "Time Spiral",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "U": 24.0,
+                    "R": 7.0
+                },
+                "splash": {
+                    "U": 16.5,
+                    "R": 6.5
+                },
+                "deck_name": "Izzet"
             }
         ]
     },
@@ -21988,7 +23398,16 @@
                     "Wheel of Misfortune",
                     "Yawgmoth's Will",
                     "Grief"
-                ]
+                ],
+                "pips": {
+                    "B": 14.5,
+                    "R": 11.5
+                },
+                "splash": {
+                    "B": 12.5,
+                    "R": 11.5
+                },
+                "deck_name": "Rakdos"
             },
             {
                 "name": "Nenni",
@@ -22082,7 +23501,18 @@
                     "Timeless Dragon",
                     "Wurmcoil Engine",
                     "Kaldra Compleat"
-                ]
+                ],
+                "pips": {
+                    "W": 12,
+                    "U": 7.5,
+                    "B": 1
+                },
+                "splash": {
+                    "W": 9,
+                    "U": 6.5,
+                    "B": 0.5
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "Alexotl",
@@ -22176,7 +23606,20 @@
                     "Batterskull",
                     "Solitude",
                     "Time Spiral"
-                ]
+                ],
+                "pips": {
+                    "W": 11.5,
+                    "U": 11.0,
+                    "B": 3,
+                    "R": 1.0
+                },
+                "splash": {
+                    "W": 8.5,
+                    "U": 7.5,
+                    "B": 3,
+                    "R": 0.5
+                },
+                "deck_name": "WUb"
             },
             {
                 "name": "big big big big dumps",
@@ -22270,7 +23713,18 @@
                     "Burning of Xinye",
                     "Wildfire",
                     "Dragonlord Atarka"
-                ]
+                ],
+                "pips": {
+                    "R": 13,
+                    "G": 8,
+                    "W": 7.0
+                },
+                "splash": {
+                    "R": 10,
+                    "G": 8,
+                    "W": 6
+                },
+                "deck_name": "Naya"
             }
         ]
     },
@@ -22663,7 +24117,20 @@
                     "Myr Battlesphere",
                     "Terastodon",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "B": 18.0,
+                    "U": 6.5,
+                    "G": 4.5,
+                    "W": 1.0
+                },
+                "splash": {
+                    "B": 15.5,
+                    "U": 6.5,
+                    "G": 3.5,
+                    "W": 0.5
+                },
+                "deck_name": "Bug"
             },
             {
                 "name": "big big big big dumps",
@@ -22757,7 +24224,16 @@
                     "Arcane Savant",
                     "Solitude",
                     "Elesh Norn, Grand Cenobite"
-                ]
+                ],
+                "pips": {
+                    "U": 9,
+                    "W": 17.0
+                },
+                "splash": {
+                    "U": 7,
+                    "W": 13
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "Alexotl",
@@ -22851,7 +24327,18 @@
                     "Chandra, Flamecaller",
                     "Inferno Titan",
                     "Primeval Titan"
-                ]
+                ],
+                "pips": {
+                    "G": 18,
+                    "R": 17,
+                    "B": 1.0
+                },
+                "splash": {
+                    "G": 14,
+                    "R": 12,
+                    "B": 0.5
+                },
+                "deck_name": "Gruul"
             },
             {
                 "name": "Nenni",
@@ -22945,7 +24432,20 @@
                     "Wheel of Misfortune",
                     "Chandra, Torch of Defiance",
                     "Hellrider"
-                ]
+                ],
+                "pips": {
+                    "R": 18.5,
+                    "B": 1.5,
+                    "U": 8,
+                    "W": 1.5
+                },
+                "splash": {
+                    "R": 16.5,
+                    "B": 1.0,
+                    "U": 6,
+                    "W": 2
+                },
+                "deck_name": "RUbw"
             }
         ]
     },
@@ -23338,7 +24838,20 @@
                     "Thragtusk",
                     "Verdurous Gearhulk",
                     "Grave Titan"
-                ]
+                ],
+                "pips": {
+                    "B": 19.5,
+                    "G": 7.5,
+                    "W": 1.0,
+                    "R": 1.0
+                },
+                "splash": {
+                    "B": 14.5,
+                    "G": 5.5,
+                    "W": 0.5,
+                    "R": 0.5
+                },
+                "deck_name": "Golgari"
             },
             {
                 "name": "Alexotl",
@@ -23432,7 +24945,22 @@
                     "Glen Elendra Archmage",
                     "Sarkhan Vol",
                     "Fury"
-                ]
+                ],
+                "pips": {
+                    "G": 4.5,
+                    "W": 1.5,
+                    "B": 0.5,
+                    "R": 13.5,
+                    "U": 11.5
+                },
+                "splash": {
+                    "G": 4.0,
+                    "W": 1.0,
+                    "B": 0.5,
+                    "R": 11.5,
+                    "U": 9
+                },
+                "deck_name": "RUgw"
             },
             {
                 "name": "shinydog",
@@ -23526,7 +25054,22 @@
                     "Myr Battlesphere",
                     "Griselbrand",
                     "Woodfall Primus"
-                ]
+                ],
+                "pips": {
+                    "G": 12,
+                    "U": 2,
+                    "R": 2,
+                    "W": 3,
+                    "B": 7.0
+                },
+                "splash": {
+                    "G": 8,
+                    "U": 2,
+                    "R": 2,
+                    "W": 3,
+                    "B": 3.5
+                },
+                "deck_name": "Gbwur"
             },
             {
                 "name": "big big big big dumps",
@@ -23620,7 +25163,16 @@
                     "Gideon, Ally of Zendikar",
                     "Hero of Bladehold",
                     "Batterskull"
-                ]
+                ],
+                "pips": {
+                    "W": 15,
+                    "R": 11
+                },
+                "splash": {
+                    "W": 12,
+                    "R": 10
+                },
+                "deck_name": "Boros"
             }
         ]
     },
@@ -24013,7 +25565,18 @@
                     "Arcane Savant",
                     "Craterhoof Behemoth",
                     "Terastodon"
-                ]
+                ],
+                "pips": {
+                    "G": 26.0,
+                    "B": 1.0,
+                    "U": 7.5
+                },
+                "splash": {
+                    "G": 20.5,
+                    "B": 0.5,
+                    "U": 6
+                },
+                "deck_name": "Simic"
             },
             {
                 "name": "Nenni",
@@ -24107,7 +25670,20 @@
                     "Sword of Fire and Ice",
                     "Tajic, Legion's Edge",
                     "Flametongue Kavu"
-                ]
+                ],
+                "pips": {
+                    "U": 6.0,
+                    "W": 4.0,
+                    "B": 5.0,
+                    "R": 11.0
+                },
+                "splash": {
+                    "U": 5.5,
+                    "W": 3.5,
+                    "B": 4.5,
+                    "R": 10.5
+                },
+                "deck_name": "Rubw"
             },
             {
                 "name": "Alexotl",
@@ -24201,7 +25777,16 @@
                     "Rankle, Master of Pranks",
                     "Smokestack",
                     "Cloudgoat Ranger"
-                ]
+                ],
+                "pips": {
+                    "W": 13,
+                    "B": 16
+                },
+                "splash": {
+                    "W": 11,
+                    "B": 12
+                },
+                "deck_name": "Orzhov"
             },
             {
                 "name": "big big big big dumps",
@@ -24295,7 +25880,18 @@
                     "Grave Titan",
                     "Upheaval",
                     "Triplicate Titan"
-                ]
+                ],
+                "pips": {
+                    "B": 10.5,
+                    "G": 0.5,
+                    "U": 17
+                },
+                "splash": {
+                    "B": 7.5,
+                    "G": 0.5,
+                    "U": 13
+                },
+                "deck_name": "Dimir"
             }
         ]
     },
@@ -24688,7 +26284,16 @@
                     "Fury",
                     "Gray Merchant of Asphodel",
                     "Siege-Gang Commander"
-                ]
+                ],
+                "pips": {
+                    "B": 18.0,
+                    "R": 13.5
+                },
+                "splash": {
+                    "B": 13,
+                    "R": 10
+                },
+                "deck_name": "Rakdos"
             },
             {
                 "name": "shinydog",
@@ -24782,7 +26387,18 @@
                     "Craterhoof Behemoth",
                     "Woodfall Primus",
                     "Ulamog, the Ceaseless Hunger"
-                ]
+                ],
+                "pips": {
+                    "G": 22.5,
+                    "W": 0.5,
+                    "U": 0.5
+                },
+                "splash": {
+                    "G": 12.5,
+                    "W": 0.5,
+                    "U": 0.5
+                },
+                "deck_name": "Green"
             },
             {
                 "name": "big big big big dumps",
@@ -24876,7 +26492,18 @@
                     "Treachery",
                     "Catastrophe",
                     "Consecrated Sphinx"
-                ]
+                ],
+                "pips": {
+                    "W": 15.0,
+                    "U": 18,
+                    "G": 1.0
+                },
+                "splash": {
+                    "W": 12.5,
+                    "U": 12,
+                    "G": 0.5
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "Alexotl",
@@ -24970,7 +26597,20 @@
                     "Garruk Relentless // Garruk, the Veil-Cursed",
                     "Karn, Scion of Urza",
                     "Mirari's Wake"
-                ]
+                ],
+                "pips": {
+                    "G": 11,
+                    "W": 4,
+                    "R": 13.0,
+                    "U": 5.0
+                },
+                "splash": {
+                    "G": 11,
+                    "W": 4,
+                    "R": 11.5,
+                    "U": 4.5
+                },
+                "deck_name": "RGuw"
             }
         ]
     },
@@ -25363,7 +27003,16 @@
                     "Karn, Scion of Urza",
                     "Lodestone Golem",
                     "Triplicate Titan"
-                ]
+                ],
+                "pips": {
+                    "U": 8,
+                    "B": 8
+                },
+                "splash": {
+                    "U": 7,
+                    "B": 7.5
+                },
+                "deck_name": "Dimir"
             },
             {
                 "name": "Alexotl",
@@ -25457,7 +27106,16 @@
                     "Harmonize",
                     "Parallax Wave",
                     "Primeval Titan"
-                ]
+                ],
+                "pips": {
+                    "G": 17.5,
+                    "W": 11.5
+                },
+                "splash": {
+                    "G": 14.5,
+                    "W": 8.5
+                },
+                "deck_name": "Selesnya"
             },
             {
                 "name": "Nenni",
@@ -25551,7 +27209,16 @@
                     "Solitude",
                     "Fireblast",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "W": 16.5,
+                    "R": 16.5
+                },
+                "splash": {
+                    "W": 12.5,
+                    "R": 13
+                },
+                "deck_name": "Boros"
             },
             {
                 "name": "big big big big dumps",
@@ -25645,7 +27312,16 @@
                     "Archon of Cruelty",
                     "Dig Through Time",
                     "Griselbrand"
-                ]
+                ],
+                "pips": {
+                    "U": 6,
+                    "B": 28
+                },
+                "splash": {
+                    "U": 5,
+                    "B": 18
+                },
+                "deck_name": "Bu"
             }
         ]
     },
@@ -26038,7 +27714,22 @@
                     "Oko, Thief of Crowns",
                     "Yavimaya Elder",
                     "Chandra, Torch of Defiance"
-                ]
+                ],
+                "pips": {
+                    "R": 10.0,
+                    "G": 7.0,
+                    "B": 1.0,
+                    "U": 4.0,
+                    "W": 1.0
+                },
+                "splash": {
+                    "R": 8.5,
+                    "G": 5.5,
+                    "B": 0.5,
+                    "U": 3.5,
+                    "W": 0.5
+                },
+                "deck_name": "RGu"
             },
             {
                 "name": "big big big big dumps",
@@ -26132,7 +27823,16 @@
                     "Angel of Invention",
                     "Fractured Identity",
                     "Kaldra Compleat"
-                ]
+                ],
+                "pips": {
+                    "U": 8.0,
+                    "W": 17.0
+                },
+                "splash": {
+                    "U": 7.5,
+                    "W": 15
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "Alexotl",
@@ -26226,7 +27926,20 @@
                     "Sundering Titan",
                     "Ugin, the Spirit Dragon",
                     "Woodfall Primus"
-                ]
+                ],
+                "pips": {
+                    "B": 12,
+                    "W": 11,
+                    "G": 11,
+                    "R": 1
+                },
+                "splash": {
+                    "B": 9.5,
+                    "W": 7.5,
+                    "G": 7,
+                    "R": 1
+                },
+                "deck_name": "BWGr"
             },
             {
                 "name": "Nenni",
@@ -26320,7 +28033,16 @@
                     "Acidic Slime",
                     "Verdurous Gearhulk",
                     "Vivien, Monsters' Advocate"
-                ]
+                ],
+                "pips": {
+                    "G": 15,
+                    "B": 16
+                },
+                "splash": {
+                    "G": 10,
+                    "B": 14
+                },
+                "deck_name": "Golgari"
             }
         ]
     },
@@ -26713,7 +28435,18 @@
                     "Arcane Savant",
                     "Solitude",
                     "Shark Typhoon"
-                ]
+                ],
+                "pips": {
+                    "W": 11,
+                    "B": 8,
+                    "U": 11
+                },
+                "splash": {
+                    "W": 9,
+                    "B": 7,
+                    "U": 9
+                },
+                "deck_name": "Esper"
             },
             {
                 "name": "Alexotl",
@@ -26807,7 +28540,20 @@
                     "Inferno Titan",
                     "Selvala's Stampede",
                     "Dragonlord Atarka"
-                ]
+                ],
+                "pips": {
+                    "B": 0.5,
+                    "G": 11.5,
+                    "R": 12.0,
+                    "W": 1.0
+                },
+                "splash": {
+                    "B": 0.5,
+                    "G": 9.0,
+                    "R": 9,
+                    "W": 0.5
+                },
+                "deck_name": "Gruul"
             },
             {
                 "name": "Nenni",
@@ -26901,7 +28647,18 @@
                     "All Suns' Dawn",
                     "Mulldrifter",
                     "Reveillark"
-                ]
+                ],
+                "pips": {
+                    "U": 13,
+                    "G": 6,
+                    "W": 5.0
+                },
+                "splash": {
+                    "U": 12,
+                    "G": 6,
+                    "W": 5
+                },
+                "deck_name": "Ugw"
             },
             {
                 "name": "big big big big dumps",
@@ -26995,7 +28752,18 @@
                     "Pia and Kiran Nalaar",
                     "Siege-Gang Commander",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "R": 15.5,
+                    "B": 9,
+                    "W": 1.0
+                },
+                "splash": {
+                    "R": 13,
+                    "B": 8.5,
+                    "W": 1
+                },
+                "deck_name": "RBw"
             }
         ]
     },
@@ -27388,7 +29156,18 @@
                     "Terastodon",
                     "Ugin, the Spirit Dragon",
                     "Ulamog, the Ceaseless Hunger"
-                ]
+                ],
+                "pips": {
+                    "G": 27.0,
+                    "B": 1.0,
+                    "U": 1
+                },
+                "splash": {
+                    "G": 17.5,
+                    "B": 0.5,
+                    "U": 1
+                },
+                "deck_name": "Gu"
             },
             {
                 "name": "Nenni",
@@ -27482,7 +29261,16 @@
                     "Chandra, Flamecaller",
                     "Consecrated Sphinx",
                     "Shark Typhoon"
-                ]
+                ],
+                "pips": {
+                    "U": 13.5,
+                    "R": 14
+                },
+                "splash": {
+                    "U": 9.5,
+                    "R": 10
+                },
+                "deck_name": "Izzet"
             },
             {
                 "name": "big big big big dumps",
@@ -27576,7 +29364,16 @@
                     "The Scarab God",
                     "Treachery",
                     "Time Spiral"
-                ]
+                ],
+                "pips": {
+                    "B": 14.0,
+                    "U": 15.5
+                },
+                "splash": {
+                    "B": 10.5,
+                    "U": 12.5
+                },
+                "deck_name": "Dimir"
             },
             {
                 "name": "Alexotl",
@@ -27670,7 +29467,18 @@
                     "Armageddon",
                     "Gideon, Ally of Zendikar",
                     "Hero of Bladehold"
-                ]
+                ],
+                "pips": {
+                    "R": 11.5,
+                    "W": 11.5,
+                    "B": 1.0
+                },
+                "splash": {
+                    "R": 11.5,
+                    "W": 8.5,
+                    "B": 1.0
+                },
+                "deck_name": "RWb"
             }
         ]
     },
@@ -28063,7 +29871,20 @@
                     "Grief",
                     "Rankle, Master of Pranks",
                     "Force of Will"
-                ]
+                ],
+                "pips": {
+                    "B": 19.5,
+                    "R": 0.5,
+                    "U": 12.5,
+                    "W": 0.5
+                },
+                "splash": {
+                    "B": 13.5,
+                    "R": 0.5,
+                    "U": 9,
+                    "W": 0.5
+                },
+                "deck_name": "Dimir"
             },
             {
                 "name": "Nenni",
@@ -28157,7 +29978,16 @@
                     "Ilharg, the Raze-Boar",
                     "Burning of Xinye",
                     "Myr Battlesphere"
-                ]
+                ],
+                "pips": {
+                    "R": 17.0,
+                    "U": 8
+                },
+                "splash": {
+                    "R": 14,
+                    "U": 6
+                },
+                "deck_name": "Izzet"
             },
             {
                 "name": "big big big big dumps",
@@ -28251,7 +30081,16 @@
                     "Garruk Wildspeaker",
                     "Acidic Slime",
                     "Elesh Norn, Grand Cenobite"
-                ]
+                ],
+                "pips": {
+                    "G": 12,
+                    "W": 16
+                },
+                "splash": {
+                    "G": 10,
+                    "W": 15
+                },
+                "deck_name": "Selesnya"
             },
             {
                 "name": "shinydog",
@@ -28345,7 +30184,18 @@
                     "Archon of Cruelty",
                     "Ulamog, the Ceaseless Hunger",
                     "Blightsteel Colossus"
-                ]
+                ],
+                "pips": {
+                    "G": 19,
+                    "R": 5,
+                    "B": 3
+                },
+                "splash": {
+                    "G": 13,
+                    "R": 4,
+                    "B": 2
+                },
+                "deck_name": "Grb"
             }
         ]
     },
@@ -28738,7 +30588,18 @@
                     "Karn Liberated",
                     "Myr Battlesphere",
                     "Terastodon"
-                ]
+                ],
+                "pips": {
+                    "G": 18.0,
+                    "R": 10,
+                    "W": 1.0
+                },
+                "splash": {
+                    "G": 11.5,
+                    "R": 7,
+                    "W": 0.5
+                },
+                "deck_name": "Gruul"
             },
             {
                 "name": "shinydog",
@@ -28832,7 +30693,18 @@
                     "The Scarab God",
                     "Regal Behemoth",
                     "Ugin, the Spirit Dragon"
-                ]
+                ],
+                "pips": {
+                    "G": 16.0,
+                    "B": 5.0,
+                    "U": 4
+                },
+                "splash": {
+                    "G": 12.5,
+                    "B": 4.0,
+                    "U": 4
+                },
+                "deck_name": "Gbu"
             },
             {
                 "name": "Alexotl",
@@ -28926,7 +30798,16 @@
                     "Pia and Kiran Nalaar",
                     "Whirler Rogue",
                     "Shark Typhoon"
-                ]
+                ],
+                "pips": {
+                    "R": 10.0,
+                    "U": 15.5
+                },
+                "splash": {
+                    "R": 8.5,
+                    "U": 12.5
+                },
+                "deck_name": "Izzet"
             },
             {
                 "name": "big big big big dumps",
@@ -29020,7 +30901,16 @@
                     "Thundermaw Hellkite",
                     "Wurmcoil Engine",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "W": 22.0,
+                    "R": 8
+                },
+                "splash": {
+                    "W": 15,
+                    "R": 6
+                },
+                "deck_name": "Boros"
             }
         ]
     },
@@ -29413,7 +31303,20 @@
                     "Harmonize",
                     "Phyrexian Metamorph",
                     "Rankle, Master of Pranks"
-                ]
+                ],
+                "pips": {
+                    "G": 14.5,
+                    "B": 14.5,
+                    "R": 0.5,
+                    "U": 0.5
+                },
+                "splash": {
+                    "G": 12.5,
+                    "B": 10.5,
+                    "R": 1,
+                    "U": 0.5
+                },
+                "deck_name": "Golgari"
             },
             {
                 "name": "shinydog",
@@ -29507,7 +31410,20 @@
                     "Thragtusk",
                     "Treachery",
                     "Selvala's Stampede"
-                ]
+                ],
+                "pips": {
+                    "R": 7.0,
+                    "G": 10,
+                    "U": 6.0,
+                    "B": 5
+                },
+                "splash": {
+                    "R": 6.5,
+                    "G": 8,
+                    "U": 4.5,
+                    "B": 5
+                },
+                "deck_name": "GRub"
             },
             {
                 "name": "Alexotl",
@@ -29601,7 +31517,16 @@
                     "Siege-Gang Commander",
                     "Timeless Dragon",
                     "Kaldra Compleat"
-                ]
+                ],
+                "pips": {
+                    "R": 11,
+                    "W": 10
+                },
+                "splash": {
+                    "R": 10,
+                    "W": 8
+                },
+                "deck_name": "Boros"
             },
             {
                 "name": "big big big big dumps",
@@ -29695,7 +31620,18 @@
                     "Vedalken Shackles",
                     "Hero of Bladehold",
                     "Whirler Rogue"
-                ]
+                ],
+                "pips": {
+                    "W": 14.0,
+                    "U": 13,
+                    "G": 1.0
+                },
+                "splash": {
+                    "W": 11.5,
+                    "U": 10,
+                    "G": 0.5
+                },
+                "deck_name": "Azorius"
             }
         ]
     },
@@ -30088,7 +32024,18 @@
                     "Siege-Gang Commander",
                     "Thragtusk",
                     "Selvala's Stampede"
-                ]
+                ],
+                "pips": {
+                    "G": 19,
+                    "R": 10,
+                    "U": 2
+                },
+                "splash": {
+                    "G": 16,
+                    "R": 8,
+                    "U": 2
+                },
+                "deck_name": "GRu"
             },
             {
                 "name": "big big big big dumps",
@@ -30182,7 +32129,18 @@
                     "Hellrider",
                     "Fireblast",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "R": 16.5,
+                    "W": 8.0,
+                    "B": 1.0
+                },
+                "splash": {
+                    "R": 14.5,
+                    "W": 8.0,
+                    "B": 1.0
+                },
+                "deck_name": "RWb"
             },
             {
                 "name": "Nenni",
@@ -30276,7 +32234,18 @@
                     "Kaya, Ghost Assassin",
                     "Angel of Invention",
                     "Cloudgoat Ranger"
-                ]
+                ],
+                "pips": {
+                    "W": 18.5,
+                    "B": 13.0,
+                    "G": 0.5
+                },
+                "splash": {
+                    "W": 14.5,
+                    "B": 12.0,
+                    "G": 0.5
+                },
+                "deck_name": "Orzhov"
             },
             {
                 "name": "Alexotl",
@@ -30370,7 +32339,18 @@
                     "The Scarab God",
                     "Consecrated Sphinx",
                     "Tasigur, the Golden Fang"
-                ]
+                ],
+                "pips": {
+                    "B": 11.0,
+                    "U": 16.5,
+                    "G": 0.5
+                },
+                "splash": {
+                    "B": 9.5,
+                    "U": 11.5,
+                    "G": 0.5
+                },
+                "deck_name": "Dimir"
             }
         ]
     },
@@ -30763,7 +32743,18 @@
                     "Snuff Out",
                     "Reveillark",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "W": 21.5,
+                    "G": 0.5,
+                    "B": 6
+                },
+                "splash": {
+                    "W": 17.5,
+                    "G": 0.5,
+                    "B": 4
+                },
+                "deck_name": "Wb"
             },
             {
                 "name": "Alexotl",
@@ -30857,7 +32848,20 @@
                     "Treasure Cruise",
                     "Ulamog, the Ceaseless Hunger",
                     "Emrakul, the Aeons Torn"
-                ]
+                ],
+                "pips": {
+                    "U": 13,
+                    "R": 7,
+                    "W": 5,
+                    "G": 3
+                },
+                "splash": {
+                    "U": 11,
+                    "R": 6,
+                    "W": 4,
+                    "G": 3
+                },
+                "deck_name": "URwg"
             },
             {
                 "name": "Nenni",
@@ -30951,7 +32955,18 @@
                     "Gray Merchant of Asphodel",
                     "Thundermaw Hellkite",
                     "Inferno Titan"
-                ]
+                ],
+                "pips": {
+                    "B": 8.5,
+                    "R": 18,
+                    "W": 0.5
+                },
+                "splash": {
+                    "B": 6.5,
+                    "R": 14,
+                    "W": 0.5
+                },
+                "deck_name": "Rakdos"
             },
             {
                 "name": "big big big big dumps",
@@ -31045,7 +33060,18 @@
                     "Thragtusk",
                     "Verdurous Gearhulk",
                     "Kaldra Compleat"
-                ]
+                ],
+                "pips": {
+                    "G": 17.0,
+                    "B": 7.0,
+                    "W": 0.5
+                },
+                "splash": {
+                    "G": 14.5,
+                    "B": 4.5,
+                    "W": 0.5
+                },
+                "deck_name": "Golgari"
             }
         ]
     },
@@ -31438,7 +33464,18 @@
                     "Hero of Bladehold",
                     "Questing Beast",
                     "Timeless Dragon"
-                ]
+                ],
+                "pips": {
+                    "G": 15.0,
+                    "W": 13.0,
+                    "B": 1.0
+                },
+                "splash": {
+                    "G": 12.5,
+                    "W": 10.0,
+                    "B": 0.5
+                },
+                "deck_name": "Selesnya"
             },
             {
                 "name": "shinydog",
@@ -31532,7 +33569,16 @@
                     "Fireblast",
                     "Inferno Titan",
                     "Ugin, the Spirit Dragon"
-                ]
+                ],
+                "pips": {
+                    "R": 25.0,
+                    "U": 1.0
+                },
+                "splash": {
+                    "R": 18.5,
+                    "U": 0.5
+                },
+                "deck_name": "Red"
             },
             {
                 "name": "Alexotl",
@@ -31626,7 +33672,20 @@
                     "Woodfall Primus",
                     "Blightsteel Colossus",
                     "Emrakul, the Aeons Torn"
-                ]
+                ],
+                "pips": {
+                    "B": 19,
+                    "W": 3,
+                    "R": 8,
+                    "G": 3
+                },
+                "splash": {
+                    "B": 15,
+                    "W": 2,
+                    "R": 7,
+                    "G": 1
+                },
+                "deck_name": "BRwg"
             },
             {
                 "name": "big big big big dumps",
@@ -31720,7 +33779,18 @@
                     "Snuff Out",
                     "Force of Will",
                     "Gray Merchant of Asphodel"
-                ]
+                ],
+                "pips": {
+                    "U": 14,
+                    "B": 17,
+                    "W": 0.5
+                },
+                "splash": {
+                    "U": 11,
+                    "B": 13,
+                    "W": 0.5
+                },
+                "deck_name": "Dimir"
             }
         ]
     },
@@ -32113,7 +34183,18 @@
                     "Sedgemoor Witch",
                     "Smokestack",
                     "The Scarab God"
-                ]
+                ],
+                "pips": {
+                    "B": 16.0,
+                    "U": 4,
+                    "R": 1
+                },
+                "splash": {
+                    "B": 14.0,
+                    "U": 4,
+                    "R": 1
+                },
+                "deck_name": "Bur"
             },
             {
                 "name": "Alexotl",
@@ -32207,7 +34288,20 @@
                     "Fractured Identity",
                     "Emeria's Call // Emeria, Shattered Skyclave",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "B": 5,
+                    "U": 10.5,
+                    "W": 13,
+                    "R": 1.0
+                },
+                "splash": {
+                    "B": 5,
+                    "U": 7.5,
+                    "W": 10,
+                    "R": 0.5
+                },
+                "deck_name": "WUb"
             },
             {
                 "name": "Nenni",
@@ -32301,7 +34395,18 @@
                     "Ugin, the Ineffable",
                     "Sundering Titan",
                     "Woodfall Primus"
-                ]
+                ],
+                "pips": {
+                    "G": 22.5,
+                    "U": 8,
+                    "B": 0.5
+                },
+                "splash": {
+                    "G": 16.5,
+                    "U": 6,
+                    "B": 0.5
+                },
+                "deck_name": "Simic"
             },
             {
                 "name": "big big big big dumps",
@@ -32395,7 +34500,18 @@
                     "Twinshot Sniper",
                     "Fury",
                     "Treachery"
-                ]
+                ],
+                "pips": {
+                    "W": 5,
+                    "R": 13.0,
+                    "U": 11
+                },
+                "splash": {
+                    "W": 5,
+                    "R": 12,
+                    "U": 9
+                },
+                "deck_name": "RUw"
             }
         ]
     },
@@ -32788,7 +34904,20 @@
                     "Nissa, Voice of Zendikar",
                     "Primal Adversary",
                     "Bloodbraid Elf"
-                ]
+                ],
+                "pips": {
+                    "G": 12.5,
+                    "W": 0.5,
+                    "R": 10.5,
+                    "B": 0.5
+                },
+                "splash": {
+                    "G": 11.5,
+                    "W": 0.5,
+                    "R": 10.5,
+                    "B": 0.5
+                },
+                "deck_name": "Gruul"
             },
             {
                 "name": "Alexotl",
@@ -32882,7 +35011,18 @@
                     "Fractured Identity",
                     "Reveillark",
                     "Inferno Titan"
-                ]
+                ],
+                "pips": {
+                    "W": 13,
+                    "U": 10,
+                    "R": 5
+                },
+                "splash": {
+                    "W": 12,
+                    "U": 8,
+                    "R": 4
+                },
+                "deck_name": "WUr"
             },
             {
                 "name": "Nenni",
@@ -32976,7 +35116,18 @@
                     "Daretti, Scrap Savant",
                     "Rankle, Master of Pranks",
                     "Ravenous Chupacabra"
-                ]
+                ],
+                "pips": {
+                    "G": 9.0,
+                    "R": 5,
+                    "B": 14.0
+                },
+                "splash": {
+                    "G": 7.5,
+                    "R": 5,
+                    "B": 11.0
+                },
+                "deck_name": "BGr"
             },
             {
                 "name": "big big big big dumps",
@@ -33070,7 +35221,18 @@
                     "Deep Forest Hermit",
                     "Fireblast",
                     "Ugin, the Ineffable"
-                ]
+                ],
+                "pips": {
+                    "R": 18,
+                    "G": 8.0,
+                    "W": 1.0
+                },
+                "splash": {
+                    "R": 14,
+                    "G": 5.5,
+                    "W": 0.5
+                },
+                "deck_name": "Gruul"
             }
         ]
     },
@@ -33463,7 +35625,18 @@
                     "Force of Will",
                     "Mulldrifter",
                     "Reveillark"
-                ]
+                ],
+                "pips": {
+                    "U": 14,
+                    "W": 14.0,
+                    "B": 1.0
+                },
+                "splash": {
+                    "U": 13,
+                    "W": 10.5,
+                    "B": 0.5
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "Alexotl",
@@ -33557,7 +35730,18 @@
                     "Inferno Titan",
                     "Regal Behemoth",
                     "Wildfire"
-                ]
+                ],
+                "pips": {
+                    "B": 13,
+                    "R": 9,
+                    "G": 10
+                },
+                "splash": {
+                    "B": 10,
+                    "R": 6,
+                    "G": 6
+                },
+                "deck_name": "Jund"
             },
             {
                 "name": "Nenni",
@@ -33651,7 +35835,16 @@
                     "Ajani Vengeant",
                     "Court of Grace",
                     "Fury"
-                ]
+                ],
+                "pips": {
+                    "R": 17,
+                    "W": 14
+                },
+                "splash": {
+                    "R": 15,
+                    "W": 12
+                },
+                "deck_name": "Boros"
             },
             {
                 "name": "big big big big dumps",
@@ -33745,7 +35938,18 @@
                     "Ulamog, the Ceaseless Hunger",
                     "Blightsteel Colossus",
                     "Emrakul, the Aeons Torn"
-                ]
+                ],
+                "pips": {
+                    "B": 12,
+                    "U": 10,
+                    "G": 6
+                },
+                "splash": {
+                    "B": 8,
+                    "U": 7,
+                    "G": 4
+                },
+                "deck_name": "BUg"
             }
         ]
     },
@@ -34138,7 +36342,16 @@
                     "Palace Jailer",
                     "Ravages of War",
                     "Solitude"
-                ]
+                ],
+                "pips": {
+                    "W": 20,
+                    "B": 1.0
+                },
+                "splash": {
+                    "W": 17,
+                    "B": 0.5
+                },
+                "deck_name": "White"
             },
             {
                 "name": "Nenni",
@@ -34232,7 +36445,18 @@
                     "Custodi Lich",
                     "Ugin, the Ineffable",
                     "Upheaval"
-                ]
+                ],
+                "pips": {
+                    "B": 7,
+                    "U": 16.5,
+                    "R": 2.0
+                },
+                "splash": {
+                    "B": 6,
+                    "U": 11.5,
+                    "R": 1.5
+                },
+                "deck_name": "UBr"
             },
             {
                 "name": "big big big big dumps",
@@ -34326,7 +36550,20 @@
                     "Pia and Kiran Nalaar",
                     "Batterskull",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "G": 0.5,
+                    "W": 8.5,
+                    "R": 14,
+                    "B": 2
+                },
+                "splash": {
+                    "G": 0.5,
+                    "W": 8.5,
+                    "R": 13,
+                    "B": 1.5
+                },
+                "deck_name": "RWb"
             },
             {
                 "name": "Alexotl",
@@ -34420,7 +36657,18 @@
                     "Vivien, Monsters' Advocate",
                     "Carnage Tyrant",
                     "Primeval Titan"
-                ]
+                ],
+                "pips": {
+                    "G": 21.5,
+                    "R": 9.0,
+                    "W": 1.5
+                },
+                "splash": {
+                    "G": 14.5,
+                    "R": 8,
+                    "W": 1.5
+                },
+                "deck_name": "GRw"
             }
         ]
     },
@@ -34813,7 +37061,20 @@
                     "Phyrexian Metamorph",
                     "Custodi Lich",
                     "Grave Titan"
-                ]
+                ],
+                "pips": {
+                    "R": 9.0,
+                    "B": 22.0,
+                    "W": 1.0,
+                    "U": 0.5
+                },
+                "splash": {
+                    "R": 8,
+                    "B": 15.5,
+                    "W": 0.5,
+                    "U": 0.5
+                },
+                "deck_name": "Rakdos"
             },
             {
                 "name": "Nenni",
@@ -34907,7 +37168,18 @@
                     "Parallax Wave",
                     "Acidic Slime",
                     "Reveillark"
-                ]
+                ],
+                "pips": {
+                    "G": 10,
+                    "U": 4.5,
+                    "W": 11
+                },
+                "splash": {
+                    "G": 8,
+                    "U": 4,
+                    "W": 8
+                },
+                "deck_name": "WGu"
             },
             {
                 "name": "Alexotl",
@@ -35001,7 +37273,22 @@
                     "Wheel of Misfortune",
                     "Armageddon",
                     "Chandra, Torch of Defiance"
-                ]
+                ],
+                "pips": {
+                    "G": 0.5,
+                    "W": 8.5,
+                    "R": 13.5,
+                    "B": 0.5,
+                    "U": 1.0
+                },
+                "splash": {
+                    "G": 0.5,
+                    "W": 8.5,
+                    "R": 12.0,
+                    "B": 0.5,
+                    "U": 0.5
+                },
+                "deck_name": "Boros"
             },
             {
                 "name": "big big big big dumps",
@@ -35095,7 +37382,18 @@
                     "Nissa, Who Shakes the World",
                     "Treachery",
                     "Upheaval"
-                ]
+                ],
+                "pips": {
+                    "G": 7,
+                    "U": 15.0,
+                    "R": 7.0
+                },
+                "splash": {
+                    "G": 5,
+                    "U": 11.5,
+                    "R": 5.5
+                },
+                "deck_name": "Temur"
             }
         ]
     },
@@ -35488,7 +37786,20 @@
                     "Shark Typhoon",
                     "Ugin, the Ineffable",
                     "Myr Battlesphere"
-                ]
+                ],
+                "pips": {
+                    "U": 11,
+                    "B": 6,
+                    "G": 5.5,
+                    "W": 0.5
+                },
+                "splash": {
+                    "U": 9,
+                    "B": 5,
+                    "G": 4.5,
+                    "W": 0.5
+                },
+                "deck_name": "Ubg"
             },
             {
                 "name": "Alexotl",
@@ -35582,7 +37893,16 @@
                     "Armageddon",
                     "Timeless Dragon",
                     "Verdurous Gearhulk"
-                ]
+                ],
+                "pips": {
+                    "G": 13.5,
+                    "W": 16.5
+                },
+                "splash": {
+                    "G": 11.5,
+                    "W": 14.5
+                },
+                "deck_name": "Selesnya"
             },
             {
                 "name": "shinydog",
@@ -35676,7 +37996,22 @@
                     "The Scarab God",
                     "Vivien, Monsters' Advocate",
                     "Tasigur, the Golden Fang"
-                ]
+                ],
+                "pips": {
+                    "G": 9.5,
+                    "B": 9.0,
+                    "W": 4.0,
+                    "R": 3.0,
+                    "U": 3.0
+                },
+                "splash": {
+                    "G": 7.5,
+                    "B": 6.5,
+                    "W": 4,
+                    "R": 2.5,
+                    "U": 3.0
+                },
+                "deck_name": "GBwru"
             },
             {
                 "name": "big big big big dumps",
@@ -35770,7 +38105,16 @@
                     "Pia and Kiran Nalaar",
                     "Tezzeret, Betrayer of Flesh",
                     "Treachery"
-                ]
+                ],
+                "pips": {
+                    "R": 10.0,
+                    "U": 14.5
+                },
+                "splash": {
+                    "R": 8.5,
+                    "U": 10.0
+                },
+                "deck_name": "Izzet"
             }
         ]
     },
@@ -36163,7 +38507,18 @@
                     "Laelia, the Blade Reforged",
                     "Pia and Kiran Nalaar",
                     "Ulvenwald Oddity // Ulvenwald Behemoth"
-                ]
+                ],
+                "pips": {
+                    "G": 8,
+                    "R": 15,
+                    "B": 1
+                },
+                "splash": {
+                    "G": 7,
+                    "R": 12,
+                    "B": 0.5
+                },
+                "deck_name": "Gruul"
             },
             {
                 "name": "Alexotl",
@@ -36257,7 +38612,18 @@
                     "Hellrider",
                     "Hero of Bladehold",
                     "Twinshot Sniper"
-                ]
+                ],
+                "pips": {
+                    "G": 3.5,
+                    "W": 14.0,
+                    "R": 10
+                },
+                "splash": {
+                    "G": 3.5,
+                    "W": 11.0,
+                    "R": 9
+                },
+                "deck_name": "WRg"
             },
             {
                 "name": "Nenni",
@@ -36351,7 +38717,20 @@
                     "Lodestone Golem",
                     "Arcane Savant",
                     "Treachery"
-                ]
+                ],
+                "pips": {
+                    "B": 10.5,
+                    "G": 0.5,
+                    "U": 10.5,
+                    "R": 1.0
+                },
+                "splash": {
+                    "B": 9.5,
+                    "G": 0.5,
+                    "U": 8.0,
+                    "R": 0.5
+                },
+                "deck_name": "Dimir"
             },
             {
                 "name": "big big big big dumps",
@@ -36445,7 +38824,20 @@
                     "Palace Jailer",
                     "Phyrexian Metamorph",
                     "Shriekmaw"
-                ]
+                ],
+                "pips": {
+                    "U": 12.0,
+                    "B": 5,
+                    "W": 9.0,
+                    "G": 1.0
+                },
+                "splash": {
+                    "U": 11.0,
+                    "B": 5,
+                    "W": 6.5,
+                    "G": 0.5
+                },
+                "deck_name": "UWb"
             }
         ]
     },
@@ -36838,7 +39230,20 @@
                     "Karn, Scion of Urza",
                     "Shriekmaw",
                     "Wurmcoil Engine"
-                ]
+                ],
+                "pips": {
+                    "R": 13.5,
+                    "G": 7,
+                    "B": 5.0,
+                    "U": 1.0
+                },
+                "splash": {
+                    "R": 13.5,
+                    "G": 7,
+                    "B": 5,
+                    "U": 0.5
+                },
+                "deck_name": "RGb"
             },
             {
                 "name": "Nenni",
@@ -36932,7 +39337,18 @@
                     "Custodi Lich",
                     "Consecrated Sphinx",
                     "Griselbrand"
-                ]
+                ],
+                "pips": {
+                    "B": 24.0,
+                    "U": 12.5,
+                    "R": 1.0
+                },
+                "splash": {
+                    "B": 12.5,
+                    "U": 8.5,
+                    "R": 0.5
+                },
+                "deck_name": "Dimir"
             },
             {
                 "name": "Alexotl",
@@ -37026,7 +39442,16 @@
                     "Moat",
                     "Teferi, Hero of Dominaria",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "U": 12,
+                    "W": 14.0
+                },
+                "splash": {
+                    "U": 11,
+                    "W": 10
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "big big big big dumps",
@@ -37120,7 +39545,18 @@
                     "Reveillark",
                     "Timeless Dragon",
                     "Elspeth, Sun's Champion"
-                ]
+                ],
+                "pips": {
+                    "B": 15.5,
+                    "W": 16,
+                    "G": 0.5
+                },
+                "splash": {
+                    "B": 12.5,
+                    "W": 11,
+                    "G": 0.5
+                },
+                "deck_name": "Orzhov"
             }
         ]
     },
@@ -37513,7 +39949,18 @@
                     "Primeval Titan",
                     "Upheaval",
                     "Colossal Skyturtle"
-                ]
+                ],
+                "pips": {
+                    "G": 16,
+                    "U": 14.0,
+                    "R": 2.0
+                },
+                "splash": {
+                    "G": 12,
+                    "U": 10.5,
+                    "R": 1.5
+                },
+                "deck_name": "GUr"
             },
             {
                 "name": "shinydog",
@@ -37607,7 +40054,20 @@
                     "Solitude",
                     "Teferi, Hero of Dominaria",
                     "Dig Through Time"
-                ]
+                ],
+                "pips": {
+                    "W": 13.0,
+                    "U": 14.0,
+                    "G": 1.0,
+                    "R": 1.0
+                },
+                "splash": {
+                    "W": 9.5,
+                    "U": 11.5,
+                    "G": 0.5,
+                    "R": 0.5
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "big big big big dumps",
@@ -37701,7 +40161,16 @@
                     "Murderous Redcap",
                     "Burn Down the House",
                     "Fireblast"
-                ]
+                ],
+                "pips": {
+                    "R": 25.0,
+                    "B": 7.0
+                },
+                "splash": {
+                    "R": 20.5,
+                    "B": 5.5
+                },
+                "deck_name": "Rakdos"
             },
             {
                 "name": "Alexotl",
@@ -37795,7 +40264,18 @@
                     "Reveillark",
                     "Thragtusk",
                     "Timeless Dragon"
-                ]
+                ],
+                "pips": {
+                    "G": 10,
+                    "B": 10,
+                    "W": 11
+                },
+                "splash": {
+                    "G": 10,
+                    "B": 8,
+                    "W": 8
+                },
+                "deck_name": "Junk"
             }
         ]
     },
@@ -38188,7 +40668,16 @@
                     "Parallax Wave",
                     "Cloudgoat Ranger",
                     "Timeless Dragon"
-                ]
+                ],
+                "pips": {
+                    "W": 18,
+                    "B": 3
+                },
+                "splash": {
+                    "W": 13,
+                    "B": 3
+                },
+                "deck_name": "Wb"
             },
             {
                 "name": "shinydog",
@@ -38282,7 +40771,16 @@
                     "Tezzeret, Betrayer of Flesh",
                     "Twinshot Sniper",
                     "Dig Through Time"
-                ]
+                ],
+                "pips": {
+                    "R": 12.0,
+                    "U": 12.0
+                },
+                "splash": {
+                    "R": 10.5,
+                    "U": 9.5
+                },
+                "deck_name": "Izzet"
             },
             {
                 "name": "big big big big dumps",
@@ -38376,7 +40874,18 @@
                     "Siege-Gang Commander",
                     "Grave Titan",
                     "Wurmcoil Engine"
-                ]
+                ],
+                "pips": {
+                    "R": 9,
+                    "W": 8.0,
+                    "B": 10
+                },
+                "splash": {
+                    "R": 6,
+                    "W": 7,
+                    "B": 6
+                },
+                "deck_name": "Mardu"
             },
             {
                 "name": "Nenni",
@@ -38470,7 +40979,18 @@
                     "Deep Forest Hermit",
                     "Thragtusk",
                     "Vivien, Monsters' Advocate"
-                ]
+                ],
+                "pips": {
+                    "G": 18,
+                    "B": 10,
+                    "R": 3
+                },
+                "splash": {
+                    "G": 16,
+                    "B": 8.5,
+                    "R": 3
+                },
+                "deck_name": "GBr"
             }
         ]
     },
@@ -38863,7 +41383,18 @@
                     "Smokestack",
                     "Ugin, the Ineffable",
                     "Elesh Norn, Grand Cenobite"
-                ]
+                ],
+                "pips": {
+                    "B": 9.5,
+                    "G": 6.5,
+                    "W": 10
+                },
+                "splash": {
+                    "B": 8.5,
+                    "G": 6.5,
+                    "W": 8
+                },
+                "deck_name": "WBg"
             },
             {
                 "name": "Alexotl",
@@ -38957,7 +41488,18 @@
                     "Mulldrifter",
                     "Dig Through Time",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "R": 14.5,
+                    "B": 0.5,
+                    "U": 11
+                },
+                "splash": {
+                    "R": 13.5,
+                    "B": 0.5,
+                    "U": 8
+                },
+                "deck_name": "Izzet"
             },
             {
                 "name": "big big big big dumps",
@@ -39051,7 +41593,18 @@
                     "Tovolar's Huntmaster // Tovolar's Packleader",
                     "Wurmcoil Engine",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "G": 11,
+                    "W": 22.0,
+                    "U": 0.5
+                },
+                "splash": {
+                    "G": 8,
+                    "W": 15,
+                    "U": 0.5
+                },
+                "deck_name": "Selesnya"
             },
             {
                 "name": "Nenni",
@@ -39145,7 +41698,20 @@
                     "The Scarab God",
                     "Tasigur, the Golden Fang",
                     "Triplicate Titan"
-                ]
+                ],
+                "pips": {
+                    "U": 12.5,
+                    "B": 15,
+                    "R": 1,
+                    "G": 0.5
+                },
+                "splash": {
+                    "U": 9.5,
+                    "B": 12,
+                    "R": 1,
+                    "G": 0.5
+                },
+                "deck_name": "BUr"
             }
         ]
     },
@@ -39538,7 +42104,20 @@
                     "Sundering Titan",
                     "Blightsteel Colossus",
                     "Emrakul, the Aeons Torn"
-                ]
+                ],
+                "pips": {
+                    "W": 9,
+                    "G": 5,
+                    "R": 3,
+                    "B": 4
+                },
+                "splash": {
+                    "W": 6,
+                    "G": 4,
+                    "R": 3,
+                    "B": 1
+                },
+                "deck_name": "Wgbr"
             },
             {
                 "name": "Alexotl",
@@ -39632,7 +42211,18 @@
                     "Mulldrifter",
                     "The Scarab God",
                     "Tasigur, the Golden Fang"
-                ]
+                ],
+                "pips": {
+                    "G": 8.5,
+                    "B": 11,
+                    "U": 8.0
+                },
+                "splash": {
+                    "G": 7.5,
+                    "B": 10,
+                    "U": 8.0
+                },
+                "deck_name": "Sultai"
             },
             {
                 "name": "Nenni",
@@ -39726,7 +42316,16 @@
                     "Kaya, Ghost Assassin",
                     "Lethal Scheme",
                     "Angel of Invention"
-                ]
+                ],
+                "pips": {
+                    "B": 15.0,
+                    "W": 15.0
+                },
+                "splash": {
+                    "B": 12.5,
+                    "W": 12.5
+                },
+                "deck_name": "Orzhov"
             },
             {
                 "name": "big big big big dumps",
@@ -39820,7 +42419,18 @@
                     "Garruk Relentless // Garruk, the Veil-Cursed",
                     "Sarkhan Vol",
                     "Fireblast"
-                ]
+                ],
+                "pips": {
+                    "R": 21,
+                    "G": 6,
+                    "B": 1
+                },
+                "splash": {
+                    "R": 19,
+                    "G": 6,
+                    "B": 0.5
+                },
+                "deck_name": "Rg"
             }
         ]
     },
@@ -40213,7 +42823,18 @@
                     "Time Spiral",
                     "Sundering Titan",
                     "Ulamog, the Ceaseless Hunger"
-                ]
+                ],
+                "pips": {
+                    "G": 5,
+                    "U": 17.0,
+                    "R": 1.0
+                },
+                "splash": {
+                    "G": 4,
+                    "U": 11.5,
+                    "R": 0.5
+                },
+                "deck_name": "Ug"
             },
             {
                 "name": "shinydog",
@@ -40307,7 +42928,18 @@
                     "Grief",
                     "Snuff Out",
                     "Custodi Lich"
-                ]
+                ],
+                "pips": {
+                    "B": 26.5,
+                    "R": 0.5,
+                    "W": 3.0
+                },
+                "splash": {
+                    "B": 17.0,
+                    "R": 0.5,
+                    "W": 2.5
+                },
+                "deck_name": "Bw"
             },
             {
                 "name": "big big big big dumps",
@@ -40401,7 +43033,16 @@
                     "Mirari's Wake",
                     "Nissa, Who Shakes the World",
                     "Wurmcoil Engine"
-                ]
+                ],
+                "pips": {
+                    "G": 13,
+                    "W": 13
+                },
+                "splash": {
+                    "G": 11,
+                    "W": 12
+                },
+                "deck_name": "Selesnya"
             },
             {
                 "name": "Nenni",
@@ -40495,7 +43136,20 @@
                     "Arcane Savant",
                     "Grave Titan",
                     "Primeval Titan"
-                ]
+                ],
+                "pips": {
+                    "G": 9,
+                    "B": 6,
+                    "U": 11.5,
+                    "R": 9.0
+                },
+                "splash": {
+                    "G": 6,
+                    "B": 5,
+                    "U": 10.0,
+                    "R": 7.5
+                },
+                "deck_name": "UGRb"
             }
         ]
     },
@@ -40888,7 +43542,18 @@
                     "Thragtusk",
                     "Wurmcoil Engine",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "B": 12.0,
+                    "G": 8,
+                    "W": 10.0
+                },
+                "splash": {
+                    "B": 9.5,
+                    "G": 8,
+                    "W": 7.5
+                },
+                "deck_name": "Junk"
             },
             {
                 "name": "shinydog",
@@ -40982,7 +43647,16 @@
                     "Fractured Identity",
                     "Shark Typhoon",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "W": 12.5,
+                    "U": 9
+                },
+                "splash": {
+                    "W": 10.5,
+                    "U": 8
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "Alexotl",
@@ -41076,7 +43750,16 @@
                     "Titan of Industry",
                     "Craterhoof Behemoth",
                     "Ugin, the Spirit Dragon"
-                ]
+                ],
+                "pips": {
+                    "G": 29,
+                    "U": 1
+                },
+                "splash": {
+                    "G": 16,
+                    "U": 1
+                },
+                "deck_name": "Gu"
             },
             {
                 "name": "big big big big dumps",
@@ -41170,7 +43853,18 @@
                     "Sword of Body and Mind",
                     "Wheel of Misfortune",
                     "Archon of Cruelty"
-                ]
+                ],
+                "pips": {
+                    "B": 8.5,
+                    "R": 19.5,
+                    "U": 1
+                },
+                "splash": {
+                    "B": 6.5,
+                    "R": 16.5,
+                    "U": 1
+                },
+                "deck_name": "RBu"
             }
         ]
     },
@@ -41563,7 +44257,20 @@
                     "Gideon, Ally of Zendikar",
                     "Hero of Bladehold",
                     "Twinshot Sniper"
-                ]
+                ],
+                "pips": {
+                    "G": 1.5,
+                    "W": 14.5,
+                    "R": 14.0,
+                    "U": 1.0
+                },
+                "splash": {
+                    "G": 1.0,
+                    "W": 11.0,
+                    "R": 11.5,
+                    "U": 0.5
+                },
+                "deck_name": "WRg"
             },
             {
                 "name": "Alexotl",
@@ -41657,7 +44364,16 @@
                     "Murderous Redcap",
                     "Ravenous Chupacabra",
                     "Snuff Out"
-                ]
+                ],
+                "pips": {
+                    "B": 19.5,
+                    "R": 7.5
+                },
+                "splash": {
+                    "B": 15.0,
+                    "R": 6.0
+                },
+                "deck_name": "Rakdos"
             },
             {
                 "name": "shinydog",
@@ -41751,7 +44467,18 @@
                     "Bribery",
                     "Force of Will",
                     "The Scarab God"
-                ]
+                ],
+                "pips": {
+                    "B": 7,
+                    "R": 7.0,
+                    "U": 16
+                },
+                "splash": {
+                    "B": 6,
+                    "R": 6,
+                    "U": 12
+                },
+                "deck_name": "Grixis"
             },
             {
                 "name": "big big big big dumps",
@@ -41845,7 +44572,16 @@
                     "Timeless Dragon",
                     "Titan of Industry",
                     "Craterhoof Behemoth"
-                ]
+                ],
+                "pips": {
+                    "G": 26,
+                    "W": 10
+                },
+                "splash": {
+                    "G": 16,
+                    "W": 8
+                },
+                "deck_name": "Selesnya"
             }
         ]
     },
@@ -42238,7 +44974,18 @@
                     "Urza, Lord High Artificer",
                     "Wurmcoil Engine",
                     "Blightsteel Colossus"
-                ]
+                ],
+                "pips": {
+                    "R": 6.0,
+                    "U": 10.5,
+                    "G": 2
+                },
+                "splash": {
+                    "R": 5.5,
+                    "U": 9.0,
+                    "G": 2
+                },
+                "deck_name": "Urg"
             },
             {
                 "name": "Alexotl",
@@ -42332,7 +45079,20 @@
                     "Cloudgoat Ranger",
                     "Thundermaw Hellkite",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "R": 10.5,
+                    "W": 15.5,
+                    "B": 0.5,
+                    "G": 1.0
+                },
+                "splash": {
+                    "R": 9.5,
+                    "W": 11.0,
+                    "B": 0.5,
+                    "G": 0.5
+                },
+                "deck_name": "Boros"
             },
             {
                 "name": "Nenni",
@@ -42426,7 +45186,20 @@
                     "Rankle, Master of Pranks",
                     "Snuff Out",
                     "Deep Forest Hermit"
-                ]
+                ],
+                "pips": {
+                    "G": 13,
+                    "B": 10.0,
+                    "U": 1.5,
+                    "W": 8.0
+                },
+                "splash": {
+                    "G": 10,
+                    "B": 8.5,
+                    "U": 1.5,
+                    "W": 6.5
+                },
+                "deck_name": "GBWu"
             },
             {
                 "name": "big big big big dumps",
@@ -42520,7 +45293,18 @@
                     "Mulldrifter",
                     "Archon of Cruelty",
                     "Triplicate Titan"
-                ]
+                ],
+                "pips": {
+                    "B": 18.0,
+                    "U": 9,
+                    "R": 1.0
+                },
+                "splash": {
+                    "B": 13.5,
+                    "U": 9,
+                    "R": 0.5
+                },
+                "deck_name": "Dimir"
             }
         ]
     },
@@ -42913,7 +45697,16 @@
                     "Sundering Titan",
                     "Triplicate Titan",
                     "Ulamog, the Ceaseless Hunger"
-                ]
+                ],
+                "pips": {
+                    "U": 12,
+                    "G": 6
+                },
+                "splash": {
+                    "U": 11,
+                    "G": 4
+                },
+                "deck_name": "Ug"
             },
             {
                 "name": "Alexotl",
@@ -43007,7 +45800,20 @@
                     "Fleetwheel Cruiser",
                     "Grief",
                     "Nether Void"
-                ]
+                ],
+                "pips": {
+                    "R": 6.5,
+                    "B": 11.5,
+                    "G": 5,
+                    "W": 0.5
+                },
+                "splash": {
+                    "R": 6.5,
+                    "B": 10.5,
+                    "G": 5,
+                    "W": 0.5
+                },
+                "deck_name": "Brg"
             },
             {
                 "name": "big big big big dumps",
@@ -43101,7 +45907,18 @@
                     "Parallax Wave",
                     "Thundermaw Hellkite",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "G": 1.5,
+                    "W": 13.5,
+                    "R": 19
+                },
+                "splash": {
+                    "G": 1.0,
+                    "W": 10.0,
+                    "R": 14
+                },
+                "deck_name": "RWg"
             },
             {
                 "name": "Nenni",
@@ -43195,7 +46012,18 @@
                     "Upheaval",
                     "Karn Liberated",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "U": 12.5,
+                    "R": 5.0,
+                    "W": 2
+                },
+                "splash": {
+                    "U": 10.0,
+                    "R": 4.5,
+                    "W": 2
+                },
+                "deck_name": "Urw"
             }
         ]
     },
@@ -43588,7 +46416,18 @@
                     "Harmonize",
                     "Smokestack",
                     "Batterskull"
-                ]
+                ],
+                "pips": {
+                    "B": 12.0,
+                    "G": 10.0,
+                    "W": 9.0
+                },
+                "splash": {
+                    "B": 8.5,
+                    "G": 8.5,
+                    "W": 6.5
+                },
+                "deck_name": "Junk"
             },
             {
                 "name": "Nenni",
@@ -43682,7 +46521,18 @@
                     "Time Spiral",
                     "Upheaval",
                     "Colossal Skyturtle"
-                ]
+                ],
+                "pips": {
+                    "R": 6,
+                    "U": 13.5,
+                    "G": 13
+                },
+                "splash": {
+                    "R": 4,
+                    "U": 10.5,
+                    "G": 9
+                },
+                "deck_name": "UGr"
             },
             {
                 "name": "big big big big dumps",
@@ -43776,7 +46626,16 @@
                     "Archon of Cruelty",
                     "Greater Gargadon",
                     "Blightsteel Colossus"
-                ]
+                ],
+                "pips": {
+                    "R": 10.0,
+                    "B": 18
+                },
+                "splash": {
+                    "R": 10,
+                    "B": 13
+                },
+                "deck_name": "Rakdos"
             },
             {
                 "name": "shinydog",
@@ -43870,7 +46729,16 @@
                     "Solitude",
                     "Elspeth, Sun's Champion",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "W": 21.0,
+                    "U": 7
+                },
+                "splash": {
+                    "W": 13,
+                    "U": 6
+                },
+                "deck_name": "Azorius"
             }
         ]
     },
@@ -44263,7 +47131,18 @@
                     "Minsc & Boo, Timeless Heroes",
                     "Mirari's Wake",
                     "Nissa, Ascended Animist"
-                ]
+                ],
+                "pips": {
+                    "G": 15.0,
+                    "R": 9.0,
+                    "W": 5
+                },
+                "splash": {
+                    "G": 12,
+                    "R": 9,
+                    "W": 5
+                },
+                "deck_name": "GRw"
             },
             {
                 "name": "Nenni",
@@ -44357,7 +47236,18 @@
                     "Elesh Norn, Mother of Machines",
                     "Siege-Gang Commander",
                     "Leyline Binding"
-                ]
+                ],
+                "pips": {
+                    "B": 14.0,
+                    "R": 15.0,
+                    "W": 4.0
+                },
+                "splash": {
+                    "B": 10.5,
+                    "R": 12,
+                    "W": 3.5
+                },
+                "deck_name": "RBw"
             },
             {
                 "name": "Alexotl",
@@ -44451,7 +47341,22 @@
                     "Archon of Cruelty",
                     "Sundering Titan",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "B": 6.5,
+                    "R": 5,
+                    "U": 15.5,
+                    "G": 0.5,
+                    "W": 0.5
+                },
+                "splash": {
+                    "B": 5.5,
+                    "R": 5,
+                    "U": 12.5,
+                    "G": 0.5,
+                    "W": 0.5
+                },
+                "deck_name": "Ubr"
             },
             {
                 "name": "big big big big dumps",
@@ -44545,7 +47450,18 @@
                     "Teferi, Temporal Pilgrim",
                     "Consecrated Sphinx",
                     "Karn Liberated"
-                ]
+                ],
+                "pips": {
+                    "W": 3,
+                    "B": 11,
+                    "U": 14.5
+                },
+                "splash": {
+                    "W": 3,
+                    "B": 8,
+                    "U": 10.5
+                },
+                "deck_name": "UBw"
             }
         ]
     },
@@ -44938,7 +47854,18 @@
                     "Shark Typhoon",
                     "Emeria's Call // Emeria, Shattered Skyclave",
                     "Dig Through Time"
-                ]
+                ],
+                "pips": {
+                    "U": 17.5,
+                    "W": 9.0,
+                    "B": 6.0
+                },
+                "splash": {
+                    "U": 12.0,
+                    "W": 5.5,
+                    "B": 2.5
+                },
+                "deck_name": "UWb"
             },
             {
                 "name": "shinydog",
@@ -45032,7 +47959,22 @@
                     "Myr Battlesphere",
                     "Archon of Cruelty",
                     "Griselbrand"
-                ]
+                ],
+                "pips": {
+                    "G": 5,
+                    "B": 13,
+                    "U": 5,
+                    "W": 1,
+                    "R": 2
+                },
+                "splash": {
+                    "G": 4,
+                    "B": 9,
+                    "U": 5,
+                    "W": 1,
+                    "R": 1
+                },
+                "deck_name": "Bgurw"
             },
             {
                 "name": "Alexotl",
@@ -45126,7 +48068,18 @@
                     "Mirari's Wake",
                     "Grave Titan",
                     "Old One Eye"
-                ]
+                ],
+                "pips": {
+                    "B": 11,
+                    "W": 6,
+                    "G": 12
+                },
+                "splash": {
+                    "B": 8,
+                    "W": 6,
+                    "G": 11
+                },
+                "deck_name": "GBw"
             },
             {
                 "name": "big big big big dumps",
@@ -45220,7 +48173,16 @@
                     "Siege-Gang Commander",
                     "Fireblast",
                     "Wurmcoil Engine"
-                ]
+                ],
+                "pips": {
+                    "R": 17.0,
+                    "W": 13
+                },
+                "splash": {
+                    "R": 12,
+                    "W": 10
+                },
+                "deck_name": "Boros"
             }
         ]
     },
@@ -45613,7 +48575,20 @@
                     "Solemn Simulacrum",
                     "Tendrils of Agony",
                     "Fireblast"
-                ]
+                ],
+                "pips": {
+                    "R": 17.5,
+                    "W": 3.5,
+                    "G": 2,
+                    "B": 2
+                },
+                "splash": {
+                    "R": 16,
+                    "W": 3,
+                    "G": 2,
+                    "B": 1
+                },
+                "deck_name": "Rwgb"
             },
             {
                 "name": "Alexotl",
@@ -45707,7 +48682,16 @@
                     "Time Spiral",
                     "Upheaval",
                     "Karn Liberated"
-                ]
+                ],
+                "pips": {
+                    "W": 10,
+                    "U": 18
+                },
+                "splash": {
+                    "W": 7,
+                    "U": 13
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "big big big big dumps",
@@ -45801,7 +48785,16 @@
                     "Wurmcoil Engine",
                     "Nissa, Ascended Animist",
                     "Woodfall Primus"
-                ]
+                ],
+                "pips": {
+                    "G": 22.0,
+                    "B": 12
+                },
+                "splash": {
+                    "G": 14,
+                    "B": 9
+                },
+                "deck_name": "Golgari"
             },
             {
                 "name": "Nenni",
@@ -45895,7 +48888,22 @@
                     "Invasion of Shandalar // Leyline Surge",
                     "Old One Eye",
                     "Shark Typhoon"
-                ]
+                ],
+                "pips": {
+                    "R": 4.0,
+                    "G": 9,
+                    "W": 5,
+                    "U": 11.5,
+                    "B": 4.0
+                },
+                "splash": {
+                    "R": 3.0,
+                    "G": 7,
+                    "W": 4,
+                    "U": 7.0,
+                    "B": 3.5
+                },
+                "deck_name": "UGwrb"
             }
         ]
     },
@@ -46288,7 +49296,20 @@
                     "Atraxa, Grand Unifier",
                     "Myr Battlesphere",
                     "Titan of Industry"
-                ]
+                ],
+                "pips": {
+                    "B": 5.5,
+                    "W": 3.5,
+                    "G": 10.5,
+                    "U": 4.5
+                },
+                "splash": {
+                    "B": 4.5,
+                    "W": 3.5,
+                    "G": 6.5,
+                    "U": 3.5
+                },
+                "deck_name": "Gbuw"
             },
             {
                 "name": "Nenni",
@@ -46382,7 +49403,18 @@
                     "Garruk Wildspeaker",
                     "Acidic Slime",
                     "Vivien, Monsters' Advocate"
-                ]
+                ],
+                "pips": {
+                    "B": 3.5,
+                    "G": 19.5,
+                    "R": 8.0
+                },
+                "splash": {
+                    "B": 3.0,
+                    "G": 15.5,
+                    "R": 7.5
+                },
+                "deck_name": "GRb"
             },
             {
                 "name": "Alexotl",
@@ -46476,7 +49508,16 @@
                     "See Double",
                     "Snuff Out",
                     "Force of Will"
-                ]
+                ],
+                "pips": {
+                    "B": 15,
+                    "U": 12.0
+                },
+                "splash": {
+                    "B": 13,
+                    "U": 8.0
+                },
+                "deck_name": "Dimir"
             },
             {
                 "name": "big big big big dumps",
@@ -46570,7 +49611,16 @@
                     "Teferi, Hero of Dominaria",
                     "Time Spiral",
                     "Wurmcoil Engine"
-                ]
+                ],
+                "pips": {
+                    "W": 16,
+                    "U": 11
+                },
+                "splash": {
+                    "W": 12,
+                    "U": 10
+                },
+                "deck_name": "Azorius"
             }
         ]
     },
@@ -46963,7 +50013,18 @@
                     "Rankle, Master of Pranks",
                     "Snuff Out",
                     "Guardian Scalelord"
-                ]
+                ],
+                "pips": {
+                    "B": 15,
+                    "W": 11.5,
+                    "R": 1
+                },
+                "splash": {
+                    "B": 11,
+                    "W": 9.5,
+                    "R": 1
+                },
+                "deck_name": "BWr"
             },
             {
                 "name": "Nenni",
@@ -47057,7 +50118,18 @@
                     "Myr Battlesphere",
                     "Sundering Titan",
                     "Woodfall Primus"
-                ]
+                ],
+                "pips": {
+                    "G": 11,
+                    "B": 4,
+                    "U": 7
+                },
+                "splash": {
+                    "G": 8,
+                    "B": 4,
+                    "U": 6
+                },
+                "deck_name": "GUb"
             },
             {
                 "name": "Alexotl",
@@ -47151,7 +50223,20 @@
                     "See Double",
                     "Bribery",
                     "Time Spiral"
-                ]
+                ],
+                "pips": {
+                    "R": 5.0,
+                    "U": 14,
+                    "B": 9.0,
+                    "W": 2
+                },
+                "splash": {
+                    "R": 4.5,
+                    "U": 10,
+                    "B": 6.0,
+                    "W": 2
+                },
+                "deck_name": "UBrw"
             },
             {
                 "name": "big big big big dumps",
@@ -47245,7 +50330,18 @@
                     "Arcane Savant",
                     "Triplicate Titan",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "R": 15,
+                    "G": 8,
+                    "U": 5
+                },
+                "splash": {
+                    "R": 14,
+                    "G": 7,
+                    "U": 4
+                },
+                "deck_name": "RGu"
             }
         ]
     },
@@ -47638,7 +50734,20 @@
                     "Chaos Defiler",
                     "Upheaval",
                     "Sundering Titan"
-                ]
+                ],
+                "pips": {
+                    "R": 8.0,
+                    "B": 5.0,
+                    "U": 8.0,
+                    "W": 1.0
+                },
+                "splash": {
+                    "R": 6.5,
+                    "B": 4.5,
+                    "U": 5.5,
+                    "W": 0.5
+                },
+                "deck_name": "RUb"
             },
             {
                 "name": "Nenni",
@@ -47732,7 +50841,20 @@
                     "Twinshot Sniper",
                     "Shark Typhoon",
                     "Nissa, Ascended Animist"
-                ]
+                ],
+                "pips": {
+                    "W": 9,
+                    "R": 9.0,
+                    "G": 8.0,
+                    "U": 1
+                },
+                "splash": {
+                    "W": 9,
+                    "R": 8,
+                    "G": 5,
+                    "U": 1
+                },
+                "deck_name": "WRGu"
             },
             {
                 "name": "big big big big dumps",
@@ -47826,7 +50948,18 @@
                     "Karn Liberated",
                     "Treasure Cruise",
                     "Woodfall Primus"
-                ]
+                ],
+                "pips": {
+                    "G": 14.0,
+                    "U": 14.5,
+                    "B": 1.0
+                },
+                "splash": {
+                    "G": 9.5,
+                    "U": 11.5,
+                    "B": 0.5
+                },
+                "deck_name": "Simic"
             },
             {
                 "name": "Alexotl",
@@ -47920,7 +51053,18 @@
                     "Shriekmaw",
                     "Vivien, Monsters' Advocate",
                     "Craterhoof Behemoth"
-                ]
+                ],
+                "pips": {
+                    "G": 18,
+                    "B": 15.0,
+                    "R": 1.0
+                },
+                "splash": {
+                    "G": 11,
+                    "B": 10.5,
+                    "R": 0.5
+                },
+                "deck_name": "Golgari"
             }
         ]
     },
@@ -48313,7 +51457,16 @@
                     "Flametongue Kavu",
                     "Hellrider",
                     "Minsc & Boo, Timeless Heroes"
-                ]
+                ],
+                "pips": {
+                    "G": 8,
+                    "R": 14
+                },
+                "splash": {
+                    "G": 8,
+                    "R": 12
+                },
+                "deck_name": "Gruul"
             },
             {
                 "name": "Nenni",
@@ -48407,7 +51560,20 @@
                     "Treachery",
                     "Old One Eye",
                     "Myr Battlesphere"
-                ]
+                ],
+                "pips": {
+                    "G": 18,
+                    "U": 8.0,
+                    "W": 3,
+                    "R": 1.0
+                },
+                "splash": {
+                    "G": 15,
+                    "U": 6.5,
+                    "W": 3,
+                    "R": 0.5
+                },
+                "deck_name": "GUw"
             },
             {
                 "name": "shinydog",
@@ -48501,7 +51667,20 @@
                     "Rankle, Master of Pranks",
                     "Seasoned Dungeoneer",
                     "Guardian Scalelord"
-                ]
+                ],
+                "pips": {
+                    "G": 5.5,
+                    "B": 13.5,
+                    "W": 9.0,
+                    "R": 1
+                },
+                "splash": {
+                    "G": 5.5,
+                    "B": 9.5,
+                    "W": 8.5,
+                    "R": 1
+                },
+                "deck_name": "BWgr"
             },
             {
                 "name": "big big big big dumps",
@@ -48595,7 +51774,22 @@
                     "Atraxa, Grand Unifier",
                     "Etali, Primal Conqueror // Etali, Primal Sickness",
                     "Phyrexian Fleshgorger"
-                ]
+                ],
+                "pips": {
+                    "R": 12.0,
+                    "B": 12.5,
+                    "U": 1.0,
+                    "G": 0.5,
+                    "W": 0.5
+                },
+                "splash": {
+                    "R": 9,
+                    "B": 10.0,
+                    "U": 1.0,
+                    "G": 0.5,
+                    "W": 0.5
+                },
+                "deck_name": "BRu"
             }
         ]
     },
@@ -48988,7 +52182,18 @@
                     "Primeval Titan",
                     "Upheaval",
                     "Craterhoof Behemoth"
-                ]
+                ],
+                "pips": {
+                    "G": 16,
+                    "U": 6.5,
+                    "W": 4
+                },
+                "splash": {
+                    "G": 12,
+                    "U": 5.5,
+                    "W": 4
+                },
+                "deck_name": "Guw"
             },
             {
                 "name": "shinydog",
@@ -49082,7 +52287,20 @@
                     "Hellrider",
                     "Hostile Negotiations",
                     "Snuff Out"
-                ]
+                ],
+                "pips": {
+                    "R": 18.0,
+                    "B": 4.0,
+                    "U": 1.0,
+                    "G": 1
+                },
+                "splash": {
+                    "R": 15.0,
+                    "B": 3.0,
+                    "U": 0.5,
+                    "G": 1
+                },
+                "deck_name": "Rbg"
             },
             {
                 "name": "Nenni",
@@ -49176,7 +52394,18 @@
                     "Saheeli, Filigree Master",
                     "Serra Paragon",
                     "Angel of Invention"
-                ]
+                ],
+                "pips": {
+                    "W": 10.5,
+                    "R": 8.5,
+                    "U": 7
+                },
+                "splash": {
+                    "W": 8,
+                    "R": 8,
+                    "U": 6
+                },
+                "deck_name": "America"
             },
             {
                 "name": "big big big big dumps",
@@ -49270,7 +52499,20 @@
                     "Tendrils of Agony",
                     "Shark Typhoon",
                     "Dig Through Time"
-                ]
+                ],
+                "pips": {
+                    "B": 14,
+                    "U": 9.5,
+                    "W": 4.0,
+                    "G": 1.0
+                },
+                "splash": {
+                    "B": 9.5,
+                    "U": 8.5,
+                    "W": 3.0,
+                    "G": 0.5
+                },
+                "deck_name": "BUw"
             }
         ]
     },
@@ -49663,7 +52905,22 @@
                     "Acidic Slime",
                     "Thragtusk",
                     "Conclave Sledge-Captain"
-                ]
+                ],
+                "pips": {
+                    "B": 1.5,
+                    "G": 19.5,
+                    "R": 2,
+                    "U": 2,
+                    "W": 0.5
+                },
+                "splash": {
+                    "B": 1.0,
+                    "G": 15.0,
+                    "R": 2,
+                    "U": 2,
+                    "W": 0.5
+                },
+                "deck_name": "Grub"
             },
             {
                 "name": "Alexotl",
@@ -49757,7 +53014,18 @@
                     "Elspeth, Sun's Champion",
                     "Ugin, the Ineffable",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "B": 12.0,
+                    "W": 6.0,
+                    "R": 11
+                },
+                "splash": {
+                    "B": 8.5,
+                    "W": 4.5,
+                    "R": 9
+                },
+                "deck_name": "BRw"
             },
             {
                 "name": "Nenni",
@@ -49851,7 +53119,18 @@
                     "Invasion of Shandalar // Leyline Surge",
                     "Mirari's Wake",
                     "Wurmcoil Engine"
-                ]
+                ],
+                "pips": {
+                    "G": 10.0,
+                    "W": 12.5,
+                    "R": 5.5
+                },
+                "splash": {
+                    "G": 7.5,
+                    "W": 9.5,
+                    "R": 5
+                },
+                "deck_name": "WGr"
             },
             {
                 "name": "big big big big dumps",
@@ -49945,7 +53224,16 @@
                     "Saheeli, Filigree Master",
                     "Sower of Temptation",
                     "Arcane Savant"
-                ]
+                ],
+                "pips": {
+                    "U": 18,
+                    "R": 8
+                },
+                "splash": {
+                    "U": 13,
+                    "R": 7
+                },
+                "deck_name": "Izzet"
             }
         ]
     },
@@ -50338,7 +53626,16 @@
                     "Timeless Dragon",
                     "Catastrophe",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "W": 21.0,
+                    "U": 8.5
+                },
+                "splash": {
+                    "W": 16,
+                    "U": 7
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "shinydog",
@@ -50432,7 +53729,18 @@
                     "Archon of Cruelty",
                     "Griselbrand",
                     "Sundering Titan"
-                ]
+                ],
+                "pips": {
+                    "R": 10.0,
+                    "B": 18,
+                    "U": 2
+                },
+                "splash": {
+                    "R": 10,
+                    "B": 13.5,
+                    "U": 2
+                },
+                "deck_name": "BRu"
             },
             {
                 "name": "Alexotl",
@@ -50526,7 +53834,18 @@
                     "Vorinclex // The Grand Evolution",
                     "Consecrated Sphinx",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "G": 11,
+                    "U": 11,
+                    "R": 3
+                },
+                "splash": {
+                    "G": 10,
+                    "U": 9,
+                    "R": 3
+                },
+                "deck_name": "GUr"
             },
             {
                 "name": "big big big big dumps",
@@ -50620,7 +53939,20 @@
                     "Murderous Redcap",
                     "Pia and Kiran Nalaar",
                     "Fury"
-                ]
+                ],
+                "pips": {
+                    "B": 1.5,
+                    "G": 8.0,
+                    "W": 3.5,
+                    "R": 17.0
+                },
+                "splash": {
+                    "B": 1.0,
+                    "G": 8.0,
+                    "W": 3.5,
+                    "R": 13.5
+                },
+                "deck_name": "RGwb"
             }
         ]
     },
@@ -51013,7 +54345,20 @@
                     "Palace Jailer",
                     "Deep Forest Hermit",
                     "Mirari's Wake"
-                ]
+                ],
+                "pips": {
+                    "B": 9.5,
+                    "G": 10.5,
+                    "R": 3,
+                    "W": 4
+                },
+                "splash": {
+                    "B": 8.5,
+                    "G": 9.5,
+                    "R": 3,
+                    "W": 3
+                },
+                "deck_name": "GBwr"
             },
             {
                 "name": "shinydog",
@@ -51107,7 +54452,18 @@
                     "Smokestack",
                     "Angel of Invention",
                     "Reveillark"
-                ]
+                ],
+                "pips": {
+                    "B": 10.0,
+                    "G": 0.5,
+                    "W": 13.0
+                },
+                "splash": {
+                    "B": 8.5,
+                    "G": 0.5,
+                    "W": 11.0
+                },
+                "deck_name": "Orzhov"
             },
             {
                 "name": "big big big big dumps",
@@ -51201,7 +54557,18 @@
                     "Etali, Primal Conqueror // Etali, Primal Sickness",
                     "Nissa, Ascended Animist",
                     "Archon of Cruelty"
-                ]
+                ],
+                "pips": {
+                    "R": 15.0,
+                    "G": 10.0,
+                    "B": 2
+                },
+                "splash": {
+                    "R": 11,
+                    "G": 8,
+                    "B": 1
+                },
+                "deck_name": "RGb"
             },
             {
                 "name": "Alexotl",
@@ -51295,7 +54662,16 @@
                     "Timeless Dragon",
                     "Time Spiral",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "U": 17,
+                    "W": 16
+                },
+                "splash": {
+                    "U": 14,
+                    "W": 10
+                },
+                "deck_name": "Azorius"
             }
         ]
     },
@@ -51688,7 +55064,18 @@
                     "See Double",
                     "Bribery",
                     "Force of Will"
-                ]
+                ],
+                "pips": {
+                    "R": 6.0,
+                    "U": 20.5,
+                    "G": 5
+                },
+                "splash": {
+                    "R": 5.5,
+                    "U": 12.5,
+                    "G": 4
+                },
+                "deck_name": "Urg"
             },
             {
                 "name": "Alexotl",
@@ -51782,7 +55169,16 @@
                     "Mulldrifter",
                     "Consecrated Sphinx",
                     "Ugin, the Spirit Dragon"
-                ]
+                ],
+                "pips": {
+                    "U": 11.5,
+                    "W": 8
+                },
+                "splash": {
+                    "U": 8.5,
+                    "W": 7
+                },
+                "deck_name": "Azorius"
             },
             {
                 "name": "big big big big dumps",
@@ -51876,7 +55272,20 @@
                     "Elspeth, Sun's Champion",
                     "Nissa, Ascended Animist",
                     "Triplicate Titan"
-                ]
+                ],
+                "pips": {
+                    "G": 20.0,
+                    "W": 7,
+                    "U": 0.5,
+                    "B": 1
+                },
+                "splash": {
+                    "G": 15,
+                    "W": 6,
+                    "U": 0.5,
+                    "B": 1
+                },
+                "deck_name": "GWb"
             },
             {
                 "name": "Nenni",
@@ -51970,7 +55379,18 @@
                     "Sheoldred, the Apocalypse",
                     "Sheoldred // The True Scriptures",
                     "Archon of Cruelty"
-                ]
+                ],
+                "pips": {
+                    "B": 23.0,
+                    "W": 8,
+                    "R": 1.0
+                },
+                "splash": {
+                    "B": 14.5,
+                    "W": 8,
+                    "R": 0.5
+                },
+                "deck_name": "Orzhov"
             }
         ]
     },
@@ -52363,7 +55783,18 @@
                     "Urza, Lord High Artificer",
                     "Arcane Savant",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "U": 15.0,
+                    "W": 1.5,
+                    "B": 1.0
+                },
+                "splash": {
+                    "U": 10.0,
+                    "W": 1.5,
+                    "B": 0.5
+                },
+                "deck_name": "Uw"
             },
             {
                 "name": "Alexotl",
@@ -52457,7 +55888,20 @@
                     "Vivien, Monsters' Advocate",
                     "Leyline Binding",
                     "Wildfire"
-                ]
+                ],
+                "pips": {
+                    "G": 14,
+                    "R": 7,
+                    "W": 8,
+                    "B": 4
+                },
+                "splash": {
+                    "G": 11,
+                    "R": 6,
+                    "W": 7,
+                    "B": 4
+                },
+                "deck_name": "GWRb"
             },
             {
                 "name": "Nenni",
@@ -52551,7 +55995,20 @@
                     "Nahiri, the Unforgiving",
                     "Elesh Norn, Mother of Machines",
                     "Conclave Sledge-Captain"
-                ]
+                ],
+                "pips": {
+                    "G": 9,
+                    "W": 8.5,
+                    "R": 7.5,
+                    "U": 1
+                },
+                "splash": {
+                    "G": 8,
+                    "W": 8,
+                    "R": 7,
+                    "U": 1
+                },
+                "deck_name": "GWRu"
             },
             {
                 "name": "big big big big dumps",
@@ -52645,7 +56102,22 @@
                     "The Scarab God",
                     "Atraxa, Grand Unifier",
                     "Griselbrand"
-                ]
+                ],
+                "pips": {
+                    "B": 23.5,
+                    "U": 9.5,
+                    "R": 1.0,
+                    "G": 0.5,
+                    "W": 0.5
+                },
+                "splash": {
+                    "B": 17.5,
+                    "U": 8.0,
+                    "R": 0.5,
+                    "G": 0.5,
+                    "W": 0.5
+                },
+                "deck_name": "Dimir"
             }
         ]
     },
@@ -53038,7 +56510,22 @@
                     "Bloodbraid Elf",
                     "The One Ring",
                     "Leyline Binding"
-                ]
+                ],
+                "pips": {
+                    "B": 4.5,
+                    "R": 8.0,
+                    "G": 9.5,
+                    "W": 2.0,
+                    "U": 1.0
+                },
+                "splash": {
+                    "B": 5,
+                    "R": 7.5,
+                    "G": 8.5,
+                    "W": 1.5,
+                    "U": 0.5
+                },
+                "deck_name": "GRbw"
             },
             {
                 "name": "Nenni",
@@ -53132,7 +56619,20 @@
                     "Thragtusk",
                     "Wurmcoil Engine",
                     "Myr Battlesphere"
-                ]
+                ],
+                "pips": {
+                    "G": 8.5,
+                    "B": 0.5,
+                    "U": 6,
+                    "W": 6
+                },
+                "splash": {
+                    "G": 7.5,
+                    "B": 0.5,
+                    "U": 6,
+                    "W": 5
+                },
+                "deck_name": "Guw"
             },
             {
                 "name": "Alexotl",
@@ -53226,7 +56726,16 @@
                     "Wheel of Misfortune",
                     "Gideon, Ally of Zendikar",
                     "Ravages of War"
-                ]
+                ],
+                "pips": {
+                    "W": 13,
+                    "R": 11
+                },
+                "splash": {
+                    "W": 11,
+                    "R": 10
+                },
+                "deck_name": "Boros"
             },
             {
                 "name": "big big big big dumps",
@@ -53320,7 +56829,18 @@
                     "Shark Typhoon",
                     "Time Spiral",
                     "Ugin, the Spirit Dragon"
-                ]
+                ],
+                "pips": {
+                    "U": 20,
+                    "B": 11.0,
+                    "G": 1
+                },
+                "splash": {
+                    "U": 13,
+                    "B": 8,
+                    "G": 1
+                },
+                "deck_name": "UBg"
             }
         ]
     },
@@ -53713,7 +57233,22 @@
                     "True-Name Nemesis",
                     "Ertai Resurrected",
                     "Chaos Defiler"
-                ]
+                ],
+                "pips": {
+                    "U": 10.5,
+                    "X": 0.5,
+                    "G": 0.5,
+                    "R": 13.0,
+                    "B": 4.0
+                },
+                "splash": {
+                    "U": 10,
+                    "X": 1,
+                    "G": 1,
+                    "R": 13,
+                    "B": 3.5
+                },
+                "deck_name": "RUb"
             },
             {
                 "name": "big big big big dumps",
@@ -53807,7 +57342,20 @@
                     "Karn, Scion of Urza",
                     "Atraxa, Grand Unifier",
                     "Archon of Cruelty"
-                ]
+                ],
+                "pips": {
+                    "G": 4.5,
+                    "W": 10.5,
+                    "U": 6.5,
+                    "B": 2.5
+                },
+                "splash": {
+                    "G": 3.5,
+                    "W": 8.5,
+                    "U": 4.5,
+                    "B": 1.5
+                },
+                "deck_name": "Wugb"
             },
             {
                 "name": "Nenni",
@@ -53901,7 +57449,20 @@
                     "Craterhoof Behemoth",
                     "Griselbrand",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "B": 8.0,
+                    "G": 11.0,
+                    "R": 15,
+                    "W": 1.0
+                },
+                "splash": {
+                    "B": 4.0,
+                    "G": 6.5,
+                    "R": 10,
+                    "W": 0.5
+                },
+                "deck_name": "Jund"
             },
             {
                 "name": "Alexotl",
@@ -53995,7 +57556,18 @@
                     "Elspeth, Sun's Champion",
                     "Leyline Binding",
                     "Old One Eye"
-                ]
+                ],
+                "pips": {
+                    "B": 12,
+                    "G": 8,
+                    "W": 10
+                },
+                "splash": {
+                    "B": 9,
+                    "G": 7,
+                    "W": 8
+                },
+                "deck_name": "Junk"
             }
         ]
     },
@@ -54388,7 +57960,18 @@
                     "Laelia, the Blade Reforged",
                     "Ob Nixilis, the Adversary",
                     "Seasoned Pyromancer"
-                ]
+                ],
+                "pips": {
+                    "R": 16.0,
+                    "B": 6.0,
+                    "W": 1
+                },
+                "splash": {
+                    "R": 14.5,
+                    "B": 5.0,
+                    "W": 1
+                },
+                "deck_name": "Rbw"
             },
             {
                 "name": "Nenni",
@@ -54482,7 +58065,22 @@
                     "Time Warp",
                     "Atraxa, Grand Unifier",
                     "Myr Battlesphere"
-                ]
+                ],
+                "pips": {
+                    "G": 12.5,
+                    "U": 13.5,
+                    "W": 4.5,
+                    "R": 1.0,
+                    "B": 0.5
+                },
+                "splash": {
+                    "G": 10.0,
+                    "U": 12.0,
+                    "W": 4.0,
+                    "R": 0.5,
+                    "B": 0.5
+                },
+                "deck_name": "UGw"
             },
             {
                 "name": "Alexotl",
@@ -54576,7 +58174,16 @@
                     "Virtue of Loyalty // Ardenvale Fealty",
                     "Elspeth, Sun's Champion",
                     "Wurmcoil Engine"
-                ]
+                ],
+                "pips": {
+                    "W": 19.5,
+                    "B": 11
+                },
+                "splash": {
+                    "W": 15,
+                    "B": 8
+                },
+                "deck_name": "Orzhov"
             },
             {
                 "name": "big big big big dumps",
@@ -54670,7 +58277,18 @@
                     "Elesh Norn, Mother of Machines",
                     "Old One Eye",
                     "Trumpeting Carnosaur"
-                ]
+                ],
+                "pips": {
+                    "G": 13,
+                    "W": 8,
+                    "R": 8
+                },
+                "splash": {
+                    "G": 12,
+                    "W": 7,
+                    "R": 6
+                },
+                "deck_name": "Naya"
             }
         ]
     },
@@ -55063,7 +58681,18 @@
                     "Trumpeting Carnosaur",
                     "Wildfire",
                     "Treasure Cruise"
-                ]
+                ],
+                "pips": {
+                    "G": 14,
+                    "R": 9,
+                    "U": 9
+                },
+                "splash": {
+                    "G": 13,
+                    "R": 7,
+                    "U": 7
+                },
+                "deck_name": "Temur"
             },
             {
                 "name": "Nenni",
@@ -55157,7 +58786,18 @@
                     "Saheeli, Filigree Master",
                     "Fury",
                     "Troll of Khazad-d\u00fbm"
-                ]
+                ],
+                "pips": {
+                    "R": 17.0,
+                    "U": 8.5,
+                    "B": 5.0
+                },
+                "splash": {
+                    "R": 14.0,
+                    "U": 7.5,
+                    "B": 4.5
+                },
+                "deck_name": "RUb"
             },
             {
                 "name": "shinydog",
@@ -55251,7 +58891,18 @@
                     "Combat Calligrapher",
                     "Snuff Out",
                     "Custodi Lich"
-                ]
+                ],
+                "pips": {
+                    "B": 7.5,
+                    "G": 5.5,
+                    "W": 11.0
+                },
+                "splash": {
+                    "B": 6.5,
+                    "G": 5.0,
+                    "W": 9.5
+                },
+                "deck_name": "WBg"
             },
             {
                 "name": "big big big big dumps",
@@ -55345,7 +58996,18 @@
                     "Treachery",
                     "Virtue of Persistence // Locthwain Scorn",
                     "Dig Through Time"
-                ]
+                ],
+                "pips": {
+                    "B": 9.5,
+                    "U": 14.5,
+                    "W": 5
+                },
+                "splash": {
+                    "B": 8,
+                    "U": 9.5,
+                    "W": 3
+                },
+                "deck_name": "UBw"
             }
         ]
     },
@@ -55738,7 +59400,20 @@
                     "Time Warp",
                     "Upheaval",
                     "Greater Gargadon"
-                ]
+                ],
+                "pips": {
+                    "G": 11,
+                    "U": 12,
+                    "W": 3,
+                    "R": 4
+                },
+                "splash": {
+                    "G": 10,
+                    "U": 10,
+                    "W": 3,
+                    "R": 4
+                },
+                "deck_name": "UGrw"
             },
             {
                 "name": "Nenni",
@@ -55832,7 +59507,18 @@
                     "Myr Battlesphere",
                     "Griselbrand",
                     "Sundering Titan"
-                ]
+                ],
+                "pips": {
+                    "B": 15.0,
+                    "U": 6,
+                    "W": 1.5
+                },
+                "splash": {
+                    "B": 10.5,
+                    "U": 6,
+                    "W": 1.0
+                },
+                "deck_name": "Buw"
             },
             {
                 "name": "Alexotl",
@@ -55926,7 +59612,18 @@
                     "Etali, Primal Conqueror // Etali, Primal Sickness",
                     "Craterhoof Behemoth",
                     "Woodfall Primus"
-                ]
+                ],
+                "pips": {
+                    "B": 10.0,
+                    "G": 16.0,
+                    "R": 6
+                },
+                "splash": {
+                    "B": 9.5,
+                    "G": 9.5,
+                    "R": 5
+                },
+                "deck_name": "GBr"
             },
             {
                 "name": "big big big big dumps",
@@ -56020,7 +59717,20 @@
                     "Batterskull",
                     "Fury",
                     "Emeria's Call // Emeria, Shattered Skyclave"
-                ]
+                ],
+                "pips": {
+                    "R": 23.0,
+                    "W": 7,
+                    "B": 1,
+                    "U": 1.0
+                },
+                "splash": {
+                    "R": 18.5,
+                    "W": 4,
+                    "B": 1,
+                    "U": 0.5
+                },
+                "deck_name": "RWb"
             }
         ]
     }

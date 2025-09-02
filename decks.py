@@ -5,31 +5,28 @@ import copy
 
 raw_path = Path.cwd().joinpath("output", "raw.json")
 card_list_path = Path.cwd().joinpath("output", "card_list.json")
-
+deck_name_path = Path.cwd().joinpath("input", "json", "deck_names.json")
 
 
 def deck_name(pips, splash):
+    with deck_name_path.open("r", encoding="utf-8") as f:
+        deck_name_data = json.load(f)
     color_string = ""
     has_splash = False
     sorted_pips = dict(sorted(pips.items(), key=lambda x: x[1], reverse=True))
-    print(sorted_pips)
-
-
     for key, value in sorted_pips.items():
-        def is_splash():
-            return False
-        if is_splash:
+        print(f"key - {key}, value - {value}, splash[key] - {splash[key]}")
+        if value < 1 or splash[key] < 1:
+            continue
+        elif value < 7 or splash[key] < 4:
             color_string += key.lower()
+            has_splash = True
         else:
             color_string += key
     if not has_splash:
-        color_string
-
-
-
-
-
-    return "wattatata"
+        if "".join(sorted(color_string)) in deck_name_data["colors"]:
+            color_string = deck_name_data["colors"]["".join(sorted(color_string))]
+    return color_string
 
 
 
@@ -41,6 +38,8 @@ def update_raw_colors():
     with card_list_path.open("r", encoding="utf-8") as f:
         card_list_data = json.load(f)
     raw_rewrite = copy.deepcopy(raw_data)
+    with deck_name_path.open("r", encoding="utf-8") as f:
+        deck_name_data = json.load(f)
 
     for draft_i, draft in enumerate(raw_data):
         for player_i, player in enumerate(draft["players"]):
@@ -49,7 +48,7 @@ def update_raw_colors():
                 #alias = helper.card_alias(card)
                 #card_name = alias if alias is not None else card
                 if card not in card_list_data:
-                    print(card)
+                    #print(card)
                     continue
                 card_dict = card_list_data[card]
 
@@ -62,15 +61,23 @@ def update_raw_colors():
             current_deck["splash"] = splash
             current_deck["deck_name"] = deck_name(pips, splash)
     
+    with raw_path.open("w", encoding="utf-8") as f:
+        f.write(json.dumps(raw_rewrite, indent=4))
 
-    print("hehe")
+def test_name():
+    with raw_path.open("r", encoding="utf-8") as f:
+        raw_data = json.load(f)
+    output = {}
+    for draft in raw_data:
+        for player in draft["players"]:
+            run_name = f"{draft["draft_number"]}-{player["name"][0].lower()}"
+            output[run_name] = player["deck_name"]
 
 
 
-
-        
-    
-    
-
+    test_path = Path.cwd().joinpath("output", "test.json")
+    output = dict(sorted(output.items()))
+    with test_path.open("w", encoding="utf-8") as f:
+        f.write(json.dumps(output, indent=4))
 if __name__ == "__main__":
-    update_raw_colors()
+    test_name()
