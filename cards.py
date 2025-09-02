@@ -11,8 +11,8 @@ exception_path = Path.cwd().joinpath("input", "json", "mana_exceptions.json")
 
 def assign_colors(data, exceptions, card_name):
     # special cases (ex. Lingering Souls) are in input/json/mana_exceptions.json
-    if card_name in exceptions:
-        return exceptions[card_name]["mana"]
+    if card_name in exceptions["exceptions"]:
+        return exceptions["exceptions"][card_name]["mana"]
     card_entry =  [entry for entry in data if entry['name'] == card_name and
                 entry["object"] == "card" and entry["layout"] != "token"]
     half_mana_string = ""
@@ -32,8 +32,8 @@ def assign_colors(data, exceptions, card_name):
             mana_string = mana_cost_faces[0]["mana_cost"]
         else:
             mana_string = ""
+    # normal handling
     else:
-        # normal handling
         mana_string = card_entry[0]["mana_cost"]
     def translate_mana_cost(mana_string):
         # TODO: check for if card faces are lands or adventures

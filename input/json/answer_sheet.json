@@ -14,11 +14,11 @@
     "103-a": "Orzhov",
     "103-b": "RBw",
     "103-n": "Simic",
-    "103-s": "BWu",
+    "103-s": "WBu",
     "104-a": "Dimir",
     "104-b": "Orzhov",
     "104-n": "RGb ### gotta add sources of mana, otherwise wont count splash",
-    "104-s": "RGwu",
+    "104-s": "GRwu",
     "105-a": "GUw",
     "105-b": "Izzet",
     "105-n": "WUr",
@@ -324,11 +324,11 @@
     "97-n": "GUw",
     "97-s": "Rbw",
     "98-a": "Temur",
-    "98-b": "BUw",
+    "98-b": "UBw",
     "98-n": "RUb",
     "98-s": "WBg",
     "99-a": "Jund",
     "99-b": "Rw",
     "99-n": "Dimir",
-    "99-s": "GUrw"
+    "99-s": "UGrw"
 }

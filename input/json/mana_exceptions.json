@@ -1,276 +1,281 @@
 {
-    "Academy Ruins": {
-        "mana": {
-            "mana_cost": "",
-            "splash": {
-                "U": 1
-            },
-            "pips": {
-                "U": 1
-            }
-        }
+    "basics": {
+
     },
-    "Alesha, Who Smiles at Death": {
-        "mana": {
-            "mana_cost": "{2}{R}",
-            "splash": {
-                "R": 1,
-                "W": 0.5,
-                "B": 0.5
-            },
-            "pips": {
-                "R": 1,
-                "W": 0.5,
-                "B": 0.5
+    "exceptions": {
+        "Academy Ruins": {
+            "mana": {
+                "mana_cost": "",
+                "splash": {
+                    "U": 1
+                },
+                "pips": {
+                    "U": 1
+                }
             }
-        }
-    },
-    "Atraxa, Grand Unifier": {
-        "mana": {
-            "mana_cost": "{3}{G}{W}{U}{B}",
-            "splash": {
-                "G": 0.5,
-                "W": 0.5,
-                "U": 0.5,
-                "B": 0.5
-            },
-            "pips": {
-                "G": 0.5,
-                "W": 0.5,
-                "U": 0.5,
-                "B": 0.5
+        },
+        "Alesha, Who Smiles at Death": {
+            "mana": {
+                "mana_cost": "{2}{R}",
+                "splash": {
+                    "R": 1,
+                    "W": 0.5,
+                    "B": 0.5
+                },
+                "pips": {
+                    "R": 1,
+                    "W": 0.5,
+                    "B": 0.5
+                }
             }
-        }
-    },
-    "Birthing Pod": {
-        "mana": {
-            "mana_cost": "{3}{G/P}",
-            "splash": {
-                "G": 1
-            },
-            "pips": {
-                "G": 1
+        },
+        "Atraxa, Grand Unifier": {
+            "mana": {
+                "mana_cost": "{3}{G}{W}{U}{B}",
+                "splash": {
+                    "G": 0.5,
+                    "W": 0.5,
+                    "U": 0.5,
+                    "B": 0.5
+                },
+                "pips": {
+                    "G": 0.5,
+                    "W": 0.5,
+                    "U": 0.5,
+                    "B": 0.5
+                }
             }
-        }
-    },
-    "Colossal Skyturtle": {
-        "mana": {
-            "mana_cost": "{4}{G}{G}{U}",
-            "splash": {
-                "G": 0.5,
-                "U": 0.5
-            },
-            "pips": {
-                "G": 1,
-                "U": 1
+        },
+        "Birthing Pod": {
+            "mana": {
+                "mana_cost": "{3}{G/P}",
+                "splash": {
+                    "G": 1
+                },
+                "pips": {
+                    "G": 1
+                }
             }
-        }
-    },
-    "Crystal Shard": {
-        "mana": {
-            "mana_cost": "{3}",
-            "splash": {
-                "U": 1
-            },
-            "pips": {
-                "U": 1
+        },
+        "Colossal Skyturtle": {
+            "mana": {
+                "mana_cost": "{4}{G}{G}{U}",
+                "splash": {
+                    "G": 0.5,
+                    "U": 0.5
+                },
+                "pips": {
+                    "G": 1,
+                    "U": 1
+                }
             }
-        }
-    },
-    "Damn": {
-        "mana": {
-            "mana_cost": "{B}{B}",
-            "splash": {
-                "B": 0.5,
-                "W": 0.5
-            },
-            "pips": {
-                "B": 1,
-                "W": 1
+        },
+        "Crystal Shard": {
+            "mana": {
+                "mana_cost": "{3}",
+                "splash": {
+                    "U": 1
+                },
+                "pips": {
+                    "U": 1
+                }
             }
-        }
-    },
-    "Den of the Bugbear": {
-        "mana": {
-            "mana_cost": "",
-            "splash": {
-                "R": 1
-            },
-            "pips": {
-                "R": 1
+        },
+        "Damn": {
+            "mana": {
+                "mana_cost": "{B}{B}",
+                "splash": {
+                    "B": 0.5,
+                    "W": 0.5
+                },
+                "pips": {
+                    "B": 1,
+                    "W": 1
+                }
             }
-        }
-    },
-    "Kor Haven": {
-        "mana": {
-            "mana_cost": "",
-            "splash": {
-                "W": 1
-            },
-            "pips": {
-                "W": 1
+        },
+        "Den of the Bugbear": {
+            "mana": {
+                "mana_cost": "",
+                "splash": {
+                    "R": 1
+                },
+                "pips": {
+                    "R": 1
+                }
             }
-        }
-    },
-    "Lair of the Hydra": {
-        "mana": {
-            "mana_cost": "",
-            "splash": {
-                "G": 1
-            },
-            "pips": {
-                "G": 1
+        },
+        "Kor Haven": {
+            "mana": {
+                "mana_cost": "",
+                "splash": {
+                    "W": 1
+                },
+                "pips": {
+                    "W": 1
+                }
             }
-        }
-    },
-    "Lingering Souls": {
-        "mana": {
-            "mana_cost": "{2}{W}",
-            "splash": {
-                "B": 1,
-                "W": 1
-            },
-            "pips": {
-                "B": 1,
-                "W": 1
+        },
+        "Lair of the Hydra": {
+            "mana": {
+                "mana_cost": "",
+                "splash": {
+                    "G": 1
+                },
+                "pips": {
+                    "G": 1
+                }
             }
-        }
-    },
-    "Nahiri, the Unforgiving": {
-        "mana": {
-            "mana_cost": "{1}{R}{R/W/P}{W}",
-            "splash": {
-                "R": 1,
-                "W": 1
-            },
-            "pips": {
-                "R": 1.5,
-                "W": 1.5
+        },
+        "Lingering Souls": {
+            "mana": {
+                "mana_cost": "{2}{W}",
+                "splash": {
+                    "B": 1,
+                    "W": 1
+                },
+                "pips": {
+                    "B": 1,
+                    "W": 1
+                }
             }
-        }
-    },
-    "Nissa, Ascended Animist": {
-        "mana": {
-            "mana_cost": "{3}{G}{G}{G/P}{G/P}",
-            "splash": {
-                "G": 1
-            },
-            "pips": {
-                "G": 3.0
+        },
+        "Nahiri, the Unforgiving": {
+            "mana": {
+                "mana_cost": "{1}{R}{R/W/P}{W}",
+                "splash": {
+                    "R": 1,
+                    "W": 1
+                },
+                "pips": {
+                    "R": 1.5,
+                    "W": 1.5
+                }
             }
-        }
-    },
-    "Otawara, Soaring City": {
-        "mana": {
-            "mana_cost": "",
-            "splash": {
-                "U": 1
-            },
-            "pips": {
-                "U": 1
+        },
+        "Nissa, Ascended Animist": {
+            "mana": {
+                "mana_cost": "{3}{G}{G}{G/P}{G/P}",
+                "splash": {
+                    "G": 1
+                },
+                "pips": {
+                    "G": 3.0
+                }
             }
-        }
-    },
-    "Phyrexian Fleshgorger": {
-        "mana": {
-            "mana_cost": "{7}",
-            "splash": {
-                "B": 0.5
-            },
-            "pips": {
-                "B": 1
+        },
+        "Otawara, Soaring City": {
+            "mana": {
+                "mana_cost": "",
+                "splash": {
+                    "U": 1
+                },
+                "pips": {
+                    "U": 1
+                }
             }
-        }
-    },
-    "Scrapheap Scrounger": {
-        "mana": {
-            "mana_cost": "{2}",
-            "splash": {
-                "B": 0.5
-            },
-            "pips": {
-                "B": 1
+        },
+        "Phyrexian Fleshgorger": {
+            "mana": {
+                "mana_cost": "{7}",
+                "splash": {
+                    "B": 0.5
+                },
+                "pips": {
+                    "B": 1
+                }
             }
-        }
-    },
-    "Spellskite": {
-        "mana": {
-            "mana_cost": "{2}",
-            "splash": {
-                "U": 0.5
-            },
-            "pips": {
-                "U": 0.5
+        },
+        "Scrapheap Scrounger": {
+            "mana": {
+                "mana_cost": "{2}",
+                "splash": {
+                    "B": 0.5
+                },
+                "pips": {
+                    "B": 1
+                }
             }
-        }
-    },
-    "Spymaster's Vault": {
-        "mana": {
-            "mana_cost": "",
-            "splash": {
-                "B": 1
-            },
-            "pips": {
-                "B": 1
+        },
+        "Spellskite": {
+            "mana": {
+                "mana_cost": "{2}",
+                "splash": {
+                    "U": 0.5
+                },
+                "pips": {
+                    "U": 0.5
+                }
             }
-        }
-    },
-    "Tasigur, the Golden Fang": {
-        "mana": {
-            "mana_cost": "{5}{B}",
-            "splash": {
-                "B": 1,
-                "G": 0.5,
-                "U": 0.5
-            },
-            "pips": {
-                "B": 1,
-                "G": 0.5,
-                "U": 0.5
+        },
+        "Spymaster's Vault": {
+            "mana": {
+                "mana_cost": "",
+                "splash": {
+                    "B": 1
+                },
+                "pips": {
+                    "B": 1
+                }
             }
-        }
-    },
-    "Transmogrant's Crown": {
-        "mana": {
-            "mana_cost": "{2}",
-            "splash": {
-                "B": 0.5
-            },
-            "pips": {
-                "B": 0.5
+        },
+        "Tasigur, the Golden Fang": {
+            "mana": {
+                "mana_cost": "{5}{B}",
+                "splash": {
+                    "B": 1,
+                    "G": 0.5,
+                    "U": 0.5
+                },
+                "pips": {
+                    "B": 1,
+                    "G": 0.5,
+                    "U": 0.5
+                }
             }
-        }
-    },
-    "Treetop Village": {
-        "mana": {
-            "mana_cost": "",
-            "splash": {
-                "G" : 1
-            },
-            "pips": {
-                "G" : 1
+        },
+        "Transmogrant's Crown": {
+            "mana": {
+                "mana_cost": "{2}",
+                "splash": {
+                    "B": 0.5
+                },
+                "pips": {
+                    "B": 0.5
+                }
             }
-        }
-    },
-    "Vedalken Shackles": {
-        "mana": {
-            "mana_cost": "{3}",
-            "splash": {
-                "U" : 1
-            },
-            "pips": {
-                "U" : 2
+        },
+        "Treetop Village": {
+            "mana": {
+                "mana_cost": "",
+                "splash": {
+                    "G" : 1
+                },
+                "pips": {
+                    "G" : 1
+                }
             }
-        }
-    },
-    "Volrath's Stronghold": {
-        "mana": {
-            "mana_cost": "",
-            "splash": {
-                "B" : 1
-            },
-            "pips": {
-                "B" : 1
+        },
+        "Vedalken Shackles": {
+            "mana": {
+                "mana_cost": "{3}",
+                "splash": {
+                    "U" : 1
+                },
+                "pips": {
+                    "U" : 2
+                }
+            }
+        },
+        "Volrath's Stronghold": {
+            "mana": {
+                "mana_cost": "",
+                "splash": {
+                    "B" : 1
+                },
+                "pips": {
+                    "B" : 1
+                }
             }
         }
     }

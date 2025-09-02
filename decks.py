@@ -15,22 +15,20 @@ def deck_name(pips, splash):
     has_splash = False
     sorted_pips = dict(sorted(pips.items(), key=lambda x: x[1], reverse=True))
     for key, value in sorted_pips.items():
-        print(f"key - {key}, value - {value}, splash[key] - {splash[key]}")
+       # print(f"key - {key}, value - {value}, splash[key] - {splash[key]}")
         if value < 1 or splash[key] < 1:
             continue
-        elif value < 7 or splash[key] < 4:
+        elif splash[key] <= 4:
             color_string += key.lower()
             has_splash = True
         else:
             color_string += key
     if not has_splash:
-        if "".join(sorted(color_string)) in deck_name_data["colors"]:
+        if len(color_string) == 1:
+            color_string = f"Mono-{deck_name_data["colors"][color_string]}"
+        elif "".join(sorted(color_string)) in deck_name_data["colors"]:
             color_string = deck_name_data["colors"]["".join(sorted(color_string))]
     return color_string
-
-
-
-
 
 def update_raw_colors():
     with raw_path.open("r", encoding="utf-8") as f:
@@ -79,5 +77,7 @@ def test_name():
     output = dict(sorted(output.items()))
     with test_path.open("w", encoding="utf-8") as f:
         f.write(json.dumps(output, indent=4))
+
+
 if __name__ == "__main__":
     test_name()

@@ -401,7 +401,7 @@
                     "W": 7,
                     "U": 8
                 },
-                "deck_name": "WUg"
+                "deck_name": "Bant"
             },
             {
                 "name": "big big big big dumps",
@@ -1118,7 +1118,7 @@
                     "U": 6,
                     "W": 9
                 },
-                "deck_name": "WRu"
+                "deck_name": "America"
             },
             {
                 "name": "Nenni",
@@ -1223,7 +1223,7 @@
                     "U": 7,
                     "B": 6
                 },
-                "deck_name": "GUb"
+                "deck_name": "Sultai"
             },
             {
                 "name": "Alexotl",
@@ -1942,7 +1942,7 @@
                     "U": 14,
                     "G": 6
                 },
-                "deck_name": "Ug"
+                "deck_name": "Simic"
             },
             {
                 "name": "Alexotl",
@@ -2051,7 +2051,7 @@
                     "U": 5,
                     "W": 0.5
                 },
-                "deck_name": "Bur"
+                "deck_name": "BUr"
             },
             {
                 "name": "big big big big dumps",
@@ -2156,7 +2156,7 @@
                     "B": 6,
                     "G": 0.5
                 },
-                "deck_name": "Wb"
+                "deck_name": "Orzhov"
             }
         ]
     },
@@ -2766,12 +2766,12 @@
                 ],
                 "pips": {
                     "W": 12.0,
-                    "B": 8,
+                    "B": 7.5,
                     "U": 4
                 },
                 "splash": {
                     "W": 11,
-                    "B": 7,
+                    "B": 6.5,
                     "U": 4
                 },
                 "deck_name": "WBu"
@@ -2879,7 +2879,7 @@
                     "R": 12,
                     "W": 2.5
                 },
-                "deck_name": "Rbw"
+                "deck_name": "RBw"
             }
         ]
     },
@@ -3997,14 +3997,14 @@
                 "pips": {
                     "G": 8,
                     "W": 18,
-                    "B": 1
+                    "B": 0.5
                 },
                 "splash": {
                     "G": 8,
                     "W": 15,
-                    "B": 1
+                    "B": 0.5
                 },
-                "deck_name": "WGb"
+                "deck_name": "Selesnya"
             },
             {
                 "name": "Nenni",
@@ -4216,7 +4216,7 @@
                     "W": 5.5,
                     "U": 8
                 },
-                "deck_name": "GUw"
+                "deck_name": "Bant"
             },
             {
                 "name": "big big big big dumps",
@@ -5033,14 +5033,14 @@
                 "pips": {
                     "R": 11.0,
                     "W": 8,
-                    "B": 4.0,
+                    "B": 3.5,
                     "U": 2,
                     "G": 5
                 },
                 "splash": {
                     "R": 8.5,
                     "W": 7,
-                    "B": 3.5,
+                    "B": 3.0,
                     "U": 2,
                     "G": 2
                 },
@@ -5450,7 +5450,7 @@
                     "U": 11,
                     "B": 3
                 },
-                "deck_name": "Ugwb"
+                "deck_name": "UGWb"
             },
             {
                 "name": "shinydog",
@@ -5662,7 +5662,7 @@
                     "G": 0.5,
                     "R": 17.0
                 },
-                "deck_name": "Rb"
+                "deck_name": "Rakdos"
             },
             {
                 "name": "big big big big dumps",
@@ -6167,7 +6167,7 @@
                     "G": 18.5,
                     "B": 0.5
                 },
-                "deck_name": "Green"
+                "deck_name": "Mono-Green"
             },
             {
                 "name": "Nenni",
@@ -6377,7 +6377,7 @@
                     "W": 5,
                     "G": 0.5
                 },
-                "deck_name": "BWu"
+                "deck_name": "Esper"
             },
             {
                 "name": "big big big big dumps",
@@ -6985,7 +6985,7 @@
                     "R": 17.5,
                     "W": 4.5
                 },
-                "deck_name": "Rw"
+                "deck_name": "Boros"
             },
             {
                 "name": "big big big big dumps",
@@ -8522,7 +8522,7 @@
                     "U": 12,
                     "R": 6
                 },
-                "deck_name": "URw"
+                "deck_name": "America"
             },
             {
                 "name": "big big big big dumps",
@@ -10063,7 +10063,7 @@
                     "B": 1.0,
                     "W": 4.5
                 },
-                "deck_name": "Rwb"
+                "deck_name": "RWb"
             }
         ]
     },
@@ -10677,7 +10677,7 @@
                     "W": 5,
                     "B": 5
                 },
-                "deck_name": "GBw"
+                "deck_name": "Junk"
             },
             {
                 "name": "Alexotl",
@@ -12008,7 +12008,7 @@
                     "U": 5,
                     "W": 7
                 },
-                "deck_name": "WBu"
+                "deck_name": "Esper"
             },
             {
                 "name": "Alexotl",
@@ -12937,7 +12937,7 @@
                     "R": 6,
                     "U": 5
                 },
-                "deck_name": "WRu"
+                "deck_name": "America"
             }
         ]
     },
@@ -13652,7 +13652,7 @@
                     "G": 5,
                     "W": 14
                 },
-                "deck_name": "Wug"
+                "deck_name": "Bant"
             }
         ]
     },
@@ -14060,7 +14060,7 @@
                     "G": 0.5,
                     "U": 0.5
                 },
-                "deck_name": "Brw"
+                "deck_name": "Mardu"
             },
             {
                 "name": "Nenni",
@@ -14274,7 +14274,7 @@
                     "R": 0.5,
                     "B": 1
                 },
-                "deck_name": "GUwb"
+                "deck_name": "GUWb"
             },
             {
                 "name": "big big big big dumps",
@@ -16526,7 +16526,7 @@
                     "G": 15,
                     "U": 4
                 },
-                "deck_name": "Simic"
+                "deck_name": "Gu"
             }
         ]
     },
@@ -17039,7 +17039,7 @@
                     "W": 1.0,
                     "U": 0.5
                 },
-                "deck_name": "RBgw"
+                "deck_name": "RBGw"
             },
             {
                 "name": "shinydog",
@@ -17758,7 +17758,7 @@
                     "U": 6.5,
                     "W": 5
                 },
-                "deck_name": "Uwgr"
+                "deck_name": "UWgR"
             },
             {
                 "name": "Nenni",
@@ -18370,7 +18370,7 @@
                 "splash": {
                     "R": 23
                 },
-                "deck_name": "Red"
+                "deck_name": "Mono-Red"
             },
             {
                 "name": "big big big big dumps",
@@ -18580,7 +18580,7 @@
                     "B": 0.5,
                     "U": 0.5
                 },
-                "deck_name": "White"
+                "deck_name": "Mono-White"
             },
             {
                 "name": "Nenni",
@@ -20531,7 +20531,7 @@
                     "R": 5,
                     "W": 4.5
                 },
-                "deck_name": "Brw"
+                "deck_name": "Mardu"
             },
             {
                 "name": "Nenni",
@@ -20741,7 +20741,7 @@
                     "G": 6,
                     "B": 0.5
                 },
-                "deck_name": "Wg"
+                "deck_name": "Selesnya"
             },
             {
                 "name": "big big big big dumps",
@@ -21973,7 +21973,7 @@
                     "R": 5.5,
                     "U": 5
                 },
-                "deck_name": "BRu"
+                "deck_name": "Grixis"
             },
             {
                 "name": "shinydog",
@@ -22183,7 +22183,7 @@
                     "G": 11.5,
                     "U": 6
                 },
-                "deck_name": "GBu"
+                "deck_name": "Sultai"
             },
             {
                 "name": "big big big big dumps",
@@ -22694,7 +22694,7 @@
                     "U": 0.5,
                     "B": 7
                 },
-                "deck_name": "WBrg"
+                "deck_name": "WBrG"
             },
             {
                 "name": "Nenni",
@@ -24130,7 +24130,7 @@
                     "G": 3.5,
                     "W": 0.5
                 },
-                "deck_name": "Bug"
+                "deck_name": "BUg"
             },
             {
                 "name": "big big big big dumps",
@@ -25683,7 +25683,7 @@
                     "B": 4.5,
                     "R": 10.5
                 },
-                "deck_name": "Rubw"
+                "deck_name": "RUBw"
             },
             {
                 "name": "Alexotl",
@@ -26398,7 +26398,7 @@
                     "W": 0.5,
                     "U": 0.5
                 },
-                "deck_name": "Green"
+                "deck_name": "Mono-Green"
             },
             {
                 "name": "big big big big dumps",
@@ -26610,7 +26610,7 @@
                     "R": 11.5,
                     "U": 4.5
                 },
-                "deck_name": "RGuw"
+                "deck_name": "RGUw"
             }
         ]
     },
@@ -27321,7 +27321,7 @@
                     "U": 5,
                     "B": 18
                 },
-                "deck_name": "Bu"
+                "deck_name": "Dimir"
             }
         ]
     },
@@ -28658,7 +28658,7 @@
                     "G": 6,
                     "W": 5
                 },
-                "deck_name": "Ugw"
+                "deck_name": "Bant"
             },
             {
                 "name": "big big big big dumps",
@@ -31423,7 +31423,7 @@
                     "U": 4.5,
                     "B": 5
                 },
-                "deck_name": "GRub"
+                "deck_name": "GRUB"
             },
             {
                 "name": "Alexotl",
@@ -33578,7 +33578,7 @@
                     "R": 18.5,
                     "U": 0.5
                 },
-                "deck_name": "Red"
+                "deck_name": "Mono-Red"
             },
             {
                 "name": "Alexotl",
@@ -34301,7 +34301,7 @@
                     "W": 10,
                     "R": 0.5
                 },
-                "deck_name": "WUb"
+                "deck_name": "Esper"
             },
             {
                 "name": "Nenni",
@@ -34511,7 +34511,7 @@
                     "R": 12,
                     "U": 9
                 },
-                "deck_name": "RUw"
+                "deck_name": "America"
             }
         ]
     },
@@ -35127,7 +35127,7 @@
                     "R": 5,
                     "B": 11.0
                 },
-                "deck_name": "BGr"
+                "deck_name": "Jund"
             },
             {
                 "name": "big big big big dumps",
@@ -36351,7 +36351,7 @@
                     "W": 17,
                     "B": 0.5
                 },
-                "deck_name": "White"
+                "deck_name": "Mono-White"
             },
             {
                 "name": "Nenni",
@@ -37799,7 +37799,7 @@
                     "G": 4.5,
                     "W": 0.5
                 },
-                "deck_name": "Ubg"
+                "deck_name": "Sultai"
             },
             {
                 "name": "Alexotl",
@@ -38837,7 +38837,7 @@
                     "W": 6.5,
                     "G": 0.5
                 },
-                "deck_name": "UWb"
+                "deck_name": "Esper"
             }
         ]
     },
@@ -39243,7 +39243,7 @@
                     "B": 5,
                     "U": 0.5
                 },
-                "deck_name": "RGb"
+                "deck_name": "Jund"
             },
             {
                 "name": "Nenni",
@@ -39951,13 +39951,13 @@
                     "Colossal Skyturtle"
                 ],
                 "pips": {
-                    "G": 16,
+                    "G": 15,
                     "U": 14.0,
                     "R": 2.0
                 },
                 "splash": {
-                    "G": 12,
-                    "U": 10.5,
+                    "G": 11.5,
+                    "U": 10.0,
                     "R": 1.5
                 },
                 "deck_name": "GUr"
@@ -41394,7 +41394,7 @@
                     "G": 6.5,
                     "W": 8
                 },
-                "deck_name": "WBg"
+                "deck_name": "Junk"
             },
             {
                 "name": "Alexotl",
@@ -42430,7 +42430,7 @@
                     "G": 6,
                     "B": 0.5
                 },
-                "deck_name": "Rg"
+                "deck_name": "Gruul"
             }
         ]
     },
@@ -43149,7 +43149,7 @@
                     "U": 10.0,
                     "R": 7.5
                 },
-                "deck_name": "UGRb"
+                "deck_name": "UGRB"
             }
         ]
     },
@@ -43752,14 +43752,14 @@
                     "Ugin, the Spirit Dragon"
                 ],
                 "pips": {
-                    "G": 29,
+                    "G": 28,
                     "U": 1
                 },
                 "splash": {
-                    "G": 16,
-                    "U": 1
+                    "G": 15.5,
+                    "U": 0.5
                 },
-                "deck_name": "Gu"
+                "deck_name": "Mono-Green"
             },
             {
                 "name": "big big big big dumps",
@@ -44985,7 +44985,7 @@
                     "U": 9.0,
                     "G": 2
                 },
-                "deck_name": "Urg"
+                "deck_name": "URg"
             },
             {
                 "name": "Alexotl",
@@ -45813,7 +45813,7 @@
                     "G": 5,
                     "W": 0.5
                 },
-                "deck_name": "Brg"
+                "deck_name": "Jund"
             },
             {
                 "name": "big big big big dumps",
@@ -46023,7 +46023,7 @@
                     "R": 4.5,
                     "W": 2
                 },
-                "deck_name": "Urw"
+                "deck_name": "URw"
             }
         ]
     },
@@ -46525,12 +46525,12 @@
                 "pips": {
                     "R": 6,
                     "U": 13.5,
-                    "G": 13
+                    "G": 12
                 },
                 "splash": {
                     "R": 4,
-                    "U": 10.5,
-                    "G": 9
+                    "U": 10.0,
+                    "G": 8.5
                 },
                 "deck_name": "UGr"
             },
@@ -47142,7 +47142,7 @@
                     "R": 9,
                     "W": 5
                 },
-                "deck_name": "GRw"
+                "deck_name": "Naya"
             },
             {
                 "name": "Nenni",
@@ -47356,7 +47356,7 @@
                     "G": 0.5,
                     "W": 0.5
                 },
-                "deck_name": "Ubr"
+                "deck_name": "Grixis"
             },
             {
                 "name": "big big big big dumps",
@@ -47453,12 +47453,12 @@
                 ],
                 "pips": {
                     "W": 3,
-                    "B": 11,
+                    "B": 10.5,
                     "U": 14.5
                 },
                 "splash": {
                     "W": 3,
-                    "B": 8,
+                    "B": 7.5,
                     "U": 10.5
                 },
                 "deck_name": "UBw"
@@ -47974,7 +47974,7 @@
                     "W": 1,
                     "R": 1
                 },
-                "deck_name": "Bgurw"
+                "deck_name": "BgUrw"
             },
             {
                 "name": "Alexotl",
@@ -48079,7 +48079,7 @@
                     "W": 6,
                     "G": 11
                 },
-                "deck_name": "GBw"
+                "deck_name": "Junk"
             },
             {
                 "name": "big big big big dumps",
@@ -49309,7 +49309,7 @@
                     "G": 6.5,
                     "U": 3.5
                 },
-                "deck_name": "Gbuw"
+                "deck_name": "GBuw"
             },
             {
                 "name": "Nenni",
@@ -49510,11 +49510,11 @@
                     "Force of Will"
                 ],
                 "pips": {
-                    "B": 15,
+                    "B": 14.5,
                     "U": 12.0
                 },
                 "splash": {
-                    "B": 13,
+                    "B": 12.5,
                     "U": 8.0
                 },
                 "deck_name": "Dimir"
@@ -50236,7 +50236,7 @@
                     "B": 6.0,
                     "W": 2
                 },
-                "deck_name": "UBrw"
+                "deck_name": "UBRw"
             },
             {
                 "name": "big big big big dumps",
@@ -50747,7 +50747,7 @@
                     "U": 5.5,
                     "W": 0.5
                 },
-                "deck_name": "RUb"
+                "deck_name": "Grixis"
             },
             {
                 "name": "Nenni",
@@ -51680,7 +51680,7 @@
                     "W": 8.5,
                     "R": 1
                 },
-                "deck_name": "BWgr"
+                "deck_name": "BWGr"
             },
             {
                 "name": "big big big big dumps",
@@ -52193,7 +52193,7 @@
                     "U": 5.5,
                     "W": 4
                 },
-                "deck_name": "Guw"
+                "deck_name": "GUw"
             },
             {
                 "name": "shinydog",
@@ -53025,7 +53025,7 @@
                     "W": 4.5,
                     "R": 9
                 },
-                "deck_name": "BRw"
+                "deck_name": "Mardu"
             },
             {
                 "name": "Nenni",
@@ -53130,7 +53130,7 @@
                     "W": 9.5,
                     "R": 5
                 },
-                "deck_name": "WGr"
+                "deck_name": "Naya"
             },
             {
                 "name": "big big big big dumps",
@@ -54347,13 +54347,13 @@
                     "Mirari's Wake"
                 ],
                 "pips": {
-                    "B": 9.5,
+                    "B": 9.0,
                     "G": 10.5,
                     "R": 3,
                     "W": 4
                 },
                 "splash": {
-                    "B": 8.5,
+                    "B": 8.0,
                     "G": 9.5,
                     "R": 3,
                     "W": 3
@@ -55075,7 +55075,7 @@
                     "U": 12.5,
                     "G": 4
                 },
-                "deck_name": "Urg"
+                "deck_name": "URg"
             },
             {
                 "name": "Alexotl",
@@ -55277,15 +55277,15 @@
                     "G": 20.0,
                     "W": 7,
                     "U": 0.5,
-                    "B": 1
+                    "B": 0.5
                 },
                 "splash": {
                     "G": 15,
                     "W": 6,
                     "U": 0.5,
-                    "B": 1
+                    "B": 0.5
                 },
-                "deck_name": "GWb"
+                "deck_name": "Selesnya"
             },
             {
                 "name": "Nenni",
@@ -56525,7 +56525,7 @@
                     "W": 1.5,
                     "U": 0.5
                 },
-                "deck_name": "GRbw"
+                "deck_name": "GRBw"
             },
             {
                 "name": "Nenni",
@@ -56632,7 +56632,7 @@
                     "U": 6,
                     "W": 5
                 },
-                "deck_name": "Guw"
+                "deck_name": "Bant"
             },
             {
                 "name": "Alexotl",
@@ -57355,7 +57355,7 @@
                     "U": 4.5,
                     "B": 1.5
                 },
-                "deck_name": "Wugb"
+                "deck_name": "WUgb"
             },
             {
                 "name": "Nenni",
@@ -57462,7 +57462,7 @@
                     "R": 10,
                     "W": 0.5
                 },
-                "deck_name": "Jund"
+                "deck_name": "RGb"
             },
             {
                 "name": "Alexotl",
@@ -57963,15 +57963,15 @@
                 ],
                 "pips": {
                     "R": 16.0,
-                    "B": 6.0,
+                    "B": 5.5,
                     "W": 1
                 },
                 "splash": {
                     "R": 14.5,
-                    "B": 5.0,
+                    "B": 4.5,
                     "W": 1
                 },
-                "deck_name": "Rbw"
+                "deck_name": "RBw"
             },
             {
                 "name": "Nenni",
@@ -58797,7 +58797,7 @@
                     "U": 7.5,
                     "B": 4.5
                 },
-                "deck_name": "RUb"
+                "deck_name": "Grixis"
             },
             {
                 "name": "shinydog",
@@ -58902,7 +58902,7 @@
                     "G": 5.0,
                     "W": 9.5
                 },
-                "deck_name": "WBg"
+                "deck_name": "Junk"
             },
             {
                 "name": "big big big big dumps",
@@ -59518,7 +59518,7 @@
                     "U": 6,
                     "W": 1.0
                 },
-                "deck_name": "Buw"
+                "deck_name": "BUw"
             },
             {
                 "name": "Alexotl",
@@ -59623,7 +59623,7 @@
                     "G": 9.5,
                     "R": 5
                 },
-                "deck_name": "GBr"
+                "deck_name": "Jund"
             },
             {
                 "name": "big big big big dumps",
@@ -59721,16 +59721,16 @@
                 "pips": {
                     "R": 23.0,
                     "W": 7,
-                    "B": 1,
+                    "B": 0.5,
                     "U": 1.0
                 },
                 "splash": {
                     "R": 18.5,
                     "W": 4,
-                    "B": 1,
+                    "B": 0.5,
                     "U": 0.5
                 },
-                "deck_name": "RWb"
+                "deck_name": "Rw"
             }
         ]
     }
