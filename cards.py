@@ -22,13 +22,14 @@ def assign_colors(data, exceptions, card_name):
         mana_string = None
     # handling for multiface cards
     elif "card_faces" in card_entry[0]:
+        type_lines = [d["type_line"] for d in card_entry[0]["card_faces"]]
         # filters out all non-mana faces (uncastable flips, lands)
         mana_cost_faces = [face for face in card_entry[0]["card_faces"] if face["mana_cost"] != ""]
         # multiple faces, count as half pips per side
-        if len(mana_cost_faces) > 1:
+        if any("Land" in w for w in type_lines) or len(mana_cost_faces) > 1:
             half_mana_string = "".join(m["mana_cost"] for m in mana_cost_faces).lower()
-            mana_string = mana_cost_faces[0]["mana_cost"]
-        elif len(mana_cost_faces) == 1:
+        
+        if len(mana_cost_faces) >= 1:
             mana_string = mana_cost_faces[0]["mana_cost"]
         else:
             mana_string = ""
@@ -46,7 +47,7 @@ def assign_colors(data, exceptions, card_name):
         splash_value = 1
         for s in symbols:
             # skip colorless pips
-            if(not s or s.isnumeric() or s in colorless_symbols):
+            if(not s or s.isnumeric() or s.upper() in colorless_symbols):
                 continue
             # process colorless as half pips, including phyrexian mana
             if("/" in s):
@@ -62,7 +63,7 @@ def assign_colors(data, exceptions, card_name):
             else:
                 pips[s] = pips.get(s, 0) + 1
         for p in pips:
-            splash[p] = splash.get(p,0) + splash_value
+            splash[p] = splash.get(p, 0) + splash_value
         return splash, pips
 
     if half_mana_string:
@@ -72,6 +73,8 @@ def assign_colors(data, exceptions, card_name):
     color_profile = {"mana_cost" : mana_string,
                     "splash" : splash,
                     "pips" : pips}
+    if "produced_mana" in card_entry[0]:
+        color_profile["produced_mana"] = card_entry[0]["produced_mana"]
     return color_profile
 
 def generate_list():
@@ -86,6 +89,8 @@ def generate_list():
         for pack in draft["packs"]:
             for card in pack["cards"]:
                 unique_cards.add(card)
+    for basic in exception_data["basics"]:
+        unique_cards.add(basic)
     card_dict = {}
     for card in unique_cards:
         temp_dict = {"mana" : assign_colors(oracle_data, exception_data, card),
@@ -93,8 +98,8 @@ def generate_list():
         alias = helper.card_alias(card)
         if alias:
             temp_dict["alias"] = alias
-        
         card_dict[card] = temp_dict
+        
     card_dict = dict(sorted(card_dict.items()))
     with list_path.open("w", encoding="utf-8") as f:
         f.write(json.dumps(card_dict, indent=4))

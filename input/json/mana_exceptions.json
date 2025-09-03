@@ -1,6 +1,60 @@
 {
     "basics": {
-
+        "Snow-Covered Plains": {
+            "mana": {
+                "mana_cost": "",
+                "splash": {},
+                "pips": {},
+                "produced_mana": [
+                    "W"
+                ]
+            },
+            "tags": []
+        },
+        "Snow-Covered Island": {
+            "mana": {
+                "mana_cost": "",
+                "splash": {},
+                "pips": {},
+                "produced_mana": [
+                    "U"
+                ]
+            },
+            "tags": []
+        },
+        "Snow-Covered Swamp": {
+            "mana": {
+                "mana_cost": "",
+                "splash": {},
+                "pips": {},
+                "produced_mana": [
+                    "B"
+                ]
+            },
+            "tags": []
+        },
+        "Snow-Covered Mountain": {
+            "mana": {
+                "mana_cost": "",
+                "splash": {},
+                "pips": {},
+                "produced_mana": [
+                    "R"
+                ]
+            },
+            "tags": []
+        },
+        "Snow-Covered Forest": {
+            "mana": {
+                "mana_cost": "",
+                "splash": {},
+                "pips": {},
+                "produced_mana": [
+                    "G"
+                ]
+            },
+            "tags": []
+        }
     },
     "exceptions": {
         "Academy Ruins": {
@@ -11,7 +65,10 @@
                 },
                 "pips": {
                     "U": 1
-                }
+                },
+                "produced_mana": [
+                    "C"
+                ]
             }
         },
         "Alesha, Who Smiles at Death": {
@@ -102,7 +159,10 @@
                 },
                 "pips": {
                     "R": 1
-                }
+                },
+                "produced_mana": [
+                    "R"
+                ]
             }
         },
         "Kor Haven": {
@@ -113,7 +173,10 @@
                 },
                 "pips": {
                     "W": 1
-                }
+                },
+                "produced_mana": [
+                    "C"
+                ]
             }
         },
         "Lair of the Hydra": {
@@ -124,7 +187,10 @@
                 },
                 "pips": {
                     "G": 1
-                }
+                },
+                "produced_mana": [
+                    "G"
+                ]
             }
         },
         "Lingering Souls": {
@@ -172,7 +238,10 @@
                 },
                 "pips": {
                     "U": 1
-                }
+                },
+                "produced_mana": [
+                    "U"
+                ]
             }
         },
         "Phyrexian Fleshgorger": {
@@ -216,7 +285,10 @@
                 },
                 "pips": {
                     "B": 1
-                }
+                },
+                "produced_mana": [
+                    "B"
+                ]
             }
         },
         "Tasigur, the Golden Fang": {
@@ -253,7 +325,10 @@
                 },
                 "pips": {
                     "G" : 1
-                }
+                },
+                "produced_mana": [
+                    "G"
+                ]
             }
         },
         "Vedalken Shackles": {
@@ -275,7 +350,10 @@
                 },
                 "pips": {
                     "B" : 1
-                }
+                },
+                "produced_mana": [
+                    "C"
+                ]
             }
         }
     }

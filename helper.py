@@ -36,4 +36,3 @@ def card_alias(card_name, shorten=True):
             return card_list[card_name]["alias"]
         return None
     
-    
