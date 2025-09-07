@@ -1146,6 +1146,18 @@
         },
         "tags": []
     },
+    "Brainsurge": {
+        "mana": {
+            "mana_cost": "{2}{U}",
+            "splash": {
+                "U": 1
+            },
+            "pips": {
+                "U": 1
+            }
+        },
+        "tags": []
+    },
     "Brazen Borrower // Petty Theft": {
         "mana": {
             "mana_cost": "{1}{U}{U}",
@@ -1182,6 +1194,22 @@
             }
         },
         "tags": []
+    },
+    "Brightcap Badger // Fungus Frolic": {
+        "mana": {
+            "mana_cost": "{3}{G}",
+            "splash": {
+                "G": 1
+            },
+            "pips": {
+                "G": 1.0
+            },
+            "produced_mana": [
+                "G"
+            ]
+        },
+        "tags": [],
+        "alias": "Brightcap Badger"
     },
     "Brimaz, King of Oreskos": {
         "mana": {
@@ -3460,6 +3488,22 @@
         },
         "tags": []
     },
+    "Fell the Profane // Fell Mire": {
+        "mana": {
+            "mana_cost": "{2}{B}{B}",
+            "splash": {
+                "B": 1
+            },
+            "pips": {
+                "B": 1.0
+            },
+            "produced_mana": [
+                "B"
+            ]
+        },
+        "tags": [],
+        "alias": "Fell the Profane"
+    },
     "Fetid Heath": {
         "mana": {
             "mana_cost": "",
@@ -4237,6 +4281,18 @@
                 "B",
                 "W"
             ]
+        },
+        "tags": []
+    },
+    "Goldvein Hydra": {
+        "mana": {
+            "mana_cost": "{X}{G}",
+            "splash": {
+                "G": 1
+            },
+            "pips": {
+                "G": 1
+            }
         },
         "tags": []
     },
@@ -6241,6 +6297,21 @@
         "tags": [],
         "alias": "Malevolent Hermit"
     },
+    "Malevolent Rumble": {
+        "mana": {
+            "mana_cost": "{1}{G}",
+            "splash": {
+                "G": 1
+            },
+            "pips": {
+                "G": 1
+            },
+            "produced_mana": [
+                "C"
+            ]
+        },
+        "tags": []
+    },
     "Man-o'-War": {
         "mana": {
             "mana_cost": "{2}{U}",
@@ -7964,6 +8035,18 @@
         },
         "tags": []
     },
+    "Pyrogoyf": {
+        "mana": {
+            "mana_cost": "{3}{R}",
+            "splash": {
+                "R": 1
+            },
+            "pips": {
+                "R": 1
+            }
+        },
+        "tags": []
+    },
     "Qasali Pridemage": {
         "mana": {
             "mana_cost": "{G}{W}",
@@ -9148,6 +9231,14 @@
         },
         "tags": []
     },
+    "Shadowspear": {
+        "mana": {
+            "mana_cost": "{1}",
+            "splash": {},
+            "pips": {}
+        },
+        "tags": []
+    },
     "Shadowy Backstreet": {
         "mana": {
             "mana_cost": "",
@@ -9233,6 +9324,18 @@
             },
             "pips": {
                 "B": 2
+            }
+        },
+        "tags": []
+    },
+    "Shoreline Looter": {
+        "mana": {
+            "mana_cost": "{1}{U}",
+            "splash": {
+                "U": 1
+            },
+            "pips": {
+                "U": 1
             }
         },
         "tags": []
@@ -9406,6 +9509,18 @@
             },
             "pips": {
                 "W": 1
+            }
+        },
+        "tags": []
+    },
+    "Slickshot Show-Off": {
+        "mana": {
+            "mana_cost": "{1}{R}",
+            "splash": {
+                "R": 1
+            },
+            "pips": {
+                "R": 1
             }
         },
         "tags": []
@@ -9732,6 +9847,18 @@
     "Spore Frog": {
         "mana": {
             "mana_cost": "{G}",
+            "splash": {
+                "G": 1
+            },
+            "pips": {
+                "G": 1
+            }
+        },
+        "tags": []
+    },
+    "Springheart Nantuko": {
+        "mana": {
+            "mana_cost": "{1}{G}",
             "splash": {
                 "G": 1
             },
@@ -10926,6 +11053,18 @@
         },
         "tags": []
     },
+    "Tishana's Tidebinder": {
+        "mana": {
+            "mana_cost": "{2}{U}",
+            "splash": {
+                "U": 1
+            },
+            "pips": {
+                "U": 1
+            }
+        },
+        "tags": []
+    },
     "Titan of Industry": {
         "mana": {
             "mana_cost": "{4}{G}{G}{G}",
@@ -11867,6 +12006,20 @@
         },
         "tags": []
     },
+    "Wight of the Reliquary": {
+        "mana": {
+            "mana_cost": "{B}{G}",
+            "splash": {
+                "B": 1,
+                "G": 1
+            },
+            "pips": {
+                "B": 1,
+                "G": 1
+            }
+        },
+        "tags": []
+    },
     "Wildfire": {
         "mana": {
             "mana_cost": "{4}{R}{R}",
@@ -11918,6 +12071,22 @@
             "pips": {}
         },
         "tags": []
+    },
+    "Witch Enchanter // Witch-Blessed Meadow": {
+        "mana": {
+            "mana_cost": "{3}{W}",
+            "splash": {
+                "W": 1
+            },
+            "pips": {
+                "W": 0.5
+            },
+            "produced_mana": [
+                "W"
+            ]
+        },
+        "tags": [],
+        "alias": "Witch Enchanter"
     },
     "Witness Protection": {
         "mana": {

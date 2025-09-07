@@ -1,192 +1,192 @@
-Master of Death
-Reclamation Sage
-Goblin Cratermaker
-Duelist of the Mind
-Unmarked Grave
-Pack Rat
-Mana Confluence
-Astrid Peth
-Disruptor Flute
-Arcum's Astrolabe
-Wrenn and Six
-Raugrin Triome
-Anim Pakal, Thousandth Moon
-Virtue of Loyalty // Ardenvale Fealty
-Giver of Runes
-#413
-Phelia, Exuberant Shepherd
-Silent Clearing
-Sorcerous Spyglass
-Savai Triome
-Stirring Wildwood
-Trumpeting Carnosaur
-Lethal Scheme
-Ugin, the Spirit Dragon
-Saheeli, Filigree Master
-Chrome Mox
-Abundant Harvest
-Temple Garden
-Mana Leak
-Irreverent Revelers
-Misty Rainforest
-#413
-Natural Order
-Sinkhole
-Kitchen Finks
-Lingering Souls
-Watery Grave
-Phlage, Titan of Fire's Fury
-Fanatic of Rhonas
-Undercity Sewers
-Death-Greeter's Champion
-Faerie Mastermind
-Ponder
-Hired Claw
-Tolarian Academy
-Sunbaked Canyon
-Thalia, Guardian of Thraben
-#413
-Through the Breach
-Time Warp
-Flash
-Volcanic Island
-Sword of Body and Mind
-Xander's Lounge
-Guardian Scalelord
-Strangleroot Geist
-Liliana of the Veil
-Smirking Spelljacker
-Oliphaunt
-Light Up the Night
-Deep-Cavern Bat
-Murderous Redcap
-Porcelain Legionnaire
-#413
-Marsh Flats
-Luminarch Aspirant
-Birds of Paradise
-Emberheart Challenger
-Knight of Autumn
-Boseiju, Who Endures
-Mother of Runes
-Dress Down
-Polluted Delta
-Ertai Resurrected
-Inti, Seneschal of the Sun
-Nissa, Who Shakes the World
-Urza, Lord High Artificer
-City of Death
-Éomer, King of Rohan
-#413
-Grim Monolith
-Ravages of War
-Nissa, Voice of Zendikar
-Cathar Commando
-Hostile Investigator
-Spellskite
-Chain Lightning
-Subtlety
-Eagles of the North
-Breeding Pool
-Restless Spire
-Land Tax
-Unlicensed Hearse
-Lutri, the Spellchaser
-Yawgmoth's Will
-#413
-The Wandering Emperor
-Thragtusk
-Imperial Seal
-Triplicate Titan
-Cankerbloom
-Commercial District
-Wheel of Fortune
-Containment Construct
-Conspiracy Theorist
-Elspeth, Knight-Errant
-Solemn Simulacrum
-Skullclamp
-Stomping Ground
-Scavenging Ooze
-Underground Sea
-#413
-Retrofitter Foundry
-Teferi, Time Raveler
-Flametongue Yearling
-Force of Will
-Demonic Tutor
-Kaya, Ghost Assassin
-Legion Extruder
-Demand Answers
-Barrowgoyf
-Lightning Strike
-Blood Artist
-Sink into Stupor // Soporific Springs
-Ledger Shredder
+Swords to Plowshares
 Guide of Souls
-Emrakul, the Promised End
-#413
-Denethor, Stone Seer
-Entomb
+Whirler Rogue
+Sorin of House Markov // Sorin, Ravenous Neonate
 Tamiyo, Inquisitive Student // Tamiyo, Seasoned Scholar
-Goblin Bombardment
-Solitude
-Worldspine Wurm
-Pest Infestation
-Dig Through Time
-Treasure Map // Treasure Cove
-Incendiary Flow
-Emry, Lurker of the Loch
-Animate Dead
-Ignoble Hierarch
-Engineered Explosives
-Consider
+Vendilion Clique
+Torsten, Founder of Benalia
+Karakas
+Dragon's Rage Channeler
+Lutri, the Spellchaser
+Solemn Simulacrum
+Intrepid Adversary
+Horizon Canopy
+Fell the Profane // Fell Mire
+Delayed Blast Fireball
 #413
-Shark Typhoon
-Bitterblossom
-Wilt
-Waterlogged Grove
-Atraxa, Grand Unifier
-Gemstone Mine
-Brazen Borrower // Petty Theft
-Ornery Tumblewagg
-Abuelo, Ancestral Echo
-Show and Tell
-Smuggler's Surprise
+Umezawa's Jitte
+Ertai Resurrected
+Palace Jailer
 Gravecrawler
-Lotus Petal
-Kitsa, Otterball Elite
-Tropical Island
-#413
-Six
+Gaea's Cradle
+Fall from Favor
+Show and Tell
 Vampiric Tutor
-Regrowth
-Wildfire
-Godless Shrine
-Duress
-Etali, Primal Conqueror // Etali, Primal Sickness
-Glen Elendra Archmage
-Tarmogoyf
-Hellrider
-Kami of False Hope
-Agatha's Soul Cauldron
-Samwise the Stouthearted
-Mox Diamond
-Stern Scolding
-#413
-Hymn to Tourach
-Collector's Cage
-Vaultborn Tyrant
-Nevinyrral's Disk
-Memory Lapse
-Kari Zev, Skyship Raider
-Young Pyromancer
-Sakura-Tribe Elder
-Flare of Denial
-Laelia, the Blade Reforged
-Damnation
-Transmogrant's Crown
+Vivien, Monsters' Advocate
+Moat
 Fury
-Baleful Mastery
-Tinker
+Waterlogged Grove
+Misty Rainforest
+Zagoth Triome
+Goldvein Hydra
+#413
+Strangleroot Geist
+Denethor, Stone Seer
+Nature's Lore
+Delighted Halfling
+Plague Engineer
+Rancor
+Grim Monolith
+Braids, Cabal Minion
+Daretti, Ingenious Iconoclast
+Bonecrusher Giant // Stomp
+Pawpatch Recruit
+Bitterblossom
+Chandra, Torch of Defiance
+Liliana, the Last Hope
+Shadowspear
+#413
+Eater of Virtue
+Occult Epiphany
+Skyclave Apparition
+Karn, Scion of Urza
+Thragtusk
+Headliner Scarlett
+Abundant Harvest
+Elspeth, Knight-Errant
+Ignoble Hierarch
+Subtlety
+Deep-Cavern Bat
+Sword of Fire and Ice
+Maze of Ith
+Wheel of Misfortune
+Windswept Heath
+#413
+Lightning Strike
+Xander's Lounge
+Cut Down
+Sakura-Tribe Elder
+Deep Forest Hermit
+Generous Ent
+Flames of the Firebrand
+Duress
+Regrowth
+Birds of Paradise
+Springheart Nantuko
+Scavenging Ooze
+Restless Vinestalk
+Searing Spear
+Tarmogoyf
+#413
+Blood Artist
+The Scarab God
+Metallic Mimic
+Embereth Shieldbreaker // Battle Display
+Grief
+Thirst for Discovery
+Guardian Scalelord
+Bounty Board
+Mishra's Bauble
+Disruptor Flute
+Legion Extruder
+Eagles of the North
+Six
+Tangle Wire
+Vaultborn Tyrant
+#413
+Wildfire
+Pest Infestation
+Witch Enchanter // Witch-Blessed Meadow
+Arbor Elf
+Esika's Chariot
+Incinerate
+Syr Ginger, the Meal Ender
+Memory Lapse
+Unmarked Grave
+Arcum's Astrolabe
+Hostile Investigator
+Pack Rat
+Planar Disruption
+Triplicate Titan
+Fanatic of Rhonas
+#413
+Sylvan Library
+Falkenrath Pit Fighter
+Firestorm
+Sandstorm Salvager
+Raging Ravine
+Wight of the Reliquary
+Fabled Passage
+Upheaval
+Éomer, King of Rohan
+Restoration Angel
+Sword of Body and Mind
+Brazen Borrower // Petty Theft
+Counterspell
+Hellrider
+Tishana's Tidebinder
+#413
+Stomping Ground
+Fable of the Mirror-Breaker // Reflection of Kiki-Jiki
+Shoreline Looter
+Manglehorn
+Sorcerous Spyglass
+Brainsurge
+Mosswood Dreadknight // Dread Whispers
+Malevolent Rumble
+Narset, Parter of Veils
+Ancient Tomb
+Badlands
+Mawloc
+Bloodsoaked Champion
+Snuff Out
+Eternal Witness
+#413
+Chart a Course
+Young Pyromancer
+Psionic Blast
+Cryptic Coat
+Breeding Pool
+Gilded Goose
+Cathar Commando
+Twinshot Sniper
+Radha's Firebrand
+Seasoned Hallowblade
+Luminarch Aspirant
+Lurrus of the Dream-Den
+Old One Eye
+Anim Pakal, Thousandth Moon
+Slickshot Show-Off
+#413
+Garruk Wildspeaker
+Pyrogoyf
+Shorikai, Genesis Engine
+Smuggler's Surprise
+Through the Breach
+Scrapheap Scrounger
+Ghostfire Slice
+Enlightened Tutor
+Bonesplitter
+Tropical Island
+Brightcap Badger // Fungus Frolic
+Kaya, Intangible Slayer
+Mana Leak
+Astrid Peth
+Zurgo Bellstriker
+#413
+Angel of Invention
+Fulminator Mage
+Recruiter of the Guard
+Bayou
+Kitsa, Otterball Elite
+Night Scythe
+Usher of the Fallen
+Walking Ballista
+Voldaren Bloodcaster // Bloodbat Summoner
+Agatha's Soul Cauldron
+Godless Shrine
+Mother of Runes
+Worldly Tutor
+Urza's Saga
+Third Path Iconoclast
 #413
