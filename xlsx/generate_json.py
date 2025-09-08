@@ -3,20 +3,18 @@ import json
 import pandas as pd
 from pathlib import Path
 
-save_path = os.path.dirname(f"{os.getcwd()}/input/xlsx/")
+save_path = Path.cwd().joinpath("input", "xlsx")
+raw_path = Path.cwd().joinpath("output", "raw.json")
 
 def generate_json():
-    input_files = os.listdir(save_path)
     draft_records = []
-
-    for f in input_files:
-        file_num, file_ext = os.path.splitext(f)
-        file_name = os.path.join(save_path, f)
-        if file_ext != ".xlsx":
+    for f in save_path.iterdir():
+        if f.suffix != ".xlsx":
             continue
+        file_num = f.stem
 
-        date_sheet = pd.read_excel(file_name, sheet_name = "Date", header = None)
-        match_sheet = pd.read_excel(file_name, sheet_name = "Results",
+        date_sheet = pd.read_excel(f, sheet_name = "Date", header = None)
+        match_sheet = pd.read_excel(f, sheet_name = "Results",
                                     usecols = [0,1,2])
         matches = []
         def write_match_row(row):
@@ -45,7 +43,7 @@ def generate_json():
                  "packs" : [], "players" : []}
         
         #writes the pack pick order
-        pack_sheet = pd.read_excel(file_name, sheet_name="Draft",
+        pack_sheet = pd.read_excel(f, sheet_name="Draft",
                                    skiprows=[16,32], usecols=[5,6,7,8],
                                    header=0)
         seat_counter = 1
@@ -60,12 +58,12 @@ def generate_json():
             seat_to_player[series_name.removesuffix(".1")] = seat_counter
             seat_counter += 1
         
-        rank_sheet = pd.read_excel(file_name, sheet_name = "Results",
+        rank_sheet = pd.read_excel(f, sheet_name = "Results",
                                    usecols = [4], skiprows = [5,6])
-        player_sheet = pd.read_excel(file_name, sheet_name = "Draft",
+        player_sheet = pd.read_excel(f, sheet_name = "Draft",
                                      skiprows = [16,32], usecols = [0,1,2,3],
                                      header = 0)
-        deck_sheet = pd.read_excel(file_name, sheet_name = "Play").dropna()
+        deck_sheet = pd.read_excel(f, sheet_name = "Play").dropna()
 
         #write player pick order- TODO: remove nested for and change to mapping
         for index, row in rank_sheet.iterrows():
@@ -81,9 +79,8 @@ def generate_json():
                     p["decklist"] = series.to_list()
             
         draft_records.append(draft)
-    f = open(f"{os.getcwd()}/output/raw.json", "w")
-    f.write(json.dumps(draft_records, indent=4, default=str))
-    f.close()
+    with raw_path.open("w", encoding="utf-8") as f:
+        f.write(json.dumps(draft_records, indent=4, default=str))
 
 if __name__ == "__main__":
     generate_json()
