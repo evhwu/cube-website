@@ -2,12 +2,17 @@ import os
 import json
 import pandas as pd
 from pathlib import Path
+from helper import get_oracle_path
 
 save_path = Path.cwd().joinpath("input", "xlsx")
 raw_path = Path.cwd().joinpath("output", "raw.json")
+list_path = Path.cwd().joinpath("output", "card_list.json")
+oracle_path = get_oracle_path()
+exception_path = Path.cwd().joinpath("input", "json", "mana_exceptions.json")
 
 def generate_json():
     draft_records = []
+    unique_cards = set() # for card list
     for f in save_path.iterdir():
         if f.suffix != ".xlsx":
             continue
@@ -50,6 +55,7 @@ def generate_json():
         seat_to_player = {}
         for series_name, series in pack_sheet.items():
             packs = series.to_list()
+            unique_cards.update(packs)
             for i in range(3):
                 draft["packs"].append({"player" : series_name.removesuffix(".1"),
                                        "seat" : seat_counter,
@@ -79,6 +85,8 @@ def generate_json():
                     p["decklist"] = series.to_list()
             
         draft_records.append(draft)
+
+    
     with raw_path.open("w", encoding="utf-8") as f:
         f.write(json.dumps(draft_records, indent=4, default=str))
 
