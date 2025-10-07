@@ -1,9 +1,9 @@
-import generate_json
+import raw_from_xlsx
 import cards
 import decks
 
 def main():
-    generate_json.generate_json()
+    raw_from_xlsx.generate_json()
 
     decks.test_name()
 if __name__ == "__main__":

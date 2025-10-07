@@ -1,9 +1,7 @@
-import os
 import json
 import pandas as pd
 from pathlib import Path
 import helper
-import copy 
 
 save_path = Path.cwd().joinpath("input", "xlsx")
 raw_path = Path.cwd().joinpath("output", "raw.json")
@@ -11,7 +9,7 @@ oracle_path = helper.get_oracle_path()
 exception_path = Path.cwd().joinpath("input", "json", "mana_exceptions.json")
 deck_name_path = Path.cwd().joinpath("input", "json", "deck_names.json")
 
-def generate_json():
+def raw_from_xlsx():
     draft_records = []
     unique_cards = set() # for card list
     
