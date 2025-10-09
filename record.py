@@ -5,6 +5,7 @@ import requests
 from time import sleep
 save_path = os.path.dirname(f"{os.getcwd()}/input/")
 
+# Records draft from Tabletop Simulator. Read from input/text/ deck, pack, player results
 def record_xlsx(): 
     with open(f"{save_path}/text/player_results.txt",
             'r', encoding="utf-8") as result:

@@ -13,7 +13,7 @@ def raw_from_xlsx():
     draft_records = []
     unique_cards = set() # for card list
     
-    def read_xlsx(): # reads each xlsx file and puts in draft record as dict
+    def read_xlsx(): # reads each xlsx file and puts in draft_record as dict
         for f in save_path.iterdir():
             if f.suffix != ".xlsx":
                 continue
@@ -166,6 +166,7 @@ def raw_from_xlsx():
                 color_profile["produced_mana"] = card_entry[0]["produced_mana"]
             card_dict["mana"] = color_profile
         
+        # get scryfall png link of front side of card
         if "image_uris" in card_entry[0]:
             img_url = card_entry[0]["image_uris"]["png"]
         elif "card_faces" in card_entry[0]:
