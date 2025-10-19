@@ -232,10 +232,11 @@ def raw_from_xlsx():
                                 "deck_name" : deck_name(pips, splash, sources)})
     
     ###############################################
+    draft_records = sorted(draft_records, key = lambda d: int(d["draft_number"]))
     record = {"card_list": card_list,
               "draft_records": draft_records}
     with raw_path.open("w", encoding="utf-8") as f:
         f.write(json.dumps(record, indent=4, default=str))
 
 if __name__ == "__main__":
-    generate_json()
+    raw_from_xlsx()

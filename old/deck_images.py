@@ -17,7 +17,7 @@ def generate_deck_images():
     with oracle_path.open("r", encoding="utf-8") as f:
         oracle_data = json.load(f)
 
-    for draft in raw_data:
+    for draft in raw_data["draft_records"]:
         for player in draft["players"]:
             cmc = 0
             curve = [[]]
