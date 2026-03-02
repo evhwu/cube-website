@@ -1,20 +1,20 @@
-turnything_1_GUID = 'e69660'
+turnything_1_GUID = 'e69660' --right
 turnything_2_GUID = '17bafe'
 startbutton_GUID  = 'ef2df3'
 flippy_1_GUID = '4ca315'
 flippy_2_GUID = '940fce'
 flippy_3_GUID = '153b25'
 flippy_4_GUID = 'ba77ba'
+cube_bag_GUID = '687d2b'
+token_zone_GUID = 'dd5d59'
+spawn_token_button_GUID = 'ee63dd'
+copy_button_GUID = '0a6af2'
+record_deck_zone_GUID = '1f0f34'
 
-lisa_ball_GUID = 'be693b'
-
---
-pano_ball_GUID = 'be693b'
-
-function onSave()
-  local state = {hs = hand_size, gc = goingClockwise, rr = rounds, rts = readyToStart, dip = draftInProgress, pp = packs}
-  return JSON.encode(state)
-end
+GUIDs = {["Rotate Right"] = 'e69660', ["Rotate Left"] = '17bafe', ["Cube Bag"] = '687d2b',
+         ["Green Flip"] = '153b25', ["Blue Flip"] = 'ba77ba', ["Red Flip"] = '940fce', ["Purple Flip"] = '4ca315',
+         ["Start Button"] = 'ef2df3', ["Spawn Token Button"] = 'ee63dd', ["Copy Button"] = '0a6af2',
+         ["Token Zone"] = '665d59', "Record Deck Zone" = '1f0f34'}
 
 function onLoad(script_state)
   packs = {}
@@ -24,8 +24,7 @@ function onLoad(script_state)
   rounds = 1
   draftInProgress = false
 
-
-
+  --turn into iteration
   turnything_1 = getObjectFromGUID(turnything_1_GUID)
   turnything_2 = getObjectFromGUID(turnything_2_GUID)
   startbutton = getObjectFromGUID(startbutton_GUID)
@@ -33,8 +32,6 @@ function onLoad(script_state)
   flippy_2 = getObjectFromGUID(flippy_2_GUID)
   flippy_3 = getObjectFromGUID(flippy_3_GUID)
   flippy_4 = getObjectFromGUID(flippy_4_GUID)
-  --
-  pano_ball = getObjectFromGUID(pano_ball_GUID)
 
   if script_state == nil or script_state == '' then
     broadcastToAll("fresh save")
@@ -49,7 +46,11 @@ function onLoad(script_state)
     draftInProgress = state.dip
     return JSON.encode(state)
   end
+end
 
+function onSave()
+  local state = {hs = hand_size, gc = goingClockwise, rr = rounds, rts = readyToStart, dip = draftInProgress, pp = packs}
+  return JSON.encode(state)
 end
 
 function globalResumeDraft(params)
@@ -62,9 +63,11 @@ end
 function globalDraftInProgress()
   draftInProgress = true
 end
+
 function globalGetRounds()
   return rounds
 end
+
 function globalSetRounds(params)
   rounds = params[1]
 end
@@ -72,9 +75,11 @@ end
 function globalDraftStatus()
   return {hand_size, goingClockwise, readyToStart, draftInProgress}
 end
+
 function globalDraftStarted()
   readyToStart = false
 end
+
 function globalSetHandSize(params)
   hand_size = params[1]
 end
@@ -84,7 +89,7 @@ function globalRealSeatedPlayers()
     local players = {}
     local newI = 1
     for i, playerColor in pairs(playerColors) do
-        if Player[playerColor].getPlayerHand() != nil
+        if Player[playerColor].getPlayerHand() ~= nil
         then
             players[newI] = Player[playerColor]
             newI = newI + 1
@@ -92,104 +97,6 @@ function globalRealSeatedPlayers()
     end
     return players
 end
-
--- a14460 scripting zone
--- 39fab2 pano ball
-function onObjectEnterScriptingZone(zone, enter_object)
-  if zone.guid == 'a14460' and enter_object.getName() == 'Ravenous Chupacabra' then
-    pano_ball.AssetBundle.playTriggerEffect(0)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Chain Lightning' then
-    pano_ball.AssetBundle.playTriggerEffect(1)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Titan of Industry' then
-    pano_ball.AssetBundle.playTriggerEffect(2)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Path to Exile' then
-    pano_ball.AssetBundle.playTriggerEffect(3)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Sower of Temptation' then
-    pano_ball.AssetBundle.playTriggerEffect(4)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Ulamog, the Ceaseless Hunger' then
-    pano_ball.AssetBundle.playTriggerEffect(5)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Dack Fayden' then
-    pano_ball.AssetBundle.playTriggerEffect(6)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Woe Strider' then
-    pano_ball.AssetBundle.playTriggerEffect(7)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Craterhoof Behemoth' then
-    pano_ball.AssetBundle.playTriggerEffect(8)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Griselbrand' then
-    pano_ball.AssetBundle.playTriggerEffect(9)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Unexpectedly Absent' then
-    pano_ball.AssetBundle.playTriggerEffect(10)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Damnation' then
-    pano_ball.AssetBundle.playTriggerEffect(11)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Lethal Scheme' then
-    pano_ball.AssetBundle.playTriggerEffect(12)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Rankle, Master of Pranks' then
-    pano_ball.AssetBundle.playTriggerEffect(12)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Shriekmaw' then
-    pano_ball.AssetBundle.playTriggerEffect(13)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Lightning Bolt' then
-    pano_ball.AssetBundle.playTriggerEffect(14)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Dauthi Voidwalker' then
-    pano_ball.AssetBundle.playTriggerEffect(15)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Psychatog' then
-    pano_ball.AssetBundle.playTriggerEffect(16)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Arc Lightning' then
-    pano_ball.AssetBundle.playTriggerEffect(17)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Vedalken Shackles' then
-    pano_ball.AssetBundle.playTriggerEffect(18)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'All Suns\' Dawn' then
-    pano_ball.AssetBundle.playTriggerEffect(19)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Boseiju, Who Endures' then
-    pano_ball.AssetBundle.playTriggerEffect(20)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Shriekmaw' then
-    pano_ball.AssetBundle.playTriggerEffect(21)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Kessig Prowler // Sinuous Predator' then
-    pano_ball.AssetBundle.playTriggerEffect(22)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Bloodsoaked Champion' then
-    pano_ball.AssetBundle.playTriggerEffect(23)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Ignoble Hierarch' then
-    pano_ball.AssetBundle.playTriggerEffect(24)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Blade of the Oni' then
-    pano_ball.AssetBundle.playTriggerEffect(24)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Ajani Vengeant' then
-    pano_ball.AssetBundle.playTriggerEffect(24)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Jace, Vryn\'s Prodigy // Jace, Telepath Unbound' then
-    pano_ball.AssetBundle.playTriggerEffect(24)
-  end
-  if zone.guid == 'a14460' and enter_object.getName() == 'Jace, the Mind Sculptor' then
-    pano_ball.AssetBundle.playTriggerEffect(24)
-  end
-
-
-end
-
 
 function findTabIndexByColor(color)
   local tabs = Notes.getNotebookTabs()
@@ -219,7 +126,6 @@ function globalNewPack(params)
       index = temp_tab.index,
       body = temp_tab.body .. new_body
     }
-    --Notes.editNotebookTab({index = temp_tab.index, body = temp_tab.body .. new_body, color = 'Black'})
     Notes.editNotebookTab(params)
   end
 end
@@ -294,7 +200,6 @@ function globalScanHandsPack()
           index = temp_tab.index,
           body = temp_tab.body .. missingCard .. '\n'
         }
-        --Notes.editNotebookTab({index = temp_tab.index, body = temp_tab.body .. missingCard .. '\n', color = temp_tab.color})
         Notes.editNotebookTab(params)
       end
     end
@@ -319,7 +224,6 @@ function globalLastCard()
           body = temp_tab.body .. newCard  .. '\n'
         }
         Notes.editNotebookTab(params)
-        --Notes.editNotebookTab({index = temp_tab.index, body = temp_tab.body .. newCard  .. '\n', color = temp_tab.color})
       end
     end
   end

@@ -1,13 +1,9 @@
 script_zone_GUID = '1f0f34'
 function onload()
-    -- Parameters that create the button
     btn_param = {
-        -- I wouldn't recommend changing any of these values
         click_function = 'action',
         function_owner = self,
         position = {0,0.25,0},
-
-        -- These are okay to change
         width = 900,
         height = 450,
         font_size = 300,
