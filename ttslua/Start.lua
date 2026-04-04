@@ -1,4 +1,3 @@
-cube_GUID = '687d2b'
 function onload()
     btn_param = {
         click_function = 'action',
@@ -7,18 +6,10 @@ function onload()
         width = 900,
         height = 450,
         font_size = 300,
-        label = "Button",
+        label = "Start",
     }
     self.createButton(btn_param)
-    cube = getObjectFromGUID(cube_GUID)
-end
-
-function update()
-    if btn_param.label ~= self.getName() then
-        btn_param.label = self.getName()
-        self.clearButtons()
-        self.createButton(btn_param)
-    end
+    cube = getObjectFromGUID(Global.getTable("GUIDs")["Cube Bag"])
 end
 
 function action()

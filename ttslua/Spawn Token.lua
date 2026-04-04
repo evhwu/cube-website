@@ -1,9 +1,6 @@
---take the cards in the SPAWN TOKEN ZONE
---create tokens by looking through a DECK placed in the scripting ZONE
---have a bag GUID from dragged bag
-
-token_zone_GUID = 'dd5d59'
-self_GUID = 'ee63dd'
+--[[ take the cards in the SPAWN TOKEN ZONE
+create tokens by looking through a DECK placed in the scripting ZONE
+have a bag GUID from dragged bag]]
 
 function onload()
     btn_param = {
@@ -13,60 +10,54 @@ function onload()
         width = 900,
         height = 450,
         font_size = 300,
-        label = "Button",
-
+        label = "Spawn Tokens",
     }
     self.createButton(btn_param)
-    token_zone = getObjectFromGUID(token_zone_GUID)
+    token_zone = getObjectFromGUID(Global.getTable("GUIDs")["Token Zone"])
 end
 
-function update()
-    if btn_param.label ~= self.getName() then
-        btn_param.label = self.getName()
-        self.clearButtons()
-        self.createButton(btn_param)
-    end
-end
-
+--[[ click action for button. On click, will call spawn_token on all cards and deck
+     in the token zone]]
 function action()
-  stuff = token_zone.getObjects()
-  for i in ipairs(stuff) do
-    temp_obj = getObjectFromGUID(stuff[i].guid)
+  local token_zone_objects = token_zone.getObjects()
+  for idx in ipairs(stuff) do
+    local temp_obj = getObjectFromGUID(token_zone_objects[idx].guid)
+    -- If object is a cube card - will also trigger on tokens and copies
     if temp_obj.name == 'CardCustom' then
       spawn_token(temp_obj.getName())
+    -- If player places entire deck - assumes deck will be of cards
     elseif temp_obj.name == 'Deck' then
       spawn_token(temp_obj.getObjects())
     end
   end
 end
----------------------------
-function spawn_token(deck)
-  token_bag = getObjectFromGUID(getObjectFromGUID(self_GUID).getDescription())
-  tokens = token_bag.getObjects()
-  guids = {}
-  if type(deck) == 'table' then
-    for deck_i in ipairs(deck) do
-      for tock_i in ipairs(tokens) do
-        if tokens[tock_i].description == deck[deck_i].name then
-          table.insert(guids, tokens[tock_i].guid)
+--[[ takes input of string or table of card objects. 
+]]
+function spawn_token(input)
+  local token_bag =  getObjectFromGUID(self.getDescription())
+  local tokens = token_bag.getObjects()
+  local matched_guids = {}
+  -- if input is a table of objects (player's deck)
+  if type(input) == 'table' then
+    --looks through each card in deck and each card in token bag
+    for deck_idx in ipairs(input) do
+      for token_idx in ipairs(tokens) do
+        if tokens[token_idx].description == input[deck_idx].name then
+          table.insert(matched_guids, tokens[token_idx].guid)
         end
       end
     end
-    for g in ipairs(guids) do
-      taken = token_bag.takeObject({guid = guids[g]})
-      replacement = taken.clone({position = {x = -85, y = 5, z = -25}})
-      token_bag.putObject(replacement)
-    end
-  elseif type(deck) == 'string' then
-    for tock_i in ipairs(tokens) do
-      if tokens[tock_i].description == deck then
-        table.insert(guids, tokens[tock_i].guid)
+  elseif type(input) == 'string' then
+    for token_idx in ipairs(tokens) do
+      if tokens[token_idx].description == input then
+        table.insert(matched_guids, tokens[token_idx].guid)
       end
     end
-    for g in ipairs(guids) do
-      taken = token_bag.takeObject({guid = guids[g]})
-      replacement = taken.clone({position = {x = -85, y = 5, z = -25}})
-      token_bag.putObject(replacement)
-    end
+  end
+  -- for each matched guid in tokens, take that token, clone it, and place it
+  for guid_idx in ipairs(matched_guids) do
+    local taken = token_bag.takeObject({guid = matched_guids[guid_idx]})
+    local replacement = taken.clone({position = {x = -85, y = 5, z = -25}})
+    token_bag.putObject(replacement)
   end
 end
