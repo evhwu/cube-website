@@ -14,7 +14,7 @@ record_deck_zone_GUID = '1f0f34'
 GUIDs = {["Rotate Right"] = 'e69660', ["Rotate Left"] = '17bafe', ["Cube Bag"] = '687d2b',
          ["Green Flip"] = '153b25', ["Blue Flip"] = 'ba77ba', ["Red Flip"] = '940fce', ["Purple Flip"] = '4ca315',
          ["Start Button"] = 'ef2df3', ["Spawn Token Button"] = 'ee63dd', ["Copy Button"] = '0a6af2',
-         ["Token Zone"] = '665d59', "Record Deck Zone" = '1f0f34'}
+         ["Token Zone"] = '665d59', ["Record Deck Zone"] = '1f0f34'}
 
 function onLoad(script_state)
   packs = {}
