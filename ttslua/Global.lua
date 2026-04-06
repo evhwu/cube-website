@@ -16,7 +16,7 @@ function onLoad(script_state)
   if script_state == nil or script_state == '' then
     broadcastToAll("fresh save")
     packs = {}
-    hand_size = -5
+    handSize = -5
     goingClockwise = true
     readyToStart = true
     rounds = 1
@@ -25,7 +25,7 @@ function onLoad(script_state)
     broadcastToAll("load save")
     local state = JSON.decode(script_state)
     packs = state.pp
-    hand_size = state.hs
+    handSize = state.hs
     goingClockwise = state.gc
     readyToStart = state.rts
     rounds = state.rr
@@ -35,12 +35,12 @@ function onLoad(script_state)
 end
 
 function onSave()
-  local state = {hs = hand_size, gc = goingClockwise, rr = rounds, rts = readyToStart, dip = draftInProgress, pp = packs}
+  local state = {hs = handSize, gc = goingClockwise, rr = rounds, rts = readyToStart, dip = draftInProgress, pp = packs}
   return JSON.encode(state)
 end
 
 function globalResumeDraft(params)
-  hand_size = params[1]
+  handSize = params[1]
   goingClockwise = params[2]
   rounds = params[3]
   --continue, address temp "pack"
@@ -58,16 +58,12 @@ function globalSetRounds(params)
   rounds = params[1]
 end
 
-function globalDraftStatus()
-  return {hand_size, goingClockwise, readyToStart, draftInProgress}
-end
-
 function globalDraftStarted()
   readyToStart = false
 end
 
 function globalSetHandSize(params)
-  hand_size = params[1]
+  handSize = params[1]
 end
 
 function globalRealSeatedPlayers()
@@ -151,7 +147,7 @@ function globalScanHandsPack()
 
   local players = globalRealSeatedPlayers()
 
-  if hand_size == 0 then
+  if handSize == 0 then
     readyToStart = true
     if goingClockwise then
       goingClockwise = false
@@ -190,11 +186,11 @@ function globalScanHandsPack()
       end
     end
   end
-  hand_size = hand_size - 1
+  handSize = handSize - 1
 end
 
 function globalLastCard()
-  if hand_size == 0 then
+  if handSize == 0 then
     local players = globalRealSeatedPlayers()
     for p in ipairs(players) do
       local temp_tab = findTabIndexByColor(players[p].color)

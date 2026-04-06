@@ -1,8 +1,8 @@
---[[ take the cards in the SPAWN TOKEN ZONE
-create tokens by looking through a DECK placed in the scripting ZONE
-have a bag GUID from dragged bag]]
+--[[ take the cards in the spawn token zone, creates tokens
+tagged in tagged token bag. The GUID of the token deck must be 
+the same as the description of the Spawn Token Button]]
 
-function onload()
+function onLoad()
     btn_param = {
         click_function = 'action',
         function_owner = self,
@@ -20,7 +20,7 @@ end
      in the token zone]]
 function action()
   local token_zone_objects = token_zone.getObjects()
-  for idx in ipairs(stuff) do
+  for idx in ipairs(token_zone_objects) do
     local temp_obj = getObjectFromGUID(token_zone_objects[idx].guid)
     -- If object is a cube card - will also trigger on tokens and copies
     if temp_obj.name == 'CardCustom' then

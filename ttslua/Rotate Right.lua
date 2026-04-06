@@ -1,4 +1,4 @@
-function onload()
+function onLoad()
     local button_parameters = {}
     button_parameters.click_function = "onClick_RotateHands"
     button_parameters.function_owner = self
@@ -14,15 +14,15 @@ function onClick_RotateHands()
     local players = getRealSeatedPlayers()
     local playersCounterClockwise = playersCounterClockwise(players)
 
-    if not Global.call('globalDraftStatus')[2] then
+    if not Global.getVar("goingClockwise") then
       broadcastToAll('wrong button dumbass')
       do return end
     end
 
     for pidx in ipairs(players) do
-      if #players[pidx].getHandObjects() != Global.call('globalDraftStatus')[1] then
+      if #players[pidx].getHandObjects() ~= Global.getVar("handSize") then
         broadcastToAll(players[pidx].steam_name .. ' has ' .. #players[pidx].getHandObjects().. ' cards')
-        broadcastToAll('Players should have ' .. Global.call('globalDraftStatus')[1] .. ' cards.')
+        broadcastToAll('Players should have ' .. Global.getVar("handSize") .. ' cards.')
         do return end
       end
     end

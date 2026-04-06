@@ -1,4 +1,4 @@
-function onload()
+function onLoad()
     btn_param = {
         click_function = 'action',
         function_owner = self,
@@ -13,7 +13,7 @@ function onload()
 end
 
 function action()
-  if not Global.call('globalDraftStatus')[3] then
+  if not Global.getVar("readyToStart") then
     broadcastToAll('Draft in progress')
     do return end
   end
@@ -21,7 +21,7 @@ function action()
   Global.call('globalSetHandSize', {14})
   local players = Global.call('globalRealSeatedPlayers')
 
-  if not Global.call('globalDraftStatus')[4] then
+  if not Global.getVar("draftInProgress") then
     cube.setLock(true)
     cube.shuffle()
     cube.setInvisibleTo(getSeatedPlayers())

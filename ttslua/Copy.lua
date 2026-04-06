@@ -1,11 +1,7 @@
---take the cards in the SPAWN TOKEN ZONE
---create tokens by looking through a DECK placed in the scripting ZONE
---have a bag GUID from dragged bag
+--[[ take the cards in the spawn token zone, copies it with
+a watermark and renames it]]
 
-token_zone_GUID = 'dd5d59'
-self_GUID = '0a6af2'
-
-function onload()
+function onLoad()
     btn_param = {
         click_function = 'action',
         function_owner = self,
@@ -13,25 +9,16 @@ function onload()
         width = 900,
         height = 450,
         font_size = 300,
-        label = "Button",
-
+        label = "Copy",
     }
     self.createButton(btn_param)
-    token_zone = getObjectFromGUID(token_zone_GUID)
-end
-
-function update()
-    if btn_param.label ~= self.getName() then
-        btn_param.label = self.getName()
-        self.clearButtons()
-        self.createButton(btn_param)
-    end
+    token_zone = getObjectFromGUID(Global.getTable("GUIDs")["Token Zone"])
 end
 
 function action()
-  stuff = token_zone.getObjects()
-  for i in ipairs(stuff) do
-    temp_obj = getObjectFromGUID(stuff[i].guid)
+  local token_zone_objects = token_zone.getObjects()
+  for idx in ipairs(token_zone_objects) do
+    local temp_obj = getObjectFromGUID(token_zone_objects[idx].guid)
     if temp_obj.name == 'CardCustom' then
       copy_card(temp_obj)
     end
@@ -41,7 +28,7 @@ end
 function copy_card(card)
   local replacement = card.clone({position = {x = -93, y = 3, z = -12.5}})
   replacement.setDescription(replacement.getName())
-  replacement.setName( "Copy")
+  replacement.setName("Copy")
   replacement.addDecal({
     name             = "Copy",
     url              = "https://i.imgur.com/8R1SH8N.png",
