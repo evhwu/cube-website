@@ -64,7 +64,7 @@ function getRealSeatedPlayers()
     local players = {}
     local newI = 1
     for i, playerColor in pairs(playerColors) do
-        if Player[playerColor].getPlayerHand() != nil
+        if Player[playerColor].getPlayerHand() ~= nil
         then
             players[newI] = Player[playerColor]
             newI = newI + 1

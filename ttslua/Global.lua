@@ -46,26 +46,6 @@ function globalResumeDraft(params)
   --continue, address temp "pack"
 end
 
-function globalDraftInProgress()
-  draftInProgress = true
-end
-
-function globalGetRounds()
-  return rounds
-end
-
-function globalSetRounds(params)
-  rounds = params[1]
-end
-
-function globalDraftStarted()
-  readyToStart = false
-end
-
-function globalSetHandSize(params)
-  handSize = params[1]
-end
-
 function globalRealSeatedPlayers()
     local playerColors = getSeatedPlayers()
     local players = {}

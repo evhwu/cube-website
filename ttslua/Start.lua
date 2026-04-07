@@ -18,7 +18,7 @@ function action()
     do return end
   end
 
-  Global.call('globalSetHandSize', {14})
+  Global.setVar("handSize", 14)
   local players = Global.call('globalRealSeatedPlayers')
 
   if not Global.getVar("draftInProgress") then
@@ -39,7 +39,7 @@ function action()
     end
     --Notes.addNotebookTab({title = 'Pack Record', body = '', color = 'Black'})
   else
-    broadcastToAll('Round ' .. tostring(Global.call('globalGetRounds')))
+    broadcastToAll('Round ' .. tostring(Global.getVar("rounds")))
   end
   for p in ipairs(players) do
     pack = {}
@@ -50,11 +50,10 @@ function action()
 
     Global.call('globalNewPack', pack)
   end
-  tempos = {}
-  table.insert(tempos, Global.call('globalGetRounds') + 1)
-  Global.call('globalSetRounds', tempos)
-  Global.call('globalDraftInProgress')
-  Global.call('globalDraftStarted')
+
+  Global.setVar("rounds", Global.getVar("rounds") + 1)
+  Global.setVar("draftInProgress", true)
+  Global.setVar("readyToStart", false)
 end
 ---------------------------
 
