@@ -2,7 +2,7 @@ function onLoad()
     btn_param = {
         click_function = 'action',
         function_owner = self,
-        position = {0,0.25,0},
+        position = {0,0.3,0},
         width = 900,
         height = 450,
         font_size = 300,
@@ -42,13 +42,19 @@ function action()
     broadcastToAll('Round ' .. tostring(Global.getVar("rounds")))
   end
   for p in ipairs(players) do
-    pack = {}
-    for i = 1, 15 do
-      card = cube.takeObject({position =getPlayerHandPosition(players[p]), index = 1})
-      table.insert(pack, card.getName())
-    end
+    local pack = {}
+    -- packs not getting recorded in pack records
 
-    Global.call('globalNewPack', pack)
+    pack = slowDeal(pack, players[p])
+
+    Wait.condition(
+    function()
+      Global.call('globalNewPack', pack)
+    end,
+    function() 
+      return #pack == 15
+    end)
+    
   end
 
   Global.setVar("rounds", Global.getVar("rounds") + 1)
@@ -56,6 +62,17 @@ function action()
   Global.setVar("readyToStart", false)
 end
 ---------------------------
+
+function slowDeal(pack, p)
+  if #pack ~= 15 then
+    Wait.frames(function()
+      card = cube.takeObject({position =getPlayerHandPosition(p), index = 1})
+      table.insert(pack, card.getName())
+      pack = slowDeal(pack, p)
+    end, 9)
+  end
+  return pack
+end
 
 function getPlayerHandPosition(player)
     local hand = player.getPlayerHand()

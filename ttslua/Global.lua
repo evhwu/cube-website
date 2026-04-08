@@ -1,7 +1,7 @@
 GUIDs = {["Rotate Right"] = 'e69660', ["Rotate Left"] = '17bafe', ["Cube Bag"] = '687d2b',
          ["Green Flip"] = '153b25', ["Blue Flip"] = 'ba77ba', ["Red Flip"] = '940fce', ["Purple Flip"] = '4ca315',
          ["Start Button"] = 'ef2df3', ["Spawn Token Button"] = 'ee63dd', ["Copy Button"] = '0a6af2',
-         ["Token Zone"] = '665d59', ["Record Deck Zone"] = '1f0f34'}
+         ["Token Zone"] = 'dd5d59', ["Record Deck Zone"] = '1f0f34'}
 
 function onLoad(script_state)
   --[[rewrite this: all loads are LOAD SAVE, no fresh save
@@ -37,13 +37,6 @@ end
 function onSave()
   local state = {hs = handSize, gc = goingClockwise, rr = rounds, rts = readyToStart, dip = draftInProgress, pp = packs}
   return JSON.encode(state)
-end
-
-function globalResumeDraft(params)
-  handSize = params[1]
-  goingClockwise = params[2]
-  rounds = params[3]
-  --continue, address temp "pack"
 end
 
 function globalRealSeatedPlayers()

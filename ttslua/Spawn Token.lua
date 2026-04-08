@@ -6,7 +6,7 @@ function onLoad()
     btn_param = {
         click_function = 'action',
         function_owner = self,
-        position = {0,0.25,0},
+        position = {0,0.3,0},
         width = 900,
         height = 450,
         font_size = 300,

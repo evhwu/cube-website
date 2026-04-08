@@ -5,18 +5,17 @@ function onLoad()
     btn_param = {
         click_function = 'action',
         function_owner = self,
-        position = {0,0.25,0},
+        position = {0,0.3,0},
         width = 900,
         height = 450,
         font_size = 300,
         label = "Copy",
     }
     self.createButton(btn_param)
-    token_zone = getObjectFromGUID(Global.getTable("GUIDs")["Token Zone"])
 end
 
 function action()
-  local token_zone_objects = token_zone.getObjects()
+  local token_zone_objects = getObjectFromGUID(Global.getTable("GUIDs")["Token Zone"]).getObjects()
   for idx in ipairs(token_zone_objects) do
     local temp_obj = getObjectFromGUID(token_zone_objects[idx].guid)
     if temp_obj.name == 'CardCustom' then
