@@ -42,7 +42,7 @@ function onLoad(script_state)
     end
     for _, val in pairs(bracket_data.entries) do
         local input_param = {
-            input_param = val.name,
+            input_function = val.name,
             function_owner = self,
             label = val.label,
             position = val.position,
@@ -59,6 +59,7 @@ function onLoad(script_state)
     for _, val in pairs(bracket_data.entries) do
         local win_counter = val.name .. "_c"
         local score_param = {
+            input_function  = win_counter,
             input_param = win_counter,
             function_owner = self,
             position = {val.position[1]+2, val.position[2], val.position[3]},

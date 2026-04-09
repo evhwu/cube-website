@@ -14,15 +14,15 @@ function onClick_RotateHands()
     local players = getRealSeatedPlayers()
     local playersCounterClockwise = playersCounterClockwise(players)
 
-    if not Global.getVar("goingClockwise") then
-      broadcastToAll('wrong button dumbass')
+    if not Global.getTable("draft_data").is_clockwise then
+      broadcastToAll('wrong direction')
       do return end
     end
 
     for pidx in ipairs(players) do
-      if #players[pidx].getHandObjects() ~= Global.getVar("handSize") then
+      if #players[pidx].getHandObjects() ~= Global.getTable("draft_data").hand_size then
         broadcastToAll(players[pidx].steam_name .. ' has ' .. #players[pidx].getHandObjects().. ' cards')
-        broadcastToAll('Players should have ' .. Global.getVar("handSize") .. ' cards.')
+        broadcastToAll('Players should have ' .. Global.getTable("draft_data").hand_size .. ' cards.')
         do return end
       end
     end

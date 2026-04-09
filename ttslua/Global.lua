@@ -3,40 +3,24 @@ GUIDs = {["Rotate Right"] = 'e69660', ["Rotate Left"] = '17bafe', ["Cube Bag"] =
          ["Start Button"] = 'ef2df3', ["Spawn Token Button"] = 'ee63dd', ["Copy Button"] = '0a6af2',
          ["Token Zone"] = 'dd5d59', ["Record Deck Zone"] = '1f0f34'}
 
+draft_data = {
+  packs = {},
+  hand_size = -1,
+  is_clockwise = true,
+  ready_for_round = true, 
+  round = 1,
+  draft_in_progress = false
+}
 function onLoad(script_state)
-  --[[rewrite this: all loads are LOAD SAVE, no fresh save
-    can also change global getters to just Global.getVar(), etc.
-    merge globaldraftstarted, globaldraftinprogress (in start button)
-  ]]
-  flips = {getObjectFromGUID(GUIDs["Green Flip"]),
-           getObjectFromGUID(GUIDs["Blue Flip"]),
-           getObjectFromGUID(GUIDs["Red Flip"]),
-           getObjectFromGUID(GUIDs["Purple Flip"])}
-
-  if script_state == nil or script_state == '' then
-    broadcastToAll("fresh save")
-    packs = {}
-    handSize = -5
-    goingClockwise = true
-    readyToStart = true
-    rounds = 1
-    draftInProgress = false
-  else
+  if script_state ~= nil or script_state ~= "" then
     broadcastToAll("load save")
-    local state = JSON.decode(script_state)
-    packs = state.pp
-    handSize = state.hs
-    goingClockwise = state.gc
-    readyToStart = state.rts
-    rounds = state.rr
-    draftInProgress = state.dip
-    --return JSON.encode(state)
+    draft_data = JSON.decode(script_state)
+    broadcastToAll(JSON.encode(draft_data))
   end
 end
 
 function onSave()
-  local state = {hs = handSize, gc = goingClockwise, rr = rounds, rts = readyToStart, dip = draftInProgress, pp = packs}
-  return JSON.encode(state)
+  return JSON.encode(draft_data)
 end
 
 function globalRealSeatedPlayers()
@@ -65,8 +49,9 @@ function findTabIndexByColor(color)
 end
 
 function globalNewPack(params)
+  broadcastToAll(JSON.encode(params))
   local new_pack = params
-  table.insert(packs, new_pack)
+  table.insert(draft_data.packs, new_pack)
 
   local new_body = ''
   for i in ipairs(new_pack) do
@@ -114,25 +99,22 @@ function helperFindCard(pack_cards, player_cards)
 end
 
 function globalScanHandsPack()
-  for idx, val in ipairs(flips) do
-    val.flip()
+  local flips = {"Green Flip", "Blue Flip", "Red Flip", "Purple Flip"}
+  for _, val in ipairs(flips) do
+    getObjectFromGUID(GUIDs[val]).flip()
   end
 
   local players = globalRealSeatedPlayers()
 
-  if handSize == 0 then
-    readyToStart = true
-    if goingClockwise then
-      goingClockwise = false
-    else
-      goingClockwise = true
-    end
+  if draft_data.hand_size == 0 then
+    draft_data.ready_for_round = true
+    draft_data.is_clockwise = not draft_data.is_clockwise
   else
     for player_index, player in ipairs(players) do
       local player_hand = transformHand(player.getHandObjects())
       local matching_pack = -1
       local super_break = false
-      for pack_index, pack in ipairs(packs) do
+      for pack_index, pack in ipairs(draft_data.packs) do
         for i, card in ipairs(pack) do
           if has_value(player_hand, card) then
             matching_pack = pack_index
@@ -144,8 +126,8 @@ function globalScanHandsPack()
           break
         end
       end
-      local missingIndex, missingCard = helperFindCard(packs[matching_pack], player_hand)
-      table.remove(packs[matching_pack], missingIndex)
+      local missingIndex, missingCard = helperFindCard(draft_data.packs[matching_pack], player_hand)
+      table.remove(draft_data.packs[matching_pack], missingIndex)
 
       local temp_tab = findTabIndexByColor(player.color)
       if temp_tab == nil then
@@ -159,11 +141,11 @@ function globalScanHandsPack()
       end
     end
   end
-  handSize = handSize - 1
+  draft_data.hand_size = draft_data.hand_size - 1
 end
 
 function globalLastCard()
-  if handSize == 0 then
+  if draft_data.hand_size == 0 then
     local players = globalRealSeatedPlayers()
     for p in ipairs(players) do
       local temp_tab = findTabIndexByColor(players[p].color)

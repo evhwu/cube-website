@@ -13,15 +13,14 @@ function onLoad()
 end
 
 function action()
-  if not Global.getVar("readyToStart") then
+  if not Global.getTable("draft_data").ready_for_round then
     broadcastToAll('Draft in progress')
     do return end
   end
 
-  Global.setVar("handSize", 14)
   local players = Global.call('globalRealSeatedPlayers')
 
-  if not Global.getVar("draftInProgress") then
+  if not Global.getTable("draft_data").draft_in_progress then
     cube.setLock(true)
     cube.shuffle()
     cube.setInvisibleTo(getSeatedPlayers())
@@ -39,7 +38,7 @@ function action()
     end
     --Notes.addNotebookTab({title = 'Pack Record', body = '', color = 'Black'})
   else
-    broadcastToAll('Round ' .. tostring(Global.getVar("rounds")))
+    broadcastToAll('Round ' .. tostring(Global.getTable("draft_data").round))
   end
   for p in ipairs(players) do
     local pack = {}
@@ -57,9 +56,12 @@ function action()
     
   end
 
-  Global.setVar("rounds", Global.getVar("rounds") + 1)
-  Global.setVar("draftInProgress", true)
-  Global.setVar("readyToStart", false)
+  local temp_data = Global.getTable("draft_data")
+  temp_data.round = temp_data.round + 1
+  temp_data.draft_in_progress = true
+  temp_data.ready_for_round = false
+  temp_data.hand_size = 14
+  Global.setTable("draft_data", temp_data)
 end
 ---------------------------
 
@@ -69,7 +71,7 @@ function slowDeal(pack, p)
       card = cube.takeObject({position =getPlayerHandPosition(p), index = 1})
       table.insert(pack, card.getName())
       pack = slowDeal(pack, p)
-    end, 9)
+    end, 6)
   end
   return pack
 end

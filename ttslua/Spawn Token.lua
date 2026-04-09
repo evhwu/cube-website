@@ -57,7 +57,12 @@ function spawn_token(input)
   -- for each matched guid in tokens, take that token, clone it, and place it
   for guid_idx in ipairs(matched_guids) do
     local taken = token_bag.takeObject({guid = matched_guids[guid_idx]})
-    local replacement = taken.clone({position = {x = -85, y = 5, z = -25}})
-    token_bag.putObject(replacement)
+    -- a wait function is used b/c it requires a few frames for the "takeObject" function
+    -- wait prevents the custom object dialogue from spawning on host's screen
+    Wait.frames(function()
+      taken.clone({position = {x = -93, y = 3, z = -12.5}})
+      token_bag.putObject(taken)
+    end, 5)
+
   end
 end
