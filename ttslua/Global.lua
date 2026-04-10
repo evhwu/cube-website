@@ -23,33 +23,31 @@ function onSave()
   return JSON.encode(draft_data)
 end
 
-function globalRealSeatedPlayers()
-    local playerColors = getSeatedPlayers()
-    local players = {}
-    local newI = 1
-    for i, playerColor in pairs(playerColors) do
-        if Player[playerColor].getPlayerHand() ~= nil
-        then
-            players[newI] = Player[playerColor]
-            newI = newI + 1
-        end
+function real_seated_players()
+  local colors = getSeatedPlayers()
+  local players = {}
+  for _, c in pairs(colors) do
+    if Player[c].getPlayerHand() ~= nil then
+      table.insert(players, Player[c])
     end
-    return players
+  end
+  return players
 end
 
-function findTabIndexByColor(color)
+function get_note_tab(title)
   local tabs = Notes.getNotebookTabs()
-  for i, tab in pairs(tabs) do
-    if tab.color == color then
+  for _, tab  in pairs(tabs) do
+    if tab.title == title then
       return tab
     end
   end
-  print('yikers')
+  broadcastToAll("Notebook tab w/ title " .. title " not found.")
   return nil
 end
 
+
+--move and rewrite to start, doesn't need to be in global
 function globalNewPack(params)
-  broadcastToAll(JSON.encode(params))
   local new_pack = params
   table.insert(draft_data.packs, new_pack)
 
@@ -58,7 +56,7 @@ function globalNewPack(params)
     new_body = new_body .. new_pack[i] .. '\n'
   end
   new_body = new_body .. '#413\n'
-  local temp_tab = findTabIndexByColor('Black')
+  local temp_tab = get_note_tab('Pack Records')
   if temp_tab == nil then
     print('missing Black')
   else
@@ -104,7 +102,7 @@ function globalScanHandsPack()
     getObjectFromGUID(GUIDs[val]).flip()
   end
 
-  local players = globalRealSeatedPlayers()
+  local players = real_seated_players()
 
   if draft_data.hand_size == 0 then
     draft_data.ready_for_round = true
@@ -129,7 +127,7 @@ function globalScanHandsPack()
       local missingIndex, missingCard = helperFindCard(draft_data.packs[matching_pack], player_hand)
       table.remove(draft_data.packs[matching_pack], missingIndex)
 
-      local temp_tab = findTabIndexByColor(player.color)
+      local temp_tab = get_note_tab(player.steam_name)
       if temp_tab == nil then
         print('missing ' .. player.color)
       else
@@ -146,9 +144,9 @@ end
 
 function globalLastCard()
   if draft_data.hand_size == 0 then
-    local players = globalRealSeatedPlayers()
-    for p in ipairs(players) do
-      local temp_tab = findTabIndexByColor(players[p].color)
+    local players = real_seated_players()
+    for p, val in pairs(players) do
+      local temp_tab = get_note_tab(val.steam_name)
       local newCard = players[p].getHandObjects()[1].getName()
       if newCard == nil or newCard == '' then
         newCard = 'MISSING'

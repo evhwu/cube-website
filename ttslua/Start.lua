@@ -18,7 +18,7 @@ function action()
     do return end
   end
 
-  local players = Global.call('globalRealSeatedPlayers')
+  local players = Global.call('real_seated_players')
 
   if not Global.getTable("draft_data").draft_in_progress then
     cube.setLock(true)
@@ -28,7 +28,7 @@ function action()
     broadcastToAll('Starting Cube Draft: Round 1')
 
     --Notes.removeNotebookTab(0)
-    for p in ipairs(players) do
+    for p in pairs(players) do
       params = {
         title = players[p].steam_name ,
         body = players[p].steam_name .. '-#-' .. players[p].color ..'\n',
