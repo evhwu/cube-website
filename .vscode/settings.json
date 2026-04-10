@@ -3,5 +3,6 @@
     "python-envs.pythonProjects": [],
     "Lua.diagnostics.disable": [
         "undefined-global"
-    ]
+    ],
+    "editor.detectIndentation": true
 }

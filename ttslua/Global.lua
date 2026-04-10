@@ -15,7 +15,6 @@ function onLoad(script_state)
   if script_state ~= nil or script_state ~= "" then
     broadcastToAll("load save")
     draft_data = JSON.decode(script_state)
-    broadcastToAll(JSON.encode(draft_data))
   end
 end
 
@@ -34,10 +33,10 @@ function real_seated_players()
   return players
 end
 
-function get_note_tab(title)
+function get_note_tab(params)
   local tabs = Notes.getNotebookTabs()
   for _, tab  in pairs(tabs) do
-    if tab.title == title then
+    if tab.title == params.title then
       return tab
     end
   end
@@ -56,7 +55,7 @@ function globalNewPack(params)
     new_body = new_body .. new_pack[i] .. '\n'
   end
   new_body = new_body .. '#413\n'
-  local temp_tab = get_note_tab('Pack Records')
+  local temp_tab = get_note_tab({title='Pack Records'})
   if temp_tab == nil then
     print('missing Black')
   else
@@ -104,6 +103,7 @@ function globalScanHandsPack()
 
   local players = real_seated_players()
 
+
   if draft_data.hand_size == 0 then
     draft_data.ready_for_round = true
     draft_data.is_clockwise = not draft_data.is_clockwise
@@ -127,7 +127,7 @@ function globalScanHandsPack()
       local missingIndex, missingCard = helperFindCard(draft_data.packs[matching_pack], player_hand)
       table.remove(draft_data.packs[matching_pack], missingIndex)
 
-      local temp_tab = get_note_tab(player.steam_name)
+      local temp_tab = get_note_tab({title = player.steam_name})
       if temp_tab == nil then
         print('missing ' .. player.color)
       else
@@ -146,7 +146,7 @@ function globalLastCard()
   if draft_data.hand_size == 0 then
     local players = real_seated_players()
     for p, val in pairs(players) do
-      local temp_tab = get_note_tab(val.steam_name)
+      local temp_tab = get_note_tab({title =val.steam_name})
       local newCard = players[p].getHandObjects()[1].getName()
       if newCard == nil or newCard == '' then
         newCard = 'MISSING'

@@ -49,6 +49,7 @@ function onClick_RotateHands()
     for i,obj in ipairs(getAllObjects()) do
         if obj.getVar('tobiiDraftTools_isReadyToken')
         then
+            broadcastToAll("CHECK")
             cur = obj.getRotation()
             obj.setRotation({cur.x,cur.y,180})
         end
