@@ -55,11 +55,13 @@ function update_label()
   if draft_stage == "Pre-Draft" then
     new_label = "Start Draft & Deal"
   elseif draft_stage == "Mid-Round" then
-    local direction = clockwise and "CW" or "CCW" 
-    local pick = 15 - g_hand_size
+    local direction = g_clockwise and "CW" or "CCW" 
+    local pick = num_cards - g_hand_size
     new_label = "Pack " .. g_round .. "\nPick " .. pick .. "\nPassing " .. direction
   elseif draft_stage == "Pre-Round" then
     new_label = "Start Round " .. g_round
+  elseif draft_stage == "Finished" then
+    new_label = "Draft Finished"
   end
   self.editButton({index = 0, label = new_label })
 end
@@ -91,7 +93,7 @@ end
 
 -- deal -------------------------------
 function start_round()
-  g_hand_size = 14
+  g_hand_size = num_cards - 1
   broadcastToAll("Round " .. g_round)
   local players = get_ordered_players()
   for p in pairs(players) do
@@ -100,7 +102,7 @@ function start_round()
     
     Wait.condition(
     function() write_pack(pack) end,
-    function() return #pack == 15 end)
+    function() return #pack == num_cards end)
   end
 
   -- increment round, DIP = true, R4R = false ?
@@ -122,7 +124,7 @@ function write_pack(pack)
 end
 
 function slow_deal(pack, p)
-  if #pack ~= 15 then
+  if #pack ~= num_cards then
     Wait.frames(function()
       local hand_transform = p.getHandTransform()
       hand_transform.rotation["y"] = hand_transform.rotation["y"] - 180
@@ -189,7 +191,11 @@ function rotate_hands()
   if g_hand_size == 0 then 
     g_clockwise = not g_clockwise
     g_round = g_round + 1
-    change_stage("Pre-Round")
+    if g_round > num_rounds then 
+      change_stage("Finished")
+    else
+      change_stage("Pre-Round")
+    end
     --ready for round = true ?
   else 
     for _, player in pairs(players) do
@@ -254,8 +260,8 @@ function get_ordered_players()
   end
 
   local ordered_players = {}
-  local new_i = clockwise and #players or 1 
-  local inc = clockwise and -1 or 1
+  local new_i = g_clockwise and #players or 1 
+  local inc = g_clockwise and -1 or 1
 
   -- Copied from LUA docs... returns iterator in order of keys
   local function pairsByKeys(t, f)

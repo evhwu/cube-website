@@ -121,9 +121,11 @@ function finishDraft()
 end
 
 function recordDecks()
-  local decks = getObjectFromGUID(Global.getTable("GUIDs")["Record Deck Zone"])
+  local script_zone = getObjectFromGUID(Global.getTable("GUIDs")["Record Deck Zone"])
+  local decks = script_zone.getObjects()
   local text = ""
 
+  broadcastToAll(#decks)
   for i, deck in ipairs(decks) do
     local cards = deck.getObjects()
     text = text .. deck.getName() .. '\n'
