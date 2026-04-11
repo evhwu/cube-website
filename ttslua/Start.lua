@@ -68,7 +68,11 @@ end
 function slowDeal(pack, p)
   if #pack ~= 15 then
     Wait.frames(function()
-      card = cube.takeObject({position =getPlayerHandPosition(p), index = 1})
+      local hand_transform = p.getHandTransform()
+      hand_transform.rotation["y"] = hand_transform.rotation["y"] - 180
+      card = cube.takeObject({position = hand_transform.position,
+                              rotation = hand_transform.rotation,
+                              index = 1})
       table.insert(pack, card.getName())
       pack = slowDeal(pack, p)
     end, 6)

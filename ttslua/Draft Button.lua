@@ -1,9 +1,12 @@
 draft_stage = "Pre-Draft"
 
+g_round = 1
 g_hand_size = -1
 g_packs = {}
 g_clockwise = false
-stage_to_label = {["Pre-Draft"] = "Start Draft & Deal"}
+
+num_cards = 15
+num_rounds = 3
 
 
 function onLoad(script_state)
@@ -17,9 +20,10 @@ function onLoad(script_state)
     width = 750,
     height = 500,
     font_size = 75,
-    label = stage_to_label[draft_stage],
+    label = "Draft Button"
   }
   self.createButton(btn_param)
+  update_label()
   cube = getObjectFromGUID(Global.getTable("GUIDs")["Cube Bag"])
 end
 
@@ -34,17 +38,30 @@ function action()
     start_round()
     change_stage("Mid-Round")
   elseif draft_stage == "Mid-Round" then 
-
+    rotate_hands()
+  elseif draft_stage == "Pre-Round" then
+    start_round()
+    change_stage("Mid-Round")
   end
+  update_label()
 end
 
 function change_stage(stage) 
   draft_stage = stage
-  self.editButton({index = 0, label = "grande gonzales"} )
 end
 
 function update_label()
-
+  local new_label = ""
+  if draft_stage == "Pre-Draft" then
+    new_label = "Start Draft & Deal"
+  elseif draft_stage == "Mid-Round" then
+    local direction = clockwise and "CW" or "CCW" 
+    local pick = 15 - g_hand_size
+    new_label = "Pack " .. g_round .. "\nPick " .. pick .. "\nPassing " .. direction
+  elseif draft_stage == "Pre-Round" then
+    new_label = "Start Round " .. g_round
+  end
+  self.editButton({index = 0, label = new_label })
 end
 
 ------------------------------------
@@ -63,7 +80,7 @@ function start_draft()
   cube.setPosition({0, -10, 0})
 
   -- Creates a draft log for each seated player 
-  local players = Global.call('real_seated_players')
+  local players = get_ordered_players()
   for p in pairs(players) do
     Notes.addNotebookTab({
       title = players[p].steam_name,
@@ -74,8 +91,9 @@ end
 
 -- deal -------------------------------
 function start_round()
-  broadcastToAll("Round XX IMPLMENET")
-  local players = Global.call('real_seated_players')
+  g_hand_size = 14
+  broadcastToAll("Round " .. g_round)
+  local players = get_ordered_players()
   for p in pairs(players) do
     local pack = {}
     pack = slow_deal(pack, players[p])
@@ -84,6 +102,8 @@ function start_round()
     function() write_pack(pack) end,
     function() return #pack == 15 end)
   end
+
+  -- increment round, DIP = true, R4R = false ?
 end
 
 function write_pack(pack)
@@ -104,9 +124,10 @@ end
 function slow_deal(pack, p)
   if #pack ~= 15 then
     Wait.frames(function()
-      local hand = p.getPlayerHand()
-      local hand_position = {hand.pos_x, hand.pos_y, hand.pos_z}
-      local card = cube.takeObject({position = hand_position, index = 1})
+      local hand_transform = p.getHandTransform()
+      hand_transform.rotation["y"] = hand_transform.rotation["y"] - 180
+      local card = cube.takeObject({position = hand_transform.position,
+                                    rotation = hand_transform.rotation, index = 1})
       table.insert(pack, card.getName())
       pack = slow_deal(pack, p)
     end, 6)
@@ -133,10 +154,24 @@ function has_value(tabl, val)
   return false
 end
 
+function find_difference(pack_cards, player_cards)
+  local set = {}
+  for _, val in ipairs(player_cards) do
+    set[val] = true
+  end
+
+  for idx, val in ipairs(pack_cards) do
+    if not set[val] then
+      return idx
+    end
+  end
+  return nil
+end
+
+
 
 function rotate_hands() 
-  local players = Global.call("real_seated_players")
-  local next_players = get_next_players(players)
+  local players = get_ordered_players()
 
   for idx, _ in ipairs(players) do 
     if #players[idx].getHandObjects() ~= g_hand_size then 
@@ -153,34 +188,39 @@ function rotate_hands()
 
   if g_hand_size == 0 then 
     g_clockwise = not g_clockwise
+    g_round = g_round + 1
+    change_stage("Pre-Round")
     --ready for round = true ?
   else 
-    for idx, player in ipairs(players) do
-      -- looks at all cards in player hand, first one to match in
-      -- pack record has that record pack as 'matching_pack'
-      -- recode, this is very horrendous
-      local player_hand = transformHand(player.getHandObject())
-      local matching_pack = -1
-      local super_break = false
-      for pack_index, pack in ipairs(g_packs) do
-        for _, card in ipairs(pack) do
-          if has_value (player_hand, card) then
-            matching_pack = pack_index
-            super_break = true 
-            break
+    for _, player in pairs(players) do
+      local player_hand = transformHand(player.getHandObjects())
+      for pack_idx, pack in ipairs(g_packs) do 
+        if has_value(pack, player_hand[1]) then
+          -- "pack" is the matching global pack to "player"'s hand
+          local g_pack_missing_index = find_difference(pack, player_hand)
+          local missingCard = table.remove(g_packs[pack_idx], g_pack_missing_index)
+          -- idea - give each pack when dealt a key, [Noble Hierach]
+          -- create a second list of packs with the same key 
+          -- when you remove here, you add to the second list
+          -- UI will display the last 3 entries in random order
+          local temp_tab = Global.call("get_note_tab", {title = player.steam_name})
+          if temp_tab == nil then
+            print("missing " .. player.color)
+          else 
+            Notes.editNotebookTab({index = temp_tab.index,
+                                   body = temp_tab.body .. missingCard .. "\n"})
           end
-        end
-        if super_break then
-          break
+          ------------------
+          break 
         end
       end
-      local missingIndex, missingCard = helperFindCard()
     end
   end
+  g_hand_size = g_hand_size - 1
 ------------------------------------
-  for idx, player in ipairs(next_players) do
+  for idx, player in ipairs(players) do
     local move_to_index = (idx == #players) and 1 or idx + 1
-    local move_to_player = next_players[move_to_index]
+    local move_to_player = players[move_to_index]
     local hold = player.getHandObjects()
     local hand = move_to_player.getPlayerHand()
     for _, card in ipairs(hold) do
@@ -189,13 +229,33 @@ function rotate_hands()
     end
   end
 
-  Wait.frames(function() Global.call('globalLastCard') end, 15)
+  Wait.frames(
+    function()
+      if g_hand_size == 0 then
+        for idx, val in pairs(players) do
+          local temp_tab = Global.call("get_note_tab", {title = val.steam_name})
+          local card = players[idx].getHandObjects()[1].getName()
+          Notes.editNotebookTab({index = temp_tab.index,
+                                 body = temp_tab.body .. card .. "\n"})
+        end
+      end
+
+    end, 10)
 end
 
-function get_next_players(players)
-  local next_players = {}
+--function get_next_players(players)
+function get_ordered_players()
+  local colors = getSeatedPlayers()
+  local players = {}
+  for _, c in pairs(colors) do
+    if Player[c].getPlayerHand() ~= nil then
+      table.insert(players, Player[c])
+    end
+  end
+
+  local ordered_players = {}
   local new_i = clockwise and #players or 1 
-  local inc = clockwise and 1 or -1
+  local inc = clockwise and -1 or 1
 
   -- Copied from LUA docs... returns iterator in order of keys
   local function pairsByKeys(t, f)
@@ -222,10 +282,10 @@ function get_next_players(players)
   end
 
   for _, p in pairsByKeys(player_angles()) do
-    next_players[new_i] = p
+    ordered_players[new_i] = p
     new_i = new_i + inc
   end
-  return next_players
+  return ordered_players
 end
 
 
