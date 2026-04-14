@@ -1,3 +1,7 @@
+-- bracket data is used to both store the positions that buttons and inputs
+-- will appear as well as store data between saves. For each entries entry,
+-- there is also a corresponding integer entry followed with "_c"
+-- not initiated, but each entry also has a "win_count" and "player parameter"
 bracket_data = {
     header = {
         patch_no = { data = "", label = "0.0", position = {6.85, .65, 3.7}},
@@ -20,6 +24,12 @@ bracket_data = {
     }
 }
 
+-- Function Creation ------------------------------------------------
+
+-- a function is created for each element in bracket_data's header and entries.
+-- _G refers to the global table that can be used universally.
+-- the argument standard (obj, color, input, stillEditing) is implicit from
+-- any input or button function, which is where these globally set functions are called.
 for _, val in ipairs(bracket_data.entries) do
     _G[val.name] = function(obj, color, input, stillEditing)
         updateBracket(val.name, input, "player")
@@ -35,7 +45,10 @@ for key, val in pairs(bracket_data.header) do
         updateBracket(key, input, "heading")
     end
 end
+-- Function Creation ------------------------------------------------
 
+-- on load, creates all buttons and inputs based on bracket_data or 
+-- previous saved script_state.
 function onLoad(script_state)
     if script_state ~= nil and script_state ~= "" then 
         bracket_data = JSON.decode(script_state)
@@ -116,10 +129,13 @@ function onLoad(script_state)
 
 end
 
+--- TODO: Implement taking bracket data, player notebooks, deck records,
+--- and pack records to give a JSON representation of the draft
 function finishDraft()
     do return end
 end
-
+--- Records each deck object in the Record Deck Zone. Taken from previous
+--- Record Button code.
 function recordDecks()
   local script_zone = getObjectFromGUID(Global.getTable("GUIDs")["Record Deck Zone"])
   local decks = script_zone.getObjects()
@@ -137,7 +153,8 @@ function recordDecks()
   Notes.editNotebookTab({index = 1, body = text})
 end
 
-
+--- updates bracket_data and saves the script_state every time
+--- an input or button is interacted with.
 function updateBracket(name, input, type)
     if type == "heading" then
         bracket_data.header[name] = input

@@ -303,6 +303,7 @@ function find_difference(pack_cards, player_cards)
   end
   return nil
 end
+-- Rotate Hands -----------------------------------------------------
 
 --- function that returns a list of Players that are ordered by 
 --- the current direction of the draft and the angles of 
