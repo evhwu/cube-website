@@ -3,14 +3,15 @@ GUIDs = {["Rotate Right"] = 'e69660', ["Rotate Left"] = '17bafe', ["Cube Bag"] =
          ["Start Button"] = 'ef2df3', ["Spawn Token Button"] = 'ee63dd', ["Copy Button"] = '0a6af2',
          ["Token Zone"] = 'dd5d59', ["Record Deck Zone"] = '1f0f34'}
 
-function onLoad(script_state)
+
+--[[
+         function onLoad(script_state)
   if script_state ~= nil or script_state ~= "" then
     broadcastToAll("load save")
     --____= JSON.decode(script_state)
   end
 end
 
---[[
 function onSave()
   return JSON.encode(draft_data)
 end

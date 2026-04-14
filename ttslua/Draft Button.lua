@@ -9,14 +9,16 @@ draft_data =  {
   -- below are essentially constants, but are implemented to support draft changes
   pack_size = 15, -- # of cards dealt in each pack
   max_rounds = 3, -- # of rounds until finished
-  num_players = 4,
-  snipping = true
+  num_players = 4, -- # of players in draft
+  snipping = true -- # whether the snipping tool pick_order reminder is turned on
 }
 
 function onLoad(script_state)
   if script_state ~= nil and script_state ~= "" then
-    -- Todo: change to draft_data, onsave as well
+    broadcastToAll("load save")
     draft_data = JSON.decode(script_state)
+  else 
+    broadcastToAll("new save")
   end
   local btn_param = {
     click_function = "action",
@@ -367,7 +369,7 @@ function update_UI()
   end
 
   -- runs after a full go - around (for 4 players, will start on pick 5)
-  if draft_data.pack_size >= num_players + 1 + draft_data.hand_size then
+  if draft_data.pack_size >= draft_data.num_players + 1 + draft_data.hand_size then
     for _, val in pairs(draft_data.pick_order) do
       local last_picks = {}
       -- adds the cards taken from the time since the player last held the pack

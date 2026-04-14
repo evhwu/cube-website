@@ -107,7 +107,7 @@ function onLoad(script_state)
     end
 
     self.createButton({
-        click_function = "recordDecks",
+        click_function = "record_decks",
         function_owner = self,
         position = {6.85, .65, 7.05},
         width = 1550,
@@ -117,7 +117,7 @@ function onLoad(script_state)
         label = "Record Decks"
     })
     self.createButton({
-        click_function = "finishDraft",
+        click_function = "finish_draft",
         function_owner = self,
         position = {5.2, .65, 7.05},
         width = 1375,
@@ -131,12 +131,12 @@ end
 
 --- TODO: Implement taking bracket data, player notebooks, deck records,
 --- and pack records to give a JSON representation of the draft
-function finishDraft()
+function finish_draft()
     do return end
 end
 --- Records each deck object in the Record Deck Zone. Taken from previous
 --- Record Button code.
-function recordDecks()
+function record_decks()
   local script_zone = getObjectFromGUID(Global.getTable("GUIDs")["Record Deck Zone"])
   local decks = script_zone.getObjects()
   local text = ""
