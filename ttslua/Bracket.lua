@@ -4,15 +4,15 @@
 -- not initiated, but each entry also has a "win_count" and "player parameter"
 bracket_data = {
     header = {
-        patch_no = { data = "", label = "0.0", position = {6.85, .65, 3.7}},
-        draft_no = { data = "", label = "1", position = {6.85, .65, 4.85}},
-        date_no =  { data = "", label = "MM/DD/YYYY", position = {6.85, .65, 6.05}}
+        patch_no = {label = "0.0", position = {6.85, .65, 3.7}},
+        draft_no = {label = "1", position = {6.85, .65, 4.85}},
+        date_no =  {label = "MM/DD/YYYY", position = {6.85, .65, 6.05}}
     },
     entries = {
         {name = "m1p1", label = "1st seed", position = {-5.93, .65, -6.29}},
         {name = "m1p2", label = "4th seed", position = {-5.93, .65, -5.13}},
         {name = "m2p1", label = "2nd seed", position = {-5.93, .65, -2.18}},
-        {name = "m2p1", label = "3rd seed", position = {-5.93, .65, -1.03}},
+        {name = "m2p2", label = "3rd seed", position = {-5.93, .65, -1.03}},
         {name = "m3p1", label = "loser of ws1", position = {-5.93, .65, 5.86}},
         {name = "m3p2", label = "loser of ws2", position = {-5.93, .65, 7.06}},
         {name = "m4p1", label = "winner of ws1", position = {-0.25, .65, -4.24}},
@@ -47,6 +47,11 @@ for key, val in pairs(bracket_data.header) do
 end
 -- Function Creation ------------------------------------------------
 
+-- saves bracket to script_state
+function onSave()
+    return JSON.encode(bracket_data)
+end
+
 -- on load, creates all buttons and inputs based on bracket_data or 
 -- previous saved script_state.
 function onLoad(script_state)
@@ -62,7 +67,7 @@ function onLoad(script_state)
             width = 3150, height = 400, scale = {0.5,1,1},
             font_size = 250, 
             color = {0,0,0,0}, font_color = {0,0,0,99},
-            alignment = 3, --center
+            alignment = 3 --center
         }
         if val.player then
             input_param.value = val.player
@@ -98,7 +103,7 @@ function onLoad(script_state)
             width = 1550, height = 400, scale = {0.5,1,1},
             font_size = 250,
             color = {0,0,0,0}, font_color = {0,0,0,99},
-            alignment = 3, --center
+            alignment = 3 --center
         }
         if val.data then
             data_param.value = val.data
@@ -153,11 +158,10 @@ function record_decks()
   Notes.editNotebookTab({index = 1, body = text})
 end
 
---- updates bracket_data and saves the script_state every time
---- an input or button is interacted with.
+--- updates bracket_data to inputs
 function updateBracket(name, input, type)
     if type == "heading" then
-        bracket_data.header[name] = input
+        bracket_data.header[name].data = input
     else
         for idx, val in ipairs(bracket_data.entries) do
             if val.name == name or val.name .. "_c" == name then
@@ -169,5 +173,4 @@ function updateBracket(name, input, type)
             end
         end
     end
-    self.script_state = JSON.encode(bracket_data)
 end

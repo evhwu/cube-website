@@ -159,7 +159,7 @@ function recursive_deal(pack, ht)
                                     index = 1})
       table.insert(pack, card.getName())
       pack = recursive_deal(pack, ht)
-    end, 5)
+    end, 8)
   end
   return pack
 end
@@ -378,6 +378,7 @@ function update_UI()
         table.insert(last_picks, val.picks[#val.picks - i])
       end
       fy_shuffle(last_picks)
+      broadcastToColor("------------------", val.color, Color.fromString(val.color))
       for _, card in ipairs(last_picks) do
         broadcastToColor(card, val.color, Color.fromString(val.color))
       end
