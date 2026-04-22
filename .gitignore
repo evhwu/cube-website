@@ -2,4 +2,5 @@ __pycache__
 input/json/oracle-cards*
 test_frontend/basic_set.js
 test_frontend/regression.js
+test_frontend/regression_basic.js
 test_frontend/demo.html

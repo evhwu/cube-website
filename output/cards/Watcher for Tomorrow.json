@@ -1,0 +1,215 @@
+{
+    "name": "Watcher for Tomorrow",
+    "picks": [
+        {
+            "draft_number": "19",
+            "player": "Nenni",
+            "pack_number": 1,
+            "pick_number": 6,
+            "run": true
+        },
+        {
+            "draft_number": "21",
+            "player": "big big big big dumps",
+            "pack_number": 2,
+            "pick_number": 2,
+            "run": true
+        },
+        {
+            "draft_number": "22",
+            "player": "shinydog",
+            "pack_number": 3,
+            "pick_number": 2,
+            "run": true
+        },
+        {
+            "draft_number": "33",
+            "player": "big big big big dumps",
+            "pack_number": 1,
+            "pick_number": 2,
+            "run": true
+        },
+        {
+            "draft_number": "34",
+            "player": "Alexotl",
+            "pack_number": 3,
+            "pick_number": 5,
+            "run": true
+        },
+        {
+            "draft_number": "37",
+            "player": "shinydog",
+            "pack_number": 1,
+            "pick_number": 3,
+            "run": true
+        },
+        {
+            "draft_number": "38",
+            "player": "Nenni",
+            "pack_number": 2,
+            "pick_number": 1,
+            "run": true
+        },
+        {
+            "draft_number": "42",
+            "player": "Alexotl",
+            "pack_number": 2,
+            "pick_number": 12,
+            "run": false
+        },
+        {
+            "draft_number": "49",
+            "player": "Nenni",
+            "pack_number": 3,
+            "pick_number": 4,
+            "run": true
+        },
+        {
+            "draft_number": "52",
+            "player": "Nenni",
+            "pack_number": 1,
+            "pick_number": 8,
+            "run": false
+        },
+        {
+            "draft_number": "53",
+            "player": "shinydog",
+            "pack_number": 1,
+            "pick_number": 7,
+            "run": true
+        },
+        {
+            "draft_number": "63",
+            "player": "shinydog",
+            "pack_number": 2,
+            "pick_number": 6,
+            "run": false
+        },
+        {
+            "draft_number": "64",
+            "player": "shinydog",
+            "pack_number": 2,
+            "pick_number": 4,
+            "run": true
+        },
+        {
+            "draft_number": "66",
+            "player": "Nenni",
+            "pack_number": 3,
+            "pick_number": 8,
+            "run": true
+        },
+        {
+            "draft_number": "67",
+            "player": "big big big big dumps",
+            "pack_number": 2,
+            "pick_number": 11,
+            "run": true
+        },
+        {
+            "draft_number": "68",
+            "player": "big big big big dumps",
+            "pack_number": 2,
+            "pick_number": 9,
+            "run": true
+        },
+        {
+            "draft_number": "70",
+            "player": "Nenni",
+            "pack_number": 2,
+            "pick_number": 3,
+            "run": true
+        },
+        {
+            "draft_number": "71",
+            "player": "shinydog",
+            "pack_number": 1,
+            "pick_number": 5,
+            "run": true
+        },
+        {
+            "draft_number": "74",
+            "player": "Alexotl",
+            "pack_number": 1,
+            "pick_number": 1,
+            "run": true
+        },
+        {
+            "draft_number": "76",
+            "player": "shinydog",
+            "pack_number": 3,
+            "pick_number": 1,
+            "run": true
+        },
+        {
+            "draft_number": "77",
+            "player": "big big big big dumps",
+            "pack_number": 3,
+            "pick_number": 8,
+            "run": true
+        },
+        {
+            "draft_number": "79",
+            "player": "Nenni",
+            "pack_number": 3,
+            "pick_number": 1,
+            "run": true
+        },
+        {
+            "draft_number": "80",
+            "player": "Alexotl",
+            "pack_number": 2,
+            "pick_number": 9,
+            "run": true
+        },
+        {
+            "draft_number": "81",
+            "player": "Nenni",
+            "pack_number": 1,
+            "pick_number": 3,
+            "run": true
+        },
+        {
+            "draft_number": "82",
+            "player": "Alexotl",
+            "pack_number": 2,
+            "pick_number": 3,
+            "run": true
+        },
+        {
+            "draft_number": "84",
+            "player": "Nenni",
+            "pack_number": 1,
+            "pick_number": 3,
+            "run": true
+        },
+        {
+            "draft_number": "85",
+            "player": "big big big big dumps",
+            "pack_number": 1,
+            "pick_number": 2,
+            "run": true
+        },
+        {
+            "draft_number": "91",
+            "player": "Nenni",
+            "pack_number": 3,
+            "pick_number": 1,
+            "run": false
+        },
+        {
+            "draft_number": "96",
+            "player": "big big big big dumps",
+            "pack_number": 3,
+            "pick_number": 9,
+            "run": false
+        },
+        {
+            "draft_number": "103",
+            "player": "big big big big dumps",
+            "pack_number": 1,
+            "pick_number": 9,
+            "run": false
+        }
+    ]
+}
