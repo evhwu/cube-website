@@ -14,8 +14,6 @@ def generate_cards():
         raw_data = json.load(f)
 
     for card in raw_data["card_list"]:
-        if card != "Six":
-            continue
         output = {"name" : card,
                   "picks" : []}
         # draft number , pick number, player , run or not, wins vs  
@@ -26,13 +24,18 @@ def generate_cards():
                     pick_number = (pick_index % 15) + 1
                     pack_number = math.ceil((pick_index+1) / 15)
                     run = card in player["decklist"]
-                    #TODO: figure out wins vs players 
+                    #TODO: figure out wins vs players
+                    #temp , using rank instead
+                    rank = player["rank"] 
+                    deck_name = player["deck_name"]
                     record = []
                     output["picks"].append({"draft_number" : draft["draft_number"],
                                             "player" : player["name"],
                                             "pack_number" : pack_number,
                                             "pick_number" : pick_number,
-                                            "run" : run})
+                                            "run" : run,
+                                            "rank" : rank,
+                                            "deck_name": deck_name})
                     break
         card_name = raw_data["card_list"][card]["alias"] if "alias" in raw_data["card_list"][card] else card
         card_path = Path.cwd().joinpath("output", "cards", f"{card_name}.json")
