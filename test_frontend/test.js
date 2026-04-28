@@ -1,21 +1,19 @@
 import * as echarts from "https://esm.sh/echarts@5";
 import ecStat from "https://esm.sh/echarts-stat@1";
-
 echarts.registerTransform(ecStat.transform.regression);
+
 
 const players = ["Alexotl", "big big big big dumps", "Nenni", "shinydog"];
 const style = {colors:['#31b32b', '#1e87ff', '#da1a18','#a020f0']};
 
 let rawData = {};
 let cardName = "";
-let pieData = [];
+let selectedPlayers = new Set(players);
+
 window.addEventListener("DOMContentLoaded", init);
 let container = document.getElementById("chart")
 let chart = echarts.init(container, null, { renderer: "canvas" });  
 window.addEventListener("resize", () => chart.resize());
-
-let selectedPlayers = new Set(players);
-
 chart.on("legendselectchanged", (e) => {
     selectedPlayers = new Set(
         Object.entries(e.selected)
@@ -40,18 +38,24 @@ async function init() {
 function readJSON(data) {
     rawData = data.picks;
     cardName = data.name;
-    const pieData = rawData.reduce((acc, item) => {
-        acc[item.player] = (acc[item.player] || 0) + 1;
-        return acc;
-    }, {});
-    console.log(pieData)
 }
 
 
 
 
 function buildChart() {
-    let visibleData = rawData.filter(d => selectedPlayers.has(d.player))
+    let visibleData = rawData.filter(d => selectedPlayers.has(d.player));
+
+    let totals = {};
+    players.forEach(p => {
+        const playerPicks = visibleData.filter(d => d.player === p);
+        totals[p] = {
+            pick:  (playerPicks.reduce((s, d) => s + d.pick_number, 0) / playerPicks.length).toFixed(1),
+            run: playerPicks.reduce((total, curr) => (curr.run ? total + 1:  total), 0),
+            not_run : playerPicks.reduce((total, curr) => (!curr.run ? total + 1:  total), 0),
+        };
+    });
+    console.log(totals)
 
     const datasets = players.map((player) => ({
         source: visibleData
@@ -62,25 +66,30 @@ function buildChart() {
     }));
 
     const wrDataset = [
-        { source: visibleData.map(d => [d.draft_number, d.pick_number]) },
+        {
+            source: visibleData
+                .map(d => [d.draft_number, d.pick_number])
+        },
         {
             fromDatasetIndex: players.length,
             transform: {
                 type:   "ecStat:regression",
-                config: { method: "polynomial", order: 3 },
+                config: { method: "polynomial", order: 2 },
             },
         },
-        { source: visibleData.map(d => [d.draft_number, d.rank]) },
-                {
+        {
+            source: visibleData
+                .filter((d => d.run === true))
+                .map(d => [d.draft_number, d.rank])
+        },
+        {
             fromDatasetIndex: players.length + 2,
             transform: {
-                type:   "ecStat:regression",
-                config: { method: "polynomial", order: 3 },
+                type: "ecStat:regression",
+                config: {method: "polynomial", order: 2 },
             },
         },
     ]
-
-    const pieDataset = {source: pieData}
 
     const series = players.map((p, i ) => ({
         type : "scatter",
@@ -98,29 +107,52 @@ function buildChart() {
 
     const wrSeries = [
         {
-        type: "line",
-        datasetIndex: players.length + 1,
-        yAxisIndex: 0,
-        encode: {x:0, y:1},
-        showSymbol: false,
-        lineStyle: {type: "dashed",
-                    color: '#f4641d'
-        }
-    },
-    {
-        type: "line",
-        datasetIndex: players.length + 3,
-        yAxisIndex: 1,
-        encode: {x:0, y:1},
-        showSymbol: false,
-        lineStyle: {type: "dashed",
-                    color: '#fffff'
-        }
-    }]
+            type: "line",
+            datasetIndex: players.length + 1,
+            yAxisIndex: 0,
+            encode: {x:0, y:1},
+            showSymbol: false,
+            lineStyle: {type: "dashed",
+                        color: '#f4641d'
+            },
+        },
+        {
+            type: "line",
+            datasetIndex: players.length + 3,
+            yAxisIndex: 1,
 
-    const pieSeries = {
-        type: 'pie',
-    }
+            encode: {x:0, y:1},
+            showSymbol: false,
+            lineStyle: {type: "dashed",
+                        color: '#000000'
+            }
+        }
+    ]
+
+    const pieSeries = [
+        {
+            type: "pie",
+            tooltip: {
+                trigger: "item",
+                formatter: (params) => {
+                    const pdee = params.data
+                    return `<b style="color:${style.colors[players.indexOf(pdee.name)]}"> ${pdee.name}</b></br>` +
+                    `Avg Pick: ${pdee.pick_rate}</br>` +
+                    `Run ${pdee.run}/${pdee.value} times (${(100*pdee.run/pdee.value).toFixed(2)}%)`
+                }
+            },
+            center: ["85%", "70%"],
+            radius: ["22%", "35%"],
+            data: players.map((p, i) => ({
+                name: p,
+                run: totals[p].run,
+                not_run: totals[p].not_run,
+                value: totals[p].run + totals[p].not_run,
+                pick_rate: totals[p].pick,
+                itemStyle: { color: style.colors[i] }
+            })),
+        },
+    ]   
 
     return {
         dataset: datasets.concat(wrDataset),
@@ -136,33 +168,49 @@ function buildChart() {
             itemHeight: 10,
         },
         xAxis: {type: "value", name: "Draft Number", nameLocation: "middle",
-                nameGap: 28
+            nameGap: 28, min: 17
         },
         yAxis: [
-      { type: "value", name: "Pick Number", nameTextStyle: {color: '#f4641d'} },
-      { type: "value", name: "Rank", splitLine: { show: false },
-        nameTextStyle: {color: '#000000'} },
-    ],
+            {
+                type: "value", name: "Pick Number",
+                nameTextStyle: {color: '#f4641d'},
+                min: 1, max: 15
+            },
+            {
+                type: "value", name: "Rank",
+                splitLine: { show: false },
+                nameTextStyle: {color: '#000000'},
+                min: 1, max : 4
+            },
+        ],
         tooltip: {
-            trigger: "item",
+            trigger: "axis",
+            axisPointer : {
+                type: "line",
+                snap: true,
+                crossStyle: {
+                    type: "dashed"
+                }
+            },
             formatter: (params) => {
-                const d = params.data;
+                const d = params[0].data;
                 return (
                     `<b style="color:${style.colors[players.indexOf(d.player)]}">Draft ${d.x}, ` +
                     `${d.player}</b><br/>` +
                     `Pack ${d.pack}, Pick ${d.y}<br/>` +
                     `${d.run ? "Run": "Not Run"}<br/>` +
                     `Rank: ${d.rank}<br/>` +
-                    `Deck Name: ${d.deck_name}`
-      );
+                    `Deck Name: ${d.deck_name}`);
             }
         },
-        grid: {
-            containLabel: true
-        },
-
-        series: series.concat(wrSeries),
+        grid:[
+            {
+                containLabel: true,
+                left: "5%", top: "10%",
+                width: "70%", height: "80%",
+            },
+        ],
+        series: series.concat(wrSeries).concat(pieSeries),
     };
-
 }
 
