@@ -1,27 +1,28 @@
 -- bracket data is used to both store the positions that buttons and inputs
 -- will appear as well as store data between saves. For each entries entry,
 -- there is also a corresponding integer entry followed with "_c"
--- not initiated, but each entry also has a "win_count" and "player parameter"
+-- not initiated, but each entry also has a "win_count" and "player" parameter
 bracket_data = {
-    header = {
-        patch_no = {label = "0.0", position = {6.85, .65, 3.7}},
-        draft_no = {label = "1", position = {6.85, .65, 4.85}},
-        date_no =  {label = "MM/DD/YYYY", position = {6.85, .65, 6.05}}
-    },
-    entries = {
-        {name = "m1p1", label = "1st seed", position = {-5.93, .65, -6.29}},
-        {name = "m1p2", label = "4th seed", position = {-5.93, .65, -5.13}},
-        {name = "m2p1", label = "2nd seed", position = {-5.93, .65, -2.18}},
-        {name = "m2p2", label = "3rd seed", position = {-5.93, .65, -1.03}},
-        {name = "m3p1", label = "loser of ws1", position = {-5.93, .65, 5.86}},
-        {name = "m3p2", label = "loser of ws2", position = {-5.93, .65, 7.06}},
-        {name = "m4p1", label = "winner of ws1", position = {-0.25, .65, -4.24}},
-        {name = "m4p2", label = "winner of ws2", position = {-0.25, .65, -3.05}},
-        {name = "m5p1", label = "loser of wf", position = {-0.25, .65, 3.85}},
-        {name = "m5p2", label = "winner of lsf", position = {-0.25, .65, 5.1}},
-        {name = "m6p1", label = "winner of wf", position = {5.395, .65, -0.02}},
-        {name = "m6p2", label = "winner of lf", position = {5.395, .65, 1.07}},
-    }
+  header = {
+    patch_no = {label = "0.0", position = {6.85, .65, 3.7}},
+    draft_no = {label = "1", position = {6.85, .65, 4.85}},
+    date_no =  {label = "MM/DD/YYYY", position = {6.85, .65, 6.05}}
+  },
+  entries = {
+    {name = "m1p1", label = "1st seed", position = {-5.93, .65, -6.29}},
+    {name = "m1p2", label = "4th seed", position = {-5.93, .65, -5.13}},
+    {name = "m2p1", label = "2nd seed", position = {-5.93, .65, -2.18}},
+    {name = "m2p2", label = "3rd seed", position = {-5.93, .65, -1.03}},
+    {name = "m3p1", label = "loser of ws1", position = {-5.93, .65, 5.86}},
+    {name = "m3p2", label = "loser of ws2", position = {-5.93, .65, 7.06}},
+    {name = "m4p1", label = "winner of ws1", position = {-0.25, .65, -4.24}},
+    {name = "m4p2", label = "winner of ws2", position = {-0.25, .65, -3.05}},
+    {name = "m5p1", label = "loser of wf", position = {-0.25, .65, 3.85}},
+    {name = "m5p2", label = "winner of lsf", position = {-0.25, .65, 5.1}},
+    {name = "m6p1", label = "winner of wf", position = {5.395, .65, -0.02}},
+    {name = "m6p2", label = "winner of lf", position = {5.395, .65, 1.07}},
+  },
+  decks = {}
 }
 
 -- Function Creation ------------------------------------------------
@@ -31,113 +32,201 @@ bracket_data = {
 -- the argument standard (obj, color, input, stillEditing) is implicit from
 -- any input or button function, which is where these globally set functions are called.
 for _, val in ipairs(bracket_data.entries) do
-    _G[val.name] = function(obj, color, input, stillEditing)
-        updateBracket(val.name, input, "player")
-    end
-    local win_counter = val.name .. "_c"
-    _G[win_counter] = function(obj, color, input, stillEditing)
-        updateBracket(win_counter, input, "win_count")
-    end
+  _G[val.name] = function(obj, color, input, stillEditing)
+    updateBracket(val.name, input, "player")
+  end
+  local win_counter = val.name .. "_c"
+  _G[win_counter] = function(obj, color, input, stillEditing)
+    updateBracket(win_counter, input, "win_count")
+  end
 end
 
 for key, val in pairs(bracket_data.header) do 
-    _G[key] = function(obj, color, input, stillEditing)
-        updateBracket(key, input, "heading")
-    end
+  _G[key] = function(obj, color, input, stillEditing)
+    updateBracket(key, input, "heading")
+  end
 end
 -- Function Creation ------------------------------------------------
 
 -- saves bracket to script_state
 function onSave()
-    return JSON.encode(bracket_data)
+  return JSON.encode(bracket_data)
 end
 
 -- on load, creates all buttons and inputs based on bracket_data or 
 -- previous saved script_state.
 function onLoad(script_state)
-    if script_state ~= nil and script_state ~= "" then 
-        bracket_data = JSON.decode(script_state)
+  if script_state ~= nil and script_state ~= "" then 
+    bracket_data = JSON.decode(script_state)
+  end
+  -- generates a space for each bracket entry's name 
+  for _, val in pairs(bracket_data.entries) do
+    local input_param = {
+      input_function = val.name,
+      function_owner = self,
+      label = val.label,
+      position = val.position,
+      width = 3150, height = 400, scale = {0.5,1,1},
+      font_size = 250, 
+      color = {0,0,0,0}, font_color = {0,0,0,99},
+      alignment = 3 --center
+    }
+    if val.player then
+      input_param.value = val.player
     end
-    for _, val in pairs(bracket_data.entries) do
-        local input_param = {
-            input_function = val.name,
-            function_owner = self,
-            label = val.label,
-            position = val.position,
-            width = 3150, height = 400, scale = {0.5,1,1},
-            font_size = 250, 
-            color = {0,0,0,0}, font_color = {0,0,0,99},
-            alignment = 3 --center
-        }
-        if val.player then
-            input_param.value = val.player
-        end
-        self.createInput(input_param)
+    self.createInput(input_param)
+  end
+  -- generates a space for each bracket entry's win count
+  for _, val in pairs(bracket_data.entries) do
+    local win_counter = val.name .. "_c"
+    local score_param = {
+      input_function  = win_counter,
+      input_param = win_counter,
+      function_owner = self,
+      position = {val.position[1]+2, val.position[2], val.position[3]},
+      width = 500, height = 400, scale = {0.5,1,1},
+      font_size = 250,
+      color = {0,0,0,0}, font_color = {0,0,0,99},
+      alignment = 3, -- center
+      validation = 2, -- only ints
+      value = 0
+    }
+    if val.win_count then
+      score_param.value = val.win_count
     end
-    for _, val in pairs(bracket_data.entries) do
-        local win_counter = val.name .. "_c"
-        local score_param = {
-            input_function  = win_counter,
-            input_param = win_counter,
-            function_owner = self,
-            position = {val.position[1]+2, val.position[2], val.position[3]},
-            width = 500, height = 400, scale = {0.5,1,1},
-            font_size = 250,
-            color = {0,0,0,0}, font_color = {0,0,0,99},
-            alignment = 3, -- center
-            validation = 2, -- only ints
-            value = 0
-        }
-        if val.win_count then
-            score_param.value = val.win_count
-        end
-        self.createInput(score_param)
-
+    self.createInput(score_param)
+  end
+  -- generates a space for each header entry's value
+  for key, val in pairs(bracket_data.header) do
+    local data_param = {
+      input_function = key,
+      function_owner = self,
+      label = val.label,
+      position = val.position,
+      width = 1550, height = 400, scale = {0.5,1,1},
+      font_size = 250,
+      color = {0,0,0,0}, font_color = {0,0,0,99},
+      alignment = 3 --center
+      --validation ? could make a field in bracket_data.header
+    }
+    if val.data then
+      data_param.value = val.data
     end
-    for key, val in pairs(bracket_data.header) do
-        local data_param = {
-            input_function = key,
-            function_owner = self,
-            label = val.label,
-            position = val.position,
-            width = 1550, height = 400, scale = {0.5,1,1},
-            font_size = 250,
-            color = {0,0,0,0}, font_color = {0,0,0,99},
-            alignment = 3 --center
-        }
-        if val.data then
-            data_param.value = val.data
-        end
-        self.createInput(data_param)
-    end
-
-    self.createButton({
-        click_function = "record_decks",
-        function_owner = self,
-        position = {6.85, .65, 7.05},
-        width = 1550,
-        height = 400,
-        font_size = 250,
-        scale = {0.5,1,1},
-        label = "Record Decks"
-    })
-    self.createButton({
-        click_function = "finish_draft",
-        function_owner = self,
-        position = {5.2, .65, 7.05},
-        width = 1375,
-        height = 400,
-        font_size = 250,
-        scale = {0.5,1,1},
-        label = "Finish Draft"
-    })
-
+    self.createInput(data_param)
+  end
+  -- creates button for record decklist and finalize draft
+  self.createButton({
+    click_function = "record_decks",
+    function_owner = self,
+    position = {6.85, .65, 7.05},
+    width = 1550,
+    height = 400,
+    font_size = 250,
+    scale = {0.5,1,1},
+    label = "Record Decks"
+  })
+  self.createButton({
+    click_function = "finish_draft",
+    function_owner = self,
+    position = {5.2, .65, 7.05},
+    width = 1375,
+    height = 400,
+    font_size = 250,
+    scale = {0.5,1,1},
+    label = "Finish Draft"
+  })
 end
 
 --- TODO: Implement taking bracket data, player notebooks, deck records,
 --- and pack records to give a JSON representation of the draft
 function finish_draft()
-    do return end
+  --[[
+  local draft_button = getObjectFromGUID(Global.getTable("GUIDs")["Draft Button"])
+  local phase = draft_button.getTable("draft_data")
+  if phase ~= "Finished" then
+    broadcastToAll("Cannot Finalize Draft: Draft phase is " .. phase)
+    return
+  end
+
+  local note_tabs = Notes.getNotebookTabs()
+  local found_flag = false
+  for _, tab in pairs(note_tabs) do
+    if tab.title == "Deck Records" then
+      found_flag = true
+      break
+    end
+  end
+  if not found_flag then
+    broadcastToAll("Cannot Finalize Draft: Decklists haven't been recorded.")
+    return
+  end
+
+  for _, entry in pairs(bracket_data.entries) do
+    if entry.win_count == nil or entry.win_count == nil then
+      broadcastToAll("Cannot Finalize Draft: " .. entry.name .. " is missing a value.")
+      return
+    end
+  end
+  for key, val in pairs(bracket_data.header) do
+    if val.data == nil then
+      broadcastToAll("Cannot Finalize Draft: " .. key .. " is missing a value.")
+      return
+    end
+  end
+  ]]
+
+  local draft_button = getObjectFromGUID(Global.getTable("GUIDs")["Draft Button"])
+  local pick_order = draft_button.getTable("draft_data").pick_order
+  table.sort(pick_order, function(a, b)
+    return a.round > b.round
+  end)
+
+  local temp_colors = {"Green", "Blue", "Red", "Purple"} 
+  local color_order = {}
+  local player_order = {}
+  for _, col in ipairs(temp_colors) do
+    local temp_color = {}
+    local temp_player = {}
+    for _, pack in pairs(pick_order) do
+      if col == pack.color then
+        for _, card in ipairs(pack.picks) do 
+          table.insert(temp_color, card)
+        end
+      end
+    end
+    color_order[col] = temp_color
+    for _, note in pairs(Notes.getNotebookTabs()) do
+      if col == note.color then
+        temp_player["body"] = note.body
+      end
+    end
+    player_order[col] = temp_player
+  end
+
+  local skip = {label = true, position = true}
+  local results = {}
+  for key, val in pairs(bracket_data.entries) do
+    if not skip[key] then
+      results[key] = val
+    end
+  end
+
+  local export_output = {
+    patch = bracket_data.patch_no,
+    draft = bracket_data.draft_no,
+    date = bracket_data.date_no,
+    color_order = color_order,
+    player_order = player_order,
+    decklists = bracket_data.decks,
+    results = results
+  }
+  
+  Notes.addNotebookTab({
+    title = "Draft Export",
+    body = JSON.encode(export_output),
+    color = "Grey"
+  })
+  
 end
 --- Records each deck object in the Record Deck Zone. Taken from previous
 --- Record Button code.
@@ -146,31 +235,40 @@ function record_decks()
   local decks = script_zone.getObjects()
   local text = ""
 
+  local draft_button = getObjectFromGUID(Global.getTable("GUIDs")["Draft Button"])
+  local players = draft_button.call("get_ordered_players")
+  local decklists = {}
+  for _, player in pairs(players) do
+    decklists[players] = {}
+  end
+
   broadcastToAll(#decks)
-  for i, deck in ipairs(decks) do
+  for _, deck in ipairs(decks) do
     local cards = deck.getObjects()
     text = text .. deck.getName() .. '\n'
-    for j, card in pairs(cards) do
+    for _, card in pairs(cards) do
       text = text .. card.name .. '\n'
+      table.insert(decklists[deck.getName()], card)
     end
-    text = text .. '#413' .. '\n'
+    text = text .. '\n\n'
   end
   Notes.editNotebookTab({index = 1, body = text})
+  bracket_data.decks = decklists
 end
 
 --- updates bracket_data to inputs
 function updateBracket(name, input, type)
-    if type == "heading" then
-        bracket_data.header[name].data = input
-    else
-        for idx, val in ipairs(bracket_data.entries) do
-            if val.name == name or val.name .. "_c" == name then
-                if type == "player" then 
-                    bracket_data.entries[idx].player = input
-                elseif type == "win_count" then
-                    bracket_data.entries[idx].win_count = input
-                end
-            end
+  if type == "heading" then
+    bracket_data.header[name].data = input
+  else
+    for idx, val in ipairs(bracket_data.entries) do
+      if val.name == name or val.name .. "_c" == name then
+        if type == "player" then 
+          bracket_data.entries[idx].player = input
+        elseif type == "win_count" then
+          bracket_data.entries[idx].win_count = input
         end
+      end
     end
+  end
 end

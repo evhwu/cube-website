@@ -5,6 +5,7 @@ draft_data =  {
   remaining_packs = {}, -- All remaining cards in the round. Diminishes over time, per round.
   pick_order = {}, -- Order of taken cards. Will start to be displayed once a full go-around has occured.
   is_clockwise = false, -- Direction that players are passing
+  player_order = {}, -- Order of taken cards by player. Duplicate of Player's Notebook.
 
   -- below are essentially constants, but are implemented to support draft changes
   pack_size = 15, -- # of cards dealt in each pack
@@ -94,6 +95,7 @@ function start_draft()
       title = players[pidx].steam_name,
       body = players[pidx].steam_name .. '-#-' .. players[pidx].color ..'\n',
       color = players[pidx].color})
+    draft_data.player_order[players[pidx].steam_name] = {}
   end
 end
 -- Begin Draft ------------------------------------------------------
@@ -105,7 +107,7 @@ end
 --- players pick in future turns.
 function start_round()
   draft_data.hand_size = draft_data.pack_size - 1
-  draft_data.pick_order = {}
+  --draft_data.pick_order = {}
   broadcastToAll("Round " .. draft_data.round)
   local players = get_ordered_players()
   for _, player in pairs(players) do
@@ -131,7 +133,9 @@ function write_pack(pack, player_color)
   -- is used mainly to find which card was taken from a pack, while pick_order
   -- is used to record the pick order and display for players as round continues.
   draft_data.remaining_packs[pack[1]] = pack
-  draft_data.pick_order[pack[1]] = {color = player_color, picks = {}}
+  draft_data.pick_order[pack[1]] = {color = player_color,
+                                    round = draft_data.round,
+                                    picks = {}}
 
   local body = ""
   for _, val in ipairs(pack) do
@@ -178,7 +182,7 @@ function rotate_hands()
     if #p.getHandObjects() ~= draft_data.hand_size then 
       broadcastToAll(p.steam_name .. " has " .. #p.getHandObjects().. " cards")
       broadcastToAll("Players should have " .. draft_data.hand_size .. " cards.")
-      do return end
+      return
     end
   end
 
@@ -230,6 +234,7 @@ function rotate_hands()
             Notes.editNotebookTab({index = temp_tab.index,
                                    body = temp_tab.body .. missing_card .. "\n"})
           end
+          table.insert(draft_data.player_order[player.steam_name], missing_card)
           break 
         end
       end
@@ -262,6 +267,12 @@ function rotate_hands()
           local card = players[idx].getHandObjects()[1].getName()
           Notes.editNotebookTab({index = temp_tab.index,
                                  body = temp_tab.body .. card .. "\n"})
+          table.insert(draft_data.player_order[val.steam_name], card)
+          for _, pack in pairs(draft_data.pick_order) do
+            if val.color == pack.color and pack.round == draft_data.round then
+              table.insert(pack.picks, card)
+            end
+          end
         end
       end
     end, 10)
@@ -371,18 +382,20 @@ function update_UI()
   -- runs after a full go - around (for 4 players, will start on pick 5)
   if draft_data.pack_size >= draft_data.num_players + 1 + draft_data.hand_size then
     for _, val in pairs(draft_data.pick_order) do
-      local last_picks = {}
-      -- adds the cards taken from the time since the player last held the pack
-      -- to a table, shuffles it, and broadcasts to that player 
-      for i = 0, draft_data.num_players-2 do
-        table.insert(last_picks, val.picks[#val.picks - i])
+      if val.round == draft_data.round then
+        local last_picks = {}
+        -- adds the cards taken from the time since the player last held the pack
+        -- to a table, shuffles it, and broadcasts to that player 
+        for i = 0, draft_data.num_players-2 do
+          table.insert(last_picks, val.picks[#val.picks - i])
+        end
+        fy_shuffle(last_picks)
+        broadcastToColor("------------------", val.color, Color.fromString(val.color))
+        for _, card in ipairs(last_picks) do
+          broadcastToColor(card, val.color, Color.fromString(val.color))
+        end
       end
-      fy_shuffle(last_picks)
-      broadcastToColor("------------------", val.color, Color.fromString(val.color))
-      for _, card in ipairs(last_picks) do
-        broadcastToColor(card, val.color, Color.fromString(val.color))
-      end
-    end
+    end  
   end
 end 
 

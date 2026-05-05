@@ -32,7 +32,7 @@ def record_xlsx():
             except:
                 if line != "#413":
                     print(line)
-            sleep(0.125)
+            sleep(.6)
 
     wb = openpyxl.Workbook()
     base_style = styles.NamedStyle(name="base",
@@ -208,7 +208,7 @@ def record_xlsx():
                     temp_cmc = card_entry["cmc"]
                     cards.append(DeckCard(line, temp_cmc, 1))
                     break
-            sleep(0.125)
+            sleep(0.6)
         cards = sorted(cards)
         for c in cards:
             for q in range(c.qty):
