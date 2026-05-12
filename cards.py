@@ -9,6 +9,12 @@ list_path = Path.cwd().joinpath("output", "card_list.json")
 oracle_path = get_oracle_path()
 exception_path = Path.cwd().joinpath("input", "json", "mana_exceptions.json")
 
+def get_dates():
+    with raw_path.open("r", encoding="utf-8") as f:
+        raw_data = json.load(f)
+    for draft in raw_data["draft_records"]:
+        print(f"{draft["draft_number"]} - {draft["date"]}" )
+
 def generate_cards():
     with raw_path.open("r", encoding="utf-8") as f:
         raw_data = json.load(f)
@@ -43,4 +49,5 @@ def generate_cards():
             f.write(json.dumps(output, indent=4))
                     
 if __name__ == "__main__":
-    generate_cards()
+    #generate_cards()
+    get_dates()

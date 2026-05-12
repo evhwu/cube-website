@@ -140,7 +140,7 @@ end
 --- TODO: Implement taking bracket data, player notebooks, deck records,
 --- and pack records to give a JSON representation of the draft
 function finish_draft()
-  --[[
+  
   local draft_button = getObjectFromGUID(Global.getTable("GUIDs")["Draft Button"])
   local phase = draft_button.getTable("draft_data")
   if phase ~= "Finished" then
@@ -148,18 +148,16 @@ function finish_draft()
     return
   end
 
-  local note_tabs = Notes.getNotebookTabs()
-  local found_flag = false
-  for _, tab in pairs(note_tabs) do
-    if tab.title == "Deck Records" then
-      found_flag = true
-      break
+  if not next(bracket_data.decks) then
+    broadcastToAll("Cannot Finalize Draft: Decklists haven't been recorded.")
+    return    
+  end
+  for player, deck in pairs(bracket_data.decks) do
+    if #deck < 40 then
+      broadcastToAll("Cannot Finalize Draft: " .. player .. "'s deck.")
     end
   end
-  if not found_flag then
-    broadcastToAll("Cannot Finalize Draft: Decklists haven't been recorded.")
-    return
-  end
+
 
   for _, entry in pairs(bracket_data.entries) do
     if entry.win_count == nil or entry.win_count == nil then
@@ -173,20 +171,17 @@ function finish_draft()
       return
     end
   end
-  ]]
-
-  local draft_button = getObjectFromGUID(Global.getTable("GUIDs")["Draft Button"])
+  
   local pick_order = draft_button.getTable("draft_data").pick_order
+  local player_order = draft_button.getTable("draft_data").player_order
   table.sort(pick_order, function(a, b)
     return a.round > b.round
   end)
 
   local temp_colors = {"Green", "Blue", "Red", "Purple"} 
   local color_order = {}
-  local player_order = {}
   for _, col in ipairs(temp_colors) do
     local temp_color = {}
-    local temp_player = {}
     for _, pack in pairs(pick_order) do
       if col == pack.color then
         for _, card in ipairs(pack.picks) do 
@@ -195,31 +190,25 @@ function finish_draft()
       end
     end
     color_order[col] = temp_color
-    for _, note in pairs(Notes.getNotebookTabs()) do
-      if col == note.color then
-        temp_player["body"] = note.body
-      end
-    end
-    player_order[col] = temp_player
   end
 
-  local skip = {label = true, position = true}
   local results = {}
-  for key, val in pairs(bracket_data.entries) do
-    if not skip[key] then
-      results[key] = val
-    end
+  for _, entry in pairs(bracket_data.entries) do
+    results[entry.name] = {player = entry.player,
+                           win_count = (entry.win_count) and entry.win_count or 0}
   end
 
+  
   local export_output = {
-    patch = bracket_data.patch_no,
-    draft = bracket_data.draft_no,
-    date = bracket_data.date_no,
-    color_order = color_order,
     player_order = player_order,
+    color_order = color_order,
     decklists = bracket_data.decks,
-    results = results
+    results = results,
+    draft = bracket_data.header.draft_no.data,
+    date = bracket_data.header.date_no.data,
+    patch = bracket_data.header.patch_no.data
   }
+  
   
   Notes.addNotebookTab({
     title = "Draft Export",
@@ -239,7 +228,7 @@ function record_decks()
   local players = draft_button.call("get_ordered_players")
   local decklists = {}
   for _, player in pairs(players) do
-    decklists[players] = {}
+    decklists[player.steam_name] = {}
   end
 
   broadcastToAll(#decks)
@@ -248,7 +237,7 @@ function record_decks()
     text = text .. deck.getName() .. '\n'
     for _, card in pairs(cards) do
       text = text .. card.name .. '\n'
-      table.insert(decklists[deck.getName()], card)
+      table.insert(decklists[deck.getName()], card.name)
     end
     text = text .. '\n\n'
   end
