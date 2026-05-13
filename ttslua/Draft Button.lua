@@ -107,7 +107,6 @@ end
 --- players pick in future turns.
 function start_round()
   draft_data.hand_size = draft_data.pack_size - 1
-  --draft_data.pick_order = {}
   broadcastToAll("Round " .. draft_data.round)
   local players = get_ordered_players()
   for _, player in pairs(players) do
@@ -124,7 +123,7 @@ function start_round()
   end
   draft_data.phase = "Mid-Round"
 end
-
+ 
 --- Helper function for start_round. Writes pack to be tracked
 --- in remaining_packs for the round and permanently in "Pack Records" note
 --- @param table of strings of card names
@@ -133,7 +132,8 @@ function write_pack(pack, player_color)
   -- is used mainly to find which card was taken from a pack, while pick_order
   -- is used to record the pick order and display for players as round continues.
   draft_data.remaining_packs[pack[1]] = pack
-  draft_data.pick_order[pack[1]] = {color = player_color,
+  draft_data.pick_order[pack[1]] = {orig_color = player_color,
+                                    curr_color = player_color,
                                     round = draft_data.round,
                                     picks = {}}
 
@@ -225,7 +225,7 @@ function rotate_hands()
           local missing_card = table.remove(draft_data.remaining_packs[pack_key], pack_missing_index)
           table.insert(draft_data.pick_order[pack_key].picks, missing_card)
           local next_idx = (idx == #players) and 1 or idx+1
-          draft_data.pick_order[pack_key].color = players[next_idx].color
+          draft_data.pick_order[pack_key].curr_color = players[next_idx].color
           -- record to Notes
           local temp_tab = Global.call("get_note_tab", {title = player.steam_name})
           if temp_tab == nil then
@@ -254,7 +254,7 @@ function rotate_hands()
     end
   end
 
-  --After passing: 
+  -- After passing: 
   Wait.frames(
     function()
       -- If the hand_size is 0 (i.e., 1 card left in pack after click), The
@@ -269,7 +269,7 @@ function rotate_hands()
                                  body = temp_tab.body .. card .. "\n"})
           table.insert(draft_data.player_order[val.steam_name], card)
           for _, pack in pairs(draft_data.pick_order) do
-            if val.color == pack.color and pack.round == draft_data.round then
+            if val.color == pack.curr_color and pack.round == draft_data.round then
               table.insert(pack.picks, card)
             end
           end

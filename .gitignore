@@ -5,3 +5,4 @@ test_frontend/regression.js
 test_frontend/regression_basic.js
 test_frontend/demo.html
 output/cards/*
+output/raw.json

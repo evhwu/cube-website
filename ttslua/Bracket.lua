@@ -48,13 +48,13 @@ for key, val in pairs(bracket_data.header) do
 end
 -- Function Creation ------------------------------------------------
 
--- saves bracket to script_state
+--- saves bracket to script_state
 function onSave()
   return JSON.encode(bracket_data)
 end
 
--- on load, creates all buttons and inputs based on bracket_data or 
--- previous saved script_state.
+--- on load, creates all buttons and inputs based on bracket_data or 
+--- previous saved script_state.
 function onLoad(script_state)
   if script_state ~= nil and script_state ~= "" then 
     bracket_data = JSON.decode(script_state)
@@ -137,18 +137,20 @@ function onLoad(script_state)
   })
 end
 
---- TODO: Implement taking bracket data, player notebooks, deck records,
---- and pack records to give a JSON representation of the draft
+--- Function run after draft is finished, decklists are recorded, and bracket
+--- entries are recorded. Exports a JSON representation of the draft, as an
+--- alternative to text export. 
 function finish_draft()
   
   local draft_button = getObjectFromGUID(Global.getTable("GUIDs")["Draft Button"])
-  local phase = draft_button.getTable("draft_data")
+  local phase = draft_button.getTable("draft_data").phase
+
+  -- Checks are in place for all data to be recorded before finalizing draft
   if phase ~= "Finished" then
     broadcastToAll("Cannot Finalize Draft: Draft phase is " .. phase)
     return
   end
-
-  if not next(bracket_data.decks) then
+  if  next(bracket_data.decks) == nil then
     broadcastToAll("Cannot Finalize Draft: Decklists haven't been recorded.")
     return    
   end
@@ -157,8 +159,6 @@ function finish_draft()
       broadcastToAll("Cannot Finalize Draft: " .. player .. "'s deck.")
     end
   end
-
-
   for _, entry in pairs(bracket_data.entries) do
     if entry.win_count == nil or entry.win_count == nil then
       broadcastToAll("Cannot Finalize Draft: " .. entry.name .. " is missing a value.")
@@ -172,24 +172,27 @@ function finish_draft()
     end
   end
   
-  local pick_order = draft_button.getTable("draft_data").pick_order
-  local player_order = draft_button.getTable("draft_data").player_order
-  table.sort(pick_order, function(a, b)
-    return a.round > b.round
-  end)
-
-  local temp_colors = {"Green", "Blue", "Red", "Purple"} 
+  -- Processes pick order into one list per color of all picks.
+  -- First, converts pick_order into iterable list, then convert into
+  -- dictionary mapping color to 45 picks.
+  local initial_pick_order = draft_button.getTable("draft_data").pick_order
+  local pick_order = {}
   local color_order = {}
-  for _, col in ipairs(temp_colors) do
-    local temp_color = {}
-    for _, pack in pairs(pick_order) do
-      if col == pack.color then
-        for _, card in ipairs(pack.picks) do 
-          table.insert(temp_color, card)
-        end
-      end
+  for _, val in pairs(initial_pick_order) do
+    table.insert(pick_order, {
+      color = val.orig_color,
+      picks = val.picks,
+      round = val.round
+    })
+  end
+  table.sort(pick_order, function(a, b)
+    return a.round < b.round
+  end)
+  for _, pack in ipairs(pick_order) do
+    color_order[pack.color] = color_order[pack.color] or {}
+    for _, card in pairs(pack.picks) do
+      table.insert(color_order[pack.color], card)
     end
-    color_order[col] = temp_color
   end
 
   local results = {}
@@ -197,10 +200,9 @@ function finish_draft()
     results[entry.name] = {player = entry.player,
                            win_count = (entry.win_count) and entry.win_count or 0}
   end
-
   
   local export_output = {
-    player_order = player_order,
+    player_order = draft_button.getTable("draft_data").player_order,
     color_order = color_order,
     decklists = bracket_data.decks,
     results = results,
@@ -209,10 +211,14 @@ function finish_draft()
     patch = bracket_data.header.patch_no.data
   }
   
-  
   Notes.addNotebookTab({
     title = "Draft Export",
     body = JSON.encode(export_output),
+    color = "Grey"
+  })
+  Notes.addNotebookTab({
+    title = "Dump",
+    body = JSON.encode(draft_button.getTable("draft_data")),
     color = "Grey"
   })
   
@@ -223,26 +229,21 @@ function record_decks()
   local script_zone = getObjectFromGUID(Global.getTable("GUIDs")["Record Deck Zone"])
   local decks = script_zone.getObjects()
   local text = ""
-
-  local draft_button = getObjectFromGUID(Global.getTable("GUIDs")["Draft Button"])
-  local players = draft_button.call("get_ordered_players")
-  local decklists = {}
-  for _, player in pairs(players) do
-    decklists[player.steam_name] = {}
-  end
+  bracket_data.decks = {}
 
   broadcastToAll(#decks)
   for _, deck in ipairs(decks) do
     local cards = deck.getObjects()
     text = text .. deck.getName() .. '\n'
+
+    bracket_data.decks[deck.getName()] = bracket_data.decks[deck.getName()] or {}
     for _, card in pairs(cards) do
       text = text .. card.name .. '\n'
-      table.insert(decklists[deck.getName()], card.name)
+      table.insert(bracket_data.decks[deck.getName()], card.name)
     end
-    text = text .. '\n\n'
+    text = text .. '#413\n'
   end
   Notes.editNotebookTab({index = 1, body = text})
-  bracket_data.decks = decklists
 end
 
 --- updates bracket_data to inputs
