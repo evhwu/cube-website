@@ -6,3 +6,5 @@ test_frontend/regression_basic.js
 test_frontend/demo.html
 output/cards/*
 output/raw.json
+input/json/draft_input.json
+input/text/*

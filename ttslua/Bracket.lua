@@ -4,9 +4,9 @@
 -- not initiated, but each entry also has a "win_count" and "player" parameter
 bracket_data = {
   header = {
-    patch_no = {label = "0.0", position = {6.85, .65, 3.7}},
+    date_no =  {label = "MM/DD/YYYY", position = {6.85, .65, 6.05}},
     draft_no = {label = "1", position = {6.85, .65, 4.85}},
-    date_no =  {label = "MM/DD/YYYY", position = {6.85, .65, 6.05}}
+    patch_no = {label = "0.0", position = {6.85, .65, 3.7}}
   },
   entries = {
     {name = "m1p1", label = "1st seed", position = {-5.93, .65, -6.29}},
@@ -141,17 +141,24 @@ end
 --- entries are recorded. Exports a JSON representation of the draft, as an
 --- alternative to text export. 
 function finish_draft()
-  
-  local draft_button = getObjectFromGUID(Global.getTable("GUIDs")["Draft Button"])
-  local phase = draft_button.getTable("draft_data").phase
+  local draft_data = getObjectFromGUID(Global.getTable("GUIDs")["Draft Button"]).getTable("draft_data")
 
   -- Checks are in place for all data to be recorded before finalizing draft
-  if phase ~= "Finished" then
-    broadcastToAll("Cannot Finalize Draft: Draft phase is " .. phase)
+  if draft_data.phase ~= "Finished" then
+    broadcastToAll("Cannot Finalize Draft: Draft phase is " .. draft_data.phase)
     return
   end
-  if  next(bracket_data.decks) == nil then
+  if next(bracket_data.decks) == nil then
     broadcastToAll("Cannot Finalize Draft: Decklists haven't been recorded.")
+    return    
+  end
+  local count = 0
+  for _ in pairs(bracket_data.decks) do
+    count = count + 1
+  end
+  if count ~= draft_data.num_players then
+    broadcastToAll("Cannot Finalize Draft: Only " .. count ..
+                   " of " .. draft_data.num_players .. " recorded.")
     return    
   end
   for player, deck in pairs(bracket_data.decks) do
@@ -175,7 +182,7 @@ function finish_draft()
   -- Processes pick order into one list per color of all picks.
   -- First, converts pick_order into iterable list, then convert into
   -- dictionary mapping color to 45 picks.
-  local initial_pick_order = draft_button.getTable("draft_data").pick_order
+  local initial_pick_order = draft_data.pick_order
   local pick_order = {}
   local color_order = {}
   for _, val in pairs(initial_pick_order) do
@@ -202,7 +209,7 @@ function finish_draft()
   end
   
   local export_output = {
-    player_order = draft_button.getTable("draft_data").player_order,
+    player_order = draft_data.player_order,
     color_order = color_order,
     decklists = bracket_data.decks,
     results = results,
@@ -218,7 +225,7 @@ function finish_draft()
   })
   Notes.addNotebookTab({
     title = "Dump",
-    body = JSON.encode(draft_button.getTable("draft_data")),
+    body = JSON.encode(draft_data),
     color = "Grey"
   })
   

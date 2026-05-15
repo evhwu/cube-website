@@ -390,9 +390,9 @@ function update_UI()
           table.insert(last_picks, val.picks[#val.picks - i])
         end
         fy_shuffle(last_picks)
-        broadcastToColor("------------------", val.color, Color.fromString(val.color))
+        broadcastToColor("------------------", val.curr_color, Color.fromString(val.curr_color))
         for _, card in ipairs(last_picks) do
-          broadcastToColor(card, val.color, Color.fromString(val.color))
+          broadcastToColor(card, val.curr_color, Color.fromString(val.curr_color))
         end
       end
     end  
