@@ -16,10 +16,13 @@ def find_xlsx_card(card_name):
     input_path = Path.cwd().joinpath("input", "xlsx")
     for f in input_path.iterdir():
         draft_sheet = pd.read_excel(f, sheet_name="Draft",
-                                    skiprows=[16,32], header=0)
+                                    skiprows=[16,32], usecols=[0,1,2,3],
+                                    header=0)
+        deck_sheet = pd.read_excel(f, sheet_name="Play", header=0)
         for series_name, series in draft_sheet.items():
             if card_name in series.values:
-                print(f"{f} - {series_name}")
+                run = "Run" if deck_sheet.isin([card_name]).any().any() else "Not Run"
+                print(f"{f} - {series_name} - {run}")
 
 # make aliases for double faced cards (windows OS dislikes //)
 # shorten makes a long string into short, otherwise short to long
@@ -35,4 +38,6 @@ def card_alias(card_name, shorten=True):
         if "alias" in card_list[card_name] :
             return card_list[card_name]["alias"]
         return None
-    
+
+if __name__ == "__main__":
+    find_xlsx_card("Tinker")
