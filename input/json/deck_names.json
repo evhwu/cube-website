@@ -17,14 +17,14 @@
         "UW": "Azorius",
         "BGR": "Jund",
         "BGU": "Sultai",
-        "BGW": "Junk",
+        "BGW": "Abzan",
         "BRU": "Grixis",
         "BRW": "Mardu",
         "BUW": "Esper",
         "GRU": "Temur",
         "GRW": "Naya",
         "GUW": "Bant",
-        "RUW": "America"
+        "RUW": "Jeskai"
     }
 
 }

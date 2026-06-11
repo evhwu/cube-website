@@ -3,7 +3,9 @@ from openpyxl import styles
 import os
 import requests
 from time import sleep
+
 save_path = os.path.dirname(f"{os.getcwd()}/input/")
+user_agent = "record-to-xlsx/1.0"
 
 # Records draft from Tabletop Simulator. Read from input/text/ deck, pack, player results
 def record_xlsx(): 
@@ -23,7 +25,8 @@ def record_xlsx():
         for line in pack_file:
             request_string = f"https://api.scryfall.com/cards/search?q={line}"
             response = requests.get(request_string,
-                                    params = {"format" : "json"})
+                                    params = {"format" : "json"},
+                                    headers = {"User-Agent" : user_agent})
             try:
                 card_dict = response.json()["data"]
                 for card_entry in card_dict:
@@ -201,7 +204,8 @@ def record_xlsx():
                 continue
             request_string = f"https://api.scryfall.com/cards/search?q={line}"
             response = requests.get(request_string,
-                                    params = {"format" : "json"})
+                                    params = {"format" : "json"},
+                                    headers = {"User-Agent" : user_agent})
             card_dict = response.json()["data"]
             for card_entry in card_dict:
                 if card_entry["name"] == line:

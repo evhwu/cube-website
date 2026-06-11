@@ -6,6 +6,7 @@ draft_data =  {
   pick_order = {}, -- Order of taken cards. Will start to be displayed once a full go-around has occured.
   is_clockwise = false, -- Direction that players are passing
   player_order = {}, -- Order of taken cards by player. Duplicate of Player's Notebook.
+  color_map = {},
 
   -- below are essentially constants, but are implemented to support draft changes
   pack_size = 15, -- # of cards dealt in each pack
@@ -96,6 +97,7 @@ function start_draft()
       body = players[pidx].steam_name .. '-#-' .. players[pidx].color ..'\n',
       color = players[pidx].color})
     draft_data.player_order[players[pidx].steam_name] = {}
+    draft_data.color_map[players[pidx].steam_name] = players[pidx].color
   end
 end
 -- Begin Draft ------------------------------------------------------

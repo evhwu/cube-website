@@ -6,6 +6,7 @@ import openpyxl
 from openpyxl import styles
 
 input_path = Path.cwd().joinpath("input", "json", "draft_input.json")
+user_agent = "record-to-xlsx/1.0"
 
 def record_draft():
     with input_path.open('r', encoding="utf-8") as f:
@@ -17,7 +18,8 @@ def record_draft():
                      for card in player]
         for card in all_cards:
             request_string = f"https://api.scryfall.com/cards/search?q={card}"
-            response = requests.get(request_string, params = {"format" : "json"})
+            response = requests.get(request_string, params = {"format" : "json"},
+                                    headers = {"User-Agent" : user_agent})
             try:
                 scryfall_dict = response.json()["data"]
                 for scryfall_entry in scryfall_dict:

@@ -70,7 +70,7 @@ def raw_from_xlsx():
             player_sheet = pd.read_excel(f, sheet_name = "Draft",
                                         skiprows = [16,32], usecols = [0,1,2,3],
                                         header = 0)
-            deck_sheet = pd.read_excel(f, sheet_name = "Play").dropna()
+            deck_sheet = pd.read_excel(f, sheet_name = "Play")
 
             #write player pick order- TODO: remove nested for and change to mapping
             for index, row in rank_sheet.iterrows():
@@ -83,7 +83,7 @@ def raw_from_xlsx():
                         p["pick_order"] = series.to_list()
                 for series_name, series in deck_sheet.items():
                     if series_name == p["name"]:
-                        p["decklist"] = series.to_list()
+                        p["decklist"] = series.dropna().to_list()
                 
             draft_records.append(draft)
     read_xlsx()

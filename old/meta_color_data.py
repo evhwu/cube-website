@@ -132,6 +132,7 @@ def color_profile():
                     break
                 
                 response = requests.get('https://api.scryfall.com/cards/search?q=' + curr_card, params = params)
+                #might need user-agent
                 card_dict = response.json()['data']
                 for card_entry in card_dict:
                     if card_entry['name'] == curr_card:

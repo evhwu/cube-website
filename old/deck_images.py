@@ -37,6 +37,7 @@ def generate_deck_images(archetypes=False):
                         except:
                             temp_image_url = card_entry['card_faces'][0]['image_uris']['normal']
                         temp_image = Image.open(io.BytesIO(requests.get(temp_image_url).content))
+                        #might need user-agent
                         if cmc != temp_cmc:
                             curve.append([])
                             cmc = temp_cmc

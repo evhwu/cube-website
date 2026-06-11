@@ -22,7 +22,8 @@ bracket_data = {
     {name = "m6p1", label = "winner of wf", position = {5.395, .65, -0.02}},
     {name = "m6p2", label = "winner of lf", position = {5.395, .65, 1.07}},
   },
-  decks = {}
+  decks = {},
+  companions = {}
 }
 
 -- Function Creation ------------------------------------------------
@@ -212,6 +213,7 @@ function finish_draft()
     player_order = draft_data.player_order,
     color_order = color_order,
     decklists = bracket_data.decks,
+    companions = bracket_data.companions,
     results = results,
     draft = bracket_data.header.draft_no.data,
     date = bracket_data.header.date_no.data,
@@ -223,17 +225,42 @@ function finish_draft()
     body = JSON.encode(export_output),
     color = "Grey"
   })
+
+  --[[
   Notes.addNotebookTab({
     title = "Dump",
     body = JSON.encode(draft_data),
     color = "Grey"
   })
+  ]]
   
 end
 --- Records each deck object in the Record Deck Zone. Taken from previous
 --- Record Button code.
 function record_decks()
-  local script_zone = getObjectFromGUID(Global.getTable("GUIDs")["Record Deck Zone"])
+  local GUIDs = Global.getTable("GUIDs")
+  local script_zone = getObjectFromGUID(GUIDs["Record Deck Zone"])
+
+  for key, val in pairs(GUIDs) do
+    if string.find(key, "Companion") then
+      local companion_zone = getObjectFromGUID(val)
+      local companion_objs = companion_zone.getObjects()
+      local temp = {}
+      for _, obj in pairs(companion_objs) do
+        if obj.name == "CardCustom" then
+          table.insert(temp, obj.getName())
+        elseif obj.name == "Deck" then
+          for _, card in pairs(obj.getObjects()) do
+            table.insert(temp, card.name)
+          end
+        end
+      end
+      local color = string.gsub(key, " Companion Zone", "")
+      bracket_data.companions[color] = temp
+    end
+  end
+
+
   local decks = script_zone.getObjects()
   local text = ""
   bracket_data.decks = {}
