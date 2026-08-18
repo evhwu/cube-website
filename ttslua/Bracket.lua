@@ -4,9 +4,9 @@
 -- not initiated, but each entry also has a "win_count" and "player" parameter
 bracket_data = {
   header = {
-    date_no =  {label = "MM/DD/YYYY", position = {6.85, .65, 6.05}},
+    patch_no = {label = "0.0", position = {6.85, .65, 3.7}},
     draft_no = {label = "1", position = {6.85, .65, 4.85}},
-    patch_no = {label = "0.0", position = {6.85, .65, 3.7}}
+    date_no =  {label = "MM/DD/YYYY", position = {6.85, .65, 6.05}}
   },
   entries = {
     {name = "m1p1", label = "1st seed", position = {-5.93, .65, -6.29}},
@@ -226,13 +226,6 @@ function finish_draft()
     color = "Grey"
   })
 
-  --[[
-  Notes.addNotebookTab({
-    title = "Dump",
-    body = JSON.encode(draft_data),
-    color = "Grey"
-  })
-  ]]
   
 end
 --- Records each deck object in the Record Deck Zone. Taken from previous
