@@ -353,3 +353,4 @@ def color_image(players):
 
 
     
+color_profile()

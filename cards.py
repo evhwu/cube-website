@@ -1,12 +1,9 @@
 import math
 import json
-import helper
 from pathlib import Path
-from helper import get_oracle_path
 
 raw_path = Path.cwd().joinpath("output", "raw.json")
 list_path = Path.cwd().joinpath("output", "card_list.json")
-oracle_path = get_oracle_path()
 exception_path = Path.cwd().joinpath("input", "json", "mana_exceptions.json")
 
 def get_dates():
@@ -14,6 +11,27 @@ def get_dates():
         raw_data = json.load(f)
     for draft in raw_data["draft_records"]:
         print(f"{draft["draft_number"]} - {draft["date"]}" )
+
+def first_pick_run_rate():
+    with raw_path.open("r", encoding="utf-8") as f:
+        raw_data = json.load(f)
+    results = {"shinydog" : [0,0],
+               "Nenni" : [0,0],
+               "big big big big dumps" : [0,0],
+               "Alexotl" : [0,0]}
+    for draft in raw_data["draft_records"]:
+        for player in draft["players"]:
+            fp = player["pick_order"][0]
+            if fp in player["decklist"]:
+                results[player["name"]][0] += 1
+            else:
+                results[player["name"]][1] += 1
+    for k,v in results.items():
+        print(f"{k} has run their first pick {v[0]} out of {v[0]+v[1]} times.")
+
+
+
+
 
 def generate_cards():
     with raw_path.open("r", encoding="utf-8") as f:
@@ -50,4 +68,5 @@ def generate_cards():
                     
 if __name__ == "__main__":
     #generate_cards()
-    get_dates()
+    #get_dates()
+    first_pick_run_rate()

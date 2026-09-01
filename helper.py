@@ -32,12 +32,12 @@ def card_alias(card_name, shorten=True):
             return card_name.split(" // ")[0]
         return None
     else:
-        list_path = Path.cwd().joinpath("output", "card_list.json")
-        with list_path.open("r", encoding="utf-8") as f:
-            card_list = json.load(f)
+        raw_path = Path.cwd().joinpath("output", "raw.json")
+        with raw_path.open("r", encoding="utf-8") as f:
+            card_list = json.load(f)["card_list"]
         if "alias" in card_list[card_name] :
             return card_list[card_name]["alias"]
         return None
 
 if __name__ == "__main__":
-    find_xlsx_card("Tinker")
+    card_alias("Tinker")

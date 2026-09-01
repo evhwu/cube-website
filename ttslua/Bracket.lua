@@ -217,7 +217,8 @@ function finish_draft()
     results = results,
     draft = bracket_data.header.draft_no.data,
     date = bracket_data.header.date_no.data,
-    patch = bracket_data.header.patch_no.data
+    patch = bracket_data.header.patch_no.data,
+    notes = ""
   }
   
   Notes.addNotebookTab({
@@ -235,6 +236,7 @@ function record_decks()
   local script_zone = getObjectFromGUID(GUIDs["Record Deck Zone"])
 
   for key, val in pairs(GUIDs) do
+
     if string.find(key, "Companion") then
       local companion_zone = getObjectFromGUID(val)
       local companion_objs = companion_zone.getObjects()
@@ -252,7 +254,6 @@ function record_decks()
       bracket_data.companions[color] = temp
     end
   end
-
 
   local decks = script_zone.getObjects()
   local text = ""

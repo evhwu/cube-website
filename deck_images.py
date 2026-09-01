@@ -1,4 +1,3 @@
-import os
 import json
 import requests
 import io
@@ -12,7 +11,6 @@ raw_path = Path.cwd().joinpath("output", "raw.json")
 oracle_path = get_oracle_path()
 ml_path = Path.cwd().joinpath("output", "ml_output.json")
 
-
 def generate_deck_images(archetypes=False):
     with raw_path.open("r", encoding="utf-8") as f:
         raw_data = json.load(f)
@@ -23,6 +21,10 @@ def generate_deck_images(archetypes=False):
             ml_data = json.load(f)
 
     for draft in raw_data["draft_records"]:
+
+        if int(draft["draft_number"]) < 118:
+            continue
+        
         for player in draft["players"]:
             cmc = 0
             curve = [[]]
@@ -36,7 +38,11 @@ def generate_deck_images(archetypes=False):
                             temp_image_url = card_entry['image_uris']['normal']
                         except:
                             temp_image_url = card_entry['card_faces'][0]['image_uris']['normal']
-                        temp_image = Image.open(io.BytesIO(requests.get(temp_image_url).content))
+
+
+
+                        temp_image = Image.open(io.BytesIO(requests.get(temp_image_url,
+                                                                        headers= {"User-Agent" : "record-to-xlsx/1.0"}).content))
                         #might need user-agent
                         if cmc != temp_cmc:
                             curve.append([])
@@ -76,4 +82,4 @@ def generate_deck_images(archetypes=False):
             del new_image
 
 if __name__ == "__main__":
-    generate_deck_images(True)
+    generate_deck_images()

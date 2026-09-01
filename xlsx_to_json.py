@@ -46,4 +46,4 @@ def xlsx_to_json():
 
 
 if __name__ == "__main__":
-    xlsx_to_json()
+    deal_broker_check()
