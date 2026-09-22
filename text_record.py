@@ -9,13 +9,13 @@ user_agent = "record-to-xlsx/1.0"
 
 # Records draft from Tabletop Simulator. Read from input/text/ deck, pack, player results
 def record_xlsx(): 
-    with open(f"{save_path}/text/player_results.txt",
+    with open(f"{save_path}/text/player_input.txt",
             'r', encoding="utf-8") as result:
         player_file = result.read().split('\n')
-    with open(f"{save_path}/text/pack_results.txt",
+    with open(f"{save_path}/text/pack_input.txt",
             'r', encoding="utf-8") as result:
         pack_file = result.read().split('\n')
-    with open(f"{save_path}/text/deck_results.txt",
+    with open(f"{save_path}/text/deck_input.txt",
             'r', encoding="utf-8") as result:
         deck_file = result.read().split('\n')
 

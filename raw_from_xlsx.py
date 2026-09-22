@@ -173,7 +173,7 @@ def raw_from_xlsx():
             img_url = card_entry[0]["card_faces"][0]["image_uris"]["png"]
     
         card_dict.update({"tags": [], "img_url" : img_url})
-        alias = helper.card_alias(card)
+        alias = helper.get_card_alias(card)
         if alias:
             card_dict["alias"] = alias
         return card_dict
@@ -212,7 +212,7 @@ def raw_from_xlsx():
         for player_i, player in enumerate(draft["players"]):
             pips, splash, sources = {}, {}, {}
             for card in player["decklist"]:
-                #alias = helper.card_alias(card)
+                #alias = helper.get_card_alias(card)
                 #card_name = alias if alias is not None else card
                 if card not in card_list:
                     #print(card)

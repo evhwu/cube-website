@@ -1,0 +1,74 @@
+09/01/2026
+
+BEFORE:
+    data creation XLSX
+        record.py/record_draft			> XLSX DATA creation
+        text_record.py/record_xlsx		> XLSX DATA creation
+
+    basic visualizations from XLSX
+        helper.py/find_xlsx_card		> console visualization
+        xlsx_to_json.py/deal_broker_check	> console visualization
+
+    create JSON from XLSX
+        xlsx_to_json.py/xlsx_to_json		> JSON DATA creation
+
+    create RAW
+        raw_from_xlsx.py/generate_raw		> raw.json
+
+    basic visualizations from RAW
+        cards.py/get_dates			> console visualization
+        cards.py/first_pick_run_rate		> console visualization
+        decks.py/test_name			> test.json
+        passing.py/passing_wr			> console visualization
+
+        deck_images.py/generate_deck_images	> image files visualization
+
+
+    reorientation of data from RAW
+        cards.py/generate_cards			> output/cards jsons
+        decks.py/format_deck_sample		> output/sample.json
+
+
+    helper functions
+        helper.py/get_oracle_path		> helper
+        helper.py/card_alias			> helper
+
+
+
+AFTER:
+    (*) - done, need comment pass
+    (**) - done, done
+
+    record_draft.py
+        record - Create XLSX, combine record and text_record into one function
+            record.py /record_draft
+            text_record.py/record_xlsx
+        create jsons retroactively from existing XLSX. 
+            xlsx_to_json.py/xlsx_to_json
+
+    **helper.py
+        **helper functions
+            **helper.py/get_oracle_path
+            **helper.py/get_card_alias
+        **testing and validate XLSX - For checking xlsx is write
+            **helper.py/find_xlsx_card
+            xlsx_to_json.py/draft_exception_check
+            **cards.py/get_dates
+    
+    raw_from_xlsx.py
+        creates raw. will replace raw.json with pandas (next big recode)
+            raw_from_xlsx.py/generate_raw
+    
+    **visualization.py
+        **visualization
+            **cards.py/first_pick_run_rate
+            **passing.py/passing_wr
+            **deck_images.py/generate_deck_images
+    
+    transformation.py
+        transformation raw data for further use / testing
+            decks.py/test_name
+            cards.py/generate_cards
+            decks.py/format_deck_sample
+
+

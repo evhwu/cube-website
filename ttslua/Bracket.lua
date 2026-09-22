@@ -22,7 +22,7 @@ bracket_data = {
     {name = "m6p1", label = "winner of wf", position = {5.395, .65, -0.02}},
     {name = "m6p2", label = "winner of lf", position = {5.395, .65, 1.07}},
   },
-  decks = {},
+  decklists = {},
   companions = {}
 }
 
@@ -50,16 +50,20 @@ end
 -- Function Creation ------------------------------------------------
 
 --- saves bracket to script_state
+
 function onSave()
   return JSON.encode(bracket_data)
 end
 
+
 --- on load, creates all buttons and inputs based on bracket_data or 
 --- previous saved script_state.
 function onLoad(script_state)
+
   if script_state ~= nil and script_state ~= "" then 
     bracket_data = JSON.decode(script_state)
   end
+
   -- generates a space for each bracket entry's name 
   for _, val in pairs(bracket_data.entries) do
     local input_param = {
@@ -84,13 +88,13 @@ function onLoad(script_state)
       input_function  = win_counter,
       input_param = win_counter,
       function_owner = self,
+      label = 0,
       position = {val.position[1]+2, val.position[2], val.position[3]},
       width = 500, height = 400, scale = {0.5,1,1},
       font_size = 250,
       color = {0,0,0,0}, font_color = {0,0,0,99},
       alignment = 3, -- center
-      validation = 2, -- only ints
-      value = 0
+      validation = 2 -- only ints
     }
     if val.win_count then
       score_param.value = val.win_count
@@ -149,30 +153,37 @@ function finish_draft()
     broadcastToAll("Cannot Finalize Draft: Draft phase is " .. draft_data.phase)
     return
   end
-  if next(bracket_data.decks) == nil then
+  if next(bracket_data.decklists) == nil then
     broadcastToAll("Cannot Finalize Draft: Decklists haven't been recorded.")
     return    
   end
   local count = 0
-  for _ in pairs(bracket_data.decks) do
+  for _, _ in pairs(bracket_data.decklists) do
     count = count + 1
   end
+  -- #(len) does not work for dictionary type tables
   if count ~= draft_data.num_players then
     broadcastToAll("Cannot Finalize Draft: Only " .. count ..
                    " of " .. draft_data.num_players .. " recorded.")
     return    
   end
-  for player, deck in pairs(bracket_data.decks) do
+  for player, deck in pairs(bracket_data.decklists) do
     if #deck < 40 then
       broadcastToAll("Cannot Finalize Draft: " .. player .. "'s deck.")
     end
   end
+  -------------------------
+  local missing = false
   for _, entry in pairs(bracket_data.entries) do
     if entry.win_count == nil or entry.win_count == nil then
       broadcastToAll("Cannot Finalize Draft: " .. entry.name .. " is missing a value.")
-      return
+      missing = true
     end
   end
+  if missing then
+    return
+  end
+  -------------------------
   for key, val in pairs(bracket_data.header) do
     if val.data == nil then
       broadcastToAll("Cannot Finalize Draft: " .. key .. " is missing a value.")
@@ -212,13 +223,18 @@ function finish_draft()
   local export_output = {
     player_order = draft_data.player_order,
     color_order = color_order,
-    decklists = bracket_data.decks,
+    decklists = bracket_data.decklists,
     companions = bracket_data.companions,
     results = results,
-    draft = bracket_data.header.draft_no.data,
+    draft = tonumber(bracket_data.header.draft_no.data),
     date = bracket_data.header.date_no.data,
     patch = bracket_data.header.patch_no.data,
-    notes = ""
+    notes = "",
+    pack_size = draft_data.pack_size,
+    rounds = draft_data.rounds,
+    num_players = draft_data.num_players,
+    color_map = draft_data.color_map,
+    type = draft_data.draft_type
   }
   
   Notes.addNotebookTab({
@@ -233,45 +249,47 @@ end
 --- Record Button code.
 function record_decks()
   local GUIDs = Global.getTable("GUIDs")
-  local script_zone = getObjectFromGUID(GUIDs["Record Deck Zone"])
+  local draft_data = getObjectFromGUID(Global.getTable("GUIDs")["Draft Button"]).getTable("draft_data")
 
-  for key, val in pairs(GUIDs) do
+  --bracket_data.decklists = {}
+  --bracket_data.companions = {}
+  local text = ""
 
-    if string.find(key, "Companion") then
-      local companion_zone = getObjectFromGUID(val)
-      local companion_objs = companion_zone.getObjects()
-      local temp = {}
-      for _, obj in pairs(companion_objs) do
-        if obj.name == "CardCustom" then
-          table.insert(temp, obj.getName())
-        elseif obj.name == "Deck" then
-          for _, card in pairs(obj.getObjects()) do
-            table.insert(temp, card.name)
+  local function record_data_and_notebook(zone_name)
+    local output = {}
+    for key, val in pairs(GUIDs) do
+      if string.find(key, zone_name) then
+        local temp_zone = getObjectFromGUID(val)
+        local temp_objs = temp_zone.getObjects()
+
+        if #temp_objs > 1 then
+          -- Returns only the proper color string from the named zones
+          -- being searched for in Golbal GUIDS (ex. "Green Companion Zone")
+          local color = string.gsub(key, " " .. zone_name .. " Zone", "")
+          local player = draft_data.color_map[color]
+          text = text .. player .. "-#-" .. color .. '\n'
+          output[player] = {}
+          for _, obj in pairs(temp_objs) do 
+            if obj.name == "CardCustom" then
+              text = text .. obj.getName() .. '\n'
+              table.insert(output[player], obj.getName())
+            elseif obj.name == "Deck" then
+              for _, card in pairs(obj.getObjects()) do
+                text = text .. card.name .. '\n'
+                table.insert(output[player], card.name)
+              end
+            end
           end
         end
       end
-      local color = string.gsub(key, " Companion Zone", "")
-      bracket_data.companions[color] = temp
     end
+    return output
   end
-
-  local decks = script_zone.getObjects()
-  local text = ""
-  bracket_data.decks = {}
-
-  broadcastToAll(#decks)
-  for _, deck in ipairs(decks) do
-    local cards = deck.getObjects()
-    text = text .. deck.getName() .. '\n'
-
-    bracket_data.decks[deck.getName()] = bracket_data.decks[deck.getName()] or {}
-    for _, card in pairs(cards) do
-      text = text .. card.name .. '\n'
-      table.insert(bracket_data.decks[deck.getName()], card.name)
-    end
-    text = text .. '#413\n'
-  end
+  bracket_data.decklists = record_data_and_notebook("Deck")
+  text = text .. "Companions:" .. '\n'
+  bracket_data.companions = record_data_and_notebook("Companion")
   Notes.editNotebookTab({index = 1, body = text})
+
 end
 
 --- updates bracket_data to inputs

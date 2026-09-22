@@ -6,22 +6,25 @@ draft_data =  {
   pick_order = {}, -- Order of taken cards. Will start to be displayed once a full go-around has occured.
   is_clockwise = false, -- Direction that players are passing
   player_order = {}, -- Order of taken cards by player. Duplicate of Player's Notebook.
-  color_map = {},
+  color_map = {}, -- 
 
   -- below are essentially constants, but are implemented to support draft changes
   pack_size = 15, -- # of cards dealt in each pack
-  max_rounds = 3, -- # of rounds until finished
+  rounds = 3, -- # of rounds until finished
   num_players = 4, -- # of players in draft
+  draft_type = "Pack",
   snipping = true -- # whether the snipping tool pick_order reminder is turned on
 }
 
 function onLoad(script_state)
+
   if script_state ~= nil and script_state ~= "" then
     broadcastToAll("load save")
     draft_data = JSON.decode(script_state)
   else 
     broadcastToAll("new save")
   end
+
   local btn_param = {
     click_function = "action",
     function_owner = self,
@@ -36,9 +39,11 @@ function onLoad(script_state)
   cube = getObjectFromGUID(Global.getTable("GUIDs")["Cube Bag"])
 end
 
+
 function onSave()
   return JSON.encode(draft_data)
 end
+
 
 
 -- Control ----------------------------------------------------------
@@ -97,7 +102,8 @@ function start_draft()
       body = players[pidx].steam_name .. '-#-' .. players[pidx].color ..'\n',
       color = players[pidx].color})
     draft_data.player_order[players[pidx].steam_name] = {}
-    draft_data.color_map[players[pidx].steam_name] = players[pidx].color
+    draft_data.color_map[players[pidx].color] = players[pidx].steam_name
+    
   end
 end
 -- Begin Draft ------------------------------------------------------
@@ -143,7 +149,7 @@ function write_pack(pack, player_color)
   for _, val in ipairs(pack) do
     body = body .. val .. "\n"
   end
-  body = body .. "#413\n"
+  body = body .. "\n"
   local temp_tab = Global.call("get_note_tab", {title="Pack Records"})
   if temp_tab ~= nil then
     Notes.editNotebookTab({index = temp_tab.index, body = temp_tab.body .. body})
@@ -202,7 +208,7 @@ function rotate_hands()
   if draft_data.hand_size == 0 then 
     draft_data.is_clockwise = not draft_data.is_clockwise
     draft_data.round = draft_data.round + 1
-    if draft_data.round > draft_data.max_rounds then 
+    if draft_data.round > draft_data.rounds then 
       draft_data.phase = "Finished"
     else
       draft_data.phase = "Pre-Round"
@@ -256,6 +262,12 @@ function rotate_hands()
     end
   end
 
+  -- calls update_UI to show previously taken cards for next pick
+  if draft_data.snipping then
+    Wait.frames(function() update_UI() end, 8)
+  end
+
+
   -- After passing: 
   Wait.frames(
     function()
@@ -276,13 +288,11 @@ function rotate_hands()
             end
           end
         end
+        --for key, val in pairs(draft_data.remaining_packs) do
+        --  draft_data.pick_order[key].append(val[0])
+        --end
       end
-    end, 10)
-  
-  -- calls update_UI to show previously taken cards for next pick
-  if draft_data.snipping then
-    Wait.frames(function() update_UI() end, 15)
-  end
+    end, 15)
 end
 
 --- helper function for rotate_hands, checks is a table has a value
